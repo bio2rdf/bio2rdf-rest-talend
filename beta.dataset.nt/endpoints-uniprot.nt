@@ -1,0 +1,551 @@
+<http://bio2rdf.org/namespace:uniprot_citationmapping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_citationmapping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_citationmapping> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_citationmapping" .
+<http://bio2rdf.org/namespace:uniprot_citationmapping> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint from UniProt [namespace:uniprot_citationmapping]" .
+<http://bio2rdf.org/namespace:uniprot_citationmapping> <http://purl.org/dc/elements/1.1/title> "UniProt Citation Mapping" .
+<http://bio2rdf.org/namespace:uniprot_citationmapping> <http://www.w3.org/2000/01/rdf-schema#comment> "The Universal Protein Resource (UniProt) is a comprehensive resource for protein sequence and annotation data." .
+<http://bio2rdf.org/namespace:uniprot_citationmapping> <http://xmlns.com/foaf/0.1/depiction> <http://m.bio2rdf.org/image/uniprot.png> .
+<http://bio2rdf.org/namespace:uniprot_citationmapping> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://beta.sparql.org/sparql> .
+<http://bio2rdf.org/namespace:uniprot_citationmapping> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://beta.sparql.uniprot.org/?query=DESCRIBE%20%3Chttp://purl.uniprot.org/citationmapping/$ID$%3E" .
+
+<http://bio2rdf.org/namespace:uniprot_citationmapping> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fcitationmapping%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+%28+%3fs+%3d+%3Chttp%3a%2f%2fpurl.uniprot.org%2f$NS$%2f$ID$%3E+%29+.%0D%0A}&format=rdf" .
+<http://bio2rdf.org/namespace:uniprot_citationmapping> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fcitationmapping%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+%28+%3fs+%3d+%3C$URI$%3E+%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_citationmapping> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{%3fs+%3fp+%3fo}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fcitationmapping%2f%3E%0D%0AWHERE+%0D%0A{%0D%0A%09%3fs+%3fp+%3fo+.%0D%0A++%09FILTER+%28%3fo+%3d+%3Chttp%3a%2f%2fpurl.uniprot.org%2f$NS$%2f$ID$%3E%29+.%0D%0A}&format=rdf" .
+<http://bio2rdf.org/namespace:uniprot_citationmapping> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{%3fs+%3fp+%3fo}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fcitationmapping%2f%3E%0D%0AWHERE+%0D%0A{%0D%0A%09%3fs+%3fp+%3fo+.%0D%0A++%09FILTER+%28%3fo+%3d+%3C$URI$%3E%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_citationmapping> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://www.uniprot.org/citationmapping/?query=$QUERY$&sort=score&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_citationmapping> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " " .
+
+
+<http://bio2rdf.org/namespace:uniprot_citationmapping_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_citationmapping_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_citationmapping_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_citationmapping_resource" .
+<http://bio2rdf.org/namespace:uniprot_citationmapping_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniprot_citationmapping_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniprot.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:uniprot_citationmapping_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_citationmapping_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_citationmapping_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_citationmapping_vocabulary" .
+<http://bio2rdf.org/namespace:uniprot_citationmapping_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniprot_citationmapping_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniprot.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+<http://bio2rdf.org/namespace:uniprot_citations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_citations> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_citations> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_citations" .
+<http://bio2rdf.org/namespace:uniprot_citations> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint from UniProt [namespace:uniprot_citations]" .
+<http://bio2rdf.org/namespace:uniprot_citations> <http://purl.org/dc/elements/1.1/title> "UniProt Citations" .
+<http://bio2rdf.org/namespace:uniprot_citations> <http://www.w3.org/2000/01/rdf-schema#comment> "The Universal Protein Resource (UniProt) is a comprehensive resource for protein sequence and annotation data." .
+<http://bio2rdf.org/namespace:uniprot_citations> <http://xmlns.com/foaf/0.1/depiction> <http://m.bio2rdf.org/image/uniprot.png> .
+<http://bio2rdf.org/namespace:uniprot_citations> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://beta.sparql.org/sparql> .
+<http://bio2rdf.org/namespace:uniprot_citations> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://beta.sparql.uniprot.org/?query=DESCRIBE%20%3Chttp://purl.uniprot.org/citations/$ID$%3E" .
+
+<http://bio2rdf.org/namespace:uniprot_citations> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fcitations%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+%28+%3fs+%3d+%3Chttp%3a%2f%2fpurl.uniprot.org%2f$NS$%2f$ID$%3E+%29+.%0D%0A}&format=rdf" .
+<http://bio2rdf.org/namespace:uniprot_citations> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fcitations%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+%28+%3fs+%3d+%3C$URI$%3E+%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_citations> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{%3fs+%3fp+%3fo}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fcitations%2f%3E%0D%0AWHERE+%0D%0A{%0D%0A%09%3fs+%3fp+%3fo+.%0D%0A++%09FILTER+%28%3fo+%3d+%3Chttp%3a%2f%2fpurl.uniprot.org%2f$NS$%2f$ID$%3E%29+.%0D%0A}&format=rdf" .
+<http://bio2rdf.org/namespace:uniprot_citations> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{%3fs+%3fp+%3fo}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fcitations%2f%3E%0D%0AWHERE+%0D%0A{%0D%0A%09%3fs+%3fp+%3fo+.%0D%0A++%09FILTER+%28%3fo+%3d+%3C$URI$%3E%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_citations> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://www.uniprot.org/citations/?query=$QUERY$&sort=score&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_citations> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " " .
+
+
+<http://bio2rdf.org/namespace:uniprot_citations_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_citations_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_citations_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_citations_resource" .
+<http://bio2rdf.org/namespace:uniprot_citations_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniprot_citations_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniprot.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:uniprot_citations_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_citations_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_citations_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_citations_vocabulary" .
+<http://bio2rdf.org/namespace:uniprot_citations_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniprot_citations_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniprot.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+<http://bio2rdf.org/namespace:uniprot_databases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_databases> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_databases> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_databases" .
+<http://bio2rdf.org/namespace:uniprot_databases> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint from UniProt [namespace:uniprot_databases]" .
+<http://bio2rdf.org/namespace:uniprot_databases> <http://purl.org/dc/elements/1.1/title> "UniProt Databases" .
+<http://bio2rdf.org/namespace:uniprot_databases> <http://www.w3.org/2000/01/rdf-schema#comment> "The Universal Protein Resource (UniProt) is a comprehensive resource for protein sequence and annotation data." .
+<http://bio2rdf.org/namespace:uniprot_databases> <http://xmlns.com/foaf/0.1/depiction> <http://m.bio2rdf.org/image/uniprot.png> .
+<http://bio2rdf.org/namespace:uniprot_databases> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://beta.sparql.org/sparql> .
+<http://bio2rdf.org/namespace:uniprot_databases> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://beta.sparql.uniprot.org/?query=DESCRIBE%20%3Chttp://purl.uniprot.org/databases/$ID$%3E" .
+
+<http://bio2rdf.org/namespace:uniprot_databases> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fdatabases%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+%28+%3fs+%3d+%3Chttp%3a%2f%2fpurl.uniprot.org%2f$NS$%2f$ID$%3E+%29+.%0D%0A}&format=rdf" .
+<http://bio2rdf.org/namespace:uniprot_databases> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fdatabases%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+%28+%3fs+%3d+%3C$URI$%3E+%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_databases> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{%3fs+%3fp+%3fo}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fdatabases%2f%3E%0D%0AWHERE+%0D%0A{%0D%0A%09%3fs+%3fp+%3fo+.%0D%0A++%09FILTER+%28%3fo+%3d+%3Chttp%3a%2f%2fpurl.uniprot.org%2f$NS$%2f$ID$%3E%29+.%0D%0A}&format=rdf" .
+<http://bio2rdf.org/namespace:uniprot_databases> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{%3fs+%3fp+%3fo}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fdatabases%2f%3E%0D%0AWHERE+%0D%0A{%0D%0A%09%3fs+%3fp+%3fo+.%0D%0A++%09FILTER+%28%3fo+%3d+%3C$URI$%3E%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_databases> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fdatabases%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+regex%28%3fo%2c+%22$QUERY$%22%2c+%22i%22%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_databases> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " " .
+
+
+<http://bio2rdf.org/namespace:uniprot_databases_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_databases_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_databases_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_databases_resource" .
+<http://bio2rdf.org/namespace:uniprot_databases_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniprot_databases_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniprot.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:uniprot_databases_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_databases_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_databases_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_databases_vocabulary" .
+<http://bio2rdf.org/namespace:uniprot_databases_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniprot_databases_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniprot.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+<http://bio2rdf.org/namespace:uniprot_diseases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_diseases> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_diseases> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_diseases" .
+<http://bio2rdf.org/namespace:uniprot_diseases> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint from UniProt [namespace:uniprot_diseases]" .
+<http://bio2rdf.org/namespace:uniprot_diseases> <http://purl.org/dc/elements/1.1/title> "UniProt Diseases" .
+<http://bio2rdf.org/namespace:uniprot_diseases> <http://www.w3.org/2000/01/rdf-schema#comment> "The Universal Protein Resource (UniProt) is a comprehensive resource for protein sequence and annotation data." .
+<http://bio2rdf.org/namespace:uniprot_diseases> <http://xmlns.com/foaf/0.1/depiction> <http://m.bio2rdf.org/image/uniprot.png> .
+<http://bio2rdf.org/namespace:uniprot_diseases> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://beta.sparql.org/sparql> .
+<http://bio2rdf.org/namespace:uniprot_diseases> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://beta.sparql.uniprot.org/?query=DESCRIBE%20%3Chttp://purl.uniprot.org/diseases/$ID$%3E" .
+
+<http://bio2rdf.org/namespace:uniprot_diseases> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fdiseases%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+%28+%3fs+%3d+%3Chttp%3a%2f%2fpurl.uniprot.org%2f$NS$%2f$ID$%3E+%29+.%0D%0A}&format=rdf" .
+<http://bio2rdf.org/namespace:uniprot_diseases> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fdiseases%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+%28+%3fs+%3d+%3C$URI$%3E+%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_diseases> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{%3fs+%3fp+%3fo}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fdiseases%2f%3E%0D%0AWHERE+%0D%0A{%0D%0A%09%3fs+%3fp+%3fo+.%0D%0A++%09FILTER+%28%3fo+%3d+%3Chttp%3a%2f%2fpurl.uniprot.org%2f$NS$%2f$ID$%3E%29+.%0D%0A}&format=rdf" .
+<http://bio2rdf.org/namespace:uniprot_diseases> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{%3fs+%3fp+%3fo}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fdiseases%2f%3E%0D%0AWHERE+%0D%0A{%0D%0A%09%3fs+%3fp+%3fo+.%0D%0A++%09FILTER+%28%3fo+%3d+%3C$URI$%3E%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_diseases> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://www.uniprot.org/diseases/?query=$QUERY$&sort=score&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_diseases> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " " .
+
+
+<http://bio2rdf.org/namespace:uniprot_diseases_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_diseases_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_diseases_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_diseases_resource" .
+<http://bio2rdf.org/namespace:uniprot_diseases_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniprot_diseases_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniprot.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:uniprot_diseases_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_diseases_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_diseases_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_diseases_vocabulary" .
+<http://bio2rdf.org/namespace:uniprot_diseases_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniprot_diseases_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniprot.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+<http://bio2rdf.org/namespace:uniprot_enzymes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_enzymes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_enzymes> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_enzymes" .
+<http://bio2rdf.org/namespace:uniprot_enzymes> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint from UniProt [namespace:uniprot_enzymes]" .
+<http://bio2rdf.org/namespace:uniprot_enzymes> <http://purl.org/dc/elements/1.1/title> "UniProt Enzymes" .
+<http://bio2rdf.org/namespace:uniprot_enzymes> <http://www.w3.org/2000/01/rdf-schema#comment> "The Universal Protein Resource (UniProt) is a comprehensive resource for protein sequence and annotation data." .
+<http://bio2rdf.org/namespace:uniprot_enzymes> <http://xmlns.com/foaf/0.1/depiction> <http://m.bio2rdf.org/image/uniprot.png> .
+<http://bio2rdf.org/namespace:uniprot_enzymes> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://beta.sparql.org/sparql> .
+<http://bio2rdf.org/namespace:uniprot_enzymes> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://beta.sparql.uniprot.org/?query=DESCRIBE%20%3Chttp://purl.uniprot.org/enzymes/$ID$%3E" .
+
+<http://bio2rdf.org/namespace:uniprot_enzymes> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fenzymes%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+%28+%3fs+%3d+%3Chttp%3a%2f%2fpurl.uniprot.org%2f$NS$%2f$ID$%3E+%29+.%0D%0A}&format=rdf" .
+<http://bio2rdf.org/namespace:uniprot_enzymes> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fenzymes%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+%28+%3fs+%3d+%3C$URI$%3E+%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_enzymes> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{%3fs+%3fp+%3fo}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fenzymes%2f%3E%0D%0AWHERE+%0D%0A{%0D%0A%09%3fs+%3fp+%3fo+.%0D%0A++%09FILTER+%28%3fo+%3d+%3Chttp%3a%2f%2fpurl.uniprot.org%2f$NS$%2f$ID$%3E%29+.%0D%0A}&format=rdf" .
+<http://bio2rdf.org/namespace:uniprot_enzymes> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{%3fs+%3fp+%3fo}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fenzymes%2f%3E%0D%0AWHERE+%0D%0A{%0D%0A%09%3fs+%3fp+%3fo+.%0D%0A++%09FILTER+%28%3fo+%3d+%3C$URI$%3E%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_enzymes> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fenzymes%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+regex%28%3fo%2c+%22$QUERY$%22%2c+%22i%22%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_enzymes> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " " .
+
+
+<http://bio2rdf.org/namespace:uniprot_enzymes_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_enzymes_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_enzymes_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_enzymes_resource" .
+<http://bio2rdf.org/namespace:uniprot_enzymes_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniprot_enzymes_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniprot.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:uniprot_enzymes_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_enzymes_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_enzymes_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_enzymes_vocabulary" .
+<http://bio2rdf.org/namespace:uniprot_enzymes_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniprot_enzymes_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniprot.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+<http://bio2rdf.org/namespace:uniprot_go> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_go> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_go> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_go" .
+<http://bio2rdf.org/namespace:uniprot_go> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint from UniProt [namespace:uniprot_go]" .
+<http://bio2rdf.org/namespace:uniprot_go> <http://purl.org/dc/elements/1.1/title> "UniProt GO" .
+<http://bio2rdf.org/namespace:uniprot_go> <http://www.w3.org/2000/01/rdf-schema#comment> "The Universal Protein Resource (UniProt) is a comprehensive resource for protein sequence and annotation data." .
+<http://bio2rdf.org/namespace:uniprot_go> <http://xmlns.com/foaf/0.1/depiction> <http://m.bio2rdf.org/image/uniprot.png> .
+<http://bio2rdf.org/namespace:uniprot_go> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://beta.sparql.org/sparql> .
+<http://bio2rdf.org/namespace:uniprot_go> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://beta.sparql.uniprot.org/?query=DESCRIBE%20%3Chttp://purl.uniprot.org/go/$ID$%3E" .
+
+<http://bio2rdf.org/namespace:uniprot_go> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fgo%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+%28+%3fs+%3d+%3Chttp%3a%2f%2fpurl.uniprot.org%2f$NS$%2f$ID$%3E+%29+.%0D%0A}&format=rdf" .
+<http://bio2rdf.org/namespace:uniprot_go> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fgo%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+%28+%3fs+%3d+%3C$URI$%3E+%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_go> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{%3fs+%3fp+%3fo}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fgo%2f%3E%0D%0AWHERE+%0D%0A{%0D%0A%09%3fs+%3fp+%3fo+.%0D%0A++%09FILTER+%28%3fo+%3d+%3Chttp%3a%2f%2fpurl.uniprot.org%2f$NS$%2f$ID$%3E%29+.%0D%0A}&format=rdf" .
+<http://bio2rdf.org/namespace:uniprot_go> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{%3fs+%3fp+%3fo}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fgo%2f%3E%0D%0AWHERE+%0D%0A{%0D%0A%09%3fs+%3fp+%3fo+.%0D%0A++%09FILTER+%28%3fo+%3d+%3C$URI$%3E%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_go> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fgo%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+regex%28%3fo%2c+%22$QUERY$%22%2c+%22i%22%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_go> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " " .
+
+
+<http://bio2rdf.org/namespace:uniprot_go_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_go_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_go_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_go_resource" .
+<http://bio2rdf.org/namespace:uniprot_go_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniprot_go_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniprot.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:uniprot_go_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_go_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_go_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_go_vocabulary" .
+<http://bio2rdf.org/namespace:uniprot_go_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniprot_go_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniprot.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+<http://bio2rdf.org/namespace:uniprot_journals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_journals> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_journals> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_journals" .
+<http://bio2rdf.org/namespace:uniprot_journals> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint from UniProt [namespace:uniprot_journals]" .
+<http://bio2rdf.org/namespace:uniprot_journals> <http://purl.org/dc/elements/1.1/title> "UniProt Journals" .
+<http://bio2rdf.org/namespace:uniprot_journals> <http://www.w3.org/2000/01/rdf-schema#comment> "The Universal Protein Resource (UniProt) is a comprehensive resource for protein sequence and annotation data." .
+<http://bio2rdf.org/namespace:uniprot_journals> <http://xmlns.com/foaf/0.1/depiction> <http://m.bio2rdf.org/image/uniprot.png> .
+<http://bio2rdf.org/namespace:uniprot_journals> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://beta.sparql.org/sparql> .
+<http://bio2rdf.org/namespace:uniprot_journals> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://beta.sparql.uniprot.org/?query=DESCRIBE%20%3Chttp://purl.uniprot.org/journals/$ID$%3E" .
+
+<http://bio2rdf.org/namespace:uniprot_journals> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fjournals%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+%28+%3fs+%3d+%3Chttp%3a%2f%2fpurl.uniprot.org%2f$NS$%2f$ID$%3E+%29+.%0D%0A}&format=rdf" .
+<http://bio2rdf.org/namespace:uniprot_journals> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fjournals%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+%28+%3fs+%3d+%3C$URI$%3E+%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_journals> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{%3fs+%3fp+%3fo}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fjournals%2f%3E%0D%0AWHERE+%0D%0A{%0D%0A%09%3fs+%3fp+%3fo+.%0D%0A++%09FILTER+%28%3fo+%3d+%3Chttp%3a%2f%2fpurl.uniprot.org%2f$NS$%2f$ID$%3E%29+.%0D%0A}&format=rdf" .
+<http://bio2rdf.org/namespace:uniprot_journals> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{%3fs+%3fp+%3fo}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fjournals%2f%3E%0D%0AWHERE+%0D%0A{%0D%0A%09%3fs+%3fp+%3fo+.%0D%0A++%09FILTER+%28%3fo+%3d+%3C$URI$%3E%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_journals> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fenzymes%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+regex%28%3fo%2c+%22$QUERY$%22%2c+%22i%22%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_journals> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " " .
+
+
+<http://bio2rdf.org/namespace:uniprot_journals_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_journals_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_journals_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_journals_resource" .
+<http://bio2rdf.org/namespace:uniprot_journals_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniprot_journals_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniprot.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:uniprot_journals_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_journals_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_journals_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_journals_vocabulary" .
+<http://bio2rdf.org/namespace:uniprot_journals_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniprot_journals_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniprot.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+<http://bio2rdf.org/namespace:uniprot_keywords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_keywords> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_keywords> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_keywords" .
+<http://bio2rdf.org/namespace:uniprot_keywords> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint from UniProt [namespace:uniprot_keywords]" .
+<http://bio2rdf.org/namespace:uniprot_keywords> <http://purl.org/dc/elements/1.1/title> "UniProt Keywords" .
+<http://bio2rdf.org/namespace:uniprot_keywords> <http://www.w3.org/2000/01/rdf-schema#comment> "The Universal Protein Resource (UniProt) is a comprehensive resource for protein sequence and annotation data." .
+<http://bio2rdf.org/namespace:uniprot_keywords> <http://xmlns.com/foaf/0.1/depiction> <http://m.bio2rdf.org/image/uniprot.png> .
+<http://bio2rdf.org/namespace:uniprot_keywords> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://beta.sparql.org/sparql> .
+<http://bio2rdf.org/namespace:uniprot_keywords> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://beta.sparql.uniprot.org/?query=DESCRIBE%20%3Chttp://purl.uniprot.org/keywords/$ID$%3E" .
+
+<http://bio2rdf.org/namespace:uniprot_keywords> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fkeywords%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+%28+%3fs+%3d+%3Chttp%3a%2f%2fpurl.uniprot.org%2f$NS$%2f$ID$%3E+%29+.%0D%0A}&format=rdf" .
+<http://bio2rdf.org/namespace:uniprot_keywords> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fkeywords%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+%28+%3fs+%3d+%3C$URI$%3E+%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_keywords> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{%3fs+%3fp+%3fo}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fkeywords%2f%3E%0D%0AWHERE+%0D%0A{%0D%0A%09%3fs+%3fp+%3fo+.%0D%0A++%09FILTER+%28%3fo+%3d+%3Chttp%3a%2f%2fpurl.uniprot.org%2f$NS$%2f$ID$%3E%29+.%0D%0A}&format=rdf" .
+<http://bio2rdf.org/namespace:uniprot_keywords> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{%3fs+%3fp+%3fo}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fkeywords%2f%3E%0D%0AWHERE+%0D%0A{%0D%0A%09%3fs+%3fp+%3fo+.%0D%0A++%09FILTER+%28%3fo+%3d+%3C$URI$%3E%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_keywords> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fkeywords%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+regex%28%3fo%2c+%22$QUERY$%22%2c+%22i%22%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_keywords> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " " .
+
+
+<http://bio2rdf.org/namespace:uniprot_keywords_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_keywords_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_keywords_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_keywords_resource" .
+<http://bio2rdf.org/namespace:uniprot_keywords_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniprot_keywords_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniprot.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:uniprot_keywords_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_keywords_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_keywords_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_keywords_vocabulary" .
+<http://bio2rdf.org/namespace:uniprot_keywords_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniprot_keywords_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniprot.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+<http://bio2rdf.org/namespace:uniprot_locations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_locations> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_locations> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_locations" .
+<http://bio2rdf.org/namespace:uniprot_locations> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint from UniProt [namespace:uniprot_locations]" .
+<http://bio2rdf.org/namespace:uniprot_locations> <http://purl.org/dc/elements/1.1/title> "UniProt Locations" .
+<http://bio2rdf.org/namespace:uniprot_locations> <http://www.w3.org/2000/01/rdf-schema#comment> "The Universal Protein Resource (UniProt) is a comprehensive resource for protein sequence and annotation data." .
+<http://bio2rdf.org/namespace:uniprot_locations> <http://xmlns.com/foaf/0.1/depiction> <http://m.bio2rdf.org/image/uniprot.png> .
+<http://bio2rdf.org/namespace:uniprot_locations> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://beta.sparql.org/sparql> .
+<http://bio2rdf.org/namespace:uniprot_locations> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://beta.sparql.uniprot.org/?query=DESCRIBE%20%3Chttp://purl.uniprot.org/locations/$ID$%3E" .
+
+<http://bio2rdf.org/namespace:uniprot_locations> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2flocations%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+%28+%3fs+%3d+%3Chttp%3a%2f%2fpurl.uniprot.org%2f$NS$%2f$ID$%3E+%29+.%0D%0A}&format=rdf" .
+<http://bio2rdf.org/namespace:uniprot_locations> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2flocations%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+%28+%3fs+%3d+%3C$URI$%3E+%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_locations> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{%3fs+%3fp+%3fo}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2flocations%2f%3E%0D%0AWHERE+%0D%0A{%0D%0A%09%3fs+%3fp+%3fo+.%0D%0A++%09FILTER+%28%3fo+%3d+%3Chttp%3a%2f%2fpurl.uniprot.org%2f$NS$%2f$ID$%3E%29+.%0D%0A}&format=rdf" .
+<http://bio2rdf.org/namespace:uniprot_locations> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{%3fs+%3fp+%3fo}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2flocations%2f%3E%0D%0AWHERE+%0D%0A{%0D%0A%09%3fs+%3fp+%3fo+.%0D%0A++%09FILTER+%28%3fo+%3d+%3C$URI$%3E%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_locations> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2flocations%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+regex%28%3fo%2c+%22$QUERY$%22%2c+%22i%22%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_locations> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " " .
+
+
+<http://bio2rdf.org/namespace:uniprot_locations_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_locations_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_locations_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_locations_resource" .
+<http://bio2rdf.org/namespace:uniprot_locations_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniprot_locations_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniprot.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:uniprot_locations_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_locations_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_locations_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_locations_vocabulary" .
+<http://bio2rdf.org/namespace:uniprot_locations_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniprot_locations_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniprot.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+<http://bio2rdf.org/namespace:uniprot_pathways> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_pathways> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_pathways> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_pathways" .
+<http://bio2rdf.org/namespace:uniprot_pathways> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint from UniProt [namespace:uniprot_pathways]" .
+<http://bio2rdf.org/namespace:uniprot_pathways> <http://purl.org/dc/elements/1.1/title> "UniProt Pathways" .
+<http://bio2rdf.org/namespace:uniprot_pathways> <http://www.w3.org/2000/01/rdf-schema#comment> "The Universal Protein Resource (UniProt) is a comprehensive resource for protein sequence and annotation data." .
+<http://bio2rdf.org/namespace:uniprot_pathways> <http://xmlns.com/foaf/0.1/depiction> <http://m.bio2rdf.org/image/uniprot.png> .
+<http://bio2rdf.org/namespace:uniprot_pathways> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://beta.sparql.org/sparql> .
+<http://bio2rdf.org/namespace:uniprot_pathways> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://beta.sparql.uniprot.org/?query=DESCRIBE%20%3Chttp://purl.uniprot.org/pathways/$ID$%3E" .
+
+<http://bio2rdf.org/namespace:uniprot_pathways> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fpathways%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+%28+%3fs+%3d+%3Chttp%3a%2f%2fpurl.uniprot.org%2f$NS$%2f$ID$%3E+%29+.%0D%0A}&format=rdf" .
+<http://bio2rdf.org/namespace:uniprot_pathways> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fpathways%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+%28+%3fs+%3d+%3C$URI$%3E+%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_pathways> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{%3fs+%3fp+%3fo}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fpathways%2f%3E%0D%0AWHERE+%0D%0A{%0D%0A%09%3fs+%3fp+%3fo+.%0D%0A++%09FILTER+%28%3fo+%3d+%3Chttp%3a%2f%2fpurl.uniprot.org%2f$NS$%2f$ID$%3E%29+.%0D%0A}&format=rdf" .
+<http://bio2rdf.org/namespace:uniprot_pathways> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{%3fs+%3fp+%3fo}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fpathways%2f%3E%0D%0AWHERE+%0D%0A{%0D%0A%09%3fs+%3fp+%3fo+.%0D%0A++%09FILTER+%28%3fo+%3d+%3C$URI$%3E%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_pathways> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2fpathways%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+regex%28%3fo%2c+%22$QUERY$%22%2c+%22i%22%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_pathways> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " " .
+
+
+<http://bio2rdf.org/namespace:uniprot_pathways_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_pathways_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_pathways_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_pathways_resource" .
+<http://bio2rdf.org/namespace:uniprot_pathways_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniprot_pathways_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniprot.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:uniprot_pathways_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_pathways_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_pathways_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_pathways_vocabulary" .
+<http://bio2rdf.org/namespace:uniprot_pathways_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniprot_pathways_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniprot.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+<http://bio2rdf.org/namespace:uniprot_taxonomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_taxonomy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_taxonomy> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_taxonomy" .
+<http://bio2rdf.org/namespace:uniprot_taxonomy> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint from UniProt [namespace:uniprot_taxonomy]" .
+<http://bio2rdf.org/namespace:uniprot_taxonomy> <http://purl.org/dc/elements/1.1/title> "UniProt Taxonomy" .
+<http://bio2rdf.org/namespace:uniprot_taxonomy> <http://www.w3.org/2000/01/rdf-schema#comment> "The Universal Protein Resource (UniProt) is a comprehensive resource for protein sequence and annotation data." .
+<http://bio2rdf.org/namespace:uniprot_taxonomy> <http://xmlns.com/foaf/0.1/depiction> <http://m.bio2rdf.org/image/uniprot.png> .
+<http://bio2rdf.org/namespace:uniprot_taxonomy> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://beta.sparql.org/sparql> .
+<http://bio2rdf.org/namespace:uniprot_taxonomy> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://beta.sparql.uniprot.org/?query=DESCRIBE%20%3Chttp://purl.uniprot.org/taxonomy/$ID$%3E" .
+
+<http://bio2rdf.org/namespace:uniprot_taxonomy> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2ftaxonomy%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+%28+%3fs+%3d+%3Chttp%3a%2f%2fpurl.uniprot.org%2f$NS$%2f$ID$%3E+%29+.%0D%0A}&format=rdf" .
+<http://bio2rdf.org/namespace:uniprot_taxonomy> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2ftaxonomy%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+%28+%3fs+%3d+%3C$URI$%3E+%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_taxonomy> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{%3fs+%3fp+%3fo}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2ftaxonomy%2f%3E%0D%0AWHERE+%0D%0A{%0D%0A%09%3fs+%3fp+%3fo+.%0D%0A++%09FILTER+%28%3fo+%3d+%3Chttp%3a%2f%2fpurl.uniprot.org%2f$NS$%2f$ID$%3E%29+.%0D%0A}&format=rdf" .
+<http://bio2rdf.org/namespace:uniprot_taxonomy> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{%3fs+%3fp+%3fo}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2ftaxonomy%2f%3E%0D%0AWHERE+%0D%0A{%0D%0A%09%3fs+%3fp+%3fo+.%0D%0A++%09FILTER+%28%3fo+%3d+%3C$URI$%3E%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_taxonomy> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://www.uniprot.org/taxonomy/?query=$QUERY$&sort=score&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_taxonomy> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " " .
+
+
+<http://bio2rdf.org/namespace:uniprot_taxonomy_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_taxonomy_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_taxonomy_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_taxonomy_resource" .
+<http://bio2rdf.org/namespace:uniprot_taxonomy_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniprot_taxonomy_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniprot.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:uniprot_taxonomy_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_taxonomy_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_taxonomy_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_taxonomy_vocabulary" .
+<http://bio2rdf.org/namespace:uniprot_taxonomy_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniprot_taxonomy_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniprot.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+<http://bio2rdf.org/namespace:uniprot_tissues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_tissues> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_tissues> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_tissues" .
+<http://bio2rdf.org/namespace:uniprot_tissues> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint from UniProt [namespace:uniprot_tissues]" .
+<http://bio2rdf.org/namespace:uniprot_tissues> <http://purl.org/dc/elements/1.1/title> "UniProt Tissues" .
+<http://bio2rdf.org/namespace:uniprot_tissues> <http://www.w3.org/2000/01/rdf-schema#comment> "The Universal Protein Resource (UniProt) is a comprehensive resource for protein sequence and annotation data." .
+<http://bio2rdf.org/namespace:uniprot_tissues> <http://xmlns.com/foaf/0.1/depiction> <http://m.bio2rdf.org/image/uniprot.png> .
+<http://bio2rdf.org/namespace:uniprot_tissues> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://beta.sparql.org/sparql> .
+<http://bio2rdf.org/namespace:uniprot_tissues> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://beta.sparql.uniprot.org/?query=DESCRIBE%20%3Chttp://purl.uniprot.org/tissues/$ID$%3E" .
+
+<http://bio2rdf.org/namespace:uniprot_tissues> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2ftissues%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+%28+%3fs+%3d+%3Chttp%3a%2f%2fpurl.uniprot.org%2f$NS$%2f$ID$%3E+%29+.%0D%0A}&format=rdf" .
+<http://bio2rdf.org/namespace:uniprot_tissues> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2ftissues%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+%28+%3fs+%3d+%3C$URI$%3E+%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_tissues> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{%3fs+%3fp+%3fo}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2ftissues%2f%3E%0D%0AWHERE+%0D%0A{%0D%0A%09%3fs+%3fp+%3fo+.%0D%0A++%09FILTER+%28%3fo+%3d+%3Chttp%3a%2f%2fpurl.uniprot.org%2f$NS$%2f$ID$%3E%29+.%0D%0A}&format=rdf" .
+<http://bio2rdf.org/namespace:uniprot_tissues> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{%3fs+%3fp+%3fo}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2ftissues%2f%3E%0D%0AWHERE+%0D%0A{%0D%0A%09%3fs+%3fp+%3fo+.%0D%0A++%09FILTER+%28%3fo+%3d+%3C$URI$%3E%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_tissues> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://www.uniprot.org/tissues/?query=$QUERY$&sort=score&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot_tissues> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " " .
+
+
+<http://bio2rdf.org/namespace:uniprot_tissues_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_tissues_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_tissues_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_tissues_resource" .
+<http://bio2rdf.org/namespace:uniprot_tissues_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniprot_tissues_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniprot.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:uniprot_tissues_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_tissues_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_tissues_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_tissues_vocabulary" .
+<http://bio2rdf.org/namespace:uniprot_tissues_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniprot_tissues_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniprot.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+<http://bio2rdf.org/namespace:uniparc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniparc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniparc> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniparc" .
+<http://bio2rdf.org/namespace:uniparc> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint from UniProt [namespace:uniparc]" .
+<http://bio2rdf.org/namespace:uniparc> <http://purl.org/dc/elements/1.1/title> "UniParc" .
+<http://bio2rdf.org/namespace:uniparc> <http://xmlns.com/foaf/0.1/depiction> <http://m.bio2rdf.org/image/uniprot.png> .
+<http://bio2rdf.org/namespace:uniparc> <http://www.w3.org/2000/01/rdf-schema#comment> "UniProt Archive (UniParc) is part of  UniProt  project. It is a non-redundant archive of protein sequences extracted from public databases  UniProtKB/Swiss-Prot , UniProtKB/TrEMBL ,  PIR-PSD ,  EMBL ,  EMBL WGS ,  Ensembl ,  IPI ,  PDB ,  PIR-PSD , RefSeq ,  FlyBase ,  WormBase ,  H-Invitational Database ,  TROME database ,  European Patent Office proteins ,  United States Patent and Trademark Office  proteins (USPTO) and  Japan Patent Office  proteins." .
+<http://bio2rdf.org/namespace:uniparc> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://beta.sparql.org/sparql> .
+<http://bio2rdf.org/namespace:uniparc> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://beta.sparql.uniprot.org/?query=DESCRIBE%20%3Chttp://purl.uniprot.org/uniparc/$ID$%3E" .
+
+<http://bio2rdf.org/namespace:uniparc> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2funiparc%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+%28+%3fs+%3d+%3Chttp%3a%2f%2fpurl.uniprot.org%2f$NS$%2f$ID$%3E+%29+.%0D%0A}&format=rdf" .
+<http://bio2rdf.org/namespace:uniparc> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2funiparc%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+%28+%3fs+%3d+%3C$URI$%3E+%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniparc> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{%3fs+%3fp+%3fo}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2funiparc%2f%3E%0D%0AWHERE+%0D%0A{%0D%0A%09%3fs+%3fp+%3fo+.%0D%0A++%09FILTER+%28%3fo+%3d+%3Chttp%3a%2f%2fpurl.uniprot.org%2f$NS$%2f$ID$%3E%29+.%0D%0A}&format=rdf" .
+<http://bio2rdf.org/namespace:uniparc> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{%3fs+%3fp+%3fo}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2funiparc%2f%3E%0D%0AWHERE+%0D%0A{%0D%0A%09%3fs+%3fp+%3fo+.%0D%0A++%09FILTER+%28%3fo+%3d+%3C$URI$%3E%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniparc> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://www.uniprot.org/uniparc/?query=$QUERY$&sort=score&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniparc> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " " .
+
+
+<http://bio2rdf.org/namespace:uniparc_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniparc_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniparc_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniparc_resource" .
+<http://bio2rdf.org/namespace:uniparc_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniparc.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniparc_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniparc.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:uniparc_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniparc_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniparc_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniparc_vocabulary" .
+<http://bio2rdf.org/namespace:uniparc_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniparc.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniparc_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniparc.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+<http://bio2rdf.org/namespace:uniprot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot" .
+<http://bio2rdf.org/namespace:uniprot> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint from UniProt [namespace:uniprot]" .
+<http://bio2rdf.org/namespace:uniprot> <http://purl.org/dc/elements/1.1/title> "UniProt" .
+<http://bio2rdf.org/namespace:uniprot> <http://www.w3.org/2000/01/rdf-schema#comment> "The Universal Protein Resource (UniProt) is a comprehensive resource for protein sequence and annotation data." .
+<http://bio2rdf.org/namespace:uniprot> <http://xmlns.com/foaf/0.1/depiction> <http://m.bio2rdf.org/image/uniprot.png> .
+<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://beta.sparql.org/sparql> .
+<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://beta.sparql.uniprot.org/?query=DESCRIBE%20%3Chttp://purl.uniprot.org/uniprot/$ID$%3E" .
+
+<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+%28+%3fs+%3d+%3Chttp%3a%2f%2fpurl.uniprot.org%2f$NS$%2f$ID$%3E+%29+.%0D%0A}&format=rdf" .
+<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+%28+%3fs+%3d+%3C$URI$%3E+%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://beta.sparql.uniprot.org/sparql?format=rdf&query=CONSTRUCT+{%3Fs+%3Fp+%3Fo}%0D%0AWHERE+%0D%0A{%0D%0A%09%3Fs+%3Fp+%3Fo+.%0D%0A++%09FILTER+%28%3Fo+%3D+%3Chttp%3A%2F%2Fpurl.uniprot.org%2F$NS$%2F$ID$%3E%29+.%0D%0A}" .
+<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://beta.sparql.uniprot.org/sparql?format=rdf&query=CONSTRUCT+{%3Fs+%3Fp+%3Fo}%0D%0AWHERE+%0D%0A{%0D%0A%09%3Fs+%3Fp+%3Fo+.%0D%0A++%09FILTER+%28%3Fo+%3D+%3C$URI$%3E%29+.%0D%0A}" .
+
+<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://www.uniprot.org/uniprot/?query=$QUERY$&sort=score&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " " .
+
+
+<http://bio2rdf.org/namespace:uniprot_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_resource" .
+<http://bio2rdf.org/namespace:uniprot_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniprot_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniprot.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:uniprot_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_vocabulary" .
+<http://bio2rdf.org/namespace:uniprot_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniprot_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniprot.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+<http://bio2rdf.org/namespace:uniref> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniref> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniref> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniref" .
+<http://bio2rdf.org/namespace:uniref> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint from UniProt [namespace:uniref]" .
+<http://bio2rdf.org/namespace:uniref> <http://purl.org/dc/elements/1.1/title> "UniRef" .
+<http://bio2rdf.org/namespace:uniref> <http://www.w3.org/2000/01/rdf-schema#comment> "The UniProt Reference Clusters (UniRef) provide clustered sets of sequences from the UniProt Knowledgebase (including isoforms) and selected UniParc records in order to obtain complete coverage of the sequence space at several resolutions while hiding redundant sequences (but not their descriptions) from view." .
+<http://bio2rdf.org/namespace:uniref> <http://xmlns.com/foaf/0.1/depiction> <http://m.bio2rdf.org/image/uniprot.png> .
+<http://bio2rdf.org/namespace:uniref> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://beta.sparql.org/sparql> .
+<http://bio2rdf.org/namespace:uniref> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://beta.sparql.uniprot.org/?query=DESCRIBE%20%3Chttp://purl.uniprot.org/uniref/$ID$%3E" .
+
+<http://bio2rdf.org/namespace:uniref> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2funiref%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+%28+%3fs+%3d+%3Chttp%3a%2f%2fpurl.uniprot.org%2f$NS$%2f$ID$%3E+%29+.%0D%0A}&format=rdf" .
+<http://bio2rdf.org/namespace:uniref> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{+%3fs+%3fp+%3fo+}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2funiref%2f%3E%0D%0AWHERE%0D%0A{%0D%0A%09%09%3fs+%3fp+%3fo+.%0D%0A++%09%09FILTER+%28+%3fs+%3d+%3C$URI$%3E+%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniref> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{%3fs+%3fp+%3fo}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2funiref%2f%3E%0D%0AWHERE+%0D%0A{%0D%0A%09%3fs+%3fp+%3fo+.%0D%0A++%09FILTER+%28%3fo+%3d+%3Chttp%3a%2f%2fpurl.uniprot.org%2f$NS$%2f$ID$%3E%29+.%0D%0A}&format=rdf" .
+<http://bio2rdf.org/namespace:uniref> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://beta.sparql.uniprot.org/sparql?query=CONSTRUCT+{%3fs+%3fp+%3fo}%0D%0AFROM+%3Chttp%3a%2f%2fbeta.sparql.uniprot.org%2funiref%2f%3E%0D%0AWHERE+%0D%0A{%0D%0A%09%3fs+%3fp+%3fo+.%0D%0A++%09FILTER+%28%3fo+%3d+%3C$URI$%3E%29+.%0D%0A}&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniref> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://www.uniprot.org/uniref/?query=$QUERY$&sort=score&format=rdf" .
+
+<http://bio2rdf.org/namespace:uniref> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " " .
+
+
+<http://bio2rdf.org/namespace:uniref_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniref_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniref_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniref_resource" .
+<http://bio2rdf.org/namespace:uniref_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniref.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniref_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniref.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:uniref_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniref_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniref_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniref_vocabulary" .
+<http://bio2rdf.org/namespace:uniref_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniref.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniref_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniref.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+

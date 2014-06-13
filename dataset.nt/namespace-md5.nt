@@ -1,0 +1,10 @@
+<http://mobile.bio2rdf.org/resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bio2rdf.org/resource> .
+<http://mobile.bio2rdf.org/resource> <http://www.w3.org/2000/01/rdf-schema#label> "Queries for mobile application" .
+
+<http://bio2rdf.org/namespace:md5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://md5.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:md5> <http://www.w3.org/2000/01/rdf-schema#label> "Queries for md5 mobile application" .
+<http://bio2rdf.org/namespace:md5> <http://purl.org/dc/elements/1.1/title> "namespace:md5" .
+
+<http://bio2rdf.org/namespace:md5> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/md5/links/rdf?uri=http://bio2rdf.org/md5:c8a4ba34cfada217ea979ae9bab8360a" .
+
+<http://bio2rdf.org/namespace:md5> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://cochrane.bio2rdf.org/sparql?default-graph-uri=&query=construct+{%0D%0A%3Fo+rdfs%3Alabel+%3Fl+.%0D%0A}%0D%0Awhere+{{%0D%0A%3Fs+%3Fp+%3Fo+.%0D%0A%3Fo+rdfs%3Alabel+%3Fl+.%0D%0Afilter%28%3Fs+%3D+%3C$URI$%3E%29+.%0D%0A}%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .

@@ -1,0 +1,24 @@
+<http://bio2rdf.org/namespace:pc2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:pc2> <http://purl.org/dc/elements/1.1/identifier> "namespace:pc2" .
+<http://bio2rdf.org/namespace:pc2> <http://www.w3.org/2000/01/rdf-schema#label> "pPC REST service [namespace:pc2]" .
+<http://bio2rdf.org/namespace:pc2> <http://purl.org/dc/elements/1.1/title> "Pathway Commons" .
+<http://bio2rdf.org/namespace:pc2> <http://xmlns.com/foaf/0.1/depiction> <http://m.bio2rdf.org/image/pc.png> .
+<http://bio2rdf.org/namespace:pc2> <http://www.w3.org/2000/01/rdf-schema#comment> "Pathway Commons is a collection of publicly available pathways from multiple organisms. It provides researchers with convenient access to a comprehensive collection of pathways from multiple sources represented in a common language. Access is via a web portal for browsing, query and download. Database providers can share their pathway data via a common repository and avoid duplication and reduce software development costs. Bioinformatics software developers can increase efficiency by sharing software components. Pathways include biochemical reactions, complex assembly, transport and catalysis events, and physical interactions involving proteins, DNA, RNA, small molecules and complexes." .
+
+<http://bio2rdf.org/namespace:pc2> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:pc2> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://www.pathwaycommons.org/pc2/> .
+
+<http://bio2rdf.org/namespace:pc2> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/pc2/search/rdf/hexokinase" .
+<http://bio2rdf.org/namespace:pc2> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/pc2/describe/rdf/uniprot:Q06609" .
+<http://bio2rdf.org/namespace:pc2> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/pc2/describe/rdf?uri=http://identifiers.org/uniprot/Q06609" .
+<http://bio2rdf.org/namespace:pc2> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/pc2/links/rdf/uniprot:P20908" .
+<http://bio2rdf.org/namespace:pc2> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/pc2/links/rdf/GENE_SYMBOL:HK1" .
+
+
+<http://bio2rdf.org/namespace:pc2> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://www.pathwaycommons.org/pc2/get?uri=http://identifiers.org/$NS$/$ID$" .
+
+<http://bio2rdf.org/namespace:pc2> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://www.pathwaycommons.org/pc2/get?uri=$URI$" .
+
+<http://bio2rdf.org/namespace:pc2> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://www.pathwaycommons.org/pc2/graph?source=$ID$&kind=neighborhood&limit=1" .
+
+<http://bio2rdf.org/namespace:pc2> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://beta.rest.pc2.bio2rdf.org/pc2/search/rdf/$QUERY$" .

@@ -1,0 +1,17 @@
+<http://mobile.bio2rdf.org/resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bio2rdf.org/resource> .
+<http://mobile.bio2rdf.org/resource> <http://www.w3.org/2000/01/rdf-schema#label> "Queries for mobile application" .
+
+<http://bio2rdf.org/namespace:dbpedia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:dbpedia> <http://www.w3.org/2000/01/rdf-schema#label> "Queries for dbpedia mobile application" .
+<http://bio2rdf.org/namespace:dbpedia> <http://purl.org/dc/elements/1.1/title> "namespace:dbpedia" .
+<http://bio2rdf.org/namespace:dbpedia> <http://bio2rdf.org/bio2rdf_vocabulary:uri> <http://purl.obolibrary.org/obo/dbpedia_2841> .
+
+<http://bio2rdf.org/namespace:dbpedia> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/dbpedia/search_ns/rdf?parm1=salb" .
+<http://bio2rdf.org/namespace:dbpedia> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/dbpedia/search_ns/rdf?parm1=salbu" .
+
+<http://bio2rdf.org/namespace:dbpedia> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/dbpedia/describe/rdf?uri=http://dbpedia.org/resource/Salbutamol" .
+
+<http://bio2rdf.org/namespace:dbpedia> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search_ns> " http://virtuoso-2.bio2rdf.org/sparql?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0A}+WHERE+{+%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FDrug%3E+.%0D%0AFILTER%28bif%3Acontains%28%3Fobject%2C+%27%22$PARM1$*%22%27%29%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:dbpedia> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://virtuoso-2.bio2rdf.org/sparql?default-graph-uri=&query=construct+{%0D%0A%3Fs+%3Fp+%3Fo+.%0D%0A}+where+{%0D%0A%3Fs+%3Fp+%3Fo+.%0D%0AFILTER%28%3Fs+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+

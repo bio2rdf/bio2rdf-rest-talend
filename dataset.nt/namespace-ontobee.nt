@@ -1,0 +1,50 @@
+<http://mobile.bio2rdf.org/resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bio2rdf.org/resource> .
+<http://mobile.bio2rdf.org/resource> <http://www.w3.org/2000/01/rdf-schema#label> "Queries for mobile application" .
+
+<http://bio2rdf.org/namespace:ontobee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ontobee.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:ontobee> <http://www.w3.org/2000/01/rdf-schema#label> "Queries for Ontobee mobile application" .
+<http://bio2rdf.org/namespace:ontobee> <http://purl.org/dc/elements/1.1/title> "namespace:ontobee" .
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:uri> <http://purl.obolibrary.org/obo/DOID_2841> .
+
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ontobee/search_ns/rdf?parm2=DOID&parm1=asth" .
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ontobee/search_ns/rdf?parm2=DOID&parm1=asthm" .
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ontobee/label_ns/rdf?parm2=DOID&parm1=asth" .
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ontobee/label_ns/rdf?parm2=DOID&parm1=asthm" .
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ontobee/label/rdf?parm1=asth" .
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ontobee/label/rdf?parm1=asthm" .
+
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ontobee/describe/json-ld?callback=1234&uri=http://purl.obolibrary.org/obo/CHEBI_49167" .
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ontobee/describe/json-ld?callback=1234&uri=http://purl.obolibrary.org/obo/DOID_2841" .
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ontobee/describe/json-ld?callback=1234&uri=http://purl.obolibrary.org/obo/GO_0004396" .
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ontobee/describe/json-ld?callback=1234&uri=http://purl.obolibrary.org/obo/PR_P52789" .
+
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ontobee/describe/rdf?uri=http://purl.obolibrary.org/obo/CHEBI_49167" .
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ontobee/describe/rdf?uri=http://purl.obolibrary.org/obo/DOID_2841" .
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ontobee/describe/rdf?uri=http://purl.obolibrary.org/obo/GO_0004396" .
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ontobee/describe/rdf?uri=http://purl.obolibrary.org/obo/PR_P52789" .
+
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ontobee/subclass/rdf?uri=http://purl.obolibrary.org/obo/GO_0004396" .
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ontobee/superclass/rdf?uri=http://purl.obolibrary.org/obo/GO_0004396" .
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ontobee/subclass/json-ld?callback=1234&uri=http://purl.obolibrary.org/obo/GO_0004396" .
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ontobee/superclass/json-ld?callback=1234&uri=http://purl.obolibrary.org/obo/GO_0004396" .
+
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ontobee/subclass/rdf?uri=http://purl.obolibrary.org/obo/DOID_2841" .
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ontobee/superclass/rdf?uri=http://purl.obolibrary.org/obo/DOID_2841" .
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ontobee/subclass/json-ld?callback=1234&uri=http://purl.obolibrary.org/obo/DOID_2841" .
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ontobee/superclass/json-ld?callback=1234&uri=http://purl.obolibrary.org/obo/DOID_2841" .
+
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_subclass> " http://sparql.hegroup.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdfs%3AsubClassOf+%3FsubClassOf+.%0D%0A%3Fsubject+rdfs%3Alabel+%3Flabel+.%0D%0A%3Fsubject+%3Chttp%3A%2F%2Fwww.geneontology.org%2Fformats%2FoboInOwl%23id%3E+%3Fid+.%0D%0A}+WHERE+{%0D%0A%3Fsubject+rdfs%3AsubClassOf+%3FsubClassOf+.%0D%0A%3Fsubject+rdfs%3Alabel+%3Flabel+.%0D%0A%3Fsubject+%3Chttp%3A%2F%2Fwww.geneontology.org%2Fformats%2FoboInOwl%23id%3E+%3Fid+.%0D%0AFILTER%28%3FsubClassOf+%3D+%3C$URI$%3E%29+.}&format=application%2Frdf%2Bxml&debug=on&timeout=" .
+
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_superclass> " http://sparql.hegroup.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdfs%3AsubClassOf+%3FsubClassOf+.%0D%0A%3FsubClassOf+rdfs%3Alabel+%3Flabel+.%0D%0A%3FsubClassOf+%3Chttp%3A%2F%2Fwww.geneontology.org%2Fformats%2FoboInOwl%23id%3E+%3Fid+.%0D%0A}+WHERE+{%0D%0A%3Fsubject+rdfs%3AsubClassOf+%3FsubClassOf+.%0D%0A%3FsubClassOf+rdfs%3Alabel+%3Flabel+.%0D%0A%3FsubClassOf+%3Chttp%3A%2F%2Fwww.geneontology.org%2Fformats%2FoboInOwl%23id%3E+%3Fid+.%0D%0AFILTER%28%3Fsubject+%3D+%3C$URI$%3E%29+.}&format=application%2Frdf%2Bxml&debug=on&timeout=" .
+
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://sparql.hegroup.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fsubject+rdfs%3Acomment+%3Fcomment+.%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fsubject+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FIAO_0000115%3E+%3Fcomment+.%0D%0AFILTER%28%3Fsubject+%3D+%3C$URI$%3E%29+.}&format=application%2Frdf%2Bxml&debug=on&timeout=" .
+
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search_ns> " http://sparql.hegroup.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fsubject+rdf%3Atype+%3Fgraph+.%0D%0A}+WHERE+{+GRAPH+%3Fgraph+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER%28bif%3Acontains%28%3Fobject%2C+%27%22$PARM1$*%22%27%29%29+.%0D%0AFILTER%28%3Fgraph+%3D+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2Fmerged%2F$PARM2$%3E+%29+.%0D%0AFILTER%28%28%3Fpredicate+%3D+%3Chttp%3A%2F%2Fwww.geneontology.org%2Fformats%2FoboInOwl%23hasExactSynonym%3E%29+OR+%28%3Fpredicate%3D+rdfs%3Alabel%29+%29+.%0D%0A}}&format=application%2Frdf%2Bxml&debug=on&timeout=" .
+
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label_ns> " http://sparql.hegroup.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0A%3Fsubject+rdf%3Atype+%3Fgraph+.%0D%0A}+WHERE+{+GRAPH+%3Fgraph+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0AFILTER%28bif%3Acontains%28%3Fobject%2C+%27%22$PARM1$*%22%27%29%29+.%0D%0AFILTER%28%3Fgraph+%3D+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2Fmerged%2F$PARM2$%3E+%29+.%0D%0A}}&format=application%2Frdf%2Bxml&debug=on&timeout=" .
+
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " http://sparql.hegroup.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0A%3Fsubject+rdf%3Atype+%3Fgraph+.%0D%0A}+WHERE+{+GRAPH+%3Fgraph+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0AFILTER%28bif%3Acontains%28%3Fobject%2C+%27%22$PARM1$*%22%27%29%29+.%0D%0A}}&format=application%2Frdf%2Bxml&debug=on&timeout=" .
+
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " http://sparql.hegroup.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0A%3Fsubject+rdf%3Atype+%3Fgraph+.%0D%0A}+WHERE+{+GRAPH+%3Fgraph+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0AFILTER%28bif%3Acontains%28%3Fobject%2C+%27%22$PARM1$*%22%27%29%29+.%0D%0A}}&format=application%2Frdf%2Bxml&debug=on&timeout=" .
+
+<http://bio2rdf.org/namespace:ontobee> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_get_label> " http://sparql.hegroup.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0A%3Fsubject+rdf%3Atype+%3Fgraph+.%0D%0A}+WHERE+{+GRAPH+%3Fgraph+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0AFILTER%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}}&format=application%2Frdf%2Bxml&debug=on&timeout=" .

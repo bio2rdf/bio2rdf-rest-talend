@@ -1,0 +1,67 @@
+<http://bio2rdf.org/namespace:obo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://obo.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:obo> <http://www.w3.org/2000/01/rdf-schema#label> "The Open Biological and Biomedical Ontologies (OBO) [namespace:obo]" .
+<http://bio2rdf.org/namespace:obo> <http://purl.org/dc/elements/1.1/title> "namespace:obo" .
+<http://bio2rdf.org/namespace:obo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://sparql.hegroup.org/sparql> .
+
+
+
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_list_limit> " http://dbdev.bio2rdf.org/sparql?default-graph-uri=&query=construct+{%0D%0A%3Chttp%3A%2F%2Fobo.bio2rdf.org%2Fresource%3E+rdfs%3Alabel+%3Flabel+.%0D%0A}%0D%0Awhere+{%0D%0A%3Fs+%3Fp+%3Fo+.%0D%0A%3Fs+rdfs%3Alabel+%3Flabel+.%0D%0Afilter%28+%3Fo+%3D+%3Chttp%3A%2F%2Fobo.bio2rdf.org%2Fresource%3E%29+.+}%0D%0Alimit+$PARM1$%0D%0A&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_list> " http://dbdev.bio2rdf.org/sparql?default-graph-uri=&query=construct+{%0D%0A%3Chttp%3A%2F%2Fobo.bio2rdf.org%2Fresource%3E+rdfs%3Alabel+%3Flabel+.%0D%0A}%0D%0Awhere+{%0D%0A%3Fs+%3Fp+%3Fo+.%0D%0A%3Fs+rdfs%3Alabel+%3Flabel+.%0D%0Afilter%28+%3Fo+%3D+%3Chttp%3A%2F%2Fobo.bio2rdf.org%2Fresource%3E%29+.+}%0D%0A&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_nslist> " http://dbdev.bio2rdf.org/sparql?default-graph-uri=&query=construct+{%0D%0A%3Fs+rdfs%3Alabel+%3Flabel+.%0D%0A}%0D%0Awhere+{%0D%0A%3Fs+%3Fp+%3Fo+.%0D%0A%3Fs+rdfs%3Alabel+%3Flabel+.%0D%0Afilter%28+%3Fo+%3D+%3Chttp%3A%2F%2Fobo.bio2rdf.org%2Fresource%3E%29+.+}%0D%0A&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://sparql.hegroup.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Chttp%3A%2F%2Fbio2rdf.ord%2F$NSID$%3E+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Chttp%3A%2F%2Fbio2rdf.ord%2F$NSID$%3E+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Chttp%3A%2F%2Fbio2rdf.ord%2F$NSID$%3E+owl%3AsameAs+%3Fsubject+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&debug=on&timeout=" .
+
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search_obo> " http://sparql.hegroup.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22$QUERY$%22+.%0D%0A}%0D%0A&format=application%2Frdf%2Bxml&debug=on&timeout=" .
+
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://sparql.hegroup.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3C$URI$%3E+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3C$URI$%3E+.%0D%0A}&format=application%2Frdf%2Bxml&debug=on&timeout=" .
+
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " http://sparql.hegroup.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Flabel+.%0D%0A%3Fsubject+%3Chttp%3A%2F%2Fwww.geneontology.org%2Fformats%2FoboInOwl%23id%3E+%3Fid+.%0D%0A}+WHERE+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Flabel+.%0D%0A%3Fsubject+%3Chttp%3A%2F%2Fwww.geneontology.org%2Fformats%2FoboInOwl%23id%3E+%3Fid+.%0D%0AFILTER%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}%0D%0A&format=application%2Frdf%2Bxml&debug=on&timeout=" .
+
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_subclass> " http://sparql.hegroup.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3FsubClassOf+rdfs%3Alabel+%3Flabel+.%0D%0A%3FsubClassOf+rdfs%3AsubClassOf+%3Fsubject+.%0D%0A%3FsubClassOf+%3Chttp%3A%2F%2Fwww.geneontology.org%2Fformats%2FoboInOwl%23id%3E+%3Fid+.%0D%0A}+WHERE+{%0D%0A%3FsubClassOf+rdfs%3AsubClassOf+%3Fsubject+.%0D%0A%3FsubClassOf+rdfs%3Alabel+%3Flabel+.%0D%0A%3FsubClassOf+%3Chttp%3A%2F%2Fwww.geneontology.org%2Fformats%2FoboInOwl%23id%3E+%3Fid+.%0D%0AFILTER%28%3Fsubject+%3D+%3C$URI$%3E%29+.}&format=application%2Frdf%2Bxml&debug=on&timeout=" .
+
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_superclass> " http://sparql.hegroup.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdfs%3AsubClassOf+%3FsubClassOf+.%0D%0A%3FsubClassOf+rdfs%3Alabel+%3Flabel+.%0D%0A%3FsubClassOf+%3Chttp%3A%2F%2Fwww.geneontology.org%2Fformats%2FoboInOwl%23id%3E+%3Fid+.%0D%0A}+WHERE+{%0D%0A%3Fsubject+rdfs%3AsubClassOf+%3FsubClassOf+.%0D%0A%3FsubClassOf+rdfs%3Alabel+%3Flabel+.%0D%0A%3FsubClassOf+%3Chttp%3A%2F%2Fwww.geneontology.org%2Fformats%2FoboInOwl%23id%3E+%3Fid+.%0D%0AFILTER%28%3Fsubject+%3D+%3C$URI$%3E%29+.}&format=application%2Frdf%2Bxml&debug=on&timeout=" .
+
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_mobile> " http://sparql.hegroup.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdfs%3AsubClassOf+%3FsubClassOf+.%0D%0A%3FsubClassOf+rdfs%3Alabel+%3Flabel+.%0D%0A%3FsubClassOf+%3Chttp%3A%2F%2Fwww.geneontology.org%2Fformats%2FoboInOwl%23id%3E+%3Fid+.%0D%0A}+WHERE+{%0D%0A%3Fsubject+rdfs%3AsubClassOf+%3FsubClassOf+.%0D%0A%3FsubClassOf+rdfs%3Alabel+%3Flabel+.%0D%0A%3FsubClassOf+%3Chttp%3A%2F%2Fwww.geneontology.org%2Fformats%2FoboInOwl%23id%3E+%3Fid+.%0D%0AFILTER%28%3Fsubject+%3D+%3C$URI$%3E%29+.}&format=application%2Frdf%2Bxml&debug=on&timeout=" .
+
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search_label> " http://sparql.hegroup.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.+%0D%0A%3Fsubject+%3Chttp%3A%2F%2Fwww.geneontology.org%2Fformats%2FoboInOwl%23id%3E+%3Fid.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0A%3Fsubject+%3Chttp%3A%2F%2Fwww.geneontology.org%2Fformats%2FoboInOwl%23id%3E+%3Fid.%0D%0A%3Fobject+bif%3Acontains+%22$QUERY$%22+.%0D%0A}%0D%0A%0D%0A&format=application%2Frdf%2Bxml&debug=on&timeout=" .
+
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/describe/chebi:49167> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/describe/doid:2841> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/describe/go:0004396> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/describe/imr:0200877> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/describe/pr:P52789> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/describe?uri=http://purl.obolibrary.org/obo/CHEBI_49167> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/describe?uri=http://purl.obolibrary.org/obo/DOID_2841> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/describe?uri=http://purl.obolibrary.org/obo/EFO_2841> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/describe?uri=http://purl.obolibrary.org/obo/GO_0004396> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/describe?uri=http://purl.obolibrary.org/obo/IMR_0200877> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/describe?uri=http://purl.obolibrary.org/obo/PR_P52789> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/label?uri=http://purl.obolibrary.org/obo/CHEBI_49167> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/label?uri=http://purl.obolibrary.org/obo/DOID_2841> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/label?uri=http://purl.obolibrary.org/obo/GO_0004396> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/links/chebi?uri=http://purl.obolibrary.org/obo/CHEBI_49167> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/links/doid?uri=http://purl.obolibrary.org/obo/DOID_2841> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/links/go?uri=http://purl.obolibrary.org/obo/GO_0004396> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/links?uri=http://purl.obolibrary.org/obo/CHEBI_49167> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/links?uri=http://purl.obolibrary.org/obo/DOID_2841> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/links?uri=http://purl.obolibrary.org/obo/GO_0004396> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/mobile?uri=http://purl.obolibrary.org/obo/DOID_2841> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/search/chebi?query=hexokinase> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/search/doid?query='ast*'> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/search/doid?query='asth*'> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/search/doid?query='asthm*'> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/search/doid?query='asthma*'> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/search/doid?query=asthma> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/search_label?query='asth*'> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/search_label?query='asthm*'> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/search_label?query=asthma> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/search_label?query=hexokinase> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/search_obo?query=asthma> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/search_obo?query=hexokinase> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/subclass?uri=http://purl.obolibrary.org/obo/DOID_2841> .
+<http://bio2rdf.org/namespace:obo> <http://bio2rdf.org/bio2rdf_vocabulary:rest_test> <http://localhost:9000/superclass?uri=http://purl.obolibrary.org/obo/DOID_2841> .
+
+

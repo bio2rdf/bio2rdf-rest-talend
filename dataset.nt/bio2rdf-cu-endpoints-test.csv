@@ -1,0 +1,26 @@
+namespace;title;date;site;id;link;search
+affymetrix;Affymetrix probesets;2012-10-04;http://www.affymetrix.com;227614_at;go:0004396;hk1
+atlas;Bio2RDF Atlas;2012-10-15;http://atlas.bio2rdf.org/fct/;hgnc:4922;go:0004396;hk1
+biomodels;A Database of Annotated Published Models;2012-09-18;http://www.ebi.ac.uk/biomodels;BIOMD0000000353;go:0004396;hexokinase
+bioportal;BioPortal;2012-10-07;http://bioportal.bioontology.org;go:0004673;ec:2.7.1.1;hk1
+ctd;Comparative Toxicogenomics Database;2012-10-15;http://ctd.mdibl.org;ctd_resource:D000086D011559;geneid:3098;hk1
+drugbank;DrugBank;2012-10-08;http://www.drugbank.ca;DB02379;hgnc:4922;hk1
+genbank;GenBank;2010-08-03;http://www.ncbi.nlm.nih.gov/genbank;P35557;pubmed:1303265;hexokinase
+geneid;NCBI Gene;2012-10-06;http://www.ncbi.nlm.nih.gov/gene;geneid:15275;go:0004396;hk1
+goa;Gene Ontology Annotation;2012-09-17;http://www.ebi.ac.uk/GOA;go:0004396;uniprot:P17710;hk1
+hgnc;HUGO Gene Nomenclature Committee;2012-09-15;http://www.genenames.org;4922;uniprot:P19367;hk1
+homologene;NCBI Homologene;2012-09-15;http://wwww.ncbi.nlm.nih.gov/homologene;100530;geneid:15275;hk1
+interpro;Integrated resource of protein families, domains and functional sites;2012-10-01;http://www.ebi.ac.uk/interpro;IPR019807;ec:2.7.1.1;hk1
+irefindex;Interaction Reference Index;2012-09-16;http://irefindex.uio.no;irefindex_irigid:1144182;uniprot:P19367;P19367
+kegg;Kyoto Encyclopedia of Genes and Genomes;2012-10-15;http://www.genome.jp/kegg/;path:map00010;ec:4.2.1.11;Glycolysis 
+mesh;Medical Subject Headings;2012-09-15;http://www.nlm.nih.gov/mesh/meshhome.html;00c1fea3e9e8ab5d94f3dca3fcdf14b6;;hk1
+mgi;Mouse genome database (MGD) from Mouse Genome Informatics (MGI);2012-10-15;http://www.informatics.jax.org/;96103;geneid:15275;hk1
+ndc;National Drug Code Directory;2012-09-14;http://www.accessdata.fda.gov/scripts/cder/ndc/default.cfm;50114-4336;ndc:0002-3004-75;asthma 
+omim;Online Mendelian Inheritance in Man ;2012-09-14;http://www.ncbi.nlm.nih.gov/omim;235700;pubmed:4980929;hk1
+pharmgkb;Pharmacogenomics Knowledge Base ;2012-10-15;http://www.pharmgkb.org/index.jsp;PA29300;geneid:3098;hk1
+pubmed;PubMed;2012-09-24;http://www.ncbi.nlm.nih.gov/pubmed;18472304;;bio2rdf
+refseq;Reference Sequence Database;2010-08-04;http://www.ncbi.nlm.nih.gov/RefSeq;ncbi:NG_012077;gi:237820692;hk1
+sabiork;SABIO-RK;2012-09-18;http://sabiork.h-its.org/;catalysis14154;uniprot:P27881;hk1
+sgd;Saccharomyces Genome Database;2012-09-18;http://www.yeastgenome.org/;S000003222;ec:2.7.1.1;hk1
+taxonomy;NCBI Taxonomy;2012-10-06;http://www.ncbi.nlm.nih.gov;taxon:9606;;homo
+toxkb;Toxicogenomics Knowledge Base;2011-01-01;http://toxkb.bio2rdf.org/fct/;ctd_resource:100049428D000152;geneid:3098;hk1

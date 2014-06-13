@@ -1,0 +1,35 @@
+<http://bio2rdf.org/namespace:taxon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:taxon> <http://purl.org/dc/elements/1.1/identifier> "namespace:taxon" .
+<http://bio2rdf.org/namespace:taxon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+
+<http://bio2rdf.org/namespace:taxon> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint taxonomy [namespace:taxon]" .
+<http://bio2rdf.org/namespace:taxon> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://taxonomy.bio2rdf.org/sparql> .
+
+<http://bio2rdf.org/namespace:taxon> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://taxonomy.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:taxon> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://taxonomy.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:taxon> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://taxonomy.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:taxon> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " http://taxonomy.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:taxon> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://taxonomy.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+<http://bio2rdf.org/namespace:taxon_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:taxon_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:taxon_resource" .
+<http://bio2rdf.org/namespace:taxon_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+
+<http://bio2rdf.org/namespace:taxon_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://taxonomy.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:taxon_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://taxonomy.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+<http://bio2rdf.org/namespace:taxon_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:taxon_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:taxon_vocabulary" .
+<http://bio2rdf.org/namespace:taxon_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+
+<http://bio2rdf.org/namespace:taxon_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://taxonomy.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:taxon_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://taxonomy.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+

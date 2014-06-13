@@ -1,0 +1,32 @@
+<http://bio2rdf.org/namespace:biomodels.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/biomodels.ebi/describe/rdf/biomodels:BIOMD0000000001" .
+<http://bio2rdf.org/namespace:biomodels.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/biomodels.ebi/describe/rdf?uri=http://identifiers.org/biomodels.db/BIOMD0000000001" .
+<http://bio2rdf.org/namespace:biomodels.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/biomodels.ebi/links/rdf?uri=http://identifiers.org/interpro/IPR002394" .
+<http://bio2rdf.org/namespace:biomodels.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/biomodels.ebi/search/rdf?query=hexokinase" .
+
+
+<http://bio2rdf.org/namespace:reactome.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/reactome.ebi/describe/rdf?uri=http://identifiers.org/reactome/REACT_15550.4" .
+<http://bio2rdf.org/namespace:reactome.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/reactome.ebi/describe/rdf/reactome:REACT_15550.4" .
+<http://bio2rdf.org/namespace:reactome.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/reactome.ebi/links/rdf?uri=http://purl.uniprot.org/uniprot/P01308" .
+<http://bio2rdf.org/namespace:reactome.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/reactome.ebi/search/rdf?query=hexokinase" .
+
+
+<http://bio2rdf.org/namespace:biosamples.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/biosamples.ebi/describe/rdf?uri=http://rdf.ebi.ac.uk/resource/biosamples/sample/SAMEA796878" .
+<http://bio2rdf.org/namespace:biosamples.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/biosamples.ebi/links/rdf?uri=http://rdf.ebi.ac.uk/resource/biosamples/sample/SAMEA796878" .
+<http://bio2rdf.org/namespace:biosamples.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/biosamples.ebi/search/rdf?query=SAMEA259855" .
+
+
+<http://bio2rdf.org/namespace:chembl.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/chembl.ebi/describe/rdf?uri=http://rdf.ebi.ac.uk/resource/chembl/molecule/CHEMBL282282" .
+<http://bio2rdf.org/namespace:chembl.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/chembl.ebi/links/nt?uri=http://rdf.ebi.ac.uk/resource/chembl/molecule/CHEMBL17095" .
+<http://bio2rdf.org/namespace:chembl.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/chembl.ebi/search/rdf?query=CHEMBL282282" .
+
+
+<http://bio2rdf.org/namespace:atlas.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/atlas.ebi/describe/rdf?uri=http://rdf.ebi.ac.uk/resource/atlas/E-AFMX-6" .
+<http://bio2rdf.org/namespace:atlas.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/atlas.ebi/links/rdf?uri=http://identifiers.org/pubmed/16467349" .
+<http://bio2rdf.org/namespace:atlas.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/atlas.ebi/search/rdf?query=E-AFMX-6" .
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema>
+    <column comment="query" default="" key="false" label="uri"
+        length="-1" nullable="true" originalDbColumnName="uri"
+        pattern="" precision="-1" talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="query" length="-1"
+        nullable="true" originalDbColumnName="query" pattern=""
+        precision="-1" talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="ns" length="-1"
+        nullable="true" originalDbColumnName="ns" pattern=""
+        precision="-1" talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="id" length="-1"
+        nullable="true" originalDbColumnName="id" pattern=""
+        precision="-1" talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="request"
+        length="-1" nullable="true" originalDbColumnName="request"
+        pattern="" precision="-1" talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="namespace"
+        length="-1" nullable="true" originalDbColumnName="namespace"
+        pattern="" precision="-1" talendType="id_String" type=""/>
+    <column comment="" default="" key="false" label="format" length="-1"
+        nullable="true" originalDbColumnName="format" pattern=""
+        precision="-1" talendType="id_String" type=""/>
+</schema>

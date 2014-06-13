@@ -1,0 +1,44 @@
+namespace;title;date;site;id;link;search
+afcsid
+affymetrix;Affymetrix probesets;2012-10-04;http://www.affymetrix.com;227614_at;go:0004396;hk1
+arabidopsis
+atlas;Bio2RDF Atlas;2012-10-15;;hgnc:4922;go:0004396;hk1
+biocyc
+biomodels;A Database of Annotated Published Models;2012-09-18;http://www.ebi.ac.uk/biomodels;BIOMD0000000353;go:0004396;hexokinase
+biopax.biomodels
+biopax.kegg
+biopax.pharmgkb
+biopax.wikipathways
+bioportal;BioPortal;2012-10-07;http://bioportal.bioontology.org;go:0004673;ec:2.7.1.1;hk1
+cellmap
+ctd;Comparative Toxicogenomics Database;2012-10-15;http://ctd.mdibl.org;ctd_resource:D000086D011559;geneid:3098;hk1
+drugbank;DrugBank;2012-10-08;http://www.drugbank.ca;DB02379;hgnc:4922;hk1
+genbank;GenBank;2010-08-03;http://www.ncbi.nlm.nih.gov/genbank;P35557;pubmed:1303265;hexokinase
+gene;NCBI Gene;2012-10-06;http://www.ncbi.nlm.nih.gov/gene;geneid:15275;go:0004396;hk1
+goa;Gene Ontology Annotation;2012-09-17;http://www.ebi.ac.uk/GOA;go:0004396;uniprot:P17710;hk1
+hgnc;2012-09-15;http://www.genenames.org;4922;uniprot:P19367;hk1
+hhpid;2012-10-15;155971-6531-1351;geneid:6531;hiv
+homologene;2012-09-15;http://wwww.ncbi.nlm.nih.gov/homologene;100530;geneid:15275;hk1
+inoh
+interpro;2012-10-01;http://www.ebi.ac.uk/interpro;IPR019807;ec:2.7.1.1;hk1
+iproclass;2012-09-20;http://pir.georgetown.edu/iproclass/;;hk1
+irefindex;2012-09-16;http://irefindex.uio.no;irefindex_irigid:1144182;uniprot:P19367;P19367
+kegg;2012-10-15;http://www.genome.jp/kegg/;path:map00010;ec:4.2.1.11;Glycolysis 
+mesh;2012-09-15;http://www.nlm.nih.gov/mesh/meshhome.html;00c1fea3e9e8ab5d94f3dca3fcdf14b6;;hk1
+mgi;2012-10-15;http://www.informatics.jax.org/;96103;geneid:15275;hk1
+ndc;2012-09-14;http://www.accessdata.fda.gov/scripts/cder/ndc/default.cfm;;50114-4336;;asthma 
+netpath
+omim;2012-09-14;http://www.ncbi.nlm.nih.gov/omim;235700;pubmed:4980929;hk1
+panther
+pathwaycommons
+pharmgkb;2012-10-15;http://www.pharmgkb.org/index.jsp;PA29300;geneid:3098;hk1
+pid;;;hk1
+pubmed;2012-09-24;http://www.ncbi.nlm.nih.gov/pubmed;;;
+reactome
+refseq;2010-08-04;http://www.ncbi.nlm.nih.gov/RefSeq;ncbi:NG_012077;gi:237820692;hk1
+rhea
+sabiork;2012-09-18;http://sabiork.h-its.org/;catalysis14154;uniprot:P27881;hk1
+sgd;Saccharomyces Genome Database;2012-09-18;http://www.yeastgenome.org/;S000003222;ec:2.7.1.1;hk1
+spike
+taxonomy;NCBI Taxonomy;2012-10-06;http://www.ncbi.nlm.nih.gov;taxon:9606;;homo
+toxkb;Toxicogenomics Knowledge Base;;geneid:3098;hk1

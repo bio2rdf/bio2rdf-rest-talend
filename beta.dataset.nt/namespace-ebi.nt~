@@ -1,0 +1,159 @@
+<http://bio2rdf.org/namespace:biomodels.ebi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:biomodels.ebi> <http://purl.org/dc/elements/1.1/identifier> "namespace:biomodels.ebi" .
+<http://bio2rdf.org/namespace:biomodels.ebi> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint BioModels from EBI [namespace:biomodels.ebi]" .
+<http://bio2rdf.org/namespace:biomodels.ebi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+
+<http://bio2rdf.org/namespace:biomodels.ebi> <http://purl.org/dc/elements/1.1/title> "BioModels" .
+<http://bio2rdf.org/namespace:biomodels.ebi> <http://xmlns.com/foaf/0.1/depiction> <http://m.bio2rdf.org/image/biomodels.png> .
+<http://bio2rdf.org/namespace:biomodels.ebi> <http://www.w3.org/2000/01/rdf-schema#comment> "BioModels Database serves as a reliable repository of computational models of biological processes. It hosts models described in peer-reviewed scientific literature and models generated automatically from pathway resources (Path2Models). A large number of models collected from literature are manually curated and semantically enriched with cross-references from external data resources." .
+
+<http://bio2rdf.org/namespace:biomodels.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://www.ebi.ac.uk/rdf/services/biomodels/sparql> .
+
+<http://bio2rdf.org/namespace:biomodels.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://www.ebi.ac.uk/rdf/services/biomodels/servlet/query?query=CONSTRUCT%20{%0D%0A%3Fsubject%20%3Fpredicate%20%3Fobject%20.%20%0D%0A}%20WHERE%20{%0D%0A%3Fsubject%20%3Fpredicate%20%3Fobject%20.%0D%0AFILTER%20%28%3Fsubject%20%3D%20%3Chttp://identifiers.org/biomodels.db/$ID$%3E%29%20.%0D%0A}&format=RDF/XML" .
+
+<http://bio2rdf.org/namespace:biomodels.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/biomodels.ebi/describe/rdf/biomodels:BIOMD0000000001" .
+
+<http://bio2rdf.org/namespace:biomodels.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://www.ebi.ac.uk/rdf/services/biomodels/servlet/query?query=CONSTRUCT%20{%0D%0A%3Fsubject%20%3Fpredicate%20%3Fobject%20.%20%0D%0A}%20WHERE%20{%0D%0A%3Fsubject%20%3Fpredicate%20%3Fobject%20.%0D%0AFILTER%20%28%3Fsubject%20%3D%20%3C$URI$%3E%29%20.%0D%0A}&format=RDF/XML" .
+
+<http://bio2rdf.org/namespace:biomodels.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/biomodels.ebi/describe/rdf?uri=http://identifiers.org/biomodels.db/BIOMD0000000001" .
+
+<http://bio2rdf.org/namespace:biomodels.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://www.ebi.ac.uk/rdf/services/biomodels/servlet/query?query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=RDF/XML" .
+
+<http://bio2rdf.org/namespace:biomodels.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/biomodels.ebi/links/rdf?uri=http://identifiers.org/interpro/IPR002394" .
+
+<http://bio2rdf.org/namespace:biomodels.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://www.ebi.ac.uk/rdf/services/biomodels/servlet/query?query=CONSTRUCT%20{%0D%0A%3Fsubject%20%3Fpredicate%20%3Fobject%20.%20%0D%0A}%20WHERE%20{%0D%0A%3Fsubject%20%3Fpredicate%20%3Fobject%20.%0D%0AFILTER%20%28%20REGEX%28%3Fobject%2C%20%22$QUERY$%22%29%20%26%26%20isLiteral%28%3Fobject%29%29%20.%0D%0A}%0D%0A&format=RDF/XML" .
+
+<http://bio2rdf.org/namespace:biomodels.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/biomodels.ebi/search/rdf?query=hexokinase" .
+
+
+
+
+
+
+
+
+
+<http://bio2rdf.org/namespace:reactome.ebi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:reactome.ebi> <http://purl.org/dc/elements/1.1/identifier> "namespace:reactome.ebi" .
+<http://bio2rdf.org/namespace:reactome.ebi> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint Reactome from EBI [namespace:reactome.ebi]" .
+<http://bio2rdf.org/namespace:reactome.ebi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+
+<http://bio2rdf.org/namespace:reactome.ebi> <http://purl.org/dc/elements/1.1/title> "Reactome" .
+<http://bio2rdf.org/namespace:reactome.ebi> <http://xmlns.com/foaf/0.1/depiction> <http://m.bio2rdf.org/image/reactome.png> .
+<http://bio2rdf.org/namespace:reactome.ebi> <http://www.w3.org/2000/01/rdf-schema#comment> "Reactome is a free, open-source, curated and peer reviewed pathway database. Its goal is to provide intuitive bioinformatics tools for the visualization, interpretation and analysis of pathway knowledge to support basic research, genome analysis, modeling, systems biology and education." .
+
+<http://bio2rdf.org/namespace:reactome.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://www.ebi.ac.uk/rdf/services/reactome/sparql> .
+
+<http://bio2rdf.org/namespace:reactome.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://www.ebi.ac.uk/rdf/services/reactome/servlet/query?query=CONSTRUCT%20{%0D%0A%3Fsubject%20%3Fpredicate%20%3Fobject%20.%20%0D%0A}%20WHERE%20{%0D%0A%3Fsubject%20%3Fpredicate%20%3Fobject%20.%0D%0AFILTER%20%28%3Fsubject%20%3D%20%3C$URI$%3E%29%20.%0D%0A}&format=RDF/XML" .
+
+<http://bio2rdf.org/namespace:reactome.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/reactome.ebi/describe/rdf?uri=http://identifiers.org/reactome/REACT_15550.4" .
+
+<http://bio2rdf.org/namespace:reactome.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://www.ebi.ac.uk/rdf/services/reactome/servlet/query?query=CONSTRUCT%20{%0D%0A%3Fsubject%20%3Fpredicate%20%3Fobject%20.%20%0D%0A}%20WHERE%20{%0D%0A%3Fsubject%20%3Fpredicate%20%3Fobject%20.%0D%0AFILTER%20%28%3Fsubject%20%3D%20%3Chttp://identifiers.org/reactome/$ID$%3E%29%20.%0D%0A}&format=RDF/XML" .
+
+<http://bio2rdf.org/namespace:reactome.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/reactome.ebi/describe/rdf/reactome:REACT_15550.4" .
+
+<http://bio2rdf.org/namespace:reactome.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://www.ebi.ac.uk/rdf/services/reactome/servlet/query?query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=RDF/XML" .
+
+<http://bio2rdf.org/namespace:reactome.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search_literal> " http://www.ebi.ac.uk/rdf/services/reactome/servlet/query?query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%22$QUERY$%22%29+.%0D%0A}&format=RDF/XML" .
+
+<http://bio2rdf.org/namespace:reactome.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/reactome.ebi/links/rdf?uri=http://purl.uniprot.org/uniprot/P01308" .
+
+<http://bio2rdf.org/namespace:reactome.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://www.ebi.ac.uk/rdf/services/reactome/servlet/query?query=CONSTRUCT%20{%0D%0A%3Fsubject%20%3Fpredicate%20%3Fobject%20.%20%0D%0A}%20WHERE%20{%0D%0A%3Fsubject%20%3Fpredicate%20%3Fobject%20.%0D%0AFILTER%20%28%20REGEX%28%3Fobject%2C%20%22$QUERY$%22%29%20%26%26%20isLiteral%28%3Fobject%29%29%20.%0D%0A}%0D%0A&format=RDF/XML" .
+
+<http://bio2rdf.org/namespace:reactome.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/reactome.ebi/search/rdf?query=hexokinase" .
+
+
+
+
+
+
+
+
+
+<http://bio2rdf.org/namespace:biosamples.ebi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:biosamples.ebi> <http://purl.org/dc/elements/1.1/identifier> "namespace:biosamples.ebi" .
+<http://bio2rdf.org/namespace:biosamples.ebi> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint BioSamples from EBI [namespace:biosamples.ebi]" .
+<http://bio2rdf.org/namespace:biosamples.ebi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+
+<http://bio2rdf.org/namespace:biosamples.ebi> <http://purl.org/dc/elements/1.1/title> "BioSample" .
+<http://bio2rdf.org/namespace:biosamples.ebi> <http://www.w3.org/2000/01/rdf-schema#comment> "The BioSample database stores submitter-supplied descriptive information, or metadata, about the biological materials from which data stored in NCBI’s primary data archives are derived. NCBI’s archives host data from diverse types of samples from any species, so the BioSample database is similarly diverse; typical examples of a BioSample include a cell line, a primary tissue biopsy, an individual organism or an environmental isolate." .
+
+<http://bio2rdf.org/namespace:biosamples.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://www.ebi.ac.uk/rdf/services/biosamples/sparql> .
+
+<http://bio2rdf.org/namespace:biosamples.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://www.ebi.ac.uk/rdf/services/biosamples/servlet/query?query=CONSTRUCT%20{%0D%0A%3Fsubject%20%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23rdf%3Atype%3E%20%3Chttp%3A%2F%2Freactome.bio2rdf.org%2Fresource%3E%20.%0D%0A%3Fsubject%20%3Fpredicate%20%3Fobject%20.%20%0D%0A}%20WHERE%20{%0D%0A%3Fsubject%20%3Fpredicate%20%3Fobject%20.%0D%0AFILTER%20%28%3Fsubject%20%3D%20%3C$URI$%3E%29%20.%0D%0A}&format=RDF/XML" .
+
+<http://bio2rdf.org/namespace:biosamples.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/biosamples.ebi/describe/rdf?uri=http://rdf.ebi.ac.uk/resource/biosamples/sample/SAMEA796878" .
+
+<http://bio2rdf.org/namespace:biosamples.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://www.ebi.ac.uk/rdf/services/biosamples/servlet/query?query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=RDF/XML" .
+
+<http://bio2rdf.org/namespace:biosamples.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/biosamples.ebi/links/rdf?uri=http://rdf.ebi.ac.uk/resource/biosamples/sample/SAMEA796878" .
+
+<http://bio2rdf.org/namespace:biosamples.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://www.ebi.ac.uk/rdf/services/biosamples/servlet/query?query=CONSTRUCT%20{%0D%0A%3Fsubject%20%3Fpredicate%20%3Fobject%20.%20%0D%0A}%20WHERE%20{%0D%0A%3Fsubject%20%3Fpredicate%20%3Fobject%20.%0D%0AFILTER%20%28%20REGEX%28%3Fobject%2C%20%22$PARM1$%22%29%20%26%26%20isLiteral%28%3Fobject%29%29%20.%0D%0A}%0D%0A&format=RDF/XML" .
+
+<http://bio2rdf.org/namespace:biosamples.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/biosamples.ebi/search/rdf?query=hexokinase" .
+
+
+
+
+
+
+
+
+<http://bio2rdf.org/namespace:chembl.ebi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:chembl.ebi> <http://purl.org/dc/elements/1.1/identifier> "namespace:chembl.ebi" .
+<http://bio2rdf.org/namespace:chembl.ebi> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint ChEMBL from EBI [namespace:chembl.ebi]" .
+<http://bio2rdf.org/namespace:chembl.ebi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+
+<http://bio2rdf.org/namespace:chembl.ebi> <http://purl.org/dc/elements/1.1/title> "ChEMBL" .
+<http://bio2rdf.org/namespace:chembl.ebi> <http://xmlns.com/foaf/0.1/depiction> <http://m.bio2rdf.org/image/chembl.png> .
+<http://bio2rdf.org/namespace:chembl.ebi> <http://www.w3.org/2000/01/rdf-schema#comment> "The ChEMBL database contains compound bioactivity data against drug targets. Bioactivity is reported in Ki, Kd, IC50, and EC50. Data can be filtered and analyzed to develop compound screening libraries for lead identification during drug discovery" .
+
+<http://bio2rdf.org/namespace:chembl.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://www.ebi.ac.uk/rdf/services/chembl/sparql> .
+
+<http://bio2rdf.org/namespace:chembl.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://www.ebi.ac.uk/rdf/services/chembl/servlet/query?query=CONSTRUCT%20{%0D%0A%3Fsubject%20%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23rdf%3Atype%3E%20%3Chttp%3A%2F%2Freactome.bio2rdf.org%2Fresource%3E%20.%0D%0A%3Fsubject%20%3Fpredicate%20%3Fobject%20.%20%0D%0A}%20WHERE%20{%0D%0A%3Fsubject%20%3Fpredicate%20%3Fobject%20.%0D%0AFILTER%20%28%3Fsubject%20%3D%20%3C$URI$%3E%29%20.%0D%0A}&format=RDF/XML" .
+
+<http://bio2rdf.org/namespace:chembl.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/chembl.ebi/describe/rdf?uri=http://rdf.ebi.ac.uk/resource/chembl/molecule/CHEMBL282282" .
+
+<http://bio2rdf.org/namespace:chembl.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://www.ebi.ac.uk/rdf/services/chembl/servlet/query?query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=RDF/XML" .
+
+<http://bio2rdf.org/namespace:chembl.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/chembl.ebi/links/nt?uri=http://rdf.ebi.ac.uk/resource/chembl/molecule/CHEMBL17095" .
+
+<http://bio2rdf.org/namespace:chembl.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://www.ebi.ac.uk/rdf/services/chembl/servlet/query?query=CONSTRUCT%20{%0D%0A%3Fsubject%20%3Fpredicate%20%3Fobject%20.%20%0D%0A}%20WHERE%20{%0D%0A%3Fsubject%20%3Fpredicate%20%3Fobject%20.%0D%0AFILTER%20%28%20REGEX%28%3Fobject%2C%20%22$PARM1$%22%29%20%26%26%20isLiteral%28%3Fobject%29%29%20.%0D%0A}%0D%0A&format=RDF/XML" .
+
+<http://bio2rdf.org/namespace:chembl.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/chembl.ebi/search/rdf?query=hexokinase" .
+
+
+
+
+
+
+
+<http://bio2rdf.org/namespace:atlas.ebi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:atlas.ebi> <http://purl.org/dc/elements/1.1/identifier> "namespace:atlas.ebi" .
+<http://bio2rdf.org/namespace:atlas.ebi> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint Atlas from EBI [namespace:atlas.ebi]" .
+<http://bio2rdf.org/namespace:atlas.ebi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+
+<http://bio2rdf.org/namespace:atlas.ebi> <http://purl.org/dc/elements/1.1/title> "Expression Atlas" .
+<http://bio2rdf.org/namespace:atlas.ebi> <http://www.w3.org/2000/01/rdf-schema#comment> "The Expression Atlas provides information on gene expression patterns under different biological conditions. Gene expression data is re-analysed in-house to detect genes showing interesting baseline and differential expression patterns." .
+
+<http://bio2rdf.org/namespace:atlas.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://www.ebi.ac.uk/rdf/services/atlas/sparql> .
+
+<http://bio2rdf.org/namespace:atlas.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://www.ebi.ac.uk/rdf/services/atlas/servlet/query?query=CONSTRUCT%20{%0D%0A%3Fsubject%20%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23rdf%3Atype%3E%20%3Chttp%3A%2F%2Freactome.bio2rdf.org%2Fresource%3E%20.%0D%0A%3Fsubject%20%3Fpredicate%20%3Fobject%20.%20%0D%0A}%20WHERE%20{%0D%0A%3Fsubject%20%3Fpredicate%20%3Fobject%20.%0D%0AFILTER%20%28%3Fsubject%20%3D%20%3C$URI$%3E%29%20.%0D%0A}&format=RDF/XML" .
+
+<http://bio2rdf.org/namespace:atlas.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/atlas.ebi/describe/rdf?uri=http://rdf.ebi.ac.uk/resource/atlas/E-AFMX-6" .
+
+<http://bio2rdf.org/namespace:atlas.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://www.ebi.ac.uk/rdf/services/atlas/servlet/query?query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=RDF/XML" .
+
+<http://bio2rdf.org/namespace:atlas.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/atlas.ebi/links/rdf?uri=http://identifiers.org/pubmed/16467349" .
+
+<http://bio2rdf.org/namespace:atlas.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://www.ebi.ac.uk/rdf/services/atlas/servlet/query?query=CONSTRUCT%20{%0D%0A%3Fsubject%20%3Fpredicate%20%3Fobject%20.%20%0D%0A}%20WHERE%20{%0D%0A%3Fsubject%20%3Fpredicate%20%3Fobject%20.%0D%0AFILTER%20%28%20REGEX%28%3Fobject%2C%20%22$PARM1$%22%29%20%26%26%20isLiteral%28%3Fobject%29%29%20.%0D%0A}%0D%0A&format=RDF/XML" .
+
+<http://bio2rdf.org/namespace:atlas.ebi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/atlas.ebi/search/rdf?query=hexokinase" .
+
+
+
+
+
+
+
+

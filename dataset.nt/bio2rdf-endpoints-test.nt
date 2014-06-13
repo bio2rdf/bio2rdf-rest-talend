@@ -1,0 +1,41 @@
+<http://bio2rdf.org/namespace:hgnc> <http://bio2rdf.org/bio2rdf_vocabulary:test> </rdfxml/hgnc:4922> .
+<http://bio2rdf.org/namespace:hgnc> <http://bio2rdf.org/bio2rdf_vocabulary:test> </rdf/hgnc:4922> .
+<http://bio2rdf.org/namespace:hgnc> <http://bio2rdf.org/bio2rdf_vocabulary:test> </n3/hgnc:4922> .
+<http://bio2rdf.org/namespace:hgnc> <http://bio2rdf.org/bio2rdf_vocabulary:test> </nt/hgnc:4922> .
+<http://bio2rdf.org/namespace:hgnc> <http://bio2rdf.org/bio2rdf_vocabulary:test> </json/hgnc:4922> .
+<http://bio2rdf.org/namespace:hgnc> <http://bio2rdf.org/bio2rdf_vocabulary:test> </jsonld/hgnc:4922> .
+
+<http://bio2rdf.org/namespace:hgnc> <http://bio2rdf.org/bio2rdf_vocabulary:test> </hgnc/describe/rdf/hgnc:4922> .
+<http://bio2rdf.org/namespace:hgnc> <http://bio2rdf.org/bio2rdf_vocabulary:test> </hgnc/describe/n3/hgnc:4922> .
+<http://bio2rdf.org/namespace:hgnc> <http://bio2rdf.org/bio2rdf_vocabulary:test> </hgnc/describe/nt/hgnc:4922> .
+<http://bio2rdf.org/namespace:hgnc> <http://bio2rdf.org/bio2rdf_vocabulary:test> </hgnc/describe/json/hgnc:4922> .
+<http://bio2rdf.org/namespace:hgnc> <http://bio2rdf.org/bio2rdf_vocabulary:test> </hgnc/describe/jsonld/hgnc:4922> .
+
+<http://bio2rdf.org/namespace:hgnc> <http://bio2rdf.org/bio2rdf_vocabulary:test> </rdfxml/searchns/hgnc/hk1> .
+<http://bio2rdf.org/namespace:hgnc> <http://bio2rdf.org/bio2rdf_vocabulary:test> </rdfxml/linksns/hgnc/go:0004396> .
+
+<http://bio2rdf.org/namespace:hgnc> <http://bio2rdf.org/bio2rdf_vocabulary:test> </rdfxml/hgnc:4922> .
+<http://bio2rdf.org/namespace:hgnc> <http://bio2rdf.org/bio2rdf_vocabulary:test> </rdfxml/searchns/hgnc/hk1> .
+<http://bio2rdf.org/namespace:hgnc> <http://bio2rdf.org/bio2rdf_vocabulary:test> </rdfxml/linksns/hgnc/go:0004396> .
+
+<http://bio2rdf.org/namespace:hgnc> <http://bio2rdf.org/bio2rdf_vocabulary:test> </hgnc:4922> .
+<http://bio2rdf.org/namespace:hgnc> <http://bio2rdf.org/bio2rdf_vocabulary:test> </page/hgnc:4922> .
+<http://bio2rdf.org/namespace:hgnc> <http://bio2rdf.org/bio2rdf_vocabulary:test> </rdf/hgnc:4922> .
+<http://bio2rdf.org/namespace:hgnc> <http://bio2rdf.org/bio2rdf_vocabulary:test> </hgnc/describe/rdf/hgnc:4922> .
+<http://bio2rdf.org/namespace:hgnc> <http://bio2rdf.org/bio2rdf_vocabulary:test> </hgnc/search/rdf/hk1> .
+<http://bio2rdf.org/namespace:hgnc> <http://bio2rdf.org/bio2rdf_vocabulary:test> </hgnc/links/rdf/go:0004396> .
+<http://bio2rdf.org/namespace:hgnc> <http://bio2rdf.org/bio2rdf_vocabulary:test> </hgnc/links/rdf/mgi:96103> .
+
+<http://bio2rdf.org/namespace:affymetrix> <http://bio2rdf.org/bio2rdf_vocabulary:test> </affymetrix:227614_at> .
+<http://bio2rdf.org/namespace:affymetrix> <http://bio2rdf.org/bio2rdf_vocabulary:test> </page/affymetrix:227614_at> .
+<http://bio2rdf.org/namespace:affymetrix> <http://bio2rdf.org/bio2rdf_vocabulary:test> </rdf/affymetrix:227614_at> .
+<http://bio2rdf.org/namespace:affymetrix> <http://bio2rdf.org/bio2rdf_vocabulary:test> </affymetrix/describe/rdf/affymetrix:227614_at> .
+<http://bio2rdf.org/namespace:affymetrix> <http://bio2rdf.org/bio2rdf_vocabulary:test> </affymetrix/search/rdf/hk1> .
+<http://bio2rdf.org/namespace:affymetrix> <http://bio2rdf.org/bio2rdf_vocabulary:test> </affymetrix/links/rdf/go:0004396> .
+
+<http://bio2rdf.org/namespace:omim> <http://bio2rdf.org/bio2rdf_vocabulary:test> </omim:235700> .
+<http://bio2rdf.org/namespace:omim> <http://bio2rdf.org/bio2rdf_vocabulary:test> </page/omim:235700> .
+<http://bio2rdf.org/namespace:omim> <http://bio2rdf.org/bio2rdf_vocabulary:test> </rdf/omim:235700> .
+<http://bio2rdf.org/namespace:omim> <http://bio2rdf.org/bio2rdf_vocabulary:test> </omim/describe/rdf/omim:235700> .
+<http://bio2rdf.org/namespace:omim> <http://bio2rdf.org/bio2rdf_vocabulary:test> </omim/search/rdf/hk1> .
+<http://bio2rdf.org/namespace:omim> <http://bio2rdf.org/bio2rdf_vocabulary:test> </omim/search/rdf/go:0004396> .

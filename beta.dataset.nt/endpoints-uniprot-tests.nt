@@ -1,0 +1,134 @@
+
+<http://bio2rdf.org/namespace:uniprot_citationmapping> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_citationmapping/describe/rdf/citation_mapping:1002" .
+<http://bio2rdf.org/namespace:uniprot_citationmapping> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_citationmapping/describe/rdf?uri=http://purl.uniprot.org/citation_mapping/10002" .
+<http://bio2rdf.org/namespace:uniprot_citationmapping> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_citationmapping/links/rdf/uniprot:A0FKN4" .
+<http://bio2rdf.org/namespace:uniprot_citationmapping> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_citationmapping/links/rdf?uri=http://purl.uniprot.org/uniprot/A0FKN4" .
+<http://bio2rdf.org/namespace:uniprot_citationmapping> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_citationmapping/search/rdf/hexokinase" .
+<http://bio2rdf.org/namespace:uniprot_citationmapping> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_citationmapping/search/rdf?query=hexokinase" .
+
+
+
+<http://bio2rdf.org/namespace:uniprot_citations> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_citations/describe/rdf/citations:6105959" .
+<http://bio2rdf.org/namespace:uniprot_citations> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_citations/describe/rdf?uri=http://purl.uniprot.org/citations/6105959" .
+<http://bio2rdf.org/namespace:uniprot_citations> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_citations/links/rdf/pubmed:6105959" .
+<http://bio2rdf.org/namespace:uniprot_citations> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_citations/links/rdf?uri=http://purl.uniprot.org/pubmed/6105959" .
+<http://bio2rdf.org/namespace:uniprot_citations> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_citations/search/rdf/hexokinase" .
+<http://bio2rdf.org/namespace:uniprot_citations> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_citations/search/rdf?query=hexokinase" .
+
+
+
+<http://bio2rdf.org/namespace:uniprot_databases> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_databases/describe/rdf/database:CTD" .
+<http://bio2rdf.org/namespace:uniprot_databases> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_databases/describe/rdf?uri=http://purl.uniprot.org/database/CTD" .
+<http://bio2rdf.org/namespace:uniprot_databases> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_databases/links/rdf/citations:18782832" .
+<http://bio2rdf.org/namespace:uniprot_databases> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_databases/links/rdf?uri=http://purl.uniprot.org/citations/18782832" .
+<http://bio2rdf.org/namespace:uniprot_databases> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_databases/search/rdf/comparative" .
+<http://bio2rdf.org/namespace:uniprot_databases> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_databases/search/rdf?query=comparative" .
+
+
+
+<http://bio2rdf.org/namespace:uniprot_diseases> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_diseases/describe/rdf/diseases:1005" .
+<http://bio2rdf.org/namespace:uniprot_diseases> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_diseases/describe/rdf?uri=http://purl.uniprot.org/diseases/1005" .
+<http://bio2rdf.org/namespace:uniprot_diseases> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_diseases/links/rdf/mesh:D012174" .
+<http://bio2rdf.org/namespace:uniprot_diseases> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_diseases/links/rdf?uri=http://purl.uniprot.org/mesh/D012174" .
+<http://bio2rdf.org/namespace:uniprot_diseases> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_diseases/search/rdf/hexokinase" .
+<http://bio2rdf.org/namespace:uniprot_diseases> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_diseases/search/rdf?query=hexokinase" .
+
+
+
+<http://bio2rdf.org/namespace:uniprot_enzymes> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_enzymes/describe/rdf/enzyme:1.1.1.113" .
+<http://bio2rdf.org/namespace:uniprot_enzymes> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_enzymes/describe/rdf?uri=http://purl.uniprot.org/enzyme/1.1.1.113" .
+<http://bio2rdf.org/namespace:uniprot_enzymes> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_enzymes/links/rdf/enzyme:1.1.1.-" .
+<http://bio2rdf.org/namespace:uniprot_enzymes> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_enzymes/links/rdf?uri=http://purl.uniprot.org/enzyme/1.1.1.-" .
+<http://bio2rdf.org/namespace:uniprot_enzymes> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_enzymes/search/rdf/hexokinase" .
+<http://bio2rdf.org/namespace:uniprot_enzymes> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_enzymes/search/rdf?query=hexokinase" .
+
+
+
+<http://bio2rdf.org/namespace:uniprot_go> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_go/describe/rdf/go:0000776" .
+<http://bio2rdf.org/namespace:uniprot_go> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_go/describe/rdf?uri=http://purl.uniprot.org/go/0000776" .
+<http://bio2rdf.org/namespace:uniprot_go> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_go/links/rdf/go:0031617" .
+<http://bio2rdf.org/namespace:uniprot_go> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_go/links/rdf?uri=http://purl.uniprot.org/go/0031617" .
+<http://bio2rdf.org/namespace:uniprot_go> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_go/search/rdf/hexokinase" .
+<http://bio2rdf.org/namespace:uniprot_go> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_go/search/rdf?query=hexokinase" .
+
+
+
+<http://bio2rdf.org/namespace:uniprot_journals> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_journals/describe/rdf/journals:101" .
+<http://bio2rdf.org/namespace:uniprot_journals> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_journals/describe/rdf?uri=http://purl.uniprot.org/journals/101" .
+<http://bio2rdf.org/namespace:uniprot_journals> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_journals/links/rdf?uri=http://pubs.acs.org/journal/ancham/" .
+<http://bio2rdf.org/namespace:uniprot_journals> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_journals/search/rdf/hexokinase" .
+<http://bio2rdf.org/namespace:uniprot_journals> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_journals/search/rdf?query=hexokinase" .
+
+
+
+<http://bio2rdf.org/namespace:uniprot_keywords> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_keywords/describe/rdf/keywords:1013" .
+<http://bio2rdf.org/namespace:uniprot_keywords> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_keywords/describe/rdf?uri=http://purl.uniprot.org/keywords/1013" .
+<http://bio2rdf.org/namespace:uniprot_keywords> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_keywords/links/rdf/keywords:9995" .
+<http://bio2rdf.org/namespace:uniprot_keywords> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_keywords/links/rdf?uri=http://purl.uniprot.org/keywords/9995" .
+<http://bio2rdf.org/namespace:uniprot_keywords> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_keywords/search/rdf/microphthalmos" .
+<http://bio2rdf.org/namespace:uniprot_keywords> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_keywords/search/rdf?query=microphthalmos" .
+
+
+
+<http://bio2rdf.org/namespace:uniprot_locations> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_locations/describe/rdf/locations:112" .
+<http://bio2rdf.org/namespace:uniprot_locations> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_locations/describe/rdf?uri=http://purl.uniprot.org/locations/112" .
+<http://bio2rdf.org/namespace:uniprot_locations> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_locations/links/rdf/go:0005615" .
+<http://bio2rdf.org/namespace:uniprot_locations> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_locations/links/rdf?uri=http://purl.uniprot.org/go/0005615" .
+<http://bio2rdf.org/namespace:uniprot_locations> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_locations/search/rdf/intercellular" .
+<http://bio2rdf.org/namespace:uniprot_locations> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_locations/search/rdf?query=intercellular" .
+
+
+
+<http://bio2rdf.org/namespace:uniprot_pathways> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_pathways/describe/rdf/unipathways:105.1031.R" .
+<http://bio2rdf.org/namespace:uniprot_pathways> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_pathways/describe/rdf?uri=http://purl.uniprot.org/unipathway/105.1031.R" .
+<http://bio2rdf.org/namespace:uniprot_pathways> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_pathways/links/rdf/unipathways:105" .
+<http://bio2rdf.org/namespace:uniprot_pathways> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_pathways/links/rdf?uri=http://purl.uniprot.org/unipathway/105" .
+<http://bio2rdf.org/namespace:uniprot_pathways> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_pathways/search/rdf/xenobiotic" .
+<http://bio2rdf.org/namespace:uniprot_pathways> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_pathways/search/rdf?query=xenobiotic" .
+
+
+
+<http://bio2rdf.org/namespace:uniprot_taxonomy> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_taxonomy/describe/rdf/taxonomy:1030836" .
+<http://bio2rdf.org/namespace:uniprot_taxonomy> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_taxonomy/describe/rdf?uri=http://purl.uniprot.org/taxonomy/1030836" .
+<http://bio2rdf.org/namespace:uniprot_taxonomy> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_taxonomy/links/rdf/taxonomy:389486" .
+<http://bio2rdf.org/namespace:uniprot_taxonomy> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_taxonomy/links/rdf?uri=http://purl.uniprot.org/taxonomy/389486" .
+<http://bio2rdf.org/namespace:uniprot_taxonomy> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_taxonomy/search/rdf/sediminicola" .
+<http://bio2rdf.org/namespace:uniprot_taxonomy> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_taxonomy/search/rdf?query=sediminicola" .
+
+
+
+<http://bio2rdf.org/namespace:uniprot_tissues> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_tissues/describe/rdf/tissues:101" .
+<http://bio2rdf.org/namespace:uniprot_tissues> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_tissues/describe/rdf?uri=http://purl.uniprot.org/tissues/101" .
+<http://bio2rdf.org/namespace:uniprot_tissues> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_tissues/links/rdf/evoc:0200078" .
+<http://bio2rdf.org/namespace:uniprot_tissues> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_tissues/links/rdf?uri=http://purl.uniprot.org/evoc/0200078" .
+<http://bio2rdf.org/namespace:uniprot_tissues> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_tissues/search/rdf/ganglia" .
+<http://bio2rdf.org/namespace:uniprot_tissues> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_tissues/search/rdf?query=ganglia" .
+
+
+
+<http://bio2rdf.org/namespace:uniparc> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniparc/describe/rdf?uri=http://purl.uniprot.org/uniparc/UPI0000001EA4" .
+<http://bio2rdf.org/namespace:uniparc> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniparc/describe/rdf/uniparc:UPI0000001EA4" .
+<http://bio2rdf.org/namespace:uniparc> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniparc/links/rdf?uri=http://purl.uniprot.org/embl-cds/BAC56607.1" .
+<http://bio2rdf.org/namespace:uniparc> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniparc/links/rdf/embl-cds:BAC56607.1" .
+<http://bio2rdf.org/namespace:uniparc> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniparc/search/rdf/hexokinase" .
+<http://bio2rdf.org/namespace:uniparc> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniparc/search/rdf?query=hexokinase" .
+
+
+
+<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot/describe/rdf/uniprot:P19367" .
+<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot/describe/rdf?uri=http://purl.uniprot.org/uniprot/P19367" .
+<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot/links/rdf?uri=http://purl.uniprot.org/uniprot/P19367" .
+<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot/links/rdf/go:0051156" .
+<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot/search/rdf?query=hexokinase" .
+<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot/search/rdf/hexokinase" .
+
+
+
+<http://bio2rdf.org/namespace:uniref> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniref/describe/rdf/uniref:UniRef50_Q13127" .
+<http://bio2rdf.org/namespace:uniref> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniref/describe/rdf/uniref:UniRef90_Q13127" .
+<http://bio2rdf.org/namespace:uniref> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniref/describe/rdf?uri=http://purl.uniprot.org/uniref/UniRef50_Q13127" .
+<http://bio2rdf.org/namespace:uniref> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniref/search/rdf/hexokinase" .
+<http://bio2rdf.org/namespace:uniref> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniref/search/rdf?query=hexokinase" .
+<http://bio2rdf.org/namespace:uniref> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniref/links/rdf/uniref:UniRef50_Q13127" .
+<http://bio2rdf.org/namespace:uniref> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniref/links/rdf?uri=http://purl.uniprot.org/uniref/UniRef50_Q13127" .
+
