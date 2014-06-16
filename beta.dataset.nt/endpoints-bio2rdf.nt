@@ -1,10 +1,164 @@
+<http://bio2rdf.org/namespace:affymetrix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:affymetrix> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:affymetrix> <http://purl.org/dc/elements/1.1/identifier> "namespace:affymetrix" .
+<http://bio2rdf.org/namespace:affymetrix> <http://purl.org/dc/elements/1.1/title> "affymetrix" .
+<http://bio2rdf.org/namespace:affymetrix> <http://www.w3.org/2000/01/rdf-schema#label> "affymetrix SPARQL endpoint [namespace:affymetrix]" .
+<http://bio2rdf.org/namespace:affymetrix> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://affymetrix.bio2rdf.org/sparql> .
+
+<http://bio2rdf.org/namespace:affymetrix> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://affymetrix.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:affymetrix> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://affymetrix.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:affymetrix> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://affymetrix.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:affymetrix> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://affymetrix.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:affymetrix> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://affymetrix.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:affymetrix> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " http://affymetrix.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:affymetrix> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://affymetrix.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+<http://bio2rdf.org/namespace:affymetrix_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:affymetrix_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:affymetrix_resource" .
+<http://bio2rdf.org/namespace:affymetrix_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:affymetrix_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://affymetrix.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:affymetrix_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://affymetrix.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:affymetrix_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:affymetrix_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:affymetrix_vocabulary" .
+<http://bio2rdf.org/namespace:affymetrix_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:affymetrix_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://affymetrix.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:affymetrix_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://affymetrix.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+
+<http://bio2rdf.org/namespace:biomodels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:biomodels> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:biomodels> <http://purl.org/dc/elements/1.1/identifier> "namespace:biomodels" .
+<http://bio2rdf.org/namespace:biomodels> <http://purl.org/dc/elements/1.1/title> "biomodels" .
+<http://bio2rdf.org/namespace:biomodels> <http://www.w3.org/2000/01/rdf-schema#label> "biomodels SPARQL endpoint [namespace:biomodels]" .
+<http://bio2rdf.org/namespace:biomodels> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://biomodels.bio2rdf.org/sparql> .
+
+<http://bio2rdf.org/namespace:biomodels> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://biomodels.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:biomodels> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://biomodels.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:biomodels> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://biomodels.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:biomodels> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://biomodels.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:biomodels> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://biomodels.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:biomodels> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " http://biomodels.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:biomodels> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://biomodels.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+<http://bio2rdf.org/namespace:biomodels_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:biomodels_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:biomodels_resource" .
+<http://bio2rdf.org/namespace:biomodels_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:biomodels_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://biomodels.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:biomodels_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://biomodels.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:biomodels_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:biomodels_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:biomodels_vocabulary" .
+<http://bio2rdf.org/namespace:biomodels_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:biomodels_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://biomodels.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:biomodels_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://biomodels.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+
+<http://bio2rdf.org/namespace:bioportal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:bioportal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:bioportal> <http://purl.org/dc/elements/1.1/identifier> "namespace:bioportal" .
+<http://bio2rdf.org/namespace:bioportal> <http://purl.org/dc/elements/1.1/title> "bioportal" .
+<http://bio2rdf.org/namespace:bioportal> <http://www.w3.org/2000/01/rdf-schema#label> "bioportal SPARQL endpoint [namespace:bioportal]" .
+<http://bio2rdf.org/namespace:bioportal> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://bioportal.bio2rdf.org/sparql> .
+
+<http://bio2rdf.org/namespace:bioportal> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://bioportal.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:bioportal> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://bioportal.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:bioportal> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://bioportal.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:bioportal> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://bioportal.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:bioportal> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://bioportal.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:bioportal> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " http://bioportal.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:bioportal> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://bioportal.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+<http://bio2rdf.org/namespace:bioportal_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:bioportal_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:bioportal_resource" .
+<http://bio2rdf.org/namespace:bioportal_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:bioportal_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://bioportal.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:bioportal_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://bioportal.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:bioportal_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:bioportal_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:bioportal_vocabulary" .
+<http://bio2rdf.org/namespace:bioportal_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:bioportal_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://bioportal.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:bioportal_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://bioportal.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+
+<http://bio2rdf.org/namespace:clinicaltrials> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:clinicaltrials> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:clinicaltrials> <http://purl.org/dc/elements/1.1/identifier> "namespace:clinicaltrials" .
+<http://bio2rdf.org/namespace:clinicaltrials> <http://purl.org/dc/elements/1.1/title> "clinicaltrials" .
+<http://bio2rdf.org/namespace:clinicaltrials> <http://www.w3.org/2000/01/rdf-schema#label> "clinicaltrials SPARQL endpoint [namespace:clinicaltrials]" .
+<http://bio2rdf.org/namespace:clinicaltrials> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://clinicaltrials.bio2rdf.org/sparql> .
+
+<http://bio2rdf.org/namespace:clinicaltrials> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://clinicaltrials.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:clinicaltrials> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://clinicaltrials.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:clinicaltrials> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://clinicaltrials.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:clinicaltrials> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://clinicaltrials.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:clinicaltrials> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://clinicaltrials.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:clinicaltrials> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " http://clinicaltrials.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:clinicaltrials> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://clinicaltrials.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+<http://bio2rdf.org/namespace:clinicaltrials_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:clinicaltrials_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:clinicaltrials_resource" .
+<http://bio2rdf.org/namespace:clinicaltrials_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:clinicaltrials_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://clinicaltrials.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:clinicaltrials_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://clinicaltrials.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:clinicaltrials_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:clinicaltrials_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:clinicaltrials_vocabulary" .
+<http://bio2rdf.org/namespace:clinicaltrials_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:clinicaltrials_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://clinicaltrials.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:clinicaltrials_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://clinicaltrials.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
 
 <http://bio2rdf.org/namespace:ctd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:ctd> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:ctd> <http://purl.org/dc/elements/1.1/identifier> "namespace:ctd" .
-<http://bio2rdf.org/namespace:ctd> <http://purl.org/dc/elements/1.1/title> "The Comparative Toxicogenomics Database" .
-<http://bio2rdf.org/namespace:ctd> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint of The Comparative Toxicogenomics Database [namespace:ctd]" .
-<http://bio2rdf.org/namespace:ctd> <http://www.w3.org/2000/01/rdf-schema#comment> "CTD includes manually curated data describing cross-species chemical-gene/protein interactions and chemical- and gene-disease relationships to illuminate molecular mechanisms underlying variable susceptibility and environmentally influenced diseases." .
+<http://bio2rdf.org/namespace:ctd> <http://purl.org/dc/elements/1.1/title> "ctd" .
+<http://bio2rdf.org/namespace:ctd> <http://www.w3.org/2000/01/rdf-schema#label> "ctd SPARQL endpoint [namespace:ctd]" .
 <http://bio2rdf.org/namespace:ctd> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://ctd.bio2rdf.org/sparql> .
 
 <http://bio2rdf.org/namespace:ctd> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://ctd.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
@@ -37,12 +191,52 @@
 
 
 
+
+
+<http://bio2rdf.org/namespace:dbsnp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:dbsnp> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:dbsnp> <http://purl.org/dc/elements/1.1/identifier> "namespace:dbsnp" .
+<http://bio2rdf.org/namespace:dbsnp> <http://purl.org/dc/elements/1.1/title> "dbsnp" .
+<http://bio2rdf.org/namespace:dbsnp> <http://www.w3.org/2000/01/rdf-schema#label> "dbsnp SPARQL endpoint [namespace:dbsnp]" .
+<http://bio2rdf.org/namespace:dbsnp> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://dbsnp.bio2rdf.org/sparql> .
+
+<http://bio2rdf.org/namespace:dbsnp> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://dbsnp.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:dbsnp> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://dbsnp.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:dbsnp> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://dbsnp.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:dbsnp> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://dbsnp.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:dbsnp> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://dbsnp.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:dbsnp> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " http://dbsnp.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:dbsnp> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://dbsnp.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+<http://bio2rdf.org/namespace:dbsnp_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:dbsnp_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:dbsnp_resource" .
+<http://bio2rdf.org/namespace:dbsnp_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:dbsnp_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://dbsnp.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:dbsnp_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://dbsnp.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:dbsnp_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:dbsnp_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:dbsnp_vocabulary" .
+<http://bio2rdf.org/namespace:dbsnp_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:dbsnp_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://dbsnp.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:dbsnp_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://dbsnp.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+
 <http://bio2rdf.org/namespace:drugbank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:drugbank> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:drugbank> <http://purl.org/dc/elements/1.1/identifier> "namespace:drugbank" .
-<http://bio2rdf.org/namespace:drugbank> <http://purl.org/dc/elements/1.1/title> "DrugBank" .
-<http://bio2rdf.org/namespace:drugbank> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint drugbank [namespace:drugbank]" .
-<http://bio2rdf.org/namespace:drugbank> <http://www.w3.org/2000/01/rdf-schema#comment> "The DrugBank database is a bioinformatics and chemoinformatics resource that combines detailed drug (i.e. chemical, pharmacological and pharmaceutical) data with comprehensive drug target (i.e. sequence, structure, and pathway) information." .
+<http://bio2rdf.org/namespace:drugbank> <http://purl.org/dc/elements/1.1/title> "drugbank" .
+<http://bio2rdf.org/namespace:drugbank> <http://www.w3.org/2000/01/rdf-schema#label> "drugbank SPARQL endpoint [namespace:drugbank]" .
 <http://bio2rdf.org/namespace:drugbank> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://drugbank.bio2rdf.org/sparql> .
 
 <http://bio2rdf.org/namespace:drugbank> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://drugbank.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
@@ -77,12 +271,89 @@
 
 
 
+<http://bio2rdf.org/namespace:genage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:genage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:genage> <http://purl.org/dc/elements/1.1/identifier> "namespace:genage" .
+<http://bio2rdf.org/namespace:genage> <http://purl.org/dc/elements/1.1/title> "genage" .
+<http://bio2rdf.org/namespace:genage> <http://www.w3.org/2000/01/rdf-schema#label> "genage SPARQL endpoint [namespace:genage]" .
+<http://bio2rdf.org/namespace:genage> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://genage.bio2rdf.org/sparql> .
+
+<http://bio2rdf.org/namespace:genage> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://genage.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:genage> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://genage.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:genage> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://genage.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:genage> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://genage.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:genage> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://genage.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:genage> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " http://genage.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:genage> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://genage.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+<http://bio2rdf.org/namespace:genage_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:genage_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:genage_resource" .
+<http://bio2rdf.org/namespace:genage_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:genage_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://genage.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:genage_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://genage.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:genage_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:genage_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:genage_vocabulary" .
+<http://bio2rdf.org/namespace:genage_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:genage_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://genage.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:genage_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://genage.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+
+<http://bio2rdf.org/namespace:gendr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:gendr> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:gendr> <http://purl.org/dc/elements/1.1/identifier> "namespace:gendr" .
+<http://bio2rdf.org/namespace:gendr> <http://purl.org/dc/elements/1.1/title> "gendr" .
+<http://bio2rdf.org/namespace:gendr> <http://www.w3.org/2000/01/rdf-schema#label> "gendr SPARQL endpoint [namespace:gendr]" .
+<http://bio2rdf.org/namespace:gendr> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://gendr.bio2rdf.org/sparql> .
+
+<http://bio2rdf.org/namespace:gendr> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://gendr.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:gendr> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://gendr.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:gendr> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://gendr.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:gendr> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://gendr.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:gendr> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://gendr.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:gendr> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " http://gendr.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:gendr> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://gendr.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+<http://bio2rdf.org/namespace:gendr_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:gendr_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:gendr_resource" .
+<http://bio2rdf.org/namespace:gendr_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:gendr_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://gendr.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:gendr_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://gendr.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:gendr_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:gendr_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:gendr_vocabulary" .
+<http://bio2rdf.org/namespace:gendr_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:gendr_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://gendr.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:gendr_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://gendr.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+
 <http://bio2rdf.org/namespace:goa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:goa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:goa> <http://purl.org/dc/elements/1.1/identifier> "namespace:goa" .
-<http://bio2rdf.org/namespace:goa> <http://purl.org/dc/elements/1.1/title> "Gene Ontology Annotation" .
-<http://bio2rdf.org/namespace:goa> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint Gene Ontology Annotation [namespace:goa]" .
-<http://bio2rdf.org/namespace:goa> <http://www.w3.org/2000/01/rdf-schema#comment> "The GOA (Gene Ontology Annotation) project provides high-quality Gene Ontology (GO) annotations to proteins in the UniProt Knowledgebase (UniProtKB) and International Protein Index (IPI). This involves electronic annotation and the integration of high-quality manual GO annotation from all GO Consortium model organism groups and specialist groups." .
+<http://bio2rdf.org/namespace:goa> <http://purl.org/dc/elements/1.1/title> "goa" .
+<http://bio2rdf.org/namespace:goa> <http://www.w3.org/2000/01/rdf-schema#label> "goa SPARQL endpoint [namespace:goa]" .
 <http://bio2rdf.org/namespace:goa> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://goa.bio2rdf.org/sparql> .
 
 <http://bio2rdf.org/namespace:goa> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://goa.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
@@ -115,12 +386,13 @@
 
 
 
+
+
 <http://bio2rdf.org/namespace:hgnc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:hgnc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:hgnc> <http://purl.org/dc/elements/1.1/identifier> "namespace:hgnc" .
-<http://bio2rdf.org/namespace:hgnc> <http://purl.org/dc/elements/1.1/title> "HUGO Gene Nomenclature Committee" .
-<http://bio2rdf.org/namespace:hgnc> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint HUGO Gene Nomenclature Committee [namespace:hgnc]" .
-<http://bio2rdf.org/namespace:hgnc> <http://www.w3.org/2000/01/rdf-schema#comment> "The HGNC gives unique and meaningful names to every human gene. For each known human gene we approve a gene name and symbol (short-form abbreviation)." .
+<http://bio2rdf.org/namespace:hgnc> <http://purl.org/dc/elements/1.1/title> "hgnc" .
+<http://bio2rdf.org/namespace:hgnc> <http://www.w3.org/2000/01/rdf-schema#label> "hgnc SPARQL endpoint [namespace:hgnc]" .
 <http://bio2rdf.org/namespace:hgnc> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://hgnc.bio2rdf.org/sparql> .
 
 <http://bio2rdf.org/namespace:hgnc> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://hgnc.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
@@ -153,12 +425,13 @@
 
 
 
+
+
 <http://bio2rdf.org/namespace:homologene> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:homologene> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:homologene> <http://purl.org/dc/elements/1.1/identifier> "namespace:homologene" .
-<http://bio2rdf.org/namespace:homologene> <http://purl.org/dc/elements/1.1/title> "HomoloGene" .
-<http://bio2rdf.org/namespace:homologene> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint HomoloGene [namespace:homologene]" .
-<http://bio2rdf.org/namespace:homologene> <http://www.w3.org/2000/01/rdf-schema#comment> "HomoloGene, a tool of the National Center for Biotechnology Information (NCBI), is a system for automated detection of homologs (similarity attributable to descent from a common ancestor) among the annotated genes of several completely sequenced eukaryotic genomes. The HomoloGene processing consists of the protein analysis from the input organisms. Sequences are compared using blastp, then matched up and put into groups, using a taxonomic tree built from sequence similarity, where closer related organisms are matched up first, and then further organisms are added to the tree." .
+<http://bio2rdf.org/namespace:homologene> <http://purl.org/dc/elements/1.1/title> "homologene" .
+<http://bio2rdf.org/namespace:homologene> <http://www.w3.org/2000/01/rdf-schema#label> "homologene SPARQL endpoint [namespace:homologene]" .
 <http://bio2rdf.org/namespace:homologene> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://homologene.bio2rdf.org/sparql> .
 
 <http://bio2rdf.org/namespace:homologene> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://homologene.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
@@ -191,12 +464,13 @@
 
 
 
+
+
 <http://bio2rdf.org/namespace:interpro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:interpro> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:interpro> <http://purl.org/dc/elements/1.1/identifier> "namespace:interpro" .
-<http://bio2rdf.org/namespace:interpro> <http://purl.org/dc/elements/1.1/title> "InterPro" .
-<http://bio2rdf.org/namespace:interpro> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint InterPro [namespace:interpro]" .
-<http://bio2rdf.org/namespace:interpro> <http://www.w3.org/2000/01/rdf-schema#comment> "InterPro is an integrated database of predictive protein "signatures" used for the classification and automatic annotation of proteins and genomes. InterPro classifies sequences at superfamily, family and subfamily levels, predicting the occurrence of functional domains, repeats and important sites." .
+<http://bio2rdf.org/namespace:interpro> <http://purl.org/dc/elements/1.1/title> "interpro" .
+<http://bio2rdf.org/namespace:interpro> <http://www.w3.org/2000/01/rdf-schema#label> "interpro SPARQL endpoint [namespace:interpro]" .
 <http://bio2rdf.org/namespace:interpro> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://interpro.bio2rdf.org/sparql> .
 
 <http://bio2rdf.org/namespace:interpro> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://interpro.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
@@ -229,12 +503,13 @@
 
 
 
+
+
 <http://bio2rdf.org/namespace:iproclass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:iproclass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:iproclass> <http://purl.org/dc/elements/1.1/identifier> "namespace:iproclass" .
-<http://bio2rdf.org/namespace:iproclass> <http://purl.org/dc/elements/1.1/title> "iProClass" .
-<http://bio2rdf.org/namespace:iproclass> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint iProClass [namespace:iproclass]" .
-<http://bio2rdf.org/namespace:iproclass> <http://www.w3.org/2000/01/rdf-schema#comment> "The iProClass database provides value-added information reports for UniProtKB and unique UniParc proteins, with links to over 90 biological databases, including databases for protein families, functions and pathways, interactions, structures and structural classifications, genes and genomes, ontologies, literature, and taxonomy." .
+<http://bio2rdf.org/namespace:iproclass> <http://purl.org/dc/elements/1.1/title> "iproclass" .
+<http://bio2rdf.org/namespace:iproclass> <http://www.w3.org/2000/01/rdf-schema#label> "iproclass SPARQL endpoint [namespace:iproclass]" .
 <http://bio2rdf.org/namespace:iproclass> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://iproclass.bio2rdf.org/sparql> .
 
 <http://bio2rdf.org/namespace:iproclass> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://iproclass.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
@@ -266,12 +541,14 @@
 
 
 
+
+
+
 <http://bio2rdf.org/namespace:irefindex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:irefindex> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:irefindex> <http://purl.org/dc/elements/1.1/identifier> "namespace:irefindex" .
-<http://bio2rdf.org/namespace:irefindex> <http://purl.org/dc/elements/1.1/title> "iRefIndex" .
-<http://bio2rdf.org/namespace:irefindex> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint iRefIndex [namespace:irefindex]" .
-<http://bio2rdf.org/namespace:irefindex> <http://www.w3.org/2000/01/rdf-schema#comment> "iRefIndex provides an index of protein interactions available in a number of primary interaction databases including BIND, BioGRID, CORUM, DIP, HPRD, InnateDB, IntAct, MatrixDB, MINT, MPact, MPIDB, MPPI and OPHID." .
+<http://bio2rdf.org/namespace:irefindex> <http://purl.org/dc/elements/1.1/title> "irefindex" .
+<http://bio2rdf.org/namespace:irefindex> <http://www.w3.org/2000/01/rdf-schema#label> "irefindex SPARQL endpoint [namespace:irefindex]" .
 <http://bio2rdf.org/namespace:irefindex> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://irefindex.bio2rdf.org/sparql> .
 
 <http://bio2rdf.org/namespace:irefindex> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://irefindex.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
@@ -305,12 +582,51 @@
 
 
 
+
+<http://bio2rdf.org/namespace:lsr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:lsr> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:lsr> <http://purl.org/dc/elements/1.1/identifier> "namespace:lsr" .
+<http://bio2rdf.org/namespace:lsr> <http://purl.org/dc/elements/1.1/title> "lsr" .
+<http://bio2rdf.org/namespace:lsr> <http://www.w3.org/2000/01/rdf-schema#label> "lsr SPARQL endpoint [namespace:lsr]" .
+<http://bio2rdf.org/namespace:lsr> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://lsr.bio2rdf.org/sparql> .
+
+<http://bio2rdf.org/namespace:lsr> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://lsr.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:lsr> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://lsr.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:lsr> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://lsr.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:lsr> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://lsr.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:lsr> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://lsr.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:lsr> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " http://lsr.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:lsr> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://lsr.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+<http://bio2rdf.org/namespace:lsr_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:lsr_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:lsr_resource" .
+<http://bio2rdf.org/namespace:lsr_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:lsr_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://lsr.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:lsr_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://lsr.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:lsr_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:lsr_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:lsr_vocabulary" .
+<http://bio2rdf.org/namespace:lsr_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:lsr_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://lsr.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:lsr_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://lsr.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+
 <http://bio2rdf.org/namespace:mesh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:mesh> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:mesh> <http://purl.org/dc/elements/1.1/identifier> "namespace:mesh" .
-<http://bio2rdf.org/namespace:mesh> <http://purl.org/dc/elements/1.1/title> "Medical Subject Headings (MeSH)" .
-<http://bio2rdf.org/namespace:mesh> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint Medical Subject Headings [namespace:mesh]" .
-<http://bio2rdf.org/namespace:mesh> <http://www.w3.org/2000/01/rdf-schema#comment> "The Medical Subject Headings (MeSH) thesaurus is a controlled vocabulary produced by the National Library of Medicine and used for indexing, cataloging, and searching for biomedical and health-related information and documents. 2014 MeSH includes the subject descriptors appearing in MEDLINE/PubMed, the NLM catalog database, and other NLM databases." .
+<http://bio2rdf.org/namespace:mesh> <http://purl.org/dc/elements/1.1/title> "mesh" .
+<http://bio2rdf.org/namespace:mesh> <http://www.w3.org/2000/01/rdf-schema#label> "mesh SPARQL endpoint [namespace:mesh]" .
 <http://bio2rdf.org/namespace:mesh> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://mesh.bio2rdf.org/sparql> .
 
 <http://bio2rdf.org/namespace:mesh> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://mesh.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
@@ -343,12 +659,13 @@
 
 
 
+
+
 <http://bio2rdf.org/namespace:mgi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:mgi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:mgi> <http://purl.org/dc/elements/1.1/identifier> "namespace:mgi" .
-<http://bio2rdf.org/namespace:mgi> <http://purl.org/dc/elements/1.1/title> "Mouse Genome Database (MGI)" .
-<http://bio2rdf.org/namespace:mgi> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint Mouse Genome Database [namespace:mgi]" .
-<http://bio2rdf.org/namespace:mgi> <http://www.w3.org/2000/01/rdf-schema#comment> "The Mouse Genome Database (MGD) project includes data on gene characterization, nomenclature, mapping, gene homologies among mammals, sequence links, phenotypes, allelic variants and mutants, and strain data. " .
+<http://bio2rdf.org/namespace:mgi> <http://purl.org/dc/elements/1.1/title> "mgi" .
+<http://bio2rdf.org/namespace:mgi> <http://www.w3.org/2000/01/rdf-schema#label> "mgi SPARQL endpoint [namespace:mgi]" .
 <http://bio2rdf.org/namespace:mgi> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://mgi.bio2rdf.org/sparql> .
 
 <http://bio2rdf.org/namespace:mgi> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://mgi.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
@@ -380,16 +697,62 @@
 
 
 
-<http://bio2rdf.org/namespace:ndc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
-<http://bio2rdf.org/namespace:ndc> <http://purl.org/dc/elements/1.1/identifier> "namespace:ndc" .
-<http://bio2rdf.org/namespace:ndc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
 
-<http://bio2rdf.org/namespace:ndc> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint ndc [namespace:ndc]" .
+
+
+<http://bio2rdf.org/namespace:ncbigene> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:ncbigene> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:ncbigene> <http://purl.org/dc/elements/1.1/identifier> "namespace:ncbigene" .
+<http://bio2rdf.org/namespace:ncbigene> <http://purl.org/dc/elements/1.1/title> "ncbigene" .
+<http://bio2rdf.org/namespace:ncbigene> <http://www.w3.org/2000/01/rdf-schema#label> "ncbigene SPARQL endpoint [namespace:ncbigene]" .
+<http://bio2rdf.org/namespace:ncbigene> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://ncbigene.bio2rdf.org/sparql> .
+
+<http://bio2rdf.org/namespace:ncbigene> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://ncbigene.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:ncbigene> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://ncbigene.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:ncbigene> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://ncbigene.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:ncbigene> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://ncbigene.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:ncbigene> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://ncbigene.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:ncbigene> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " http://ncbigene.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:ncbigene> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://ncbigene.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+<http://bio2rdf.org/namespace:ncbigene_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:ncbigene_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:ncbigene_resource" .
+<http://bio2rdf.org/namespace:ncbigene_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:ncbigene_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://ncbigene.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:ncbigene_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://ncbigene.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:ncbigene_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:ncbigene_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:ncbigene_vocabulary" .
+<http://bio2rdf.org/namespace:ncbigene_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:ncbigene_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://ncbigene.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:ncbigene_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://ncbigene.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+
+<http://bio2rdf.org/namespace:ndc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:ndc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:ndc> <http://purl.org/dc/elements/1.1/identifier> "namespace:ndc" .
+<http://bio2rdf.org/namespace:ndc> <http://purl.org/dc/elements/1.1/title> "ndc" .
+<http://bio2rdf.org/namespace:ndc> <http://www.w3.org/2000/01/rdf-schema#label> "ndc SPARQL endpoint [namespace:ndc]" .
 <http://bio2rdf.org/namespace:ndc> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://ndc.bio2rdf.org/sparql> .
 
 <http://bio2rdf.org/namespace:ndc> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://ndc.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
 
+<http://bio2rdf.org/namespace:ndc> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://ndc.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
 <http://bio2rdf.org/namespace:ndc> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://ndc.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:ndc> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://ndc.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
 
 <http://bio2rdf.org/namespace:ndc> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://ndc.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
 
@@ -401,30 +764,34 @@
 <http://bio2rdf.org/namespace:ndc_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:ndc_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:ndc_resource" .
 <http://bio2rdf.org/namespace:ndc_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
-
 <http://bio2rdf.org/namespace:ndc_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://ndc.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
-
 <http://bio2rdf.org/namespace:ndc_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://ndc.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
-
 
 <http://bio2rdf.org/namespace:ndc_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:ndc_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:ndc_vocabulary" .
 <http://bio2rdf.org/namespace:ndc_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
-
 <http://bio2rdf.org/namespace:ndc_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://ndc.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
-
 <http://bio2rdf.org/namespace:ndc_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://ndc.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
 
-<http://bio2rdf.org/namespace:omim> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
-<http://bio2rdf.org/namespace:omim> <http://purl.org/dc/elements/1.1/identifier> "namespace:omim" .
-<http://bio2rdf.org/namespace:omim> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
 
-<http://bio2rdf.org/namespace:omim> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint omim [namespace:omim]" .
+
+
+
+
+<http://bio2rdf.org/namespace:omim> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:omim> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:omim> <http://purl.org/dc/elements/1.1/identifier> "namespace:omim" .
+<http://bio2rdf.org/namespace:omim> <http://purl.org/dc/elements/1.1/title> "omim" .
+<http://bio2rdf.org/namespace:omim> <http://www.w3.org/2000/01/rdf-schema#label> "omim SPARQL endpoint [namespace:omim]" .
 <http://bio2rdf.org/namespace:omim> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://omim.bio2rdf.org/sparql> .
 
 <http://bio2rdf.org/namespace:omim> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://omim.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
 
+<http://bio2rdf.org/namespace:omim> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://omim.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
 <http://bio2rdf.org/namespace:omim> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://omim.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:omim> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://omim.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
 
 <http://bio2rdf.org/namespace:omim> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://omim.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
 
@@ -436,30 +803,112 @@
 <http://bio2rdf.org/namespace:omim_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:omim_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:omim_resource" .
 <http://bio2rdf.org/namespace:omim_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
-
 <http://bio2rdf.org/namespace:omim_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://omim.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
-
 <http://bio2rdf.org/namespace:omim_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://omim.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
-
 
 <http://bio2rdf.org/namespace:omim_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:omim_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:omim_vocabulary" .
 <http://bio2rdf.org/namespace:omim_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
-
 <http://bio2rdf.org/namespace:omim_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://omim.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
-
 <http://bio2rdf.org/namespace:omim_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://omim.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
 
-<http://bio2rdf.org/namespace:pharmgkb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
-<http://bio2rdf.org/namespace:pharmgkb> <http://purl.org/dc/elements/1.1/identifier> "namespace:pharmgkb" .
-<http://bio2rdf.org/namespace:pharmgkb> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
 
-<http://bio2rdf.org/namespace:pharmgkb> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint pharmgkb [namespace:pharmgkb]" .
+
+
+
+
+<http://bio2rdf.org/namespace:pathwaycommons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:pathwaycommons> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:pathwaycommons> <http://purl.org/dc/elements/1.1/identifier> "namespace:pathwaycommons" .
+<http://bio2rdf.org/namespace:pathwaycommons> <http://purl.org/dc/elements/1.1/title> "pathwaycommons" .
+<http://bio2rdf.org/namespace:pathwaycommons> <http://www.w3.org/2000/01/rdf-schema#label> "pathwaycommons SPARQL endpoint [namespace:pathwaycommons]" .
+<http://bio2rdf.org/namespace:pathwaycommons> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://pathwaycommons.bio2rdf.org/sparql> .
+
+<http://bio2rdf.org/namespace:pathwaycommons> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://pathwaycommons.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:pathwaycommons> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://pathwaycommons.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:pathwaycommons> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://pathwaycommons.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:pathwaycommons> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://pathwaycommons.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:pathwaycommons> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://pathwaycommons.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:pathwaycommons> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " http://pathwaycommons.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:pathwaycommons> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://pathwaycommons.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+<http://bio2rdf.org/namespace:pathwaycommons_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:pathwaycommons_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:pathwaycommons_resource" .
+<http://bio2rdf.org/namespace:pathwaycommons_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:pathwaycommons_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://pathwaycommons.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:pathwaycommons_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://pathwaycommons.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:pathwaycommons_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:pathwaycommons_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:pathwaycommons_vocabulary" .
+<http://bio2rdf.org/namespace:pathwaycommons_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:pathwaycommons_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://pathwaycommons.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:pathwaycommons_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://pathwaycommons.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+
+<http://bio2rdf.org/namespace:pdb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:pdb> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:pdb> <http://purl.org/dc/elements/1.1/identifier> "namespace:pdb" .
+<http://bio2rdf.org/namespace:pdb> <http://purl.org/dc/elements/1.1/title> "pdb" .
+<http://bio2rdf.org/namespace:pdb> <http://www.w3.org/2000/01/rdf-schema#label> "pdb SPARQL endpoint [namespace:pdb]" .
+<http://bio2rdf.org/namespace:pdb> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://pdb.bio2rdf.org/sparql> .
+
+<http://bio2rdf.org/namespace:pdb> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://pdb.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:pdb> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://pdb.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:pdb> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://pdb.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:pdb> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://pdb.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:pdb> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://pdb.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:pdb> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " http://pdb.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:pdb> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://pdb.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+<http://bio2rdf.org/namespace:pdb_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:pdb_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:pdb_resource" .
+<http://bio2rdf.org/namespace:pdb_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:pdb_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://pdb.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:pdb_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://pdb.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:pdb_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:pdb_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:pdb_vocabulary" .
+<http://bio2rdf.org/namespace:pdb_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:pdb_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://pdb.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:pdb_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://pdb.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+
+<http://bio2rdf.org/namespace:pharmgkb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:pharmgkb> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:pharmgkb> <http://purl.org/dc/elements/1.1/identifier> "namespace:pharmgkb" .
+<http://bio2rdf.org/namespace:pharmgkb> <http://purl.org/dc/elements/1.1/title> "pharmgkb" .
+<http://bio2rdf.org/namespace:pharmgkb> <http://www.w3.org/2000/01/rdf-schema#label> "pharmgkb SPARQL endpoint [namespace:pharmgkb]" .
 <http://bio2rdf.org/namespace:pharmgkb> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://pharmgkb.bio2rdf.org/sparql> .
 
 <http://bio2rdf.org/namespace:pharmgkb> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://pharmgkb.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
 
+<http://bio2rdf.org/namespace:pharmgkb> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://pharmgkb.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
 <http://bio2rdf.org/namespace:pharmgkb> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://pharmgkb.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:pharmgkb> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://pharmgkb.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
 
 <http://bio2rdf.org/namespace:pharmgkb> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://pharmgkb.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
 
@@ -471,30 +920,73 @@
 <http://bio2rdf.org/namespace:pharmgkb_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:pharmgkb_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:pharmgkb_resource" .
 <http://bio2rdf.org/namespace:pharmgkb_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
-
 <http://bio2rdf.org/namespace:pharmgkb_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://pharmgkb.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
-
 <http://bio2rdf.org/namespace:pharmgkb_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://pharmgkb.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
-
 
 <http://bio2rdf.org/namespace:pharmgkb_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:pharmgkb_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:pharmgkb_vocabulary" .
 <http://bio2rdf.org/namespace:pharmgkb_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
-
 <http://bio2rdf.org/namespace:pharmgkb_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://pharmgkb.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
-
 <http://bio2rdf.org/namespace:pharmgkb_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://pharmgkb.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
 
-<http://bio2rdf.org/namespace:pubmed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
-<http://bio2rdf.org/namespace:pubmed> <http://purl.org/dc/elements/1.1/identifier> "namespace:pubmed" .
-<http://bio2rdf.org/namespace:pubmed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
 
-<http://bio2rdf.org/namespace:pubmed> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint pubmed [namespace:pubmed]" .
+
+
+
+
+<http://bio2rdf.org/namespace:pubchem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:pubchem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:pubchem> <http://purl.org/dc/elements/1.1/identifier> "namespace:pubchem" .
+<http://bio2rdf.org/namespace:pubchem> <http://purl.org/dc/elements/1.1/title> "pubchem" .
+<http://bio2rdf.org/namespace:pubchem> <http://www.w3.org/2000/01/rdf-schema#label> "pubchem SPARQL endpoint [namespace:pubchem]" .
+<http://bio2rdf.org/namespace:pubchem> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://pubchem.bio2rdf.org/sparql> .
+
+<http://bio2rdf.org/namespace:pubchem> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://pubchem.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:pubchem> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://pubchem.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:pubchem> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://pubchem.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:pubchem> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://pubchem.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:pubchem> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://pubchem.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:pubchem> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " http://pubchem.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:pubchem> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://pubchem.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+<http://bio2rdf.org/namespace:pubchem_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:pubchem_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:pubchem_resource" .
+<http://bio2rdf.org/namespace:pubchem_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:pubchem_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://pubchem.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:pubchem_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://pubchem.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:pubchem_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:pubchem_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:pubchem_vocabulary" .
+<http://bio2rdf.org/namespace:pubchem_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:pubchem_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://pubchem.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:pubchem_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://pubchem.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+
+<http://bio2rdf.org/namespace:pubmed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:pubmed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:pubmed> <http://purl.org/dc/elements/1.1/identifier> "namespace:pubmed" .
+<http://bio2rdf.org/namespace:pubmed> <http://purl.org/dc/elements/1.1/title> "pubmed" .
+<http://bio2rdf.org/namespace:pubmed> <http://www.w3.org/2000/01/rdf-schema#label> "pubmed SPARQL endpoint [namespace:pubmed]" .
 <http://bio2rdf.org/namespace:pubmed> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://pubmed.bio2rdf.org/sparql> .
 
 <http://bio2rdf.org/namespace:pubmed> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://pubmed.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
 
+<http://bio2rdf.org/namespace:pubmed> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://pubmed.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
 <http://bio2rdf.org/namespace:pubmed> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://pubmed.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:pubmed> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://pubmed.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
 
 <http://bio2rdf.org/namespace:pubmed> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://pubmed.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
 
@@ -506,30 +998,73 @@
 <http://bio2rdf.org/namespace:pubmed_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:pubmed_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:pubmed_resource" .
 <http://bio2rdf.org/namespace:pubmed_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
-
 <http://bio2rdf.org/namespace:pubmed_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://pubmed.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
-
 <http://bio2rdf.org/namespace:pubmed_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://pubmed.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
-
 
 <http://bio2rdf.org/namespace:pubmed_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:pubmed_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:pubmed_vocabulary" .
 <http://bio2rdf.org/namespace:pubmed_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
-
 <http://bio2rdf.org/namespace:pubmed_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://pubmed.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
-
 <http://bio2rdf.org/namespace:pubmed_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://pubmed.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
 
-<http://bio2rdf.org/namespace:sabiork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
-<http://bio2rdf.org/namespace:sabiork> <http://purl.org/dc/elements/1.1/identifier> "namespace:sabiork" .
-<http://bio2rdf.org/namespace:sabiork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
 
-<http://bio2rdf.org/namespace:sabiork> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint sabiork [namespace:sabiork]" .
+
+
+
+
+<http://bio2rdf.org/namespace:refseq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:refseq> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:refseq> <http://purl.org/dc/elements/1.1/identifier> "namespace:refseq" .
+<http://bio2rdf.org/namespace:refseq> <http://purl.org/dc/elements/1.1/title> "refseq" .
+<http://bio2rdf.org/namespace:refseq> <http://www.w3.org/2000/01/rdf-schema#label> "refseq SPARQL endpoint [namespace:refseq]" .
+<http://bio2rdf.org/namespace:refseq> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://refseq.bio2rdf.org/sparql> .
+
+<http://bio2rdf.org/namespace:refseq> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://refseq.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:refseq> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://refseq.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:refseq> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://refseq.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:refseq> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://refseq.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:refseq> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://refseq.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:refseq> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " http://refseq.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:refseq> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://refseq.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+<http://bio2rdf.org/namespace:refseq_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:refseq_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:refseq_resource" .
+<http://bio2rdf.org/namespace:refseq_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:refseq_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://refseq.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:refseq_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://refseq.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:refseq_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:refseq_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:refseq_vocabulary" .
+<http://bio2rdf.org/namespace:refseq_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:refseq_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://refseq.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:refseq_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://refseq.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+
+<http://bio2rdf.org/namespace:sabiork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:sabiork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:sabiork> <http://purl.org/dc/elements/1.1/identifier> "namespace:sabiork" .
+<http://bio2rdf.org/namespace:sabiork> <http://purl.org/dc/elements/1.1/title> "sabiork" .
+<http://bio2rdf.org/namespace:sabiork> <http://www.w3.org/2000/01/rdf-schema#label> "sabiork SPARQL endpoint [namespace:sabiork]" .
 <http://bio2rdf.org/namespace:sabiork> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://sabiork.bio2rdf.org/sparql> .
 
 <http://bio2rdf.org/namespace:sabiork> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://sabiork.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
 
+<http://bio2rdf.org/namespace:sabiork> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://sabiork.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
 <http://bio2rdf.org/namespace:sabiork> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://sabiork.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:sabiork> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://sabiork.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
 
 <http://bio2rdf.org/namespace:sabiork> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://sabiork.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
 
@@ -541,30 +1076,34 @@
 <http://bio2rdf.org/namespace:sabiork_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:sabiork_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:sabiork_resource" .
 <http://bio2rdf.org/namespace:sabiork_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
-
 <http://bio2rdf.org/namespace:sabiork_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://sabiork.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
-
 <http://bio2rdf.org/namespace:sabiork_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://sabiork.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
-
 
 <http://bio2rdf.org/namespace:sabiork_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:sabiork_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:sabiork_vocabulary" .
 <http://bio2rdf.org/namespace:sabiork_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
-
 <http://bio2rdf.org/namespace:sabiork_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://sabiork.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
-
 <http://bio2rdf.org/namespace:sabiork_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://sabiork.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
 
-<http://bio2rdf.org/namespace:sgd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
-<http://bio2rdf.org/namespace:sgd> <http://purl.org/dc/elements/1.1/identifier> "namespace:sgd" .
-<http://bio2rdf.org/namespace:sgd> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
 
-<http://bio2rdf.org/namespace:sgd> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint sgd [namespace:sgd]" .
+
+
+
+
+<http://bio2rdf.org/namespace:sgd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:sgd> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:sgd> <http://purl.org/dc/elements/1.1/identifier> "namespace:sgd" .
+<http://bio2rdf.org/namespace:sgd> <http://purl.org/dc/elements/1.1/title> "sgd" .
+<http://bio2rdf.org/namespace:sgd> <http://www.w3.org/2000/01/rdf-schema#label> "sgd SPARQL endpoint [namespace:sgd]" .
 <http://bio2rdf.org/namespace:sgd> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://sgd.bio2rdf.org/sparql> .
 
 <http://bio2rdf.org/namespace:sgd> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://sgd.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
 
+<http://bio2rdf.org/namespace:sgd> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://sgd.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
 <http://bio2rdf.org/namespace:sgd> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://sgd.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:sgd> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://sgd.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
 
 <http://bio2rdf.org/namespace:sgd> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://sgd.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
 
@@ -576,30 +1115,73 @@
 <http://bio2rdf.org/namespace:sgd_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:sgd_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:sgd_resource" .
 <http://bio2rdf.org/namespace:sgd_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
-
 <http://bio2rdf.org/namespace:sgd_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://sgd.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
-
 <http://bio2rdf.org/namespace:sgd_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://sgd.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
-
 
 <http://bio2rdf.org/namespace:sgd_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:sgd_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:sgd_vocabulary" .
 <http://bio2rdf.org/namespace:sgd_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
-
 <http://bio2rdf.org/namespace:sgd_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://sgd.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
-
 <http://bio2rdf.org/namespace:sgd_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://sgd.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
 
-<http://bio2rdf.org/namespace:taxonomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
-<http://bio2rdf.org/namespace:taxonomy> <http://purl.org/dc/elements/1.1/identifier> "namespace:taxonomy" .
-<http://bio2rdf.org/namespace:taxonomy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
 
-<http://bio2rdf.org/namespace:taxonomy> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint taxonomy [namespace:taxonomy]" .
+
+
+
+
+<http://bio2rdf.org/namespace:sider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:sider> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:sider> <http://purl.org/dc/elements/1.1/identifier> "namespace:sider" .
+<http://bio2rdf.org/namespace:sider> <http://purl.org/dc/elements/1.1/title> "sider" .
+<http://bio2rdf.org/namespace:sider> <http://www.w3.org/2000/01/rdf-schema#label> "sider SPARQL endpoint [namespace:sider]" .
+<http://bio2rdf.org/namespace:sider> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://sider.bio2rdf.org/sparql> .
+
+<http://bio2rdf.org/namespace:sider> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://sider.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:sider> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://sider.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:sider> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://sider.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:sider> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://sider.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:sider> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://sider.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:sider> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " http://sider.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:sider> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://sider.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+<http://bio2rdf.org/namespace:sider_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:sider_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:sider_resource" .
+<http://bio2rdf.org/namespace:sider_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:sider_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://sider.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:sider_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://sider.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:sider_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:sider_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:sider_vocabulary" .
+<http://bio2rdf.org/namespace:sider_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:sider_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://sider.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:sider_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://sider.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+
+<http://bio2rdf.org/namespace:taxonomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:taxonomy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:taxonomy> <http://purl.org/dc/elements/1.1/identifier> "namespace:taxonomy" .
+<http://bio2rdf.org/namespace:taxonomy> <http://purl.org/dc/elements/1.1/title> "taxonomy" .
+<http://bio2rdf.org/namespace:taxonomy> <http://www.w3.org/2000/01/rdf-schema#label> "taxonomy SPARQL endpoint [namespace:taxonomy]" .
 <http://bio2rdf.org/namespace:taxonomy> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://taxonomy.bio2rdf.org/sparql> .
 
 <http://bio2rdf.org/namespace:taxonomy> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://taxonomy.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
 
+<http://bio2rdf.org/namespace:taxonomy> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://taxonomy.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
 <http://bio2rdf.org/namespace:taxonomy> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://taxonomy.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:taxonomy> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://taxonomy.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
 
 <http://bio2rdf.org/namespace:taxonomy> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://taxonomy.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
 
@@ -611,30 +1193,346 @@
 <http://bio2rdf.org/namespace:taxonomy_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:taxonomy_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:taxonomy_resource" .
 <http://bio2rdf.org/namespace:taxonomy_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
-
 <http://bio2rdf.org/namespace:taxonomy_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://taxonomy.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
-
 <http://bio2rdf.org/namespace:taxonomy_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://taxonomy.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
-
 
 <http://bio2rdf.org/namespace:taxonomy_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:taxonomy_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:taxonomy_vocabulary" .
 <http://bio2rdf.org/namespace:taxonomy_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
-
 <http://bio2rdf.org/namespace:taxonomy_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://taxonomy.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
-
 <http://bio2rdf.org/namespace:taxonomy_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://taxonomy.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
 
-<http://bio2rdf.org/namespace:toxkb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
-<http://bio2rdf.org/namespace:toxkb> <http://purl.org/dc/elements/1.1/identifier> "namespace:toxkb" .
-<http://bio2rdf.org/namespace:toxkb> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
 
-<http://bio2rdf.org/namespace:toxkb> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL endpoint toxkb [namespace:toxkb]" .
+
+
+
+
+<http://bio2rdf.org/namespace:unists> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:unists> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:unists> <http://purl.org/dc/elements/1.1/identifier> "namespace:unists" .
+<http://bio2rdf.org/namespace:unists> <http://purl.org/dc/elements/1.1/title> "unists" .
+<http://bio2rdf.org/namespace:unists> <http://www.w3.org/2000/01/rdf-schema#label> "unists SPARQL endpoint [namespace:unists]" .
+<http://bio2rdf.org/namespace:unists> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://unists.bio2rdf.org/sparql> .
+
+<http://bio2rdf.org/namespace:unists> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://unists.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:unists> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://unists.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:unists> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://unists.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:unists> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://unists.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:unists> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://unists.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:unists> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " http://unists.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:unists> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://unists.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+<http://bio2rdf.org/namespace:unists_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:unists_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:unists_resource" .
+<http://bio2rdf.org/namespace:unists_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:unists_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://unists.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:unists_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://unists.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:unists_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:unists_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:unists_vocabulary" .
+<http://bio2rdf.org/namespace:unists_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:unists_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://unists.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:unists_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://unists.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+
+<http://bio2rdf.org/namespace:wormbase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:wormbase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:wormbase> <http://purl.org/dc/elements/1.1/identifier> "namespace:wormbase" .
+<http://bio2rdf.org/namespace:wormbase> <http://purl.org/dc/elements/1.1/title> "wormbase" .
+<http://bio2rdf.org/namespace:wormbase> <http://www.w3.org/2000/01/rdf-schema#label> "wormbase SPARQL endpoint [namespace:wormbase]" .
+<http://bio2rdf.org/namespace:wormbase> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://wormbase.bio2rdf.org/sparql> .
+
+<http://bio2rdf.org/namespace:wormbase> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://wormbase.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:wormbase> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://wormbase.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:wormbase> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://wormbase.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:wormbase> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://wormbase.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:wormbase> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://wormbase.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:wormbase> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " http://wormbase.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:wormbase> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://wormbase.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+<http://bio2rdf.org/namespace:wormbase_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:wormbase_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:wormbase_resource" .
+<http://bio2rdf.org/namespace:wormbase_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:wormbase_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://wormbase.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:wormbase_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://wormbase.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:wormbase_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:wormbase_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:wormbase_vocabulary" .
+<http://bio2rdf.org/namespace:wormbase_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:wormbase_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://wormbase.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:wormbase_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://wormbase.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+
+<http://bio2rdf.org/namespace:atlas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:atlas> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:atlas> <http://purl.org/dc/elements/1.1/identifier> "namespace:atlas" .
+<http://bio2rdf.org/namespace:atlas> <http://purl.org/dc/elements/1.1/title> "atlas" .
+<http://bio2rdf.org/namespace:atlas> <http://www.w3.org/2000/01/rdf-schema#label> "atlas SPARQL endpoint [namespace:atlas]" .
+<http://bio2rdf.org/namespace:atlas> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://atlas.bio2rdf.org/sparql> .
+
+<http://bio2rdf.org/namespace:atlas> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://atlas.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:atlas> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://atlas.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:atlas> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://atlas.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:atlas> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://atlas.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:atlas> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://atlas.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:atlas> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " http://atlas.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:atlas> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://atlas.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+<http://bio2rdf.org/namespace:atlas_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:atlas_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:atlas_resource" .
+<http://bio2rdf.org/namespace:atlas_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:atlas_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://atlas.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:atlas_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://atlas.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:atlas_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:atlas_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:atlas_vocabulary" .
+<http://bio2rdf.org/namespace:atlas_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:atlas_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://atlas.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:atlas_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://atlas.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+
+<http://bio2rdf.org/namespace:ctd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:ctd> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:ctd> <http://purl.org/dc/elements/1.1/identifier> "namespace:ctd" .
+<http://bio2rdf.org/namespace:ctd> <http://purl.org/dc/elements/1.1/title> "ctd" .
+<http://bio2rdf.org/namespace:ctd> <http://www.w3.org/2000/01/rdf-schema#label> "ctd SPARQL endpoint [namespace:ctd]" .
+<http://bio2rdf.org/namespace:ctd> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://ctd.bio2rdf.org/sparql> .
+
+<http://bio2rdf.org/namespace:ctd> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://ctd.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:ctd> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://ctd.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:ctd> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://ctd.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:ctd> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://ctd.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:ctd> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://ctd.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:ctd> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " http://ctd.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:ctd> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://ctd.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+<http://bio2rdf.org/namespace:ctd_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:ctd_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:ctd_resource" .
+<http://bio2rdf.org/namespace:ctd_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:ctd_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://ctd.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:ctd_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://ctd.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:ctd_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:ctd_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:ctd_vocabulary" .
+<http://bio2rdf.org/namespace:ctd_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:ctd_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://ctd.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:ctd_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://ctd.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+
+<http://bio2rdf.org/namespace:gene> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:gene> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:gene> <http://purl.org/dc/elements/1.1/identifier> "namespace:gene" .
+<http://bio2rdf.org/namespace:gene> <http://purl.org/dc/elements/1.1/title> "gene" .
+<http://bio2rdf.org/namespace:gene> <http://www.w3.org/2000/01/rdf-schema#label> "gene SPARQL endpoint [namespace:gene]" .
+<http://bio2rdf.org/namespace:gene> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://gene.bio2rdf.org/sparql> .
+
+<http://bio2rdf.org/namespace:gene> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://gene.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:gene> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://gene.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:gene> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://gene.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:gene> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://gene.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:gene> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://gene.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:gene> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " http://gene.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:gene> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://gene.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+<http://bio2rdf.org/namespace:gene_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:gene_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:gene_resource" .
+<http://bio2rdf.org/namespace:gene_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:gene_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://gene.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:gene_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://gene.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:gene_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:gene_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:gene_vocabulary" .
+<http://bio2rdf.org/namespace:gene_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:gene_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://gene.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:gene_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://gene.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+
+<http://bio2rdf.org/namespace:genbank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:genbank> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:genbank> <http://purl.org/dc/elements/1.1/identifier> "namespace:genbank" .
+<http://bio2rdf.org/namespace:genbank> <http://purl.org/dc/elements/1.1/title> "genbank" .
+<http://bio2rdf.org/namespace:genbank> <http://www.w3.org/2000/01/rdf-schema#label> "genbank SPARQL endpoint [namespace:genbank]" .
+<http://bio2rdf.org/namespace:genbank> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://genbank.bio2rdf.org/sparql> .
+
+<http://bio2rdf.org/namespace:genbank> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://genbank.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:genbank> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://genbank.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:genbank> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://genbank.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:genbank> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://genbank.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:genbank> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://genbank.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:genbank> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " http://genbank.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:genbank> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://genbank.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+<http://bio2rdf.org/namespace:genbank_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:genbank_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:genbank_resource" .
+<http://bio2rdf.org/namespace:genbank_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:genbank_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://genbank.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:genbank_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://genbank.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:genbank_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:genbank_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:genbank_vocabulary" .
+<http://bio2rdf.org/namespace:genbank_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:genbank_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://genbank.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:genbank_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://genbank.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+
+<http://bio2rdf.org/namespace:hhpid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:hhpid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:hhpid> <http://purl.org/dc/elements/1.1/identifier> "namespace:hhpid" .
+<http://bio2rdf.org/namespace:hhpid> <http://purl.org/dc/elements/1.1/title> "hhpid" .
+<http://bio2rdf.org/namespace:hhpid> <http://www.w3.org/2000/01/rdf-schema#label> "hhpid SPARQL endpoint [namespace:hhpid]" .
+<http://bio2rdf.org/namespace:hhpid> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://hhpid.bio2rdf.org/sparql> .
+
+<http://bio2rdf.org/namespace:hhpid> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://hhpid.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:hhpid> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://hhpid.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:hhpid> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://hhpid.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:hhpid> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://hhpid.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:hhpid> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://hhpid.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:hhpid> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " http://hhpid.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:hhpid> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://hhpid.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+<http://bio2rdf.org/namespace:hhpid_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:hhpid_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:hhpid_resource" .
+<http://bio2rdf.org/namespace:hhpid_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:hhpid_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://hhpid.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:hhpid_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://hhpid.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:hhpid_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:hhpid_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:hhpid_vocabulary" .
+<http://bio2rdf.org/namespace:hhpid_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:hhpid_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://hhpid.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:hhpid_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://hhpid.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+
+<http://bio2rdf.org/namespace:kegg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:kegg> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:kegg> <http://purl.org/dc/elements/1.1/identifier> "namespace:kegg" .
+<http://bio2rdf.org/namespace:kegg> <http://purl.org/dc/elements/1.1/title> "kegg" .
+<http://bio2rdf.org/namespace:kegg> <http://www.w3.org/2000/01/rdf-schema#label> "kegg SPARQL endpoint [namespace:kegg]" .
+<http://bio2rdf.org/namespace:kegg> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://kegg.bio2rdf.org/sparql> .
+
+<http://bio2rdf.org/namespace:kegg> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://kegg.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:kegg> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://kegg.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:kegg> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://kegg.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:kegg> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://kegg.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:kegg> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://kegg.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:kegg> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " http://kegg.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:kegg> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://kegg.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+<http://bio2rdf.org/namespace:kegg_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:kegg_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:kegg_resource" .
+<http://bio2rdf.org/namespace:kegg_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:kegg_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://kegg.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:kegg_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://kegg.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:kegg_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:kegg_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:kegg_vocabulary" .
+<http://bio2rdf.org/namespace:kegg_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:kegg_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://kegg.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:kegg_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://kegg.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+
+<http://bio2rdf.org/namespace:toxkb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:toxkb> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:toxkb> <http://purl.org/dc/elements/1.1/identifier> "namespace:toxkb" .
+<http://bio2rdf.org/namespace:toxkb> <http://purl.org/dc/elements/1.1/title> "toxkb" .
+<http://bio2rdf.org/namespace:toxkb> <http://www.w3.org/2000/01/rdf-schema#label> "toxkb SPARQL endpoint [namespace:toxkb]" .
 <http://bio2rdf.org/namespace:toxkb> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://toxkb.bio2rdf.org/sparql> .
 
 <http://bio2rdf.org/namespace:toxkb> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://toxkb.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
 
+<http://bio2rdf.org/namespace:toxkb> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://toxkb.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
 <http://bio2rdf.org/namespace:toxkb> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://toxkb.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:toxkb> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://toxkb.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
 
 <http://bio2rdf.org/namespace:toxkb> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://toxkb.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
 
@@ -646,17 +1544,56 @@
 <http://bio2rdf.org/namespace:toxkb_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:toxkb_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:toxkb_resource" .
 <http://bio2rdf.org/namespace:toxkb_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
-
 <http://bio2rdf.org/namespace:toxkb_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://toxkb.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
-
 <http://bio2rdf.org/namespace:toxkb_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://toxkb.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
-
 
 <http://bio2rdf.org/namespace:toxkb_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:toxkb_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:toxkb_vocabulary" .
 <http://bio2rdf.org/namespace:toxkb_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
-
 <http://bio2rdf.org/namespace:toxkb_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://toxkb.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
-
 <http://bio2rdf.org/namespace:toxkb_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://toxkb.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
+
+<http://bio2rdf.org/namespace:uniprot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot" .
+<http://bio2rdf.org/namespace:uniprot> <http://purl.org/dc/elements/1.1/title> "uniprot" .
+<http://bio2rdf.org/namespace:uniprot> <http://www.w3.org/2000/01/rdf-schema#label> "uniprot SPARQL endpoint [namespace:uniprot]" .
+<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:endpoint> <http://uniprot.bio2rdf.org/sparql> .
+
+<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe_uri> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_links_uri> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fobject+%3D+%3C$URI$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_search> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0A%3Fobject+bif%3Acontains+%22%27$QUERY$%27%22+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_label> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+rdfs%3Alabel+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+
+<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniprot.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+<http://bio2rdf.org/namespace:uniprot_resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://resource.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_resource> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_resource" .
+<http://bio2rdf.org/namespace:uniprot_resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_resource> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniprot_resource> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniprot.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+<http://bio2rdf.org/namespace:uniprot_vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocabulary.bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_vocabulary> <http://purl.org/dc/elements/1.1/identifier> "namespace:uniprot_vocabulary" .
+<http://bio2rdf.org/namespace:uniprot_vocabulary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
+<http://bio2rdf.org/namespace:uniprot_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://uniprot.bio2rdf.org/sparql/?default-graph-uri=&query=CONSTRUCT+{%0D%0A%3Fsubject+rdf%3Atype+%3Chttp%3A%2F%2F$NS$.bio2rdf.org%2Fresource%3E+.%0D%0A%3Fsubject+dc%3Aidentifier+%22$NSID$%22+.%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.+%0D%0A}+WHERE+{%0D%0A%3Fsubject+%3Fpredicate+%3Fobject+.%0D%0AFILTER+%28%3Fsubject+%3D+%3Chttp%3A%2F%2Fbio2rdf.org%2F$NSID$%3E%29+.%0D%0A}&format=application%2Frdf%2Bxml&timeout=0&debug=on" .
+<http://bio2rdf.org/namespace:uniprot_vocabulary> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://uniprot.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
+
+
+
+
+
 
