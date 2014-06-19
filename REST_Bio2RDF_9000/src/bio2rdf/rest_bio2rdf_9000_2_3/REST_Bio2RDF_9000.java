@@ -92,7 +92,7 @@ import java.util.Comparator;
  20140429 VE 2.2 searchns and linksns services added, modification of reader_converter to accept REST PC responses. JSON LD conversion unactivated : compilation issues 
  20140428 FB 2.1 use url redirection link from dataset.bio2rdf.org <br>
  * @author test@talend.com
- * @version 5.4.1.r111943
+ * @version 5.5.0.r117820
  * @status 
  */
 public class REST_Bio2RDF_9000 implements TalendJob {
@@ -533,7 +533,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tFlowToIterate_3_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tFlowToIterate_3", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -543,7 +544,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tFixedFlowInput_6_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tFixedFlowInput_6", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -553,7 +555,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tRESTResponse_6_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tRESTResponse_6", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -563,7 +566,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tLogRow_2_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tLogRow_2", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -573,7 +577,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tJavaRow_5_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tJavaRow_5", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -583,7 +588,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tMap_2_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tMap_2", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -593,7 +599,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tFlowToIterate_4_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tFlowToIterate_4", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -603,7 +610,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tSparqlSelectRequest_4_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tSparqlSelectRequest_4", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -613,7 +621,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tMap_5_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tMap_5", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -623,7 +632,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tLogRow_16_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tLogRow_16", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -633,7 +643,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tReplace_3_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tReplace_3", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -643,7 +654,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tRESTResponse_2_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tRESTResponse_2", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -653,7 +665,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tFlowToIterate_14_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tFlowToIterate_14", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -663,7 +676,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tSparqlSelectRequest_5_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tSparqlSelectRequest_5", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -673,7 +687,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tReplace_7_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tReplace_7", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -683,7 +698,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tLogRow_20_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tLogRow_20", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -693,7 +709,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tFlowToIterate_15_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tFlowToIterate_15", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -703,7 +720,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tRunJob_4_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tRunJob_4", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -713,7 +731,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tRESTResponse_10_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tRESTResponse_10", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -723,7 +742,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tLogRow_21_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tLogRow_21", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -733,7 +753,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tLogRow_8_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tLogRow_8", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -743,7 +764,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tJavaRow_11_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tJavaRow_11", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -753,7 +775,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tFlowToIterate_12_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tFlowToIterate_12", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -763,7 +786,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tSparqlSelectRequest_6_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tSparqlSelectRequest_6", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -773,7 +797,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tReplace_6_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tReplace_6", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -783,7 +808,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tLogRow_18_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tLogRow_18", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -793,7 +819,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tFlowToIterate_13_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tFlowToIterate_13", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -803,7 +830,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tRunJob_3_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tRunJob_3", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -813,7 +841,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tRESTResponse_5_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tRESTResponse_5", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -823,7 +852,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tLogRow_14_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tLogRow_14", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -833,7 +863,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tJavaRow_12_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tJavaRow_12", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -843,7 +874,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tFlowToIterate_17_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tFlowToIterate_17", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -853,7 +885,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tSparqlSelectRequest_3_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tSparqlSelectRequest_3", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -863,7 +896,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tMap_4_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tMap_4", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -873,7 +907,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tLogRow_19_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tLogRow_19", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -883,7 +918,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tReplace_5_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tReplace_5", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -893,7 +929,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tRESTResponse_13_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tRESTResponse_13", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -903,7 +940,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tLogRow_9_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tLogRow_9", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -913,7 +951,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tJavaRow_3_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tJavaRow_3", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -923,7 +962,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tFlowToIterate_5_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tFlowToIterate_5", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -933,7 +973,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tSparqlSelectRequest_1_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tSparqlSelectRequest_1", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -943,7 +984,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tLogRow_15_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tLogRow_15", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -953,7 +995,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tJavaRow_6_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tJavaRow_6", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -963,7 +1006,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tJavaRow_4_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tJavaRow_4", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -973,7 +1017,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tRESTResponse_3_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tRESTResponse_3", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -983,7 +1028,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tFlowToIterate_18_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tFlowToIterate_18", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -993,7 +1039,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tFixedFlowInput_7_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tFixedFlowInput_7", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1003,7 +1050,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tRESTResponse_17_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tRESTResponse_17", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1013,7 +1061,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tLogRow_30_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tLogRow_30", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1023,7 +1072,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tJavaRow_18_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tJavaRow_18", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1033,7 +1083,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tFlowToIterate_29_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tFlowToIterate_29", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1043,7 +1094,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tRunJob_10_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tRunJob_10", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1053,7 +1105,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tRESTResponse_16_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tRESTResponse_16", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1063,7 +1116,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tLogRow_28_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tLogRow_28", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1073,7 +1127,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tJavaRow_17_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tJavaRow_17", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1083,7 +1138,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tFlowToIterate_26_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tFlowToIterate_26", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1093,7 +1149,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tRunJob_12_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tRunJob_12", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1103,7 +1160,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tRESTResponse_20_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tRESTResponse_20", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1113,7 +1171,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tLogRow_31_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tLogRow_31", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1123,7 +1182,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tJavaRow_16_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tJavaRow_16", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1133,7 +1193,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tFlowToIterate_25_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tFlowToIterate_25", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1143,7 +1204,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tRunJob_9_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tRunJob_9", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1153,7 +1215,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tRESTResponse_15_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tRESTResponse_15", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1163,7 +1226,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tLogRow_5_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tLogRow_5", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1173,7 +1237,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tJavaRow_7_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tJavaRow_7", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1183,7 +1248,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tFlowToIterate_7_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tFlowToIterate_7", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1193,7 +1259,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tSparqlSelectRequest_2_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tSparqlSelectRequest_2", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1203,7 +1270,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tLogRow_6_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tLogRow_6", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1213,7 +1281,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tMap_3_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tMap_3", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1223,7 +1292,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tJavaRow_8_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tJavaRow_8", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1233,7 +1303,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tRESTResponse_8_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tRESTResponse_8", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1243,7 +1314,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tLogRow_1_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tLogRow_1", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1253,7 +1325,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tJavaRow_1_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tJavaRow_1", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1263,7 +1336,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tFlowToIterate_1_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tFlowToIterate_1", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1273,7 +1347,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tRunJob_1_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tRunJob_1", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1283,7 +1358,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tRESTResponse_1_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tRESTResponse_1", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1293,7 +1369,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tLogRow_3_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tLogRow_3", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1303,7 +1380,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tJavaRow_2_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tJavaRow_2", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1313,7 +1391,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tFlowToIterate_2_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tFlowToIterate_2", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1323,7 +1402,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tRunJob_2_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tRunJob_2", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1333,7 +1413,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tRESTResponse_4_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tRESTResponse_4", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1343,7 +1424,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tPrejob_1_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tPrejob_1", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1353,7 +1435,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tJava_1_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tJava_1", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1363,17 +1446,16 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tRESTRequest_1_Loop_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tRESTRequest_1_Loop", System.currentTimeMillis());
 
-		status = "failure";
+		tRESTRequest_1_In_error(exception, errorComponent, globalMap);
 
-		tRESTRequest_1_Loop_onSubJobError(exception, errorComponent, globalMap);
 	}
 
 	public void tRESTRequest_1_In_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tRESTRequest_1_In", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1383,17 +1465,16 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tSortRow_1_SortOut_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tSortRow_1_SortOut", System.currentTimeMillis());
 
-		status = "failure";
+		tSortRow_1_SortIn_error(exception, errorComponent, globalMap);
 
-		tRESTRequest_1_Loop_onSubJobError(exception, errorComponent, globalMap);
 	}
 
 	public void tSortRow_1_SortIn_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tSortRow_1_SortIn", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1404,18 +1485,16 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 			java.lang.Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tDenormalize_2_DenormalizeOut",
-				System.currentTimeMillis());
 
-		status = "failure";
+		tDenormalize_2_ArrayIn_error(exception, errorComponent, globalMap);
 
-		tRESTRequest_1_Loop_onSubJobError(exception, errorComponent, globalMap);
 	}
 
 	public void tDenormalize_2_ArrayIn_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tDenormalize_2_ArrayIn", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1425,17 +1504,16 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	public void tSortRow_2_SortOut_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tSortRow_2_SortOut", System.currentTimeMillis());
 
-		status = "failure";
+		tSortRow_2_SortIn_error(exception, errorComponent, globalMap);
 
-		tRESTRequest_1_Loop_onSubJobError(exception, errorComponent, globalMap);
 	}
 
 	public void tSortRow_2_SortIn_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tSortRow_2_SortIn", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1446,18 +1524,16 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 			java.lang.Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tDenormalize_1_DenormalizeOut",
-				System.currentTimeMillis());
 
-		status = "failure";
+		tDenormalize_1_ArrayIn_error(exception, errorComponent, globalMap);
 
-		tRESTRequest_1_Loop_onSubJobError(exception, errorComponent, globalMap);
 	}
 
 	public void tDenormalize_1_ArrayIn_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tDenormalize_1_ArrayIn", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -2432,6 +2508,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 		final boolean execStat = this.execStat;
 
 		String iterateId = "";
+
 		int iterateLoop = 0;
 		String currentComponent = "";
 		java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
@@ -2527,6 +2604,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 		final boolean execStat = this.execStat;
 
 		String iterateId = "";
+
 		int iterateLoop = 0;
 		String currentComponent = "";
 		java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
@@ -13440,6 +13518,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 		String currentVirtualComponent = null;
 
 		String iterateId = "";
+
 		int iterateLoop = 0;
 		String currentComponent = "";
 		java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
@@ -15209,8 +15288,9 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 						context.ns = row5.ns;
 						context.id = row5.id;
 
-						row12.Accept = row5.Accept;
-						context.format = row5.Accept;
+						row12.Accept = BioUtil
+								.parseContentNegotiation(row5.Accept);
+						context.format = row12.Accept;
 
 						nb_line_tJavaRow_5++;
 
@@ -15345,7 +15425,6 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 							int tos_count_tReplace_3 = 0;
 
 							int nb_line_tReplace_3 = 0;
-							int nb_line_ok_tReplace_3 = 0;
 
 							/**
 							 * [tReplace_3 begin ] stop
@@ -15604,7 +15683,6 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 											.replaceAllStrictly(row27.string,
 													searchStr_tReplace_3_2,
 													row12.id + "", false, false);
-									nb_line_ok_tReplace_3++;
 									row28.string = row27.string;
 
 									nb_line_tReplace_3++;
@@ -15725,8 +15803,6 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 
 							globalMap.put("tReplace_3_NB_LINE",
 									nb_line_tReplace_3);
-							globalMap.put("tReplace_3_NB_LINE_OK",
-									nb_line_ok_tReplace_3);
 
 							ok_Hash.put("tReplace_3", true);
 							end_Hash.put("tReplace_3",
@@ -15844,7 +15920,6 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 							int tos_count_tReplace_7 = 0;
 
 							int nb_line_tReplace_7 = 0;
-							int nb_line_ok_tReplace_7 = 0;
 
 							/**
 							 * [tReplace_7 begin ] stop
@@ -16001,7 +16076,6 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 								row35.sparql = StringUtils.replaceAllStrictly(
 										row35.sparql, searchStr_tReplace_7_3,
 										context.ns + "", false, false);
-								nb_line_ok_tReplace_7++;
 								row36.sparql = row35.sparql;
 
 								nb_line_tReplace_7++;
@@ -16119,6 +16193,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 								currentComponent = "tRunJob_4";
 
 								java.util.List<String> paraList_tRunJob_4 = new java.util.ArrayList<String>();
+
 								paraList_tRunJob_4.add("--father_pid=" + pid);
 
 								paraList_tRunJob_4.add("--root_pid=" + rootPid);
@@ -16129,6 +16204,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 								paraList_tRunJob_4.add("--context=Default");
 
 								// for feature:10589
+
 								paraList_tRunJob_4.add("--stat_port="
 										+ portStats);
 
@@ -16163,6 +16239,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 														.tRunJobConvertContext(obj_tRunJob_4));
 								parentContextMap_tRunJob_4.put("rdf_url",
 										obj_tRunJob_4);
+
 								obj_tRunJob_4 = context.debug;
 								paraList_tRunJob_4
 										.add("--context_param debug="
@@ -16170,6 +16247,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 														.tRunJobConvertContext(obj_tRunJob_4));
 								parentContextMap_tRunJob_4.put("debug",
 										obj_tRunJob_4);
+
 								obj_tRunJob_4 = context.format;
 								paraList_tRunJob_4
 										.add("--context_param formatOut="
@@ -16177,6 +16255,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 														.tRunJobConvertContext(obj_tRunJob_4));
 								parentContextMap_tRunJob_4.put("formatOut",
 										obj_tRunJob_4);
+
 								bio2rdf.rdfxml_reader_converter_1_7.rdfxml_reader_converter childJob_tRunJob_4 = new bio2rdf.rdfxml_reader_converter_1_7.rdfxml_reader_converter();
 								// pass DataSources
 								java.util.Map<String, routines.system.TalendDataSource> talendDataSources_tRunJob_4 = (java.util.Map<String, routines.system.TalendDataSource>) globalMap
@@ -16195,6 +16274,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 									childJob_tRunJob_4
 											.setDataSources(dataSources_tRunJob_4);
 								}
+
 								childJob_tRunJob_4.parentContextMap = parentContextMap_tRunJob_4;
 
 								String[][] childReturn_tRunJob_4 = childJob_tRunJob_4
@@ -16226,16 +16306,26 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 								}
 
 								for (String[] item_tRunJob_4 : childReturn_tRunJob_4) {
-									if (0 < item_tRunJob_4.length) {
-										row38.string = item_tRunJob_4[0];
-									} else {
-										row38.string = null;
-									}
-									if (1 < item_tRunJob_4.length) {
-										row38.body = ParserUtils
-												.parseTo_Document(item_tRunJob_4[1]);
-									} else {
-										row38.body = null;
+									if (childJob_tRunJob_4
+											.hastBufferOutputComponent() || true) {
+
+										if (0 < item_tRunJob_4.length) {
+
+											row38.string = item_tRunJob_4[0];
+
+										} else {
+											row38.string = null;
+										}
+
+										if (1 < item_tRunJob_4.length) {
+
+											row38.body = ParserUtils
+													.parseTo_Document(item_tRunJob_4[1]);
+
+										} else {
+											row38.body = null;
+										}
+
 									}
 
 									tos_count_tRunJob_4++;
@@ -16296,8 +16386,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 									/**
 									 * [tRESTResponse_10 main ] stop
 									 */
-									// end for
-								}
+
+								} // C_01
 
 								/**
 								 * [tRunJob_4 end ] start
@@ -16355,8 +16445,6 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 
 							globalMap.put("tReplace_7_NB_LINE",
 									nb_line_tReplace_7);
-							globalMap.put("tReplace_7_NB_LINE_OK",
-									nb_line_ok_tReplace_7);
 
 							ok_Hash.put("tReplace_7", true);
 							end_Hash.put("tReplace_7",
@@ -16660,7 +16748,6 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 						int tos_count_tReplace_6 = 0;
 
 						int nb_line_tReplace_6 = 0;
-						int nb_line_ok_tReplace_6 = 0;
 
 						/**
 						 * [tReplace_6 begin ] stop
@@ -16813,7 +16900,6 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 							row20.sparql = StringUtils.replaceAllStrictly(
 									row20.sparql, searchStr_tReplace_6_3,
 									context.ns + "", false, false);
-							nb_line_ok_tReplace_6++;
 							row25.sparql = row20.sparql;
 
 							nb_line_tReplace_6++;
@@ -16898,6 +16984,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 							currentComponent = "tRunJob_3";
 
 							java.util.List<String> paraList_tRunJob_3 = new java.util.ArrayList<String>();
+
 							paraList_tRunJob_3.add("--father_pid=" + pid);
 
 							paraList_tRunJob_3.add("--root_pid=" + rootPid);
@@ -16907,6 +16994,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 							paraList_tRunJob_3.add("--context=Default");
 
 							// for feature:10589
+
 							paraList_tRunJob_3.add("--stat_port=" + portStats);
 
 							if (resuming_logs_dir_path != null) {
@@ -16940,6 +17028,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 													.tRunJobConvertContext(obj_tRunJob_3));
 							parentContextMap_tRunJob_3.put("rdf_url",
 									obj_tRunJob_3);
+
 							obj_tRunJob_3 = context.debug;
 							paraList_tRunJob_3
 									.add("--context_param debug="
@@ -16947,6 +17036,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 													.tRunJobConvertContext(obj_tRunJob_3));
 							parentContextMap_tRunJob_3.put("debug",
 									obj_tRunJob_3);
+
 							obj_tRunJob_3 = context.format;
 							paraList_tRunJob_3
 									.add("--context_param formatOut="
@@ -16954,6 +17044,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 													.tRunJobConvertContext(obj_tRunJob_3));
 							parentContextMap_tRunJob_3.put("formatOut",
 									obj_tRunJob_3);
+
 							bio2rdf.rdfxml_reader_converter_1_7.rdfxml_reader_converter childJob_tRunJob_3 = new bio2rdf.rdfxml_reader_converter_1_7.rdfxml_reader_converter();
 							// pass DataSources
 							java.util.Map<String, routines.system.TalendDataSource> talendDataSources_tRunJob_3 = (java.util.Map<String, routines.system.TalendDataSource>) globalMap
@@ -16972,6 +17063,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 								childJob_tRunJob_3
 										.setDataSources(dataSources_tRunJob_3);
 							}
+
 							childJob_tRunJob_3.parentContextMap = parentContextMap_tRunJob_3;
 
 							String[][] childReturn_tRunJob_3 = childJob_tRunJob_3
@@ -17001,16 +17093,26 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 							}
 
 							for (String[] item_tRunJob_3 : childReturn_tRunJob_3) {
-								if (0 < item_tRunJob_3.length) {
-									row33.string = item_tRunJob_3[0];
-								} else {
-									row33.string = null;
-								}
-								if (1 < item_tRunJob_3.length) {
-									row33.body = ParserUtils
-											.parseTo_Document(item_tRunJob_3[1]);
-								} else {
-									row33.body = null;
+								if (childJob_tRunJob_3
+										.hastBufferOutputComponent() || true) {
+
+									if (0 < item_tRunJob_3.length) {
+
+										row33.string = item_tRunJob_3[0];
+
+									} else {
+										row33.string = null;
+									}
+
+									if (1 < item_tRunJob_3.length) {
+
+										row33.body = ParserUtils
+												.parseTo_Document(item_tRunJob_3[1]);
+
+									} else {
+										row33.body = null;
+									}
+
 								}
 
 								tos_count_tRunJob_3++;
@@ -17070,8 +17172,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 								/**
 								 * [tRESTResponse_5 main ] stop
 								 */
-								// end for
-							}
+
+							} // C_01
 
 							/**
 							 * [tRunJob_3 end ] start
@@ -17128,8 +17230,6 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 						currentComponent = "tReplace_6";
 
 						globalMap.put("tReplace_6_NB_LINE", nb_line_tReplace_6);
-						globalMap.put("tReplace_6_NB_LINE_OK",
-								nb_line_ok_tReplace_6);
 
 						ok_Hash.put("tReplace_6", true);
 						end_Hash.put("tReplace_6", System.currentTimeMillis());
@@ -17311,7 +17411,6 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 						int tos_count_tReplace_5 = 0;
 
 						int nb_line_tReplace_5 = 0;
-						int nb_line_ok_tReplace_5 = 0;
 
 						/**
 						 * [tReplace_5 begin ] stop
@@ -17562,7 +17661,6 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 								row8.string = StringUtils.replaceAllStrictly(
 										row8.string, searchStr_tReplace_5_2,
 										row14.id + "", false, false);
-								nb_line_ok_tReplace_5++;
 								row9.string = row8.string;
 
 								nb_line_tReplace_5++;
@@ -17680,8 +17778,6 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 						currentComponent = "tReplace_5";
 
 						globalMap.put("tReplace_5_NB_LINE", nb_line_tReplace_5);
-						globalMap.put("tReplace_5_NB_LINE_OK",
-								nb_line_ok_tReplace_5);
 
 						ok_Hash.put("tReplace_5", true);
 						end_Hash.put("tReplace_5", System.currentTimeMillis());
@@ -18975,6 +19071,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 						currentComponent = "tRunJob_10";
 
 						java.util.List<String> paraList_tRunJob_10 = new java.util.ArrayList<String>();
+
 						paraList_tRunJob_10.add("--father_pid=" + pid);
 
 						paraList_tRunJob_10.add("--root_pid=" + rootPid);
@@ -18984,6 +19081,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 						paraList_tRunJob_10.add("--context=Default");
 
 						// for feature:10589
+
 						paraList_tRunJob_10.add("--stat_port=" + portStats);
 
 						if (resuming_logs_dir_path != null) {
@@ -19020,34 +19118,53 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 
 						parentContextMap_tRunJob_10.put("pageTest",
 								context.pageTest);
+
 						parentContextMap_tRunJob_10.put("request",
 								context.request);
+
 						parentContextMap_tRunJob_10.put("message",
 								context.message);
+
 						parentContextMap_tRunJob_10.put("ns", context.ns);
+
 						parentContextMap_tRunJob_10.put("id", context.id);
+
 						parentContextMap_tRunJob_10.put("format",
 								context.format);
+
 						parentContextMap_tRunJob_10.put("localhost",
 								context.localhost);
+
 						parentContextMap_tRunJob_10.put("sparql",
 								context.sparql);
+
 						parentContextMap_tRunJob_10.put("database_endpoint",
 								context.database_endpoint);
+
 						parentContextMap_tRunJob_10.put("query", context.query);
+
 						parentContextMap_tRunJob_10.put("debug", context.debug);
+
 						parentContextMap_tRunJob_10.put("namespace",
 								context.namespace);
+
 						parentContextMap_tRunJob_10.put("database_endpoint1",
 								context.database_endpoint1);
+
 						parentContextMap_tRunJob_10.put("localhost1",
 								context.localhost1);
+
 						parentContextMap_tRunJob_10.put("localhost2",
 								context.localhost2);
+
 						parentContextMap_tRunJob_10.put("uri", context.uri);
+
 						parentContextMap_tRunJob_10.put("parm1", context.parm1);
+
 						parentContextMap_tRunJob_10.put("parm2", context.parm2);
+
 						parentContextMap_tRunJob_10.put("parm3", context.parm3);
+
 						parentContextMap_tRunJob_10.put("restUrl",
 								context.restUrl);
 
@@ -19070,6 +19187,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 							childJob_tRunJob_10
 									.setDataSources(dataSources_tRunJob_10);
 						}
+
 						childJob_tRunJob_10.parentContextMap = parentContextMap_tRunJob_10;
 
 						String[][] childReturn_tRunJob_10 = childJob_tRunJob_10
@@ -19105,17 +19223,27 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 							throw new RuntimeException(
 									"Child job running failed");
 						}
+
 						for (String[] item_tRunJob_10 : childReturn_tRunJob_10) {
-							if (0 < item_tRunJob_10.length) {
-								row60.string = item_tRunJob_10[0];
-							} else {
-								row60.string = null;
-							}
-							if (1 < item_tRunJob_10.length) {
-								row60.body = ParserUtils
-										.parseTo_Document(item_tRunJob_10[1]);
-							} else {
-								row60.body = null;
+							if (childJob_tRunJob_10.hastBufferOutputComponent() || true) {
+
+								if (0 < item_tRunJob_10.length) {
+
+									row60.string = item_tRunJob_10[0];
+
+								} else {
+									row60.string = null;
+								}
+
+								if (1 < item_tRunJob_10.length) {
+
+									row60.body = ParserUtils
+											.parseTo_Document(item_tRunJob_10[1]);
+
+								} else {
+									row60.body = null;
+								}
+
 							}
 
 							tos_count_tRunJob_10++;
@@ -19173,8 +19301,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 							/**
 							 * [tRESTResponse_16 main ] stop
 							 */
-							// end for
-						}
+
+						} // C_01
 
 						/**
 						 * [tRunJob_10 end ] start
@@ -19386,6 +19514,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 						currentComponent = "tRunJob_12";
 
 						java.util.List<String> paraList_tRunJob_12 = new java.util.ArrayList<String>();
+
 						paraList_tRunJob_12.add("--father_pid=" + pid);
 
 						paraList_tRunJob_12.add("--root_pid=" + rootPid);
@@ -19395,6 +19524,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 						paraList_tRunJob_12.add("--context=Default");
 
 						// for feature:10589
+
 						paraList_tRunJob_12.add("--stat_port=" + portStats);
 
 						if (resuming_logs_dir_path != null) {
@@ -19431,34 +19561,53 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 
 						parentContextMap_tRunJob_12.put("pageTest",
 								context.pageTest);
+
 						parentContextMap_tRunJob_12.put("request",
 								context.request);
+
 						parentContextMap_tRunJob_12.put("message",
 								context.message);
+
 						parentContextMap_tRunJob_12.put("ns", context.ns);
+
 						parentContextMap_tRunJob_12.put("id", context.id);
+
 						parentContextMap_tRunJob_12.put("format",
 								context.format);
+
 						parentContextMap_tRunJob_12.put("localhost",
 								context.localhost);
+
 						parentContextMap_tRunJob_12.put("sparql",
 								context.sparql);
+
 						parentContextMap_tRunJob_12.put("database_endpoint",
 								context.database_endpoint);
+
 						parentContextMap_tRunJob_12.put("query", context.query);
+
 						parentContextMap_tRunJob_12.put("debug", context.debug);
+
 						parentContextMap_tRunJob_12.put("namespace",
 								context.namespace);
+
 						parentContextMap_tRunJob_12.put("database_endpoint1",
 								context.database_endpoint1);
+
 						parentContextMap_tRunJob_12.put("localhost1",
 								context.localhost1);
+
 						parentContextMap_tRunJob_12.put("localhost2",
 								context.localhost2);
+
 						parentContextMap_tRunJob_12.put("uri", context.uri);
+
 						parentContextMap_tRunJob_12.put("parm1", context.parm1);
+
 						parentContextMap_tRunJob_12.put("parm2", context.parm2);
+
 						parentContextMap_tRunJob_12.put("parm3", context.parm3);
+
 						parentContextMap_tRunJob_12.put("restUrl",
 								context.restUrl);
 
@@ -19481,6 +19630,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 							childJob_tRunJob_12
 									.setDataSources(dataSources_tRunJob_12);
 						}
+
 						childJob_tRunJob_12.parentContextMap = parentContextMap_tRunJob_12;
 
 						String[][] childReturn_tRunJob_12 = childJob_tRunJob_12
@@ -19516,17 +19666,27 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 							throw new RuntimeException(
 									"Child job running failed");
 						}
+
 						for (String[] item_tRunJob_12 : childReturn_tRunJob_12) {
-							if (0 < item_tRunJob_12.length) {
-								row68.string = item_tRunJob_12[0];
-							} else {
-								row68.string = null;
-							}
-							if (1 < item_tRunJob_12.length) {
-								row68.body = ParserUtils
-										.parseTo_Document(item_tRunJob_12[1]);
-							} else {
-								row68.body = null;
+							if (childJob_tRunJob_12.hastBufferOutputComponent() || true) {
+
+								if (0 < item_tRunJob_12.length) {
+
+									row68.string = item_tRunJob_12[0];
+
+								} else {
+									row68.string = null;
+								}
+
+								if (1 < item_tRunJob_12.length) {
+
+									row68.body = ParserUtils
+											.parseTo_Document(item_tRunJob_12[1]);
+
+								} else {
+									row68.body = null;
+								}
+
 							}
 
 							tos_count_tRunJob_12++;
@@ -19584,8 +19744,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 							/**
 							 * [tRESTResponse_20 main ] stop
 							 */
-							// end for
-						}
+
+						} // C_01
 
 						/**
 						 * [tRunJob_12 end ] start
@@ -19779,6 +19939,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 						currentComponent = "tRunJob_9";
 
 						java.util.List<String> paraList_tRunJob_9 = new java.util.ArrayList<String>();
+
 						paraList_tRunJob_9.add("--father_pid=" + pid);
 
 						paraList_tRunJob_9.add("--root_pid=" + rootPid);
@@ -19788,6 +19949,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 						paraList_tRunJob_9.add("--context=Default");
 
 						// for feature:10589
+
 						paraList_tRunJob_9.add("--stat_port=" + portStats);
 
 						if (resuming_logs_dir_path != null) {
@@ -19824,34 +19986,53 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 
 						parentContextMap_tRunJob_9.put("pageTest",
 								context.pageTest);
+
 						parentContextMap_tRunJob_9.put("request",
 								context.request);
+
 						parentContextMap_tRunJob_9.put("message",
 								context.message);
+
 						parentContextMap_tRunJob_9.put("ns", context.ns);
+
 						parentContextMap_tRunJob_9.put("id", context.id);
+
 						parentContextMap_tRunJob_9
 								.put("format", context.format);
+
 						parentContextMap_tRunJob_9.put("localhost",
 								context.localhost);
+
 						parentContextMap_tRunJob_9
 								.put("sparql", context.sparql);
+
 						parentContextMap_tRunJob_9.put("database_endpoint",
 								context.database_endpoint);
+
 						parentContextMap_tRunJob_9.put("query", context.query);
+
 						parentContextMap_tRunJob_9.put("debug", context.debug);
+
 						parentContextMap_tRunJob_9.put("namespace",
 								context.namespace);
+
 						parentContextMap_tRunJob_9.put("database_endpoint1",
 								context.database_endpoint1);
+
 						parentContextMap_tRunJob_9.put("localhost1",
 								context.localhost1);
+
 						parentContextMap_tRunJob_9.put("localhost2",
 								context.localhost2);
+
 						parentContextMap_tRunJob_9.put("uri", context.uri);
+
 						parentContextMap_tRunJob_9.put("parm1", context.parm1);
+
 						parentContextMap_tRunJob_9.put("parm2", context.parm2);
+
 						parentContextMap_tRunJob_9.put("parm3", context.parm3);
+
 						parentContextMap_tRunJob_9.put("restUrl",
 								context.restUrl);
 
@@ -19874,6 +20055,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 							childJob_tRunJob_9
 									.setDataSources(dataSources_tRunJob_9);
 						}
+
 						childJob_tRunJob_9.parentContextMap = parentContextMap_tRunJob_9;
 
 						String[][] childReturn_tRunJob_9 = childJob_tRunJob_9
@@ -19909,17 +20091,27 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 							throw new RuntimeException(
 									"Child job running failed");
 						}
+
 						for (String[] item_tRunJob_9 : childReturn_tRunJob_9) {
-							if (0 < item_tRunJob_9.length) {
-								row59.string = item_tRunJob_9[0];
-							} else {
-								row59.string = null;
-							}
-							if (1 < item_tRunJob_9.length) {
-								row59.body = ParserUtils
-										.parseTo_Document(item_tRunJob_9[1]);
-							} else {
-								row59.body = null;
+							if (childJob_tRunJob_9.hastBufferOutputComponent() || true) {
+
+								if (0 < item_tRunJob_9.length) {
+
+									row59.string = item_tRunJob_9[0];
+
+								} else {
+									row59.string = null;
+								}
+
+								if (1 < item_tRunJob_9.length) {
+
+									row59.body = ParserUtils
+											.parseTo_Document(item_tRunJob_9[1]);
+
+								} else {
+									row59.body = null;
+								}
+
 							}
 
 							tos_count_tRunJob_9++;
@@ -19977,8 +20169,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 							/**
 							 * [tRESTResponse_15 main ] stop
 							 */
-							// end for
-						}
+
+						} // C_01
 
 						/**
 						 * [tRunJob_9 end ] start
@@ -21108,6 +21300,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 						currentComponent = "tRunJob_1";
 
 						java.util.List<String> paraList_tRunJob_1 = new java.util.ArrayList<String>();
+
 						paraList_tRunJob_1.add("--father_pid=" + pid);
 
 						paraList_tRunJob_1.add("--root_pid=" + rootPid);
@@ -21117,6 +21310,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 						paraList_tRunJob_1.add("--context=Default");
 
 						// for feature:10589
+
 						paraList_tRunJob_1.add("--stat_port=" + portStats);
 
 						if (resuming_logs_dir_path != null) {
@@ -21153,34 +21347,53 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 
 						parentContextMap_tRunJob_1.put("pageTest",
 								context.pageTest);
+
 						parentContextMap_tRunJob_1.put("request",
 								context.request);
+
 						parentContextMap_tRunJob_1.put("message",
 								context.message);
+
 						parentContextMap_tRunJob_1.put("ns", context.ns);
+
 						parentContextMap_tRunJob_1.put("id", context.id);
+
 						parentContextMap_tRunJob_1
 								.put("format", context.format);
+
 						parentContextMap_tRunJob_1.put("localhost",
 								context.localhost);
+
 						parentContextMap_tRunJob_1
 								.put("sparql", context.sparql);
+
 						parentContextMap_tRunJob_1.put("database_endpoint",
 								context.database_endpoint);
+
 						parentContextMap_tRunJob_1.put("query", context.query);
+
 						parentContextMap_tRunJob_1.put("debug", context.debug);
+
 						parentContextMap_tRunJob_1.put("namespace",
 								context.namespace);
+
 						parentContextMap_tRunJob_1.put("database_endpoint1",
 								context.database_endpoint1);
+
 						parentContextMap_tRunJob_1.put("localhost1",
 								context.localhost1);
+
 						parentContextMap_tRunJob_1.put("localhost2",
 								context.localhost2);
+
 						parentContextMap_tRunJob_1.put("uri", context.uri);
+
 						parentContextMap_tRunJob_1.put("parm1", context.parm1);
+
 						parentContextMap_tRunJob_1.put("parm2", context.parm2);
+
 						parentContextMap_tRunJob_1.put("parm3", context.parm3);
+
 						parentContextMap_tRunJob_1.put("restUrl",
 								context.restUrl);
 
@@ -21203,6 +21416,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 							childJob_tRunJob_1
 									.setDataSources(dataSources_tRunJob_1);
 						}
+
 						childJob_tRunJob_1.parentContextMap = parentContextMap_tRunJob_1;
 
 						String[][] childReturn_tRunJob_1 = childJob_tRunJob_1
@@ -21238,17 +21452,27 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 							throw new RuntimeException(
 									"Child job running failed");
 						}
+
 						for (String[] item_tRunJob_1 : childReturn_tRunJob_1) {
-							if (0 < item_tRunJob_1.length) {
-								row22.string = item_tRunJob_1[0];
-							} else {
-								row22.string = null;
-							}
-							if (1 < item_tRunJob_1.length) {
-								row22.body = ParserUtils
-										.parseTo_Document(item_tRunJob_1[1]);
-							} else {
-								row22.body = null;
+							if (childJob_tRunJob_1.hastBufferOutputComponent() || true) {
+
+								if (0 < item_tRunJob_1.length) {
+
+									row22.string = item_tRunJob_1[0];
+
+								} else {
+									row22.string = null;
+								}
+
+								if (1 < item_tRunJob_1.length) {
+
+									row22.body = ParserUtils
+											.parseTo_Document(item_tRunJob_1[1]);
+
+								} else {
+									row22.body = null;
+								}
+
 							}
 
 							tos_count_tRunJob_1++;
@@ -21305,8 +21529,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 							/**
 							 * [tRESTResponse_1 main ] stop
 							 */
-							// end for
-						}
+
+						} // C_01
 
 						/**
 						 * [tRunJob_1 end ] start
@@ -21491,6 +21715,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 						currentComponent = "tRunJob_2";
 
 						java.util.List<String> paraList_tRunJob_2 = new java.util.ArrayList<String>();
+
 						paraList_tRunJob_2.add("--father_pid=" + pid);
 
 						paraList_tRunJob_2.add("--root_pid=" + rootPid);
@@ -21500,6 +21725,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 						paraList_tRunJob_2.add("--context=Default");
 
 						// for feature:10589
+
 						paraList_tRunJob_2.add("--stat_port=" + portStats);
 
 						if (resuming_logs_dir_path != null) {
@@ -21536,34 +21762,53 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 
 						parentContextMap_tRunJob_2.put("pageTest",
 								context.pageTest);
+
 						parentContextMap_tRunJob_2.put("request",
 								context.request);
+
 						parentContextMap_tRunJob_2.put("message",
 								context.message);
+
 						parentContextMap_tRunJob_2.put("ns", context.ns);
+
 						parentContextMap_tRunJob_2.put("id", context.id);
+
 						parentContextMap_tRunJob_2
 								.put("format", context.format);
+
 						parentContextMap_tRunJob_2.put("localhost",
 								context.localhost);
+
 						parentContextMap_tRunJob_2
 								.put("sparql", context.sparql);
+
 						parentContextMap_tRunJob_2.put("database_endpoint",
 								context.database_endpoint);
+
 						parentContextMap_tRunJob_2.put("query", context.query);
+
 						parentContextMap_tRunJob_2.put("debug", context.debug);
+
 						parentContextMap_tRunJob_2.put("namespace",
 								context.namespace);
+
 						parentContextMap_tRunJob_2.put("database_endpoint1",
 								context.database_endpoint1);
+
 						parentContextMap_tRunJob_2.put("localhost1",
 								context.localhost1);
+
 						parentContextMap_tRunJob_2.put("localhost2",
 								context.localhost2);
+
 						parentContextMap_tRunJob_2.put("uri", context.uri);
+
 						parentContextMap_tRunJob_2.put("parm1", context.parm1);
+
 						parentContextMap_tRunJob_2.put("parm2", context.parm2);
+
 						parentContextMap_tRunJob_2.put("parm3", context.parm3);
+
 						parentContextMap_tRunJob_2.put("restUrl",
 								context.restUrl);
 
@@ -21586,6 +21831,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 							childJob_tRunJob_2
 									.setDataSources(dataSources_tRunJob_2);
 						}
+
 						childJob_tRunJob_2.parentContextMap = parentContextMap_tRunJob_2;
 
 						String[][] childReturn_tRunJob_2 = childJob_tRunJob_2
@@ -21621,17 +21867,27 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 							throw new RuntimeException(
 									"Child job running failed");
 						}
+
 						for (String[] item_tRunJob_2 : childReturn_tRunJob_2) {
-							if (0 < item_tRunJob_2.length) {
-								row29.string = item_tRunJob_2[0];
-							} else {
-								row29.string = null;
-							}
-							if (1 < item_tRunJob_2.length) {
-								row29.body = ParserUtils
-										.parseTo_Document(item_tRunJob_2[1]);
-							} else {
-								row29.body = null;
+							if (childJob_tRunJob_2.hastBufferOutputComponent() || true) {
+
+								if (0 < item_tRunJob_2.length) {
+
+									row29.string = item_tRunJob_2[0];
+
+								} else {
+									row29.string = null;
+								}
+
+								if (1 < item_tRunJob_2.length) {
+
+									row29.body = ParserUtils
+											.parseTo_Document(item_tRunJob_2[1]);
+
+								} else {
+									row29.body = null;
+								}
+
 							}
 
 							tos_count_tRunJob_2++;
@@ -21688,8 +21944,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 							/**
 							 * [tRESTResponse_4 main ] stop
 							 */
-							// end for
-						}
+
+						} // C_01
 
 						/**
 						 * [tRunJob_2 end ] start
@@ -23380,6 +23636,12 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 		return bufferValue;
 	}
 
+	public boolean hastBufferOutputComponent() {
+		boolean hastBufferOutput = false;
+
+		return hastBufferOutput;
+	}
+
 	public int runJobInTOS(String[] args) {
 		// reset status
 		status = "";
@@ -23679,18 +23941,40 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 
 	}
 
-	private final String[][] escapeChars = { { "\\n", "\n" }, { "\\'", "\'" },
-			{ "\\r", "\r" }, { "\\f", "\f" }, { "\\b", "\b" }, { "\\t", "\t" },
-			{ "\\\\", "\\" } };
+	private final String[][] escapeChars = { { "\\\\", "\\" }, { "\\n", "\n" },
+			{ "\\'", "\'" }, { "\\r", "\r" }, { "\\f", "\f" }, { "\\b", "\b" },
+			{ "\\t", "\t" } };
 
 	private String replaceEscapeChars(String keyValue) {
 		if (keyValue == null || ("").equals(keyValue.trim())) {
 			return keyValue;
 		}
-		for (String[] strArray : escapeChars) {
-			keyValue = keyValue.replace(strArray[0], strArray[1]);
+
+		StringBuilder result = new StringBuilder();
+		int currIndex = 0;
+		while (currIndex < keyValue.length()) {
+			int index = -1;
+			// judege if the left string includes escape chars
+			for (String[] strArray : escapeChars) {
+				index = keyValue.indexOf(strArray[0], currIndex);
+				if (index >= 0) {
+
+					result.append(keyValue.substring(currIndex,
+							index + strArray[0].length()).replace(strArray[0],
+							strArray[1]));
+					currIndex = index + strArray[0].length();
+					break;
+				}
+			}
+			// if the left string doesn't include escape chars, append the left
+			// into the result
+			if (index < 0) {
+				result.append(keyValue.substring(currIndex));
+				currIndex = currIndex + keyValue.length();
+			}
 		}
-		return keyValue;
+
+		return result.toString();
 	}
 
 	public Integer getErrorCode() {
@@ -23704,6 +23988,6 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- * 606637 characters generated by Talend Open Studio for ESB on the 12 juin 2014
- * 11:18:19 EDT
+ * 608905 characters generated by Talend Open Studio for ESB on the 19 juin 2014
+ * 16:32:50 EDT
  ************************************************************************************************/

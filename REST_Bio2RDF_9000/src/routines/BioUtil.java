@@ -1,4 +1,8 @@
 package routines;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /*
  * Author: vincent.emonet@gmail.com
@@ -19,6 +23,96 @@ package routines;
  */
 public class BioUtil {
 
+	
+	/**
+     * Return the accepted Mime type from a html header Accept field
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("accept")
+     * 
+     * {example} parseContentNegotiation("rdf")
+     */
+    public static String parseContentNegotiation(String accept) {
+    	
+    	Pattern p = Pattern.compile("\\s?([^,;]*);?(?:\\s*q=)?([^,]*)?(?:$|,)");
+    	Matcher m = p.matcher(accept);
+    	double bestQ = 0;
+    	double tempQ;
+    	int priority = 10;
+    	String tempMime = "";
+    	String acceptedMime = "";
+    	
+    	while (m.find())
+    	{
+    		tempMime = m.group(1);
+    		if (m.group(1).equals("text/n3") || m.group(1).equals("application/rdf+n3") || m.group(1).equals("application/n3") || m.group(1).equals("text/*"))
+    		{
+    			tempMime = "text/rdf+n3";
+    		}
+    		else if (m.group(1).equals("*/*") || m.group(1).equals("application/*"))
+    		{
+    			tempMime = "application/rdf+xml";
+    		}
+    		
+    		if (m.group(2).equals(""))
+    		{
+    			tempQ = 1.0;
+    		}
+    		else
+    		{
+    			tempQ = Double.parseDouble(m.group(2));
+    		}
+    		
+    		if (tempQ > bestQ && BioUtil.getMimePriority(tempMime) != -1)
+    		{
+    			acceptedMime = tempMime;
+    			priority = BioUtil.getMimePriority(tempMime);
+    			bestQ = tempQ;
+    		}
+    		else if (tempQ == bestQ && BioUtil.getMimePriority(tempMime) < priority && BioUtil.getMimePriority(tempMime) != -1)
+    		{
+    			acceptedMime = tempMime;
+    			priority = BioUtil.getMimePriority(tempMime);
+    		}
+    		    		
+    	}    	
+    	
+		return(acceptedMime);
+    }
+
+
+
+/**
+ * Return the priority (0 is the preferred, -1 is not supported) of the rdf MIME type for the REST content negotiation
+ * 
+ * 
+ * {talendTypes} String
+ * 
+ * {Category} User Defined
+ * 
+ * {param} string("mimeString")
+ * 
+ * {example} getAcceptableMime("application/rdf+xml")
+ */
+public static int getMimePriority(String mimeString) {
+	List<String> acceptableMime = new ArrayList<String>();
+	
+	acceptableMime.add("application/rdf+xml");
+	acceptableMime.add("text/rdf+n3");
+	acceptableMime.add("text/turtle");
+	acceptableMime.add("text/plain");
+	acceptableMime.add("text/html");
+	acceptableMime.add("application/rdf+json");
+	
+	return(acceptableMime.indexOf(mimeString));
+}
+
+
+	
 	
     /**
      * Return well-written method for Bio2RDF REST service

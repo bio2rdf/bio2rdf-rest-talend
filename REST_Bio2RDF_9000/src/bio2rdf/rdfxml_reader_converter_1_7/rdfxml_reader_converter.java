@@ -53,7 +53,7 @@ import org.openjena.riot.out.RDFJSONWriter;
  * Job: rdfxml_reader_converter Purpose: <br>
  * Description:  <br>
  * @author test@talend.com
- * @version 5.4.1.r111943
+ * @version 5.5.0.r117820
  * @status 
  */
 public class rdfxml_reader_converter implements TalendJob {
@@ -445,7 +445,8 @@ public class rdfxml_reader_converter implements TalendJob {
 	public void tHttpRequest_2_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tHttpRequest_2", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -455,7 +456,8 @@ public class rdfxml_reader_converter implements TalendJob {
 	public void tLogRow_1_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tLogRow_1", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -465,7 +467,8 @@ public class rdfxml_reader_converter implements TalendJob {
 	public void tMap_2_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tMap_2", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -475,7 +478,8 @@ public class rdfxml_reader_converter implements TalendJob {
 	public void tMap_6_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tMap_6", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -485,7 +489,8 @@ public class rdfxml_reader_converter implements TalendJob {
 	public void tRDF2RDF_1_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tRDF2RDF_1", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -495,7 +500,8 @@ public class rdfxml_reader_converter implements TalendJob {
 	public void tMap_5_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tMap_5", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -505,7 +511,8 @@ public class rdfxml_reader_converter implements TalendJob {
 	public void tBufferOutput_2_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tBufferOutput_2", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -515,7 +522,8 @@ public class rdfxml_reader_converter implements TalendJob {
 	public void tLogRow_7_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tLogRow_7", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -525,7 +533,8 @@ public class rdfxml_reader_converter implements TalendJob {
 	public void tLogRow_6_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tLogRow_6", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1551,6 +1560,7 @@ public class rdfxml_reader_converter implements TalendJob {
 		final boolean execStat = this.execStat;
 
 		String iterateId = "";
+
 		int iterateLoop = 0;
 		String currentComponent = "";
 		java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
@@ -2531,6 +2541,14 @@ public class rdfxml_reader_converter implements TalendJob {
 		return bufferValue;
 	}
 
+	public boolean hastBufferOutputComponent() {
+		boolean hastBufferOutput = false;
+
+		hastBufferOutput = true;
+
+		return hastBufferOutput;
+	}
+
 	public int runJobInTOS(String[] args) {
 		// reset status
 		status = "";
@@ -2795,18 +2813,40 @@ public class rdfxml_reader_converter implements TalendJob {
 
 	}
 
-	private final String[][] escapeChars = { { "\\n", "\n" }, { "\\'", "\'" },
-			{ "\\r", "\r" }, { "\\f", "\f" }, { "\\b", "\b" }, { "\\t", "\t" },
-			{ "\\\\", "\\" } };
+	private final String[][] escapeChars = { { "\\\\", "\\" }, { "\\n", "\n" },
+			{ "\\'", "\'" }, { "\\r", "\r" }, { "\\f", "\f" }, { "\\b", "\b" },
+			{ "\\t", "\t" } };
 
 	private String replaceEscapeChars(String keyValue) {
 		if (keyValue == null || ("").equals(keyValue.trim())) {
 			return keyValue;
 		}
-		for (String[] strArray : escapeChars) {
-			keyValue = keyValue.replace(strArray[0], strArray[1]);
+
+		StringBuilder result = new StringBuilder();
+		int currIndex = 0;
+		while (currIndex < keyValue.length()) {
+			int index = -1;
+			// judege if the left string includes escape chars
+			for (String[] strArray : escapeChars) {
+				index = keyValue.indexOf(strArray[0], currIndex);
+				if (index >= 0) {
+
+					result.append(keyValue.substring(currIndex,
+							index + strArray[0].length()).replace(strArray[0],
+							strArray[1]));
+					currIndex = index + strArray[0].length();
+					break;
+				}
+			}
+			// if the left string doesn't include escape chars, append the left
+			// into the result
+			if (index < 0) {
+				result.append(keyValue.substring(currIndex));
+				currIndex = currIndex + keyValue.length();
+			}
 		}
-		return keyValue;
+
+		return result.toString();
 	}
 
 	public Integer getErrorCode() {
@@ -2820,6 +2860,6 @@ public class rdfxml_reader_converter implements TalendJob {
 	ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- * 72635 characters generated by Talend Open Studio for ESB on the 12 juin 2014
- * 11:18:18 EDT
+ * 73451 characters generated by Talend Open Studio for ESB on the 19 juin 2014
+ * 16:32:49 EDT
  ************************************************************************************************/

@@ -46,7 +46,7 @@ import java.util.Comparator;
  * Job: bio2rdf_rest_subjob Purpose: <br>
  * Description:  <br>
  * @author test@talend.com
- * @version 5.4.1.r111943
+ * @version 5.5.0.r117820
  * @status 
  */
 public class bio2rdf_rest_subjob implements TalendJob {
@@ -390,7 +390,8 @@ public class bio2rdf_rest_subjob implements TalendJob {
 	public void tSparqlSelectRequest_1_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tSparqlSelectRequest_1", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -401,7 +402,8 @@ public class bio2rdf_rest_subjob implements TalendJob {
 	public void tReplace_1_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tReplace_1", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -412,7 +414,8 @@ public class bio2rdf_rest_subjob implements TalendJob {
 	public void tLogRow_3_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tLogRow_3", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -423,7 +426,8 @@ public class bio2rdf_rest_subjob implements TalendJob {
 	public void tMap_1_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tMap_1", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -434,7 +438,8 @@ public class bio2rdf_rest_subjob implements TalendJob {
 	public void tFlowToIterate_2_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tFlowToIterate_2", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -445,7 +450,8 @@ public class bio2rdf_rest_subjob implements TalendJob {
 	public void tRunJob_1_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tRunJob_1", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -456,7 +462,8 @@ public class bio2rdf_rest_subjob implements TalendJob {
 	public void tMap_2_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tMap_2", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -467,7 +474,8 @@ public class bio2rdf_rest_subjob implements TalendJob {
 	public void tBufferOutput_1_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tBufferOutput_1", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -478,7 +486,8 @@ public class bio2rdf_rest_subjob implements TalendJob {
 	public void tLogRow_2_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tLogRow_2", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -489,7 +498,8 @@ public class bio2rdf_rest_subjob implements TalendJob {
 	public void tLogRow_1_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		end_Hash.put("tLogRow_1", System.currentTimeMillis());
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
@@ -1549,6 +1559,7 @@ public class bio2rdf_rest_subjob implements TalendJob {
 		final boolean execStat = this.execStat;
 
 		String iterateId = "";
+
 		int iterateLoop = 0;
 		String currentComponent = "";
 		java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
@@ -1684,7 +1695,6 @@ public class bio2rdf_rest_subjob implements TalendJob {
 				int tos_count_tReplace_1 = 0;
 
 				int nb_line_tReplace_1 = 0;
-				int nb_line_ok_tReplace_1 = 0;
 
 				/**
 				 * [tReplace_1 begin ] stop
@@ -1854,7 +1864,6 @@ public class bio2rdf_rest_subjob implements TalendJob {
 					String searchStr_tReplace_1_9 = "#" + "";
 					row3.sparql = StringUtils.replaceAllStrictly(row3.sparql,
 							searchStr_tReplace_1_9, "%23" + "", false, false);
-					nb_line_ok_tReplace_1++;
 					row1.sparql = row3.sparql;
 
 					nb_line_tReplace_1++;
@@ -2076,6 +2085,7 @@ public class bio2rdf_rest_subjob implements TalendJob {
 						currentComponent = "tRunJob_1";
 
 						java.util.List<String> paraList_tRunJob_1 = new java.util.ArrayList<String>();
+
 						paraList_tRunJob_1.add("--father_pid=" + pid);
 
 						paraList_tRunJob_1.add("--root_pid=" + rootPid);
@@ -2085,6 +2095,7 @@ public class bio2rdf_rest_subjob implements TalendJob {
 						paraList_tRunJob_1.add("--context=Default");
 
 						// for feature:10589
+
 						paraList_tRunJob_1.add("--stat_port=" + portStats);
 
 						if (resuming_logs_dir_path != null) {
@@ -2115,12 +2126,14 @@ public class bio2rdf_rest_subjob implements TalendJob {
 										.tRunJobConvertContext(obj_tRunJob_1));
 						parentContextMap_tRunJob_1
 								.put("rdf_url", obj_tRunJob_1);
+
 						obj_tRunJob_1 = context.format;
 						paraList_tRunJob_1.add("--context_param formatOut="
 								+ RuntimeUtils
 										.tRunJobConvertContext(obj_tRunJob_1));
 						parentContextMap_tRunJob_1.put("formatOut",
 								obj_tRunJob_1);
+
 						bio2rdf.rdfxml_reader_converter_1_7.rdfxml_reader_converter childJob_tRunJob_1 = new bio2rdf.rdfxml_reader_converter_1_7.rdfxml_reader_converter();
 						// pass DataSources
 						java.util.Map<String, routines.system.TalendDataSource> talendDataSources_tRunJob_1 = (java.util.Map<String, routines.system.TalendDataSource>) globalMap
@@ -2138,6 +2151,7 @@ public class bio2rdf_rest_subjob implements TalendJob {
 							childJob_tRunJob_1
 									.setDataSources(dataSources_tRunJob_1);
 						}
+
 						childJob_tRunJob_1.parentContextMap = parentContextMap_tRunJob_1;
 
 						String[][] childReturn_tRunJob_1 = childJob_tRunJob_1
@@ -2167,16 +2181,25 @@ public class bio2rdf_rest_subjob implements TalendJob {
 						}
 
 						for (String[] item_tRunJob_1 : childReturn_tRunJob_1) {
-							if (0 < item_tRunJob_1.length) {
-								row2.string = item_tRunJob_1[0];
-							} else {
-								row2.string = null;
-							}
-							if (1 < item_tRunJob_1.length) {
-								row2.body = ParserUtils
-										.parseTo_Document(item_tRunJob_1[1]);
-							} else {
-								row2.body = null;
+							if (childJob_tRunJob_1.hastBufferOutputComponent() || true) {
+
+								if (0 < item_tRunJob_1.length) {
+
+									row2.string = item_tRunJob_1[0];
+
+								} else {
+									row2.string = null;
+								}
+
+								if (1 < item_tRunJob_1.length) {
+
+									row2.body = ParserUtils
+											.parseTo_Document(item_tRunJob_1[1]);
+
+								} else {
+									row2.body = null;
+								}
+
 							}
 
 							tos_count_tRunJob_1++;
@@ -2332,8 +2355,7 @@ public class bio2rdf_rest_subjob implements TalendJob {
 
 							} // End of branch "debug2"
 
-							// end for
-						}
+						} // C_01
 
 						/**
 						 * [tRunJob_1 end ] start
@@ -2475,7 +2497,6 @@ public class bio2rdf_rest_subjob implements TalendJob {
 				currentComponent = "tReplace_1";
 
 				globalMap.put("tReplace_1_NB_LINE", nb_line_tReplace_1);
-				globalMap.put("tReplace_1_NB_LINE_OK", nb_line_ok_tReplace_1);
 
 				ok_Hash.put("tReplace_1", true);
 				end_Hash.put("tReplace_1", System.currentTimeMillis());
@@ -2736,6 +2757,14 @@ public class bio2rdf_rest_subjob implements TalendJob {
 		return bufferValue;
 	}
 
+	public boolean hastBufferOutputComponent() {
+		boolean hastBufferOutput = false;
+
+		hastBufferOutput = true;
+
+		return hastBufferOutput;
+	}
+
 	public int runJobInTOS(String[] args) {
 		// reset status
 		status = "";
@@ -2986,18 +3015,40 @@ public class bio2rdf_rest_subjob implements TalendJob {
 
 	}
 
-	private final String[][] escapeChars = { { "\\n", "\n" }, { "\\'", "\'" },
-			{ "\\r", "\r" }, { "\\f", "\f" }, { "\\b", "\b" }, { "\\t", "\t" },
-			{ "\\\\", "\\" } };
+	private final String[][] escapeChars = { { "\\\\", "\\" }, { "\\n", "\n" },
+			{ "\\'", "\'" }, { "\\r", "\r" }, { "\\f", "\f" }, { "\\b", "\b" },
+			{ "\\t", "\t" } };
 
 	private String replaceEscapeChars(String keyValue) {
 		if (keyValue == null || ("").equals(keyValue.trim())) {
 			return keyValue;
 		}
-		for (String[] strArray : escapeChars) {
-			keyValue = keyValue.replace(strArray[0], strArray[1]);
+
+		StringBuilder result = new StringBuilder();
+		int currIndex = 0;
+		while (currIndex < keyValue.length()) {
+			int index = -1;
+			// judege if the left string includes escape chars
+			for (String[] strArray : escapeChars) {
+				index = keyValue.indexOf(strArray[0], currIndex);
+				if (index >= 0) {
+
+					result.append(keyValue.substring(currIndex,
+							index + strArray[0].length()).replace(strArray[0],
+							strArray[1]));
+					currIndex = index + strArray[0].length();
+					break;
+				}
+			}
+			// if the left string doesn't include escape chars, append the left
+			// into the result
+			if (index < 0) {
+				result.append(keyValue.substring(currIndex));
+				currIndex = currIndex + keyValue.length();
+			}
 		}
-		return keyValue;
+
+		return result.toString();
 	}
 
 	public Integer getErrorCode() {
@@ -3011,6 +3062,6 @@ public class bio2rdf_rest_subjob implements TalendJob {
 	ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- * 78885 characters generated by Talend Open Studio for ESB on the 12 juin 2014
- * 11:18:18 EDT
+ * 79867 characters generated by Talend Open Studio for ESB on the 19 juin 2014
+ * 16:32:49 EDT
  ************************************************************************************************/
