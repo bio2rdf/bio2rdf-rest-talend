@@ -15894,15 +15894,6 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 
 							int tos_count_tLogRow_20 = 0;
 
-							// /////////////////////
-
-							final String OUTPUT_FIELD_SEPARATOR_tLogRow_20 = " |20| ";
-							java.io.PrintStream consoleOut_tLogRow_20 = null;
-
-							StringBuilder strBuffer_tLogRow_20 = null;
-							int nb_line_tLogRow_20 = 0;
-							// /////////////////////
-
 							/**
 							 * [tLogRow_20 begin ] stop
 							 */
@@ -16091,39 +16082,6 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 								 */
 
 								currentComponent = "tLogRow_20";
-
-								// /////////////////////
-
-								strBuffer_tLogRow_20 = new StringBuilder();
-
-								if (row36.sparql != null) { //
-
-									strBuffer_tLogRow_20.append(String
-											.valueOf(row36.sparql));
-
-								} //
-
-								if (globalMap.get("tLogRow_CONSOLE") != null) {
-									consoleOut_tLogRow_20 = (java.io.PrintStream) globalMap
-											.get("tLogRow_CONSOLE");
-								} else {
-									consoleOut_tLogRow_20 = new java.io.PrintStream(
-											new java.io.BufferedOutputStream(
-													System.out));
-									globalMap.put("tLogRow_CONSOLE",
-											consoleOut_tLogRow_20);
-								}
-
-								consoleOut_tLogRow_20
-										.println(strBuffer_tLogRow_20
-												.toString());
-								consoleOut_tLogRow_20.flush();
-								nb_line_tLogRow_20++;
-								// ////
-
-								// ////
-
-								// /////////////////////
 
 								row37 = row36;
 
@@ -16459,13 +16417,6 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 							 */
 
 							currentComponent = "tLogRow_20";
-
-							// ////
-							// ////
-							globalMap.put("tLogRow_20_NB_LINE",
-									nb_line_tLogRow_20);
-
-							// /////////////////////
 
 							ok_Hash.put("tLogRow_20", true);
 							end_Hash.put("tLogRow_20",
@@ -17964,15 +17915,6 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 
 						int tos_count_tLogRow_15 = 0;
 
-						// /////////////////////
-
-						final String OUTPUT_FIELD_SEPARATOR_tLogRow_15 = "|";
-						java.io.PrintStream consoleOut_tLogRow_15 = null;
-
-						StringBuilder strBuffer_tLogRow_15 = null;
-						int nb_line_tLogRow_15 = 0;
-						// /////////////////////
-
 						/**
 						 * [tLogRow_15 begin ] stop
 						 */
@@ -18138,56 +18080,6 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 
 							currentComponent = "tLogRow_15";
 
-							// /////////////////////
-
-							strBuffer_tLogRow_15 = new StringBuilder();
-
-							if (row15.nsid != null) { //
-
-								strBuffer_tLogRow_15.append(String
-										.valueOf(row15.nsid));
-
-							} //
-
-							strBuffer_tLogRow_15.append("|");
-
-							if (row15.label != null) { //
-
-								strBuffer_tLogRow_15.append(String
-										.valueOf(row15.label));
-
-							} //
-
-							strBuffer_tLogRow_15.append("|");
-
-							if (row15.title != null) { //
-
-								strBuffer_tLogRow_15.append(String
-										.valueOf(row15.title));
-
-							} //
-
-							if (globalMap.get("tLogRow_CONSOLE") != null) {
-								consoleOut_tLogRow_15 = (java.io.PrintStream) globalMap
-										.get("tLogRow_CONSOLE");
-							} else {
-								consoleOut_tLogRow_15 = new java.io.PrintStream(
-										new java.io.BufferedOutputStream(
-												System.out));
-								globalMap.put("tLogRow_CONSOLE",
-										consoleOut_tLogRow_15);
-							}
-
-							consoleOut_tLogRow_15.println(strBuffer_tLogRow_15
-									.toString());
-							consoleOut_tLogRow_15.flush();
-							nb_line_tLogRow_15++;
-							// ////
-
-							// ////
-
-							// /////////////////////
-
 							row16 = row15;
 
 							tos_count_tLogRow_15++;
@@ -18284,12 +18176,6 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 						 */
 
 						currentComponent = "tLogRow_15";
-
-						// ////
-						// ////
-						globalMap.put("tLogRow_15_NB_LINE", nb_line_tLogRow_15);
-
-						// /////////////////////
 
 						ok_Hash.put("tLogRow_15", true);
 						end_Hash.put("tLogRow_15", System.currentTimeMillis());
@@ -18595,7 +18481,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 							// Code généré selon le schémas d'entrée et de
 							// sortie
 							row19.body = row17.body;
-							row19.string = "<html><head><style>p {margin:0 0 8px 0;} .label { color:grey; font-style:italic; font-size:80%;text-decoration:none;} .title {color: orange} a {font-weight:bold;color: green;} a:link {text-decoration:none;} a:visited {text-decoration:none;color: green;} a:hover {text-decoration:underline;color: green;} a:active {text-decoration:underline;color: green;} h1 {margin-left:3cm; color: blue;margin-bottom:15px}</style></head> <body><h1><span class=\"title\">Bio2RDF.org</span> example pages</h1>"
+							row19.string = "<html><head><style>p {margin:0 0 8px 0;} .label { color:grey; font-style:italic; font-size:80%;text-decoration:none;} a {font-weight:bold;color: green;} a:link {text-decoration:none;} a:visited {text-decoration:none;color: green;} a:hover {text-decoration:underline;color: green;} a:active {text-decoration:underline;color: green;} h1 {margin-left:3cm; color: blue;margin-bottom:15px}</style></head> <body><h1>Bio2RDF.org example pages</h1>"
 									+ row17.string + "</body></html>";
 
 							nb_line_tJavaRow_4++;
@@ -21020,9 +20906,9 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 							}
 
 							row44.body = row43.body;
-							row44.string = "<html><head><style>p {margin:0 0 8px 0;} .describe {text-indent:2em; margin: 0 0 20px 0} .label { color:grey; font-style:italic; font-size:80%;text-decoration:none;} .title {color: orange} a {color: blue;} a:link {text-decoration:none;} a:visited {text-decoration:none;color: blue;} a:hover {text-decoration:underline;color: blue;} a:active {text-decoration:underline;color: blue;} h1 {margin-left:3cm; color: blue;margin-bottom:15px}</style></head> <body><h1><span class=\"title\">"
+							row44.string = "<html><head><style>p {margin:0 0 8px 0;} .describe {text-indent:2em; margin: 0 0 20px 0} .label { color:grey; font-style:italic; font-size:80%;text-decoration:none;} a {color: blue;} a:link {text-decoration:none;} a:visited {text-decoration:none;color: blue;} a:hover {text-decoration:underline;color: blue;} a:active {text-decoration:underline;color: blue;} h1 {margin-left:3cm; color: blue;margin-bottom:15px}</style></head> <body><h1>"
 									+ title
-									+ "</span> example page</h1><p class=\"describe\">"
+									+ " example page</h1><p class=\"describe\">"
 									+ row43.comment
 									+ "</p>"
 									+ row43.string
@@ -23988,6 +23874,6 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- * 608905 characters generated by Talend Open Studio for ESB on the 19 juin 2014
- * 16:32:50 EDT
+ * 605434 characters generated by Talend Open Studio for ESB on the 20 juin 2014
+ * 18:13:36 EDT
  ************************************************************************************************/

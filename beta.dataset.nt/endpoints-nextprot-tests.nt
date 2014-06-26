@@ -1,0 +1,5 @@
+
+<http://bio2rdf.org/namespace:nextprot> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/nextprot/describe/rdf?uri=http://bio2rdf.org/nextprot:NX_P19367" .
+<http://bio2rdf.org/namespace:nextprot> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/nextprot/links/rdf?uri=http://bio2rdf.org/interpro:IPR022673" .
+<http://bio2rdf.org/namespace:nextprot> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/nextprot/search/rdf/hexokinase" .
+

@@ -1,0 +1,238 @@
+<http://bio2rdf.org/namespace:affymetrix> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/affymetrix/describe/rdf?uri=http://bio2rdf.org/affymetrix:185061_at" .
+<http://bio2rdf.org/namespace:affymetrix> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/affymetrix/describe/rdf/affymetrix:185061_at" .
+<http://bio2rdf.org/namespace:affymetrix> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/affymetrix/links/rdf?uri=http://bio2rdf.org/affymetrix:F26D11.3" .
+<http://bio2rdf.org/namespace:affymetrix> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/affymetrix/search/rdf?query=hexokinase" .
+
+
+
+
+<http://bio2rdf.org/namespace:biomodels> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/biomodels/describe/rdf?uri=http://bio2rdf.org/biomodels:BIOMD0000000048" .
+<http://bio2rdf.org/namespace:biomodels> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/biomodels/describe/rdf/biomodels:BIOMD0000000048" .
+<http://bio2rdf.org/namespace:biomodels> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/biomodels/links/rdf?uri=http://bio2rdf.org/biomodels:BIOMD0000000048" .
+<http://bio2rdf.org/namespace:biomodels> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/biomodels/search/rdf?query=hexokinase" .
+
+
+
+
+<http://bio2rdf.org/namespace:bioportal> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/bioportal/describe/rdf?uri=http://bio2rdf.org/ncbigene:3099" .
+<http://bio2rdf.org/namespace:bioportal> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/bioportal/describe/rdf/ncbigene:3099" .
+<http://bio2rdf.org/namespace:bioportal> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/bioportal/links/rdf?uri=http://bio2rdf.org/hgnc:4923" .
+<http://bio2rdf.org/namespace:bioportal> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/bioportal/search/rdf?query=hexokinase" .
+
+
+
+
+<http://bio2rdf.org/namespace:clinicaltrials> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/clinicaltrials/describe/rdf?uri=http://bio2rdf.org/clinicaltrials:NCT00005100" .
+<http://bio2rdf.org/namespace:clinicaltrials> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/clinicaltrials/describe/rdf/clinicaltrials:NCT00005100" .
+<http://bio2rdf.org/namespace:clinicaltrials> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/clinicaltrials/links/rdf?uri=http://bio2rdf.org/clinicaltrials_resource:005e837817c21a0393b99843cbfee450" .
+<http://bio2rdf.org/namespace:clinicaltrials> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/clinicaltrials/search/rdf?query=hexokinase" .
+
+
+
+
+<http://bio2rdf.org/namespace:ctd> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ctd/describe/rdf?uri=http://bio2rdf.org/ctd_resource:D001151406949" .
+<http://bio2rdf.org/namespace:ctd> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ctd/describe/rdf/ctd_resource:D001151406949" .
+<http://bio2rdf.org/namespace:ctd> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ctd/links/rdf?uri=http://bio2rdf.org/mesh:D001151" .
+<http://bio2rdf.org/namespace:ctd> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ctd/search/rdf?query=hexokinase" .
+
+
+
+
+<http://bio2rdf.org/namespace:dbsnp> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/dbsnp/describe/rdf?uri=http://bio2rdf.org/dbsnp:rs199422184" .
+<http://bio2rdf.org/namespace:dbsnp> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/dbsnp/describe/rdf/dbsnp:rs199422184" .
+<http://bio2rdf.org/namespace:dbsnp> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/dbsnp/links/rdf?uri=http://bio2rdf.org/genbank:NT_004487.19" .
+<http://bio2rdf.org/namespace:dbsnp> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/dbsnp/search/rdf?query=resource" .
+
+
+
+
+<http://bio2rdf.org/namespace:drugbank> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/drugbank/describe/rdf?uri=http://bio2rdf.org/drugbank:DB00001" .
+<http://bio2rdf.org/namespace:drugbank> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/drugbank/describe/rdf/drugbank:DB00001" .
+<http://bio2rdf.org/namespace:drugbank> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/drugbank/links/rdf?uri=http://bio2rdf.org/uspto:5180668" .
+<http://bio2rdf.org/namespace:drugbank> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/drugbank/search/rdf?query=hexokinase" .
+
+
+
+
+<http://bio2rdf.org/namespace:genage> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/genage/describe/rdf?uri=http://bio2rdf.org/genage:0357" .
+<http://bio2rdf.org/namespace:genage> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/genage/describe/rdf/genage:0357" .
+<http://bio2rdf.org/namespace:genage> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/genage/links/rdf?uri=http://bio2rdf.org/ncbigene:852639" .
+<http://bio2rdf.org/namespace:genage> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/genage/search/rdf?query=hexokinase" .
+
+
+
+
+<http://bio2rdf.org/namespace:gendr> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/gendr/describe/rdf?uri=http://bio2rdf.org/gendr:2" .
+<http://bio2rdf.org/namespace:gendr> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/gendr/describe/rdf/gendr:2" .
+<http://bio2rdf.org/namespace:gendr> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/gendr/links/rdf?uri=http://bio2rdf.org/pubmed:11000115" .
+<http://bio2rdf.org/namespace:gendr> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/gendr/search/rdf?query=hexokinase" .
+
+
+
+
+<http://bio2rdf.org/namespace:goa> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/goa/describe/rdf?uri=http://bio2rdf.org/go:0006915" .
+<http://bio2rdf.org/namespace:goa> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/goa/describe/rdf/go:0006915" .
+<http://bio2rdf.org/namespace:goa> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/goa/links/rdf?uri=http://bio2rdf.org/go:0006915" .
+<http://bio2rdf.org/namespace:goa> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/goa/search/rdf?query=hexokinase" .
+
+
+
+
+<http://bio2rdf.org/namespace:hgnc> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/hgnc/describe/rdf?uri=http://bio2rdf.org/hgnc:7" .
+<http://bio2rdf.org/namespace:hgnc> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/hgnc/describe/rdf/hgnc:7" .
+<http://bio2rdf.org/namespace:hgnc> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/hgnc/links/rdf?uri=http://bio2rdf.org/omim:103950" .
+<http://bio2rdf.org/namespace:hgnc> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/hgnc/search/rdf?query=hexokinase" .
+
+
+
+
+<http://bio2rdf.org/namespace:homologene> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/homologene/describe/rdf?uri=http://bio2rdf.org/homologene:1000" .
+<http://bio2rdf.org/namespace:homologene> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/homologene/describe/rdf/homologene:1000" .
+<http://bio2rdf.org/namespace:homologene> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/homologene/links/rdf?uri=http://bio2rdf.org/ncbigene:81580" .
+<http://bio2rdf.org/namespace:homologene> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/homologene/search/rdf?query=cldna" .
+
+
+
+
+<http://bio2rdf.org/namespace:interpro> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/interpro/describe/rdf?uri=http://bio2rdf.org/interpro:IPR000100" .
+<http://bio2rdf.org/namespace:interpro> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/interpro/describe/rdf/interpro:IPR000100" .
+<http://bio2rdf.org/namespace:interpro> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/interpro/links/rdf?uri=http://bio2rdf.org/pdb:3q1q" .
+<http://bio2rdf.org/namespace:interpro> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/interpro/search/rdf?query=hexokinase" .
+
+
+
+
+<http://bio2rdf.org/namespace:iproclass> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/iproclass/describe/rdf?uri=http://bio2rdf.org/iproclass:uniprot:B2RYJ4" .
+<http://bio2rdf.org/namespace:iproclass> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/iproclass/describe/rdf/iproclass:uniprot:B2RYJ4" .
+<http://bio2rdf.org/namespace:iproclass> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/iproclass/links/rdf?uri=http://bio2rdf.org/gi:149030154" .
+<http://bio2rdf.org/namespace:iproclass> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/iproclass/search/rdf?query=B2RYJ4" .
+
+
+
+
+<http://bio2rdf.org/namespace:irefindex> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/irefindex/describe/rdf?uri=http://bio2rdf.org/irefindex.irogid:1069566" .
+<http://bio2rdf.org/namespace:irefindex> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/irefindex/describe/rdf/irefindex.irogid:1069566" .
+<http://bio2rdf.org/namespace:irefindex> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/irefindex/links/rdf?uri=http://bio2rdf.org/uniprot:Q01768" .
+<http://bio2rdf.org/namespace:irefindex> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/irefindex/search/rdf?query=1069566" .
+
+
+
+
+<http://bio2rdf.org/namespace:lsr> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/lsr/describe/rdf?uri=http://bio2rdf.org/lsr:uniprot" .
+<http://bio2rdf.org/namespace:lsr> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/lsr/describe/rdf/lsr:uniprot" .
+<http://bio2rdf.org/namespace:lsr> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/lsr/links/rdf?uri=http://bio2rdf.org/pubmed:16381842" .
+<http://bio2rdf.org/namespace:lsr> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/lsr/search/rdf?query=consortium" .
+
+
+
+
+<http://bio2rdf.org/namespace:mesh> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/mesh/describe/rdf?uri=http://bio2rdf.org/mesh:D018377" .
+<http://bio2rdf.org/namespace:mesh> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/mesh/describe/rdf/mesh:D018377" .
+<http://bio2rdf.org/namespace:mesh> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/mesh/links/rdf?uri=http://bio2rdf.org/mesh_resource:BI" .
+<http://bio2rdf.org/namespace:mesh> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/mesh/search/rdf?query=hexokinase" .
+
+
+
+
+<http://bio2rdf.org/namespace:mgi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/mgi/describe/rdf?uri=http://bio2rdf.org/mgi:95484" .
+<http://bio2rdf.org/namespace:mgi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/mgi/describe/rdf/mgi:95484" .
+<http://bio2rdf.org/namespace:mgi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/mgi/links/rdf?uri=http://bio2rdf.org/genbank:BG976607" .
+<http://bio2rdf.org/namespace:mgi> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/mgi/search/rdf?query=hexokinase" .
+
+
+
+
+<http://bio2rdf.org/namespace:ncbigene> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ncbigene/describe/rdf?uri=http://bio2rdf.org/ncbigene:1" .
+<http://bio2rdf.org/namespace:ncbigene> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ncbigene/describe/rdf/ncbigene:1" .
+<http://bio2rdf.org/namespace:ncbigene> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ncbigene/links/rdf?uri=http://bio2rdf.org/pubmed:18706098" .
+<http://bio2rdf.org/namespace:ncbigene> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ncbigene/search/rdf?query=hexokinase" .
+
+
+
+
+<http://bio2rdf.org/namespace:ndc> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ndc/describe/rdf?uri=http://bio2rdf.org/ndc:49288-0001_272c9910-2160-4d41-afbd-faab3055ba1d" .
+<http://bio2rdf.org/namespace:ndc> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ndc/describe/rdf/ndc:49288-0001_272c9910-2160-4d41-afbd-faab3055ba1d" .
+<http://bio2rdf.org/namespace:ndc> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ndc/links/rdf?uri=http://bio2rdf.org/ndc:49288-0001-1" .
+<http://bio2rdf.org/namespace:ndc> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/ndc/search/rdf?query=alternata" .
+
+
+
+
+<http://bio2rdf.org/namespace:omim> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/omim/describe/rdf?uri=http://bio2rdf.org/omim:603903" .
+<http://bio2rdf.org/namespace:omim> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/omim/describe/rdf/omim:603903" .
+<http://bio2rdf.org/namespace:omim> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/omim/links/rdf?uri=http://bio2rdf.org/pubmed:7677966" .
+<http://bio2rdf.org/namespace:omim> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/omim/search/rdf?query=hexokinase" .
+
+
+
+
+<http://bio2rdf.org/namespace:pdb> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/pdb/describe/rdf?uri=http://rdf.wwpdb.org/pdb/1HKG/entity/1" .
+<http://bio2rdf.org/namespace:pdb> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/pdb/links/rdf?uri=http://rdf.wwpdb.org/pdb/1HKG/struct_ref/1" .
+<http://bio2rdf.org/namespace:pdb> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/pdb/search/rdf?query=hexokinase" .
+
+
+
+
+<http://bio2rdf.org/namespace:pharmgkb> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/pharmgkb/describe/rdf?uri=http://bio2rdf.org/pharmgkb:PA445062" .
+<http://bio2rdf.org/namespace:pharmgkb> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/pharmgkb/describe/rdf/pharmgkb:PA445062" .
+<http://bio2rdf.org/namespace:pharmgkb> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/pharmgkb/links/rdf?uri=http://bio2rdf.org/dbsnp:rs10426377" .
+<http://bio2rdf.org/namespace:pharmgkb> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/pharmgkb/search/rdf?query=hexokinase" .
+
+
+
+
+<http://bio2rdf.org/namespace:pubchem> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/pubchem/describe/rdf?uri=http://rdf.ncbi.nlm.nih.gov/pubchem/bioassay/AID20492" .
+<http://bio2rdf.org/namespace:pubchem> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/pubchem/links/rdf?uri=http://rdf.ncbi.nlm.nih.gov/pubchem/source/ChEMBL" .
+<http://bio2rdf.org/namespace:pubchem> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/pubchem/search/rdf?query=hexokinase" .
+
+
+
+
+<http://bio2rdf.org/namespace:pubmed> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/pubmed/describe/rdf?uri=http://bio2rdf.org/pubmed:5874906" .
+<http://bio2rdf.org/namespace:pubmed> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/pubmed/describe/rdf/pubmed:5874906" .
+<http://bio2rdf.org/namespace:pubmed> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/pubmed/links/rdf?uri=http://bio2rdf.org/pubmed_resource:5874906_CHEMICAL_3" .
+<http://bio2rdf.org/namespace:pubmed> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/pubmed/search/rdf?query=hexokinase" .
+
+
+
+
+<http://bio2rdf.org/namespace:sabiork> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/sabiork/describe/rdf?uri=http://sabiork.h-its.org/biopax%23catalysis11900" .
+<http://bio2rdf.org/namespace:sabiork> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/sabiork/links/rdf?uri=http://sabiork.h-its.org/biopax%23reaction8164" .
+<http://bio2rdf.org/namespace:sabiork> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/sabiork/search/rdf?query=hexokinase" .
+
+
+
+
+<http://bio2rdf.org/namespace:sgd> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/sgd/describe/rdf?uri=http://bio2rdf.org/sgd:S000028457" .
+<http://bio2rdf.org/namespace:sgd> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/sgd/describe/rdf/sgd:S000028457" .
+<http://bio2rdf.org/namespace:sgd> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/sgd/links/rdf?uri=http://bio2rdf.org/sgd:ARS1020" .
+<http://bio2rdf.org/namespace:sgd> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/sgd/search/rdf?query=hexokinase" .
+
+
+
+
+<http://bio2rdf.org/namespace:sider> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/sider/describe/rdf?uri=http://bio2rdf.org/sider:20111220_b379b413-5d66-4adb-8521-3978f10bbd1d" .
+<http://bio2rdf.org/namespace:sider> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/sider/describe/rdf/sider:20111220_b379b413-5d66-4adb-8521-3978f10bbd1d" .
+<http://bio2rdf.org/namespace:sider> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/sider/links/rdf?uri=http://bio2rdf.org/umls:C0702166" .
+<http://bio2rdf.org/namespace:sider> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/sider/search/rdf?query=venlafaxine" .
+
+
+
+
+<http://bio2rdf.org/namespace:taxonomy> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/taxonomy/describe/rdf?uri=http://bio2rdf.org/taxonomy:9606" .
+<http://bio2rdf.org/namespace:taxonomy> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/taxonomy/describe/rdf/taxonomy:9606" .
+<http://bio2rdf.org/namespace:taxonomy> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/taxonomy/links/rdf?uri=http://bio2rdf.org/taxonomy:9606" .
+<http://bio2rdf.org/namespace:taxonomy> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/taxonomy/search/rdf?query=sapiens" .
+
+
+
+
+<http://bio2rdf.org/namespace:wormbase> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/wormbase/describe/rdf?uri=http://bio2rdf.org/wormbase:WBGene00000001" .
+<http://bio2rdf.org/namespace:wormbase> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/wormbase/describe/rdf/wormbase:WBGene00000001" .
+<http://bio2rdf.org/namespace:wormbase> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/wormbase/links/rdf?uri=http://bio2rdf.org/wormbase:WBGene00000001" .
+<http://bio2rdf.org/namespace:wormbase> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/wormbase/search/rdf?query=phosphoinositide" .
+
+
+
+
+

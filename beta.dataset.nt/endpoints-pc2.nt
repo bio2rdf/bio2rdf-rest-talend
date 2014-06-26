@@ -32,16 +32,6 @@
 <http://bio2rdf.org/namespace:pc> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_rest_search> " http://beta.rest.pc.bio2rdf.org/pc/search/rdf/$QUERY$" .
 
 
-<http://bio2rdf.org/namespace:pc> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/pc/rest_describe/rdf/uniprot:Q06609" .
-<http://bio2rdf.org/namespace:pc> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/pc/rest_describe/rdf?uri=http://identifiers.org/uniprot/Q06609" .
-<http://bio2rdf.org/namespace:pc> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/pc/rest_links/rdf/uniprot:P20908" .
-<http://bio2rdf.org/namespace:pc> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/pc/rest_links/rdf/GENE_SYMBOL:HK1" .
-<http://bio2rdf.org/namespace:pc> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/pc/rest_search/rdf/hexokinase" .
-<http://bio2rdf.org/namespace:pc> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/pc/describe/rdf?uri=http://cbio.mskcc.org/cpath%23CPATH-557956" .
-<http://bio2rdf.org/namespace:pc> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/pc/links/rdf?uri=http://cbio.mskcc.org/cpath%23CPATH-506115" .
-<http://bio2rdf.org/namespace:pc> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/pc/search/rdf/hexokinase" .
-
-
 <http://bio2rdf.org/namespace:pc> <http://bio2rdf.org/bio2rdf_vocabulary:url_page> " http://pathwaycommons.bio2rdf.org/describe/?url=http%3A%2F%2Fbio2rdf.org%2F$NS$:$ID$" .
 
 
