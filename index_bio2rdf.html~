@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html version="XHTML+RDFa 1.0" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Bio2RDF</title>
+	<link href="http://m.bio2rdf.org/image/bio2rdf.png" rel="shortcut icon" />
+</head>
+<body>
+<table summary="">
+	<tbody>
+		<tr>
+			<td width="20%"><a href="http://bioinformatique.ulaval.ca/team/"><img alt="ulaval" height="80" src="http://www.ulaval.ca/Al/fichiers/UL.jpg" /></a></td>
+			<td width="60%">&nbsp;</td>
+			<td width="20%"><a href="http://dumontierlab.com/"><img alt="carleton" height="80" src="http://m.bio2rdf.org/image/carleton.png" /></a></td>
+		</tr>
+	</tbody>
+</table>
+
+<div id="all">
+<div id="main" style="text-align: center;">
+<div style="height: 20%;">&nbsp;</div>
+<img alt="Bio2RDF" src="http://m.bio2rdf.org/image/bio2rdf.png" />
+<div id="main" style="text-align: center;">
+<h1>Linked Data Hub for the Life Sciences</h1>
+</div>
+
+<form action="/noscript/" method="GET" name="form1" onsubmit="document.location='/page/'+form1.id.value+'';return false;"><select name="selectvalue" onchange="form1.id.value = this.options[this.selectedIndex].value;" size="1"><option selected="selected" valu11e="">Select an ID example</option><option value="go:0032283">plastid acetate CoA-transferase complex [go:0032283]</option><option value="chebi:16526">carbon dioxide [chebi:16526]</option><option value="omim:602080">PAGET DISEASE OF BONE; PDB [omim:602080]</option><option value="geneid:37191">Serotonin receptor 1B (symbol:5-HT1B,taxon:7227) [geneid:37191]</option><option value="taxonomy:9606">Homo Sapiens [taxon:9606]</option><option value="drugbank:DB00143">Glutathione [drugbank:DB00143]</option><option value="go:0005813">Centrosome [go:0005813]</option><option value="pharmgkb:PA128406956">fluorouracil [pharmgkb:PA128406956]</option><option value="affymetrix:1415765_at">probeset 1415765_at on GeneChip HT Mouse Genome MG-430B (Mus musculus) [affymetrix:1415765_at]</option><option value="sgd:S000006169">GAL4 [sgd:S000006169]</option><option value="ndc:0781-1034">Trifluoperazine Hydrochloride (5 mg/1 trifluoperazine hydrochloride) [ndc:0781-1034]</option><option value="homologene:8260">HomoloGene Group 8260 [homologene:8260]</option><option value="dip:DIP-57266E">3 component complex identified by protein cross-linking with a bifunctional reagent [dip:DIP-57266E]</option><option value="hgnc:24086">APOBEC1 complementation factor [hgnc:24086]</option><option value="interpro:IPR009407">Viral polyprotein, parechovirus P3B (VPP_parechovir_P3B) Domain [interpro:IPR009407]</option> </select> <input maxlength="150" name="id" size="30" type="text" /> <input type="submit" value="Submit" />&nbsp;</form>
+</div>
+
+<div id="footer" style="text-align: center;">
+<ul style="list-style-type: none;">
+	<li>
+	<h3><a href="/test">REST services test page</a></h3>
+	</li>
+	<li>.</li>
+	<li>Get more information about available Bio2RDF datasets <a href="https://github.com/bio2rdf/bio2rdf-scripts/wiki">here</a>.</li>
+	<li>Release 2 datasets list <a href="http://download.bio2rdf.org/release/2/release.html">here</a></li>
+	<li>&nbsp;</li>
+	<li>Download : <a href="https://sourceforge.net/projects/bio2rdf/">Bio2RDF version 2.0 REST server</a>, <a href="https://sourceforge.net/projects/bio2rdf/files/talend4bio2rdf/">Talend for Bio2RDF</a>, <a href="https://sourceforge.net/projects/bio2rdf/files/talend4sw/">Talend for Semantic Web</a>.</li>
+</ul>
+</div>
+</div>
+
+<div id="footer" style="text-align: center;">Powered by <a href="http://www.talend.com/products/esb">Talend ESB</a> and <a href="http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/">Virtuoso Open-Source Edition</a></div>
+
+<table summary="">
+	<tbody>
+		<tr>
+			<td width="20%">
+			<h3><a href="https://twitter.com/bio2rdf"><img height="30" src="http://m.bio2rdf.org/image/twitter.png" />@bio2rdf</a></h3>
+			</td>
+			<td width="60%">&nbsp;</td>
+			<td width="100%"><a href="http://groups.google.com/group/bio2rdf">Send your comments to the project team</a></td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
+
