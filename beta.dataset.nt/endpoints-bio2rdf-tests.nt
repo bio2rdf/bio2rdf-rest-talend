@@ -234,5 +234,11 @@
 
 
 
+<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot/describe/rdf?uri=http://purl.uniprot.org/uniprot/G3S6F7" .
+<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot/links/rdf?uri=http://purl.uniprot.org/pfam/PF00480" .
+<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot/search/rdf?query=hexokinase" .
+
+
+
 
 

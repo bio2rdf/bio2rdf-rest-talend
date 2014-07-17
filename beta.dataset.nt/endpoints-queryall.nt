@@ -58,15 +58,6 @@
 
 
 
-<http://bio2rdf.org/namespace:go> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
-<http://bio2rdf.org/namespace:go> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
-<http://bio2rdf.org/namespace:go> <http://purl.org/dc/elements/1.1/identifier> "namespace:go" .
-<http://bio2rdf.org/namespace:go> <http://purl.org/dc/elements/1.1/title> "go" .
-<http://bio2rdf.org/namespace:go> <http://www.w3.org/2000/01/rdf-schema#label> "go informations [namespace:go]" .
-
-<http://bio2rdf.org/namespace:go> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://queryall.rest.bio2rdf.org/queryall/$NSID$" .
-
-
 
 <http://bio2rdf.org/namespace:hgnc.symbol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:hgnc.symbol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
@@ -228,16 +219,6 @@
 <http://bio2rdf.org/namespace:broad.tucp> <http://www.w3.org/2000/01/rdf-schema#label> "broad.tucp informations [namespace:broad.tucp]" .
 
 <http://bio2rdf.org/namespace:broad.tucp> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://queryall.rest.bio2rdf.org/queryall/$NSID$" .
-
-
-
-<http://bio2rdf.org/namespace:reactome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
-<http://bio2rdf.org/namespace:reactome> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
-<http://bio2rdf.org/namespace:reactome> <http://purl.org/dc/elements/1.1/identifier> "namespace:reactome" .
-<http://bio2rdf.org/namespace:reactome> <http://purl.org/dc/elements/1.1/title> "reactome" .
-<http://bio2rdf.org/namespace:reactome> <http://www.w3.org/2000/01/rdf-schema#label> "reactome informations [namespace:reactome]" .
-
-<http://bio2rdf.org/namespace:reactome> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://queryall.rest.bio2rdf.org/queryall/$NSID$" .
 
 
 
@@ -500,14 +481,6 @@
 <http://bio2rdf.org/namespace:cas> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://queryall.rest.bio2rdf.org/queryall/$NSID$" .
 
 
-
-<http://bio2rdf.org/namespace:chebi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
-<http://bio2rdf.org/namespace:chebi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
-<http://bio2rdf.org/namespace:chebi> <http://purl.org/dc/elements/1.1/identifier> "namespace:chebi" .
-<http://bio2rdf.org/namespace:chebi> <http://purl.org/dc/elements/1.1/title> "chebi" .
-<http://bio2rdf.org/namespace:chebi> <http://www.w3.org/2000/01/rdf-schema#label> "chebi informations [namespace:chebi]" .
-
-<http://bio2rdf.org/namespace:chebi> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://queryall.rest.bio2rdf.org/queryall/$NSID$" .
 
 
 
@@ -941,16 +914,6 @@
 
 
 
-<http://bio2rdf.org/namespace:panther> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
-<http://bio2rdf.org/namespace:panther> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
-<http://bio2rdf.org/namespace:panther> <http://purl.org/dc/elements/1.1/identifier> "namespace:panther" .
-<http://bio2rdf.org/namespace:panther> <http://purl.org/dc/elements/1.1/title> "panther" .
-<http://bio2rdf.org/namespace:panther> <http://www.w3.org/2000/01/rdf-schema#label> "panther informations [namespace:panther]" .
-
-<http://bio2rdf.org/namespace:panther> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://queryall.rest.bio2rdf.org/queryall/$NSID$" .
-
-
-
 <http://bio2rdf.org/namespace:embl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:embl> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:embl> <http://purl.org/dc/elements/1.1/identifier> "namespace:embl" .
@@ -1011,15 +974,6 @@
 
 
 
-<http://bio2rdf.org/namespace:pdb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
-<http://bio2rdf.org/namespace:pdb> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
-<http://bio2rdf.org/namespace:pdb> <http://purl.org/dc/elements/1.1/identifier> "namespace:pdb" .
-<http://bio2rdf.org/namespace:pdb> <http://purl.org/dc/elements/1.1/title> "pdb" .
-<http://bio2rdf.org/namespace:pdb> <http://www.w3.org/2000/01/rdf-schema#label> "pdb informations [namespace:pdb]" .
-
-<http://bio2rdf.org/namespace:pdb> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://queryall.rest.bio2rdf.org/queryall/$NSID$" .
-
-
 
 <http://bio2rdf.org/namespace:ecocyc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
 <http://bio2rdf.org/namespace:ecocyc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
@@ -1038,16 +992,6 @@
 <http://bio2rdf.org/namespace:hamap> <http://www.w3.org/2000/01/rdf-schema#label> "hamap informations [namespace:hamap]" .
 
 <http://bio2rdf.org/namespace:hamap> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://queryall.rest.bio2rdf.org/queryall/$NSID$" .
-
-
-
-<http://bio2rdf.org/namespace:exo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://endpoint.bio2rdf.org/resource> .
-<http://bio2rdf.org/namespace:exo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bio2rdf.org/resource> .
-<http://bio2rdf.org/namespace:exo> <http://purl.org/dc/elements/1.1/identifier> "namespace:exo" .
-<http://bio2rdf.org/namespace:exo> <http://purl.org/dc/elements/1.1/title> "exo" .
-<http://bio2rdf.org/namespace:exo> <http://www.w3.org/2000/01/rdf-schema#label> "exo informations [namespace:exo]" .
-
-<http://bio2rdf.org/namespace:exo> <http://bio2rdf.org/bio2rdf_vocabulary:sparql_describe> " http://queryall.rest.bio2rdf.org/queryall/$NSID$" .
 
 
 

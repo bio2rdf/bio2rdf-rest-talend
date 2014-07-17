@@ -115,12 +115,12 @@
 
 
 
-<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot/describe/rdf/uniprot:P19367" .
-<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot/describe/rdf?uri=http://purl.uniprot.org/uniprot/P19367" .
-<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot/links/rdf?uri=http://purl.uniprot.org/uniprot/P19367" .
-<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot/links/rdf/go:0051156" .
-<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot/search/rdf?query=hexokinase" .
-<http://bio2rdf.org/namespace:uniprot> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot/search/rdf/hexokinase" .
+<http://bio2rdf.org/namespace:uniprot_sparql> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_sparql/describe/rdf/uniprot:P19367" .
+<http://bio2rdf.org/namespace:uniprot_sparql> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_sparql/describe/rdf?uri=http://purl.uniprot.org/uniprot/P19367" .
+<http://bio2rdf.org/namespace:uniprot_sparql> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_sparql/links/rdf?uri=http://purl.uniprot.org/uniprot/P19367" .
+<http://bio2rdf.org/namespace:uniprot_sparql> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_sparql/links/rdf/go:0051156" .
+<http://bio2rdf.org/namespace:uniprot_sparql> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_sparql/search/rdf?query=hexokinase" .
+<http://bio2rdf.org/namespace:uniprot_sparql> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/uniprot_sparql/search/rdf/hexokinase" .
 
 
 
