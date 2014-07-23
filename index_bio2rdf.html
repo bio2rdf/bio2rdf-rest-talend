@@ -4,6 +4,29 @@
 	<title>Bio2RDF</title>
 	<link href="http://m.bio2rdf.org/image/bio2rdf.png" rel="shortcut icon" />
 </head>
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setCookieDomain", "*.bio2rdf.org"]);
+  _paq.push(["setDomains", ["*.bio2rdf.org"]]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http")
++ "://ls22.genome.ulaval.ca:10001/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'),
+s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js';
+s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img
+src="http://ls22.genome.ulaval.ca:10001/piwik.php?idsite=1"
+style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
 <body>
 <br/><br/>
 <div id="all">
@@ -15,14 +38,12 @@
 </div>
 <br/><br/>
 <form action="/noscript/" method="GET" name="form1" onsubmit="document.location='/page/'+form1.id.value+'';return false;"><select name="selectvalue" onchange="form1.id.value = this.options[this.selectedIndex].value;" size="1"><option selected="selected" valu11e="">Select an ID example</option>
-<option value="affymetrix:1415765_at">Affymetrix 1415765_at on GeneChip HT Mouse Genome MG-430B (Mus musculus) [affymetrix:1415765_at]</option>
-<option value="clinicaltrials:NCT00050895">Comparing the Safety, Effectiveness, and Tolerability of Three Anti-HIV Drug Regimens for Treatment-Naive Patients [clinicaltrials:NCT00050895]</option>
+<option value="affymetrix:1415765_at">Affymetrix on GeneChip HT Mouse Genome MG-430B [affymetrix:1415765_at]</option>
+<option value="clinicaltrials:NCT00050895">Comparing Three Anti-HIV Drug Regimens [clinicaltrials:NCT00050895]</option>
 <option value="ctd_resource:D001151406949">Arsenic-MIR15B chemical-gene association [ctd_resource:D001151406949]</option>
-<option value="chebi:16526">carbon dioxide [chebi:16526]</option>
 <option value="dbsnp:rs199422184">ASPN frameshift variant [dbsnp:rs199422184]</option>
 <option value="drugbank:DB00143">Vioxx [drugbank:DB00533 ]</option>
-<option value="go:0032283">plastid acetate CoA-transferase complex [go:0032283]</option>
-<option value="gendr_resource:9cd488f9b76caaed4610ed21e43bdaf8">CDC25 and variation in life span extension induced by dietary restriction [gendr_resource:9cd488f9b76caaed4610ed21e43bdaf8]</option>
+<option value="gendr_resource:9cd488f9b76caaed4610ed21e43bdaf8">CDC25 induced by dietary restriction [gendr_resource:9cd488f9b76caaed4610ed21e43bdaf8]</option>
 <option value="homologene:8260">HomoloGene Group 8260 [homologene:8260]</option>
 <option value="hgnc:24086">APOBEC1 complementation factor [hgnc:24086]</option>
 <option value="iproclass:uniprot:P69380">Ferrous-iron efflux pump FieF [iproclass:uniprot:P69380"</option> 
@@ -31,9 +52,7 @@
 <option value="mesh:D018377">Neurotransmitter Agents [mesh:D018377]</option>
 <option value="mgi:95484">Fas [mgi:95484]</option>
 <option value="ncbigene:37191">Serotonin receptor 1B (symbol:5-HT1B,taxon:7227) [ncbigene:37191]</option>
-<option value="ndc:0781-1034">Trifluoperazine Hydrochloride (5 mg/1 trifluoperazine hydrochloride) [ndc:0781-1034]</option>
 <option value="omim:602080">PAGET DISEASE OF BONE; PDB [omim:602080]</option>
-<option value="orphanet:85163">Hypomyelination - congenital cataract [orphanet:85163]</option>
 <option value="pubmed:23735196">Ontology-Based Querying with Bio2RDFs Linked Open Data. [pubmed:23735196]</option>
 <option value="pharmgkb:PA128406956">fluorouracil [pharmgkb:PA128406956]</option>
 <option value="sgd:S000006169">GAL4 [sgd:S000006169]</option>
