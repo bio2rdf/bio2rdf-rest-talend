@@ -14695,141 +14695,172 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 						result_tFixedFlowInput_6
 								.append("bS5iaW8ycmRmLm9yZy9pbWFnZS9iaW8ycmRmLnBuZyIgcmVsPSJzaG9ydGN1dCBpY29uIiAvPg0K");
 						result_tFixedFlowInput_6
-								.append("PC9oZWFkPg0KPGJvZHk+DQo8dGFibGUgc3VtbWFyeT0iIj4NCgk8dGJvZHk+DQoJCTx0cj4NCgkJ");
+								.append("PC9oZWFkPgo8IS0tIFBpd2lrIC0tPgo8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCI+CiAg");
 						result_tFixedFlowInput_6
-								.append("CTx0ZCB3aWR0aD0iMjAlIj48YSBocmVmPSJodHRwOi8vYmlvaW5mb3JtYXRpcXVlLnVsYXZhbC5j");
+								.append("dmFyIF9wYXEgPSBfcGFxIHx8IFtdOwogIF9wYXEucHVzaChbInNldERvY3VtZW50VGl0bGUiLCBk");
 						result_tFixedFlowInput_6
-								.append("YS90ZWFtLyI+PGltZyBhbHQ9InVsYXZhbCIgaGVpZ2h0PSI4MCIgc3JjPSJodHRwOi8vd3d3LnVs");
+								.append("b2N1bWVudC5kb21haW4gKyAiLyIgKyBkb2N1bWVudC50aXRsZV0pOwogIF9wYXEucHVzaChbInNl");
 						result_tFixedFlowInput_6
-								.append("YXZhbC5jYS9BbC9maWNoaWVycy9VTC5qcGciIC8+PC9hPjwvdGQ+DQoJCQk8dGQgd2lkdGg9IjYw");
+								.append("dENvb2tpZURvbWFpbiIsICIqLmJpbzJyZGYub3JnIl0pOwogIF9wYXEucHVzaChbInNldERvbWFp");
 						result_tFixedFlowInput_6
-								.append("JSI+Jm5ic3A7PC90ZD4NCgkJCTx0ZCB3aWR0aD0iMjAlIj48YSBocmVmPSJodHRwOi8vZHVtb250");
+								.append("bnMiLCBbIiouYmlvMnJkZi5vcmciXV0pOwogIF9wYXEucHVzaChbJ3RyYWNrUGFnZVZpZXcnXSk7");
 						result_tFixedFlowInput_6
-								.append("aWVybGFiLmNvbS8iPjxpbWcgYWx0PSJjYXJsZXRvbiIgaGVpZ2h0PSI4MCIgc3JjPSJodHRwOi8v");
+								.append("CiAgX3BhcS5wdXNoKFsnZW5hYmxlTGlua1RyYWNraW5nJ10pOwogIChmdW5jdGlvbigpIHsKICAg");
 						result_tFixedFlowInput_6
-								.append("bS5iaW8ycmRmLm9yZy9pbWFnZS9jYXJsZXRvbi5wbmciIC8+PC9hPjwvdGQ+DQoJCTwvdHI+DQoJ");
+								.append("IHZhciB1PSgoImh0dHBzOiIgPT0gZG9jdW1lbnQubG9jYXRpb24ucHJvdG9jb2wpID8gImh0dHBz");
 						result_tFixedFlowInput_6
-								.append("PC90Ym9keT4NCjwvdGFibGU+DQoNCjxkaXYgaWQ9ImFsbCI+DQo8ZGl2IGlkPSJtYWluIiBzdHls");
+								.append("IiA6ICJodHRwIikKKyAiOi8vbHMyMi5nZW5vbWUudWxhdmFsLmNhOjEwMDAxLyI7CiAgICBfcGFx");
 						result_tFixedFlowInput_6
-								.append("ZT0idGV4dC1hbGlnbjogY2VudGVyOyI+DQo8ZGl2IHN0eWxlPSJoZWlnaHQ6IDIwJTsiPiZuYnNw");
+								.append("LnB1c2goWydzZXRUcmFja2VyVXJsJywgdSsncGl3aWsucGhwJ10pOwogICAgX3BhcS5wdXNoKFsn");
 						result_tFixedFlowInput_6
-								.append("OzwvZGl2Pg0KPGltZyBhbHQ9IkJpbzJSREYiIHNyYz0iaHR0cDovL20uYmlvMnJkZi5vcmcvaW1h");
+								.append("c2V0U2l0ZUlkJywgMV0pOwogICAgdmFyIGQ9ZG9jdW1lbnQsIGc9ZC5jcmVhdGVFbGVtZW50KCdz");
 						result_tFixedFlowInput_6
-								.append("Z2UvYmlvMnJkZi5wbmciIC8+DQo8ZGl2IGlkPSJtYWluIiBzdHlsZT0idGV4dC1hbGlnbjogY2Vu");
+								.append("Y3JpcHQnKSwKcz1kLmdldEVsZW1lbnRzQnlUYWdOYW1lKCdzY3JpcHQnKVswXTsgZy50eXBlPSd0");
 						result_tFixedFlowInput_6
-								.append("dGVyOyI+DQo8aDE+TGlua2VkIERhdGEgSHViIGZvciB0aGUgTGlmZSBTY2llbmNlczwvaDE+DQo8");
+								.append("ZXh0L2phdmFzY3JpcHQnOwogICAgZy5kZWZlcj10cnVlOyBnLmFzeW5jPXRydWU7IGcuc3JjPXUr");
 						result_tFixedFlowInput_6
-								.append("L2Rpdj4NCg0KPGZvcm0gYWN0aW9uPSIvbm9zY3JpcHQvIiBtZXRob2Q9IkdFVCIgbmFtZT0iZm9y");
+								.append("J3Bpd2lrLmpzJzsKcy5wYXJlbnROb2RlLmluc2VydEJlZm9yZShnLHMpOwogIH0pKCk7Cjwvc2Ny");
 						result_tFixedFlowInput_6
-								.append("bTEiIG9uc3VibWl0PSJkb2N1bWVudC5sb2NhdGlvbj0nL3BhZ2UvJytmb3JtMS5pZC52YWx1ZSsn");
+								.append("aXB0Pgo8bm9zY3JpcHQ+PHA+PGltZwpzcmM9Imh0dHA6Ly9sczIyLmdlbm9tZS51bGF2YWwuY2E6");
 						result_tFixedFlowInput_6
-								.append("JztyZXR1cm4gZmFsc2U7Ij48c2VsZWN0IG5hbWU9InNlbGVjdHZhbHVlIiBvbmNoYW5nZT0iZm9y");
+								.append("MTAwMDEvcGl3aWsucGhwP2lkc2l0ZT0xIgpzdHlsZT0iYm9yZGVyOjA7IiBhbHQ9IiIgLz48L3A+");
 						result_tFixedFlowInput_6
-								.append("bTEuaWQudmFsdWUgPSB0aGlzLm9wdGlvbnNbdGhpcy5zZWxlY3RlZEluZGV4XS52YWx1ZTsiIHNp");
+								.append("PC9ub3NjcmlwdD4KPCEtLSBFbmQgUGl3aWsgQ29kZSAtLT4NCjxib2R5Pg0KPHRhYmxlIHN1bW1h");
 						result_tFixedFlowInput_6
-								.append("emU9IjEiPjxvcHRpb24gc2VsZWN0ZWQ9InNlbGVjdGVkIiB2YWx1MTFlPSIiPlNlbGVjdCBhbiBJ");
+								.append("cnk9IiI+DQoJPHRib2R5Pg0KCQk8dHI+DQoJCQk8dGQgd2lkdGg9IjIwJSI+PGEgaHJlZj0iaHR0");
 						result_tFixedFlowInput_6
-								.append("RCBleGFtcGxlPC9vcHRpb24+PG9wdGlvbiB2YWx1ZT0iZ286MDAzMjI4MyI+cGxhc3RpZCBhY2V0");
+								.append("cDovL2Jpb2luZm9ybWF0aXF1ZS51bGF2YWwuY2EvdGVhbS8iPjxpbWcgYWx0PSJ1bGF2YWwiIGhl");
 						result_tFixedFlowInput_6
-								.append("YXRlIENvQS10cmFuc2ZlcmFzZSBjb21wbGV4IFtnbzowMDMyMjgzXTwvb3B0aW9uPjxvcHRpb24g");
+								.append("aWdodD0iODAiIHNyYz0iaHR0cDovL3d3dy51bGF2YWwuY2EvQWwvZmljaGllcnMvVUwuanBnIiAv");
 						result_tFixedFlowInput_6
-								.append("dmFsdWU9ImNoZWJpOjE2NTI2Ij5jYXJib24gZGlveGlkZSBbY2hlYmk6MTY1MjZdPC9vcHRpb24+");
+								.append("PjwvYT48L3RkPg0KCQkJPHRkIHdpZHRoPSI2MCUiPiZuYnNwOzwvdGQ+DQoJCQk8dGQgd2lkdGg9");
 						result_tFixedFlowInput_6
-								.append("PG9wdGlvbiB2YWx1ZT0ib21pbTo2MDIwODAiPlBBR0VUIERJU0VBU0UgT0YgQk9ORTsgUERCIFtv");
+								.append("IjIwJSI+PGEgaHJlZj0iaHR0cDovL2R1bW9udGllcmxhYi5jb20vIj48aW1nIGFsdD0iY2FybGV0");
 						result_tFixedFlowInput_6
-								.append("bWltOjYwMjA4MF08L29wdGlvbj48b3B0aW9uIHZhbHVlPSJnZW5laWQ6MzcxOTEiPlNlcm90b25p");
+								.append("b24iIGhlaWdodD0iODAiIHNyYz0iaHR0cDovL20uYmlvMnJkZi5vcmcvaW1hZ2UvY2FybGV0b24u");
 						result_tFixedFlowInput_6
-								.append("biByZWNlcHRvciAxQiAoc3ltYm9sOjUtSFQxQix0YXhvbjo3MjI3KSBbZ2VuZWlkOjM3MTkxXTwv");
+								.append("cG5nIiAvPjwvYT48L3RkPg0KCQk8L3RyPg0KCTwvdGJvZHk+DQo8L3RhYmxlPg0KDQo8ZGl2IGlk");
 						result_tFixedFlowInput_6
-								.append("b3B0aW9uPjxvcHRpb24gdmFsdWU9InRheG9ub215Ojk2MDYiPkhvbW8gU2FwaWVucyBbdGF4b246");
+								.append("PSJhbGwiPg0KPGRpdiBpZD0ibWFpbiIgc3R5bGU9InRleHQtYWxpZ246IGNlbnRlcjsiPg0KPGRp");
 						result_tFixedFlowInput_6
-								.append("OTYwNl08L29wdGlvbj48b3B0aW9uIHZhbHVlPSJkcnVnYmFuazpEQjAwMTQzIj5HbHV0YXRoaW9u");
+								.append("diBzdHlsZT0iaGVpZ2h0OiAyMCU7Ij4mbmJzcDs8L2Rpdj4NCjxpbWcgYWx0PSJCaW8yUkRGIiBz");
 						result_tFixedFlowInput_6
-								.append("ZSBbZHJ1Z2Jhbms6REIwMDE0M108L29wdGlvbj48b3B0aW9uIHZhbHVlPSJnbzowMDA1ODEzIj5D");
+								.append("cmM9Imh0dHA6Ly9tLmJpbzJyZGYub3JnL2ltYWdlL2JpbzJyZGYucG5nIiAvPg0KPGRpdiBpZD0i");
 						result_tFixedFlowInput_6
-								.append("ZW50cm9zb21lIFtnbzowMDA1ODEzXTwvb3B0aW9uPjxvcHRpb24gdmFsdWU9InBoYXJtZ2tiOlBB");
+								.append("bWFpbiIgc3R5bGU9InRleHQtYWxpZ246IGNlbnRlcjsiPg0KPGgxPkxpbmtlZCBEYXRhIEh1YiBm");
 						result_tFixedFlowInput_6
-								.append("MTI4NDA2OTU2Ij5mbHVvcm91cmFjaWwgW3BoYXJtZ2tiOlBBMTI4NDA2OTU2XTwvb3B0aW9uPjxv");
+								.append("b3IgdGhlIExpZmUgU2NpZW5jZXM8L2gxPg0KPC9kaXY+DQoNCjxmb3JtIGFjdGlvbj0iL25vc2Ny");
 						result_tFixedFlowInput_6
-								.append("cHRpb24gdmFsdWU9ImFmZnltZXRyaXg6MTQxNTc2NV9hdCI+cHJvYmVzZXQgMTQxNTc2NV9hdCBv");
+								.append("aXB0LyIgbWV0aG9kPSJHRVQiIG5hbWU9ImZvcm0xIiBvbnN1Ym1pdD0iZG9jdW1lbnQubG9jYXRp");
 						result_tFixedFlowInput_6
-								.append("biBHZW5lQ2hpcCBIVCBNb3VzZSBHZW5vbWUgTUctNDMwQiAoTXVzIG11c2N1bHVzKSBbYWZmeW1l");
+								.append("b249Jy9wYWdlLycrZm9ybTEuaWQudmFsdWUrJyc7cmV0dXJuIGZhbHNlOyI+PHNlbGVjdCBuYW1l");
 						result_tFixedFlowInput_6
-								.append("dHJpeDoxNDE1NzY1X2F0XTwvb3B0aW9uPjxvcHRpb24gdmFsdWU9InNnZDpTMDAwMDA2MTY5Ij5H");
+								.append("PSJzZWxlY3R2YWx1ZSIgb25jaGFuZ2U9ImZvcm0xLmlkLnZhbHVlID0gdGhpcy5vcHRpb25zW3Ro");
 						result_tFixedFlowInput_6
-								.append("QUw0IFtzZ2Q6UzAwMDAwNjE2OV08L29wdGlvbj48b3B0aW9uIHZhbHVlPSJuZGM6MDc4MS0xMDM0");
+								.append("aXMuc2VsZWN0ZWRJbmRleF0udmFsdWU7IiBzaXplPSIxIj48b3B0aW9uIHNlbGVjdGVkPSJzZWxl");
 						result_tFixedFlowInput_6
-								.append("Ij5UcmlmbHVvcGVyYXppbmUgSHlkcm9jaGxvcmlkZSAoNSBtZy8xIHRyaWZsdW9wZXJhemluZSBo");
+								.append("Y3RlZCIgdmFsdTExZT0iIj5TZWxlY3QgYW4gSUQgZXhhbXBsZTwvb3B0aW9uPjxvcHRpb24gdmFs");
 						result_tFixedFlowInput_6
-								.append("eWRyb2NobG9yaWRlKSBbbmRjOjA3ODEtMTAzNF08L29wdGlvbj48b3B0aW9uIHZhbHVlPSJob21v");
+								.append("dWU9ImdvOjAwMzIyODMiPnBsYXN0aWQgYWNldGF0ZSBDb0EtdHJhbnNmZXJhc2UgY29tcGxleCBb");
 						result_tFixedFlowInput_6
-								.append("bG9nZW5lOjgyNjAiPkhvbW9sb0dlbmUgR3JvdXAgODI2MCBbaG9tb2xvZ2VuZTo4MjYwXTwvb3B0");
+								.append("Z286MDAzMjI4M108L29wdGlvbj48b3B0aW9uIHZhbHVlPSJjaGViaToxNjUyNiI+Y2FyYm9uIGRp");
 						result_tFixedFlowInput_6
-								.append("aW9uPjxvcHRpb24gdmFsdWU9ImRpcDpESVAtNTcyNjZFIj4zIGNvbXBvbmVudCBjb21wbGV4IGlk");
+								.append("b3hpZGUgW2NoZWJpOjE2NTI2XTwvb3B0aW9uPjxvcHRpb24gdmFsdWU9Im9taW06NjAyMDgwIj5Q");
 						result_tFixedFlowInput_6
-								.append("ZW50aWZpZWQgYnkgcHJvdGVpbiBjcm9zcy1saW5raW5nIHdpdGggYSBiaWZ1bmN0aW9uYWwgcmVh");
+								.append("QUdFVCBESVNFQVNFIE9GIEJPTkU7IFBEQiBbb21pbTo2MDIwODBdPC9vcHRpb24+PG9wdGlvbiB2");
 						result_tFixedFlowInput_6
-								.append("Z2VudCBbZGlwOkRJUC01NzI2NkVdPC9vcHRpb24+PG9wdGlvbiB2YWx1ZT0iaGduYzoyNDA4NiI+");
+								.append("YWx1ZT0iZ2VuZWlkOjM3MTkxIj5TZXJvdG9uaW4gcmVjZXB0b3IgMUIgKHN5bWJvbDo1LUhUMUIs");
 						result_tFixedFlowInput_6
-								.append("QVBPQkVDMSBjb21wbGVtZW50YXRpb24gZmFjdG9yIFtoZ25jOjI0MDg2XTwvb3B0aW9uPjxvcHRp");
+								.append("dGF4b246NzIyNykgW2dlbmVpZDozNzE5MV08L29wdGlvbj48b3B0aW9uIHZhbHVlPSJ0YXhvbm9t");
 						result_tFixedFlowInput_6
-								.append("b24gdmFsdWU9ImludGVycHJvOklQUjAwOTQwNyI+VmlyYWwgcG9seXByb3RlaW4sIHBhcmVjaG92");
+								.append("eTo5NjA2Ij5Ib21vIFNhcGllbnMgW3RheG9uOjk2MDZdPC9vcHRpb24+PG9wdGlvbiB2YWx1ZT0i");
 						result_tFixedFlowInput_6
-								.append("aXJ1cyBQM0IgKFZQUF9wYXJlY2hvdmlyX1AzQikgRG9tYWluIFtpbnRlcnBybzpJUFIwMDk0MDdd");
+								.append("ZHJ1Z2Jhbms6REIwMDE0MyI+R2x1dGF0aGlvbmUgW2RydWdiYW5rOkRCMDAxNDNdPC9vcHRpb24+");
 						result_tFixedFlowInput_6
-								.append("PC9vcHRpb24+IDwvc2VsZWN0PiA8aW5wdXQgbWF4bGVuZ3RoPSIxNTAiIG5hbWU9ImlkIiBzaXpl");
+								.append("PG9wdGlvbiB2YWx1ZT0iZ286MDAwNTgxMyI+Q2VudHJvc29tZSBbZ286MDAwNTgxM108L29wdGlv");
 						result_tFixedFlowInput_6
-								.append("PSIzMCIgdHlwZT0idGV4dCIgLz4gPGlucHV0IHR5cGU9InN1Ym1pdCIgdmFsdWU9IlN1Ym1pdCIg");
+								.append("bj48b3B0aW9uIHZhbHVlPSJwaGFybWdrYjpQQTEyODQwNjk1NiI+Zmx1b3JvdXJhY2lsIFtwaGFy");
 						result_tFixedFlowInput_6
-								.append("Lz4mbmJzcDs8L2Zvcm0+DQo8L2Rpdj4NCg0KPGRpdiBpZD0iZm9vdGVyIiBzdHlsZT0idGV4dC1h");
+								.append("bWdrYjpQQTEyODQwNjk1Nl08L29wdGlvbj48b3B0aW9uIHZhbHVlPSJhZmZ5bWV0cml4OjE0MTU3");
 						result_tFixedFlowInput_6
-								.append("bGlnbjogY2VudGVyOyI+DQo8dWwgc3R5bGU9Imxpc3Qtc3R5bGUtdHlwZTogbm9uZTsiPg0KCTxs");
+								.append("NjVfYXQiPnByb2Jlc2V0IDE0MTU3NjVfYXQgb24gR2VuZUNoaXAgSFQgTW91c2UgR2Vub21lIE1H");
 						result_tFixedFlowInput_6
-								.append("aT4NCgk8aDM+PGEgaHJlZj0iL3Rlc3QiPlJFU1Qgc2VydmljZXMgdGVzdCBwYWdlPC9hPjwvaDM+");
+								.append("LTQzMEIgKE11cyBtdXNjdWx1cykgW2FmZnltZXRyaXg6MTQxNTc2NV9hdF08L29wdGlvbj48b3B0");
 						result_tFixedFlowInput_6
-								.append("DQoJPC9saT4NCgk8bGk+LjwvbGk+DQoJPGxpPkdldCBtb3JlIGluZm9ybWF0aW9uIGFib3V0IGF2");
+								.append("aW9uIHZhbHVlPSJzZ2Q6UzAwMDAwNjE2OSI+R0FMNCBbc2dkOlMwMDAwMDYxNjldPC9vcHRpb24+");
 						result_tFixedFlowInput_6
-								.append("YWlsYWJsZSBCaW8yUkRGIGRhdGFzZXRzIDxhIGhyZWY9Imh0dHBzOi8vZ2l0aHViLmNvbS9iaW8y");
+								.append("PG9wdGlvbiB2YWx1ZT0ibmRjOjA3ODEtMTAzNCI+VHJpZmx1b3BlcmF6aW5lIEh5ZHJvY2hsb3Jp");
 						result_tFixedFlowInput_6
-								.append("cmRmL2JpbzJyZGYtc2NyaXB0cy93aWtpIj5oZXJlPC9hPi48L2xpPg0KCTxsaT5SZWxlYXNlIDIg");
+								.append("ZGUgKDUgbWcvMSB0cmlmbHVvcGVyYXppbmUgaHlkcm9jaGxvcmlkZSkgW25kYzowNzgxLTEwMzRd");
 						result_tFixedFlowInput_6
-								.append("ZGF0YXNldHMgbGlzdCA8YSBocmVmPSJodHRwOi8vZG93bmxvYWQuYmlvMnJkZi5vcmcvcmVsZWFz");
+								.append("PC9vcHRpb24+PG9wdGlvbiB2YWx1ZT0iaG9tb2xvZ2VuZTo4MjYwIj5Ib21vbG9HZW5lIEdyb3Vw");
 						result_tFixedFlowInput_6
-								.append("ZS8yL3JlbGVhc2UuaHRtbCI+aGVyZTwvYT48L2xpPg0KCTxsaT4mbmJzcDs8L2xpPg0KCTxsaT5E");
+								.append("IDgyNjAgW2hvbW9sb2dlbmU6ODI2MF08L29wdGlvbj48b3B0aW9uIHZhbHVlPSJkaXA6RElQLTU3");
 						result_tFixedFlowInput_6
-								.append("b3dubG9hZCA6IDxhIGhyZWY9Imh0dHBzOi8vc291cmNlZm9yZ2UubmV0L3Byb2plY3RzL2JpbzJy");
+								.append("MjY2RSI+MyBjb21wb25lbnQgY29tcGxleCBpZGVudGlmaWVkIGJ5IHByb3RlaW4gY3Jvc3MtbGlu");
 						result_tFixedFlowInput_6
-								.append("ZGYvIj5CaW8yUkRGIHZlcnNpb24gMi4wIFJFU1Qgc2VydmVyPC9hPiwgPGEgaHJlZj0iaHR0cHM6");
+								.append("a2luZyB3aXRoIGEgYmlmdW5jdGlvbmFsIHJlYWdlbnQgW2RpcDpESVAtNTcyNjZFXTwvb3B0aW9u");
 						result_tFixedFlowInput_6
-								.append("Ly9zb3VyY2Vmb3JnZS5uZXQvcHJvamVjdHMvYmlvMnJkZi9maWxlcy90YWxlbmQ0YmlvMnJkZi8i");
+								.append("PjxvcHRpb24gdmFsdWU9ImhnbmM6MjQwODYiPkFQT0JFQzEgY29tcGxlbWVudGF0aW9uIGZhY3Rv");
 						result_tFixedFlowInput_6
-								.append("PlRhbGVuZCBmb3IgQmlvMlJERjwvYT4sIDxhIGhyZWY9Imh0dHBzOi8vc291cmNlZm9yZ2UubmV0");
+								.append("ciBbaGduYzoyNDA4Nl08L29wdGlvbj48b3B0aW9uIHZhbHVlPSJpbnRlcnBybzpJUFIwMDk0MDci");
 						result_tFixedFlowInput_6
-								.append("L3Byb2plY3RzL2JpbzJyZGYvZmlsZXMvdGFsZW5kNHN3LyI+VGFsZW5kIGZvciBTZW1hbnRpYyBX");
+								.append("PlZpcmFsIHBvbHlwcm90ZWluLCBwYXJlY2hvdmlydXMgUDNCIChWUFBfcGFyZWNob3Zpcl9QM0Ip");
 						result_tFixedFlowInput_6
-								.append("ZWI8L2E+LjwvbGk+DQo8L3VsPg0KPC9kaXY+DQo8L2Rpdj4NCg0KPGRpdiBpZD0iZm9vdGVyIiBz");
+								.append("IERvbWFpbiBbaW50ZXJwcm86SVBSMDA5NDA3XTwvb3B0aW9uPiA8L3NlbGVjdD4gPGlucHV0IG1h");
 						result_tFixedFlowInput_6
-								.append("dHlsZT0idGV4dC1hbGlnbjogY2VudGVyOyI+UG93ZXJlZCBieSA8YSBocmVmPSJodHRwOi8vd3d3");
+								.append("eGxlbmd0aD0iMTUwIiBuYW1lPSJpZCIgc2l6ZT0iMzAiIHR5cGU9InRleHQiIC8+IDxpbnB1dCB0");
 						result_tFixedFlowInput_6
-								.append("LnRhbGVuZC5jb20vcHJvZHVjdHMvZXNiIj5UYWxlbmQgRVNCPC9hPiBhbmQgPGEgaHJlZj0iaHR0");
+								.append("eXBlPSJzdWJtaXQiIHZhbHVlPSJTdWJtaXQiIC8+Jm5ic3A7PC9mb3JtPg0KPC9kaXY+DQoNCjxk");
 						result_tFixedFlowInput_6
-								.append("cDovL3ZpcnR1b3NvLm9wZW5saW5rc3cuY29tL2RhdGFzcGFjZS9kb2MvZGF2L3dpa2kvTWFpbi8i");
+								.append("aXYgaWQ9ImZvb3RlciIgc3R5bGU9InRleHQtYWxpZ246IGNlbnRlcjsiPg0KPHVsIHN0eWxlPSJs");
 						result_tFixedFlowInput_6
-								.append("PlZpcnR1b3NvIE9wZW4tU291cmNlIEVkaXRpb248L2E+PC9kaXY+DQoNCjx0YWJsZSBzdW1tYXJ5");
+								.append("aXN0LXN0eWxlLXR5cGU6IG5vbmU7Ij4NCgk8bGk+DQoJPGgzPjxhIGhyZWY9Ii90ZXN0Ij5SRVNU");
 						result_tFixedFlowInput_6
-								.append("PSIiPg0KCTx0Ym9keT4NCgkJPHRyPg0KCQkJPHRkIHdpZHRoPSIyMCUiPg0KCQkJPGgzPjxhIGhy");
+								.append("IHNlcnZpY2VzIHRlc3QgcGFnZTwvYT48L2gzPg0KCTwvbGk+DQoJPGxpPi48L2xpPg0KCTxsaT5H");
 						result_tFixedFlowInput_6
-								.append("ZWY9Imh0dHBzOi8vdHdpdHRlci5jb20vYmlvMnJkZiI+PGltZyBoZWlnaHQ9IjMwIiBzcmM9Imh0");
+								.append("ZXQgbW9yZSBpbmZvcm1hdGlvbiBhYm91dCBhdmFpbGFibGUgQmlvMlJERiBkYXRhc2V0cyA8YSBo");
 						result_tFixedFlowInput_6
-								.append("dHA6Ly9tLmJpbzJyZGYub3JnL2ltYWdlL3R3aXR0ZXIucG5nIiAvPkBiaW8ycmRmPC9hPjwvaDM+");
+								.append("cmVmPSJodHRwczovL2dpdGh1Yi5jb20vYmlvMnJkZi9iaW8ycmRmLXNjcmlwdHMvd2lraSI+aGVy");
 						result_tFixedFlowInput_6
-								.append("DQoJCQk8L3RkPg0KCQkJPHRkIHdpZHRoPSI2MCUiPiZuYnNwOzwvdGQ+DQoJCQk8dGQgd2lkdGg9");
+								.append("ZTwvYT4uPC9saT4NCgk8bGk+UmVsZWFzZSAyIGRhdGFzZXRzIGxpc3QgPGEgaHJlZj0iaHR0cDov");
 						result_tFixedFlowInput_6
-								.append("IjEwMCUiPjxhIGhyZWY9Imh0dHA6Ly9ncm91cHMuZ29vZ2xlLmNvbS9ncm91cC9iaW8ycmRmIj5T");
+								.append("L2Rvd25sb2FkLmJpbzJyZGYub3JnL3JlbGVhc2UvMi9yZWxlYXNlLmh0bWwiPmhlcmU8L2E+PC9s");
 						result_tFixedFlowInput_6
-								.append("ZW5kIHlvdXIgY29tbWVudHMgdG8gdGhlIHByb2plY3QgdGVhbTwvYT48L3RkPg0KCQk8L3RyPg0K");
+								.append("aT4NCgk8bGk+Jm5ic3A7PC9saT4NCgk8bGk+RG93bmxvYWQgOiA8YSBocmVmPSJodHRwczovL3Nv");
 						result_tFixedFlowInput_6
-								.append("CTwvdGJvZHk+DQo8L3RhYmxlPg0KPC9ib2R5Pg0KPC9odG1sPg0K");
+								.append("dXJjZWZvcmdlLm5ldC9wcm9qZWN0cy9iaW8ycmRmLyI+QmlvMlJERiB2ZXJzaW9uIDIuMCBSRVNU");
+						result_tFixedFlowInput_6
+								.append("IHNlcnZlcjwvYT4sIDxhIGhyZWY9Imh0dHBzOi8vc291cmNlZm9yZ2UubmV0L3Byb2plY3RzL2Jp");
+						result_tFixedFlowInput_6
+								.append("bzJyZGYvZmlsZXMvdGFsZW5kNGJpbzJyZGYvIj5UYWxlbmQgZm9yIEJpbzJSREY8L2E+LCA8YSBo");
+						result_tFixedFlowInput_6
+								.append("cmVmPSJodHRwczovL3NvdXJjZWZvcmdlLm5ldC9wcm9qZWN0cy9iaW8ycmRmL2ZpbGVzL3RhbGVu");
+						result_tFixedFlowInput_6
+								.append("ZDRzdy8iPlRhbGVuZCBmb3IgU2VtYW50aWMgV2ViPC9hPi48L2xpPg0KPC91bD4NCjwvZGl2Pg0K");
+						result_tFixedFlowInput_6
+								.append("PC9kaXY+DQoNCjxkaXYgaWQ9ImZvb3RlciIgc3R5bGU9InRleHQtYWxpZ246IGNlbnRlcjsiPlBv");
+						result_tFixedFlowInput_6
+								.append("d2VyZWQgYnkgPGEgaHJlZj0iaHR0cDovL3d3dy50YWxlbmQuY29tL3Byb2R1Y3RzL2VzYiI+VGFs");
+						result_tFixedFlowInput_6
+								.append("ZW5kIEVTQjwvYT4gYW5kIDxhIGhyZWY9Imh0dHA6Ly92aXJ0dW9zby5vcGVubGlua3N3LmNvbS9k");
+						result_tFixedFlowInput_6
+								.append("YXRhc3BhY2UvZG9jL2Rhdi93aWtpL01haW4vIj5WaXJ0dW9zbyBPcGVuLVNvdXJjZSBFZGl0aW9u");
+						result_tFixedFlowInput_6
+								.append("PC9hPjwvZGl2Pg0KDQo8dGFibGUgc3VtbWFyeT0iIj4NCgk8dGJvZHk+DQoJCTx0cj4NCgkJCTx0");
+						result_tFixedFlowInput_6
+								.append("ZCB3aWR0aD0iMjAlIj4NCgkJCTxoMz48YSBocmVmPSJodHRwczovL3R3aXR0ZXIuY29tL2JpbzJy");
+						result_tFixedFlowInput_6
+								.append("ZGYiPjxpbWcgaGVpZ2h0PSIzMCIgc3JjPSJodHRwOi8vbS5iaW8ycmRmLm9yZy9pbWFnZS90d2l0");
+						result_tFixedFlowInput_6
+								.append("dGVyLnBuZyIgLz5AYmlvMnJkZjwvYT48L2gzPg0KCQkJPC90ZD4NCgkJCTx0ZCB3aWR0aD0iNjAl");
+						result_tFixedFlowInput_6
+								.append("Ij4mbmJzcDs8L3RkPg0KCQkJPHRkIHdpZHRoPSIxMDAlIj48YSBocmVmPSJodHRwOi8vZ3JvdXBz");
+						result_tFixedFlowInput_6
+								.append("Lmdvb2dsZS5jb20vZ3JvdXAvYmlvMnJkZiI+U2VuZCB5b3VyIGNvbW1lbnRzIHRvIHRoZSBwcm9q");
+						result_tFixedFlowInput_6
+								.append("ZWN0IHRlYW08L2E+PC90ZD4NCgkJPC90cj4NCgk8L3Rib2R5Pg0KPC90YWJsZT4NCjwvYm9keT4N");
+						result_tFixedFlowInput_6.append("CjwvaHRtbD4NCg==");
 						String originalFileContent_tFixedFlowInput_6 = "";
 						try {
 							originalFileContent_tFixedFlowInput_6 = new String(
@@ -23138,6 +23169,6 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- * 586601 characters generated by Talend Open Studio for ESB on the 18 juillet
- * 2014 16:51:06 EDT
+ * 588389 characters generated by Talend Open Studio for ESB on the 23 juillet
+ * 2014 15:41:54 EDT
  ************************************************************************************************/
