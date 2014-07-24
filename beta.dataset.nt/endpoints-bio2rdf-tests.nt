@@ -14,8 +14,8 @@
 
 
 
-<http://bio2rdf.org/namespace:bioportal> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/bioportal/describe/rdf?uri=http://bio2rdf.org/ncbigene:3099" .
-<http://bio2rdf.org/namespace:bioportal> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/bioportal/describe/rdf/ncbigene:3099" .
+<http://bio2rdf.org/namespace:bioportal> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/bioportal/describe/rdf?uri=http://bio2rdf.org/ncbigene:309902" .
+<http://bio2rdf.org/namespace:bioportal> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/bioportal/describe/rdf/ncbigene:309902" .
 <http://bio2rdf.org/namespace:bioportal> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/bioportal/links/rdf?uri=http://bio2rdf.org/hgnc:4923" .
 <http://bio2rdf.org/namespace:bioportal> <http://bio2rdf.org/bio2rdf_vocabulary:test> "/bioportal/search/rdf?query=hexokinase" .
 
