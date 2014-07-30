@@ -135,6 +135,13 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 
 			}
 
+			if (database_endpoint != null) {
+
+				this.setProperty("database_endpoint",
+						database_endpoint.toString());
+
+			}
+
 		}
 
 		public String ns;
@@ -159,6 +166,12 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 
 		public String getFormat() {
 			return this.format;
+		}
+
+		public String database_endpoint;
+
+		public String getDatabase_endpoint() {
+			return this.database_endpoint;
 		}
 	}
 
@@ -326,7 +339,7 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 		tJenaCreateModel_1_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void tFixedFlowInput_1_error(java.lang.Exception exception,
+	public void tSparqlSelectRequest_1_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
 
@@ -334,7 +347,8 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 
 		status = "failure";
 
-		tFixedFlowInput_1_onSubJobError(exception, errorComponent, globalMap);
+		tSparqlSelectRequest_1_onSubJobError(exception, errorComponent,
+				globalMap);
 	}
 
 	public void tLogRow_1_error(java.lang.Exception exception,
@@ -345,7 +359,8 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 
 		status = "failure";
 
-		tFixedFlowInput_1_onSubJobError(exception, errorComponent, globalMap);
+		tSparqlSelectRequest_1_onSubJobError(exception, errorComponent,
+				globalMap);
 	}
 
 	public void tReplicate_1_error(java.lang.Exception exception,
@@ -356,7 +371,8 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 
 		status = "failure";
 
-		tFixedFlowInput_1_onSubJobError(exception, errorComponent, globalMap);
+		tSparqlSelectRequest_1_onSubJobError(exception, errorComponent,
+				globalMap);
 	}
 
 	public void tSparqlConstructRequest_1_error(java.lang.Exception exception,
@@ -367,7 +383,8 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 
 		status = "failure";
 
-		tFixedFlowInput_1_onSubJobError(exception, errorComponent, globalMap);
+		tSparqlSelectRequest_1_onSubJobError(exception, errorComponent,
+				globalMap);
 	}
 
 	public void tLogRow_2_error(java.lang.Exception exception,
@@ -378,7 +395,8 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 
 		status = "failure";
 
-		tFixedFlowInput_1_onSubJobError(exception, errorComponent, globalMap);
+		tSparqlSelectRequest_1_onSubJobError(exception, errorComponent,
+				globalMap);
 	}
 
 	public void tJenaReadRow_1_error(java.lang.Exception exception,
@@ -389,7 +407,8 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 
 		status = "failure";
 
-		tFixedFlowInput_1_onSubJobError(exception, errorComponent, globalMap);
+		tSparqlSelectRequest_1_onSubJobError(exception, errorComponent,
+				globalMap);
 	}
 
 	public void tPostjob_1_error(java.lang.Exception exception,
@@ -462,8 +481,9 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 
 	}
 
-	public void tFixedFlowInput_1_onSubJobError(java.lang.Exception exception,
-			String errorComponent, final java.util.Map<String, Object> globalMap)
+	public void tSparqlSelectRequest_1_onSubJobError(
+			java.lang.Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap)
 			throws TalendException {
 
 		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread
@@ -572,7 +592,7 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 						"", "");
 			}
 
-			tFixedFlowInput_1Process(globalMap);
+			tSparqlSelectRequest_1Process(globalMap);
 
 		} catch (java.lang.Exception e) {
 
@@ -1248,10 +1268,10 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 
 	}
 
-	public void tFixedFlowInput_1Process(
+	public void tSparqlSelectRequest_1Process(
 			final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		globalMap.put("tFixedFlowInput_1_SUBPROCESS_STATE", 0);
+		globalMap.put("tSparqlSelectRequest_1_SUBPROCESS_STATE", 0);
 
 		final boolean execStat = this.execStat;
 
@@ -1366,276 +1386,336 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 				 */
 
 				/**
-				 * [tFixedFlowInput_1 begin ] start
+				 * [tSparqlSelectRequest_1 begin ] start
 				 */
 
-				ok_Hash.put("tFixedFlowInput_1", false);
-				start_Hash.put("tFixedFlowInput_1", System.currentTimeMillis());
+				ok_Hash.put("tSparqlSelectRequest_1", false);
+				start_Hash.put("tSparqlSelectRequest_1",
+						System.currentTimeMillis());
 
-				currentComponent = "tFixedFlowInput_1";
+				currentComponent = "tSparqlSelectRequest_1";
 
-				int tos_count_tFixedFlowInput_1 = 0;
+				int tos_count_tSparqlSelectRequest_1 = 0;
 
-				StringBuilder result_tFixedFlowInput_1 = new StringBuilder();
-				result_tFixedFlowInput_1
-						.append("YWZmeW1ldHJpeApiaW9tb2RlbHMKYmlvcG9ydGFsCmNsaW5pY2FsdHJpYWxzCmN0ZApkYnNucApk");
-				result_tFixedFlowInput_1
-						.append("cnVnYmFuawpnZW5hZ2UKZ2VuZHIKZ29hCmhnbmMKaG9tb2xvZ2VuZQppbnRlcnBybwppcHJvY2xh");
-				result_tFixedFlowInput_1
-						.append("c3MKaXJlZmluZGV4CmxzcgptZXNoCm1naQpuY2JpZ2VuZQpuZGMKb21pbQpwZGIKcGhhcm1na2IK");
-				result_tFixedFlowInput_1
-						.append("cHViY2hlbQpwdWJtZWQKc2FiaW9yawpzZ2QKc2lkZXIKdGF4b25vbXkKd29ybWJhc2UKYXRsYXMK");
-				result_tFixedFlowInput_1
-						.append("Z2VuZQpnZW5iYW5rCmhocGlkCmtlZ2cKdG94a2I=");
-				String originalFileContent_tFixedFlowInput_1 = "";
+				String URL_string_tSparqlSelectRequest_1;
+
+				URL_string_tSparqlSelectRequest_1 = context.database_endpoint
+						+ "?default-graph-uri=&query="
+						+ java.net.URLEncoder
+								.encode("SELECT ?o WHERE { 	<http://bio2rdf.org/datasets> <http://bio2rdf.org/bio2rdf_vocabulary:describe_list> ?o . }",
+										"UTF-8")
+						+ "&format=application%2Fsparql-results%2Bjson&timeout=0&debug=on";
+
+				org.json.JSONArray jsonArray_tSparqlSelectRequest_1 = new org.json.JSONArray();
+
+				org.json.JSONArray jsonKeysArray_tSparqlSelectRequest_1;
+
+				java.util.ArrayList<String> queryKeys_tSparqlSelectRequest_1 = new java.util.ArrayList<String>();
+				// ArrayList that will contain the key value of the query sorted
+				// correctly
+
+				org.json.JSONObject jsonObj_tSparqlSelectRequest_1;
+
+				java.util.Iterator<String> queryKeysIterator_tSparqlSelectRequest_1;
+
+				java.net.URL url_tSparqlSelectRequest_1 = new java.net.URL(
+						URL_string_tSparqlSelectRequest_1);
+
+				java.net.HttpURLConnection urlConn_tSparqlSelectRequest_1 = (java.net.HttpURLConnection) url_tSparqlSelectRequest_1
+						.openConnection();
+				urlConn_tSparqlSelectRequest_1.setRequestMethod("GET");
+				urlConn_tSparqlSelectRequest_1.setDoOutput(true);
+				urlConn_tSparqlSelectRequest_1.setDoInput(true);
+				urlConn_tSparqlSelectRequest_1.setUseCaches(false);
+
 				try {
-					originalFileContent_tFixedFlowInput_1 = new String(
-							(new sun.misc.BASE64Decoder()).decodeBuffer(result_tFixedFlowInput_1
-									.toString()), utf8Charset);
-				} catch (java.lang.Exception e) {
-					e.printStackTrace();
-				}
+					urlConn_tSparqlSelectRequest_1.connect();
 
-				int nb_line_tFixedFlowInput_1 = 0;
+					byte[] buffer_tSparqlSelectRequest_1 = new byte[1024];
+					int bos_buffer_tSparqlSelectRequest_1 = 0;
 
-				for (int i_tFixedFlowInput_1 = 0; i_tFixedFlowInput_1 < 1; i_tFixedFlowInput_1++) {
+					StringBuilder sb_tSparqlSelectRequest_1 = new StringBuilder();
 
-					java.io.InputStream ins_tFixedFlowInput_1 = new java.io.ByteArrayInputStream(
-							originalFileContent_tFixedFlowInput_1
-									.getBytes(utf8Charset));
-					org.talend.fileprocess.FileInputDelimited fid_tFixedFlowInput_1 = new org.talend.fileprocess.FileInputDelimited(
-							ins_tFixedFlowInput_1, utf8Charset, ";", "\n",
-							true, 0, 0, -1, -1, false);
+					if (java.net.HttpURLConnection.HTTP_OK == (urlConn_tSparqlSelectRequest_1
+							.getResponseCode())) {
+						java.io.InputStream bis_tSparqlSelectRequest_1 = new java.io.BufferedInputStream(
+								urlConn_tSparqlSelectRequest_1.getInputStream());
 
-					while (fid_tFixedFlowInput_1.nextRecord()) {
-						nb_line_tFixedFlowInput_1++;
-						row1 = new row1Struct();
-
-						if (0 < fid_tFixedFlowInput_1
-								.getColumnsCountOfCurrentRow()) {
-							String colContent = fid_tFixedFlowInput_1.get(0);
-							row1.endpoint = (colContent == null || colContent
-									.length() == 0) ? null : colContent;
-						} else {
-
-							row1.endpoint = null;
-
+						while ((bos_buffer_tSparqlSelectRequest_1 = bis_tSparqlSelectRequest_1
+								.read(buffer_tSparqlSelectRequest_1)) != -1) {
+							// Then the table of bytes and its size are used to
+							// generate a string
+							// which is added to a string builder that will
+							// contain the whole response
+							sb_tSparqlSelectRequest_1.append(new String(
+									buffer_tSparqlSelectRequest_1, 0,
+									bos_buffer_tSparqlSelectRequest_1));
 						}
+						bis_tSparqlSelectRequest_1.close();
 
-						/**
-						 * [tFixedFlowInput_1 begin ] stop
-						 */
-						/**
-						 * [tFixedFlowInput_1 main ] start
-						 */
-
-						currentComponent = "tFixedFlowInput_1";
-
-						tos_count_tFixedFlowInput_1++;
-
-						/**
-						 * [tFixedFlowInput_1 main ] stop
-						 */
-
-						/**
-						 * [tLogRow_1 main ] start
-						 */
-
-						currentComponent = "tLogRow_1";
-
-						// /////////////////////
-
-						strBuffer_tLogRow_1 = new StringBuilder();
-
-						if (row1.endpoint != null) { //
-
-							strBuffer_tLogRow_1.append(String
-									.valueOf(row1.endpoint));
-
-						} //
-
-						if (globalMap.get("tLogRow_CONSOLE") != null) {
-							consoleOut_tLogRow_1 = (java.io.PrintStream) globalMap
-									.get("tLogRow_CONSOLE");
-						} else {
-							consoleOut_tLogRow_1 = new java.io.PrintStream(
-									new java.io.BufferedOutputStream(System.out));
-							globalMap.put("tLogRow_CONSOLE",
-									consoleOut_tLogRow_1);
-						}
-
-						consoleOut_tLogRow_1.println(strBuffer_tLogRow_1
-								.toString());
-						consoleOut_tLogRow_1.flush();
-						nb_line_tLogRow_1++;
-						// ////
-
-						// ////
-
-						// /////////////////////
-
-						row3 = row1;
-
-						tos_count_tLogRow_1++;
-
-						/**
-						 * [tLogRow_1 main ] stop
-						 */
-
-						/**
-						 * [tReplicate_1 main ] start
-						 */
-
-						currentComponent = "tReplicate_1";
-
-						row6 = new row6Struct();
-
-						row6.endpoint = row3.endpoint;
-
-						tos_count_tReplicate_1++;
-
-						/**
-						 * [tReplicate_1 main ] stop
-						 */
-
-						/**
-						 * [tSparqlConstructRequest_1 main ] start
-						 */
-
-						currentComponent = "tSparqlConstructRequest_1";
-
-						String URL_string_tSparqlConstructRequest_1;
-
-						URL_string_tSparqlConstructRequest_1 = "http://"
-								+ row6.endpoint
-								+ ".bio2rdf.org/sparql"
-								+ "?default-graph-uri=&query="
-								+ java.net.URLEncoder.encode(
-										"construct {?s ?p ?o .}   where {?s ?p ?o .  FILTER (?s = <http://bio2rdf.org/"
-												+ context.ns + ":" + context.id
-												+ ">) .}", "UTF-8")
-								+ "&format=" + "text%2Fplain"
-								+ "&timeout=0&debug=on";
-
-						java.net.URL url_tSparqlConstructRequest_1 = new java.net.URL(
-								URL_string_tSparqlConstructRequest_1);
-
-						try {
-
-							java.net.HttpURLConnection urlConn_tSparqlConstructRequest_1 = (java.net.HttpURLConnection) url_tSparqlConstructRequest_1
-									.openConnection();
-							urlConn_tSparqlConstructRequest_1
-									.setRequestMethod("GET");
-							urlConn_tSparqlConstructRequest_1.setDoOutput(true);
-							urlConn_tSparqlConstructRequest_1.setDoInput(true);
-							urlConn_tSparqlConstructRequest_1
-									.setUseCaches(false);
-
-							urlConn_tSparqlConstructRequest_1.connect();
-
-							byte[] buffer_tSparqlConstructRequest_1 = new byte[1024];
-							int bos_buffer_tSparqlConstructRequest_1 = 0;
-
-							StringBuilder sb_tSparqlConstructRequest_1 = new StringBuilder();
-
-							if (java.net.HttpURLConnection.HTTP_OK == (urlConn_tSparqlConstructRequest_1
-									.getResponseCode())) {
-								java.io.InputStream bis_tSparqlConstructRequest_1 = new java.io.BufferedInputStream(
-										urlConn_tSparqlConstructRequest_1
-												.getInputStream());
-
-								while ((bos_buffer_tSparqlConstructRequest_1 = bis_tSparqlConstructRequest_1
-										.read(buffer_tSparqlConstructRequest_1)) != -1) {
-
-									sb_tSparqlConstructRequest_1
-											.append(new String(
-													buffer_tSparqlConstructRequest_1,
-													0,
-													bos_buffer_tSparqlConstructRequest_1));
-
-								}
-								bis_tSparqlConstructRequest_1.close();
-
-							} else {
-								System.err
-										.println(urlConn_tSparqlConstructRequest_1
-												.getResponseCode()
-												+ " "
-												+ urlConn_tSparqlConstructRequest_1
-														.getResponseMessage());
-							}
-
-							row2.endpoint = row6.endpoint;
-
-							row2.SparqlResults = sb_tSparqlConstructRequest_1
-									.toString();
-
-							urlConn_tSparqlConstructRequest_1.disconnect();
-						} catch (Exception e) {
-							System.err.println("UnknownHostException");
-						}
-
-						tos_count_tSparqlConstructRequest_1++;
-
-						/**
-						 * [tSparqlConstructRequest_1 main ] stop
-						 */
-
-						/**
-						 * [tLogRow_2 main ] start
-						 */
-
-						currentComponent = "tLogRow_2";
-
-						row4 = row2;
-
-						tos_count_tLogRow_2++;
-
-						/**
-						 * [tLogRow_2 main ] stop
-						 */
-
-						/**
-						 * [tJenaReadRow_1 main ] start
-						 */
-
-						currentComponent = "tJenaReadRow_1";
-
-						String stringToConvert_tJenaReadRow_1 = row4.SparqlResults;
-
-						InputStream stringIn_tJenaReadRow_1 = new ByteArrayInputStream(
-								stringToConvert_tJenaReadRow_1.getBytes());
-
-						model_tJenaReadRow_1.read(stringIn_tJenaReadRow_1, "",
-								"N-TRIPLE");
-
-						globalMap.put("model_tJenaCreateModel_1",
-								model_tJenaReadRow_1);
-
-						tos_count_tJenaReadRow_1++;
-
-						/**
-						 * [tJenaReadRow_1 main ] stop
-						 */
-
-						/**
-						 * [tFixedFlowInput_1 end ] start
-						 */
-
-						currentComponent = "tFixedFlowInput_1";
-
+					} else {
+						System.err.println(urlConn_tSparqlSelectRequest_1
+								.getResponseCode()
+								+ " "
+								+ urlConn_tSparqlSelectRequest_1
+										.getResponseMessage());
 					}
-					fid_tFixedFlowInput_1.close();
+
+					urlConn_tSparqlSelectRequest_1.disconnect();
+
+					jsonObj_tSparqlSelectRequest_1 = new org.json.JSONObject(
+							sb_tSparqlSelectRequest_1.toString());
+
+					jsonKeysArray_tSparqlSelectRequest_1 = jsonObj_tSparqlSelectRequest_1
+							.getJSONObject("head").getJSONArray("vars");
+					for (int k_tSparqlSelectRequest_1 = 0; k_tSparqlSelectRequest_1 < jsonKeysArray_tSparqlSelectRequest_1
+							.length(); k_tSparqlSelectRequest_1++) {
+						queryKeys_tSparqlSelectRequest_1
+								.add(jsonKeysArray_tSparqlSelectRequest_1
+										.getString(k_tSparqlSelectRequest_1));
+					}
+
+					jsonArray_tSparqlSelectRequest_1 = jsonObj_tSparqlSelectRequest_1
+							.getJSONObject("results").getJSONArray("bindings");
+
+				} catch (Exception e) {
+					System.err.println("UnknownHostException");
 				}
 
-				globalMap.put("tFixedFlowInput_1_NB_LINE",
-						nb_line_tFixedFlowInput_1);
+				if (jsonArray_tSparqlSelectRequest_1.length() == 0) {
+					globalMap.put("tSparqlSelectRequest_1_HAS_RESULTS", false);
+				} else {
+					globalMap.put("tSparqlSelectRequest_1_HAS_RESULTS", true);
+				}
 
-				ok_Hash.put("tFixedFlowInput_1", true);
-				end_Hash.put("tFixedFlowInput_1", System.currentTimeMillis());
+				int i_tSparqlSelectRequest_1;
+				int nb_line_tSparqlSelectRequest_1 = 0;
+
+				for (i_tSparqlSelectRequest_1 = 0; i_tSparqlSelectRequest_1 < jsonArray_tSparqlSelectRequest_1
+						.length(); i_tSparqlSelectRequest_1++) {
+
+					/**
+					 * [tSparqlSelectRequest_1 begin ] stop
+					 */
+					/**
+					 * [tSparqlSelectRequest_1 main ] start
+					 */
+
+					currentComponent = "tSparqlSelectRequest_1";
+
+					queryKeysIterator_tSparqlSelectRequest_1 = queryKeys_tSparqlSelectRequest_1
+							.iterator();
+
+					if (queryKeysIterator_tSparqlSelectRequest_1.hasNext()) {
+						try {
+							row1.endpoint = jsonArray_tSparqlSelectRequest_1
+									.getJSONObject(i_tSparqlSelectRequest_1)
+									.getJSONObject(
+											queryKeysIterator_tSparqlSelectRequest_1
+													.next()).getString("value");
+						} catch (org.json.JSONException e_tSparqlSelectRequest_1) {
+							row1.endpoint = "";
+						}
+					}
+
+					tos_count_tSparqlSelectRequest_1++;
+
+					/**
+					 * [tSparqlSelectRequest_1 main ] stop
+					 */
+
+					/**
+					 * [tLogRow_1 main ] start
+					 */
+
+					currentComponent = "tLogRow_1";
+
+					// /////////////////////
+
+					strBuffer_tLogRow_1 = new StringBuilder();
+
+					if (row1.endpoint != null) { //
+
+						strBuffer_tLogRow_1.append(String
+								.valueOf(row1.endpoint));
+
+					} //
+
+					if (globalMap.get("tLogRow_CONSOLE") != null) {
+						consoleOut_tLogRow_1 = (java.io.PrintStream) globalMap
+								.get("tLogRow_CONSOLE");
+					} else {
+						consoleOut_tLogRow_1 = new java.io.PrintStream(
+								new java.io.BufferedOutputStream(System.out));
+						globalMap.put("tLogRow_CONSOLE", consoleOut_tLogRow_1);
+					}
+
+					consoleOut_tLogRow_1
+							.println(strBuffer_tLogRow_1.toString());
+					consoleOut_tLogRow_1.flush();
+					nb_line_tLogRow_1++;
+					// ////
+
+					// ////
+
+					// /////////////////////
+
+					row3 = row1;
+
+					tos_count_tLogRow_1++;
+
+					/**
+					 * [tLogRow_1 main ] stop
+					 */
+
+					/**
+					 * [tReplicate_1 main ] start
+					 */
+
+					currentComponent = "tReplicate_1";
+
+					row6 = new row6Struct();
+
+					row6.endpoint = row3.endpoint;
+
+					tos_count_tReplicate_1++;
+
+					/**
+					 * [tReplicate_1 main ] stop
+					 */
+
+					/**
+					 * [tSparqlConstructRequest_1 main ] start
+					 */
+
+					currentComponent = "tSparqlConstructRequest_1";
+
+					String URL_string_tSparqlConstructRequest_1;
+
+					URL_string_tSparqlConstructRequest_1 = row6.endpoint
+							+ "?default-graph-uri=&query="
+							+ java.net.URLEncoder.encode(
+									"construct {?s ?p ?o .}   where {?s ?p ?o .  FILTER (?s = <http://bio2rdf.org/"
+											+ context.ns + ":" + context.id
+											+ ">) .}", "UTF-8") + "&format="
+							+ "text%2Fplain" + "&timeout=0&debug=on";
+
+					java.net.URL url_tSparqlConstructRequest_1 = new java.net.URL(
+							URL_string_tSparqlConstructRequest_1);
+
+					try {
+
+						java.net.HttpURLConnection urlConn_tSparqlConstructRequest_1 = (java.net.HttpURLConnection) url_tSparqlConstructRequest_1
+								.openConnection();
+						urlConn_tSparqlConstructRequest_1
+								.setRequestMethod("GET");
+						urlConn_tSparqlConstructRequest_1.setDoOutput(true);
+						urlConn_tSparqlConstructRequest_1.setDoInput(true);
+						urlConn_tSparqlConstructRequest_1.setUseCaches(false);
+
+						urlConn_tSparqlConstructRequest_1.connect();
+
+						byte[] buffer_tSparqlConstructRequest_1 = new byte[1024];
+						int bos_buffer_tSparqlConstructRequest_1 = 0;
+
+						StringBuilder sb_tSparqlConstructRequest_1 = new StringBuilder();
+
+						if (java.net.HttpURLConnection.HTTP_OK == (urlConn_tSparqlConstructRequest_1
+								.getResponseCode())) {
+							java.io.InputStream bis_tSparqlConstructRequest_1 = new java.io.BufferedInputStream(
+									urlConn_tSparqlConstructRequest_1
+											.getInputStream());
+
+							while ((bos_buffer_tSparqlConstructRequest_1 = bis_tSparqlConstructRequest_1
+									.read(buffer_tSparqlConstructRequest_1)) != -1) {
+
+								sb_tSparqlConstructRequest_1.append(new String(
+										buffer_tSparqlConstructRequest_1, 0,
+										bos_buffer_tSparqlConstructRequest_1));
+
+							}
+							bis_tSparqlConstructRequest_1.close();
+
+						} else {
+							System.err
+									.println(urlConn_tSparqlConstructRequest_1
+											.getResponseCode()
+											+ " "
+											+ urlConn_tSparqlConstructRequest_1
+													.getResponseMessage());
+						}
+
+						row2.endpoint = row6.endpoint;
+
+						row2.SparqlResults = sb_tSparqlConstructRequest_1
+								.toString();
+
+						urlConn_tSparqlConstructRequest_1.disconnect();
+					} catch (Exception e) {
+						System.err.println("UnknownHostException");
+					}
+
+					tos_count_tSparqlConstructRequest_1++;
+
+					/**
+					 * [tSparqlConstructRequest_1 main ] stop
+					 */
+
+					/**
+					 * [tLogRow_2 main ] start
+					 */
+
+					currentComponent = "tLogRow_2";
+
+					row4 = row2;
+
+					tos_count_tLogRow_2++;
+
+					/**
+					 * [tLogRow_2 main ] stop
+					 */
+
+					/**
+					 * [tJenaReadRow_1 main ] start
+					 */
+
+					currentComponent = "tJenaReadRow_1";
+
+					String stringToConvert_tJenaReadRow_1 = row4.SparqlResults;
+
+					InputStream stringIn_tJenaReadRow_1 = new ByteArrayInputStream(
+							stringToConvert_tJenaReadRow_1.getBytes());
+
+					model_tJenaReadRow_1.read(stringIn_tJenaReadRow_1, "",
+							"N-TRIPLE");
+
+					globalMap.put("model_tJenaCreateModel_1",
+							model_tJenaReadRow_1);
+
+					tos_count_tJenaReadRow_1++;
+
+					/**
+					 * [tJenaReadRow_1 main ] stop
+					 */
+
+					/**
+					 * [tSparqlSelectRequest_1 end ] start
+					 */
+
+					currentComponent = "tSparqlSelectRequest_1";
+
+					nb_line_tSparqlSelectRequest_1++;
+				}
+
+				globalMap.put("tSparqlSelectRequest_1_NB_LINE",
+						nb_line_tSparqlSelectRequest_1);
+
+				ok_Hash.put("tSparqlSelectRequest_1", true);
+				end_Hash.put("tSparqlSelectRequest_1",
+						System.currentTimeMillis());
 
 				/**
-				 * [tFixedFlowInput_1 end ] stop
+				 * [tSparqlSelectRequest_1 end ] stop
 				 */
 
 				/**
@@ -1726,13 +1806,13 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 			try {
 
 				/**
-				 * [tFixedFlowInput_1 finally ] start
+				 * [tSparqlSelectRequest_1 finally ] start
 				 */
 
-				currentComponent = "tFixedFlowInput_1";
+				currentComponent = "tSparqlSelectRequest_1";
 
 				/**
-				 * [tFixedFlowInput_1 finally ] stop
+				 * [tSparqlSelectRequest_1 finally ] stop
 				 */
 
 				/**
@@ -1793,7 +1873,7 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 			resourceMap = null;
 		}
 
-		globalMap.put("tFixedFlowInput_1_SUBPROCESS_STATE", 1);
+		globalMap.put("tSparqlSelectRequest_1_SUBPROCESS_STATE", 1);
 	}
 
 	public void tPostjob_1Process(final java.util.Map<String, Object> globalMap)
@@ -2740,6 +2820,8 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 			context.id = (String) context.getProperty("id");
 			context.ntriples = (String) context.getProperty("ntriples");
 			context.format = (String) context.getProperty("format");
+			context.database_endpoint = (String) context
+					.getProperty("database_endpoint");
 		} catch (java.io.IOException ie) {
 			System.err.println("Could not load context " + contextStr);
 			ie.printStackTrace();
@@ -2758,6 +2840,10 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 			}
 			if (parentContextMap.containsKey("format")) {
 				context.format = (String) parentContextMap.get("format");
+			}
+			if (parentContextMap.containsKey("database_endpoint")) {
+				context.database_endpoint = (String) parentContextMap
+						.get("database_endpoint");
 			}
 		}
 
@@ -2946,6 +3032,6 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 	ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- * 75813 characters generated by Talend Open Studio for ESB on the 23 juillet
- * 2014 16:39:06 EDT
+ * 78572 characters generated by Talend Open Studio for ESB on the 30 juillet
+ * 2014 13:19:22 EDT
  ************************************************************************************************/
