@@ -107,6 +107,7 @@ public static int getMimePriority(String mimeString) {
 	acceptableMime.add("text/plain");
 	acceptableMime.add("text/html");
 	acceptableMime.add("application/rdf+json");
+	// Add mime type here if you want to parse them
 	
 	return(acceptableMime.indexOf(mimeString));
 }

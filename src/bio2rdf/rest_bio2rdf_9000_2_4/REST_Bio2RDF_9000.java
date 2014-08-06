@@ -264,6 +264,12 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 
 			}
 
+			if (contentType != null) {
+
+				this.setProperty("contentType", contentType.toString());
+
+			}
+
 		}
 
 		public String pageTest;
@@ -384,6 +390,12 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 
 		public String getRestUrl() {
 			return this.restUrl;
+		}
+
+		public String contentType;
+
+		public String getContentType() {
+			return this.contentType;
 		}
 	}
 
@@ -550,7 +562,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 		tRESTRequest_1_Loop_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void tFixedFlowInput_6_error(java.lang.Exception exception,
+	public void tFixedFlowInput_1_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
 
@@ -13420,7 +13432,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 					 * [tFlowToIterate_3 begin ] start
 					 */
 
-					int NB_ITERATE_tFixedFlowInput_6 = 0; // for statistics
+					int NB_ITERATE_tFixedFlowInput_1 = 0; // for statistics
 
 					ok_Hash.put("tFlowToIterate_3", false);
 					start_Hash.put("tFlowToIterate_3",
@@ -14652,7 +14664,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 						/**
 						 * [tFlowToIterate_3 main ] stop
 						 */
-						NB_ITERATE_tFixedFlowInput_6++;
+						NB_ITERATE_tFixedFlowInput_1++;
 						iterateLoop++;
 
 						/**
@@ -14672,242 +14684,217 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 						 */
 
 						/**
-						 * [tFixedFlowInput_6 begin ] start
+						 * [tFixedFlowInput_1 begin ] start
 						 */
 
-						ok_Hash.put("tFixedFlowInput_6", false);
-						start_Hash.put("tFixedFlowInput_6",
+						ok_Hash.put("tFixedFlowInput_1", false);
+						start_Hash.put("tFixedFlowInput_1",
 								System.currentTimeMillis());
 
-						currentComponent = "tFixedFlowInput_6";
+						currentComponent = "tFixedFlowInput_1";
 
-						int tos_count_tFixedFlowInput_6 = 0;
+						int tos_count_tFixedFlowInput_1 = 0;
 
-						StringBuilder result_tFixedFlowInput_6 = new StringBuilder();
-						result_tFixedFlowInput_6
+						StringBuilder result_tFixedFlowInput_1 = new StringBuilder();
+						result_tFixedFlowInput_1
 								.append("PCFET0NUWVBFIGh0bWwgUFVCTElDICItLy9XM0MvL0RURCBYSFRNTCtSREZhIDEuMC8vRU4iICJo");
-						result_tFixedFlowInput_6
-								.append("dHRwOi8vd3d3LnczLm9yZy9NYXJrVXAvRFREL3hodG1sLXJkZmEtMS5kdGQiPg0KPGh0bWwgdmVy");
-						result_tFixedFlowInput_6
-								.append("c2lvbj0iWEhUTUwrUkRGYSAxLjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1s");
-						result_tFixedFlowInput_6
-								.append("Ij4NCjxoZWFkPg0KCTx0aXRsZT5CaW8yUkRGPC90aXRsZT4NCgk8bGluayBocmVmPSJodHRwOi8v");
-						result_tFixedFlowInput_6
-								.append("bS5iaW8ycmRmLm9yZy9pbWFnZS9iaW8ycmRmLnBuZyIgcmVsPSJzaG9ydGN1dCBpY29uIiAvPg0K");
-						result_tFixedFlowInput_6
-								.append("PC9oZWFkPgo8IS0tIFBpd2lrIC0tPgo8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCI+CiAg");
-						result_tFixedFlowInput_6
-								.append("dmFyIF9wYXEgPSBfcGFxIHx8IFtdOwogIF9wYXEucHVzaChbInNldERvY3VtZW50VGl0bGUiLCBk");
-						result_tFixedFlowInput_6
-								.append("b2N1bWVudC5kb21haW4gKyAiLyIgKyBkb2N1bWVudC50aXRsZV0pOwogIF9wYXEucHVzaChbInNl");
-						result_tFixedFlowInput_6
-								.append("dENvb2tpZURvbWFpbiIsICIqLmJpbzJyZGYub3JnIl0pOwogIF9wYXEucHVzaChbInNldERvbWFp");
-						result_tFixedFlowInput_6
-								.append("bnMiLCBbIiouYmlvMnJkZi5vcmciXV0pOwogIF9wYXEucHVzaChbJ3RyYWNrUGFnZVZpZXcnXSk7");
-						result_tFixedFlowInput_6
-								.append("CiAgX3BhcS5wdXNoKFsnZW5hYmxlTGlua1RyYWNraW5nJ10pOwogIChmdW5jdGlvbigpIHsKICAg");
-						result_tFixedFlowInput_6
-								.append("IHZhciB1PSgoImh0dHBzOiIgPT0gZG9jdW1lbnQubG9jYXRpb24ucHJvdG9jb2wpID8gImh0dHBz");
-						result_tFixedFlowInput_6
-								.append("IiA6ICJodHRwIikKKyAiOi8vbHMyMi5nZW5vbWUudWxhdmFsLmNhOjEwMDAxLyI7CiAgICBfcGFx");
-						result_tFixedFlowInput_6
-								.append("LnB1c2goWydzZXRUcmFja2VyVXJsJywgdSsncGl3aWsucGhwJ10pOwogICAgX3BhcS5wdXNoKFsn");
-						result_tFixedFlowInput_6
-								.append("c2V0U2l0ZUlkJywgMV0pOwogICAgdmFyIGQ9ZG9jdW1lbnQsIGc9ZC5jcmVhdGVFbGVtZW50KCdz");
-						result_tFixedFlowInput_6
-								.append("Y3JpcHQnKSwKcz1kLmdldEVsZW1lbnRzQnlUYWdOYW1lKCdzY3JpcHQnKVswXTsgZy50eXBlPSd0");
-						result_tFixedFlowInput_6
-								.append("ZXh0L2phdmFzY3JpcHQnOwogICAgZy5kZWZlcj10cnVlOyBnLmFzeW5jPXRydWU7IGcuc3JjPXUr");
-						result_tFixedFlowInput_6
-								.append("J3Bpd2lrLmpzJzsKcy5wYXJlbnROb2RlLmluc2VydEJlZm9yZShnLHMpOwogIH0pKCk7Cjwvc2Ny");
-						result_tFixedFlowInput_6
-								.append("aXB0Pgo8bm9zY3JpcHQ+PHA+PGltZwpzcmM9Imh0dHA6Ly9sczIyLmdlbm9tZS51bGF2YWwuY2E6");
-						result_tFixedFlowInput_6
-								.append("MTAwMDEvcGl3aWsucGhwP2lkc2l0ZT0xIgpzdHlsZT0iYm9yZGVyOjA7IiBhbHQ9IiIgLz48L3A+");
-						result_tFixedFlowInput_6
-								.append("PC9ub3NjcmlwdD4KPCEtLSBFbmQgUGl3aWsgQ29kZSAtLT4NCjxib2R5Pg0KPHRhYmxlIHN1bW1h");
-						result_tFixedFlowInput_6
-								.append("cnk9IiI+DQoJPHRib2R5Pg0KCQk8dHI+DQoJCQk8dGQgd2lkdGg9IjIwJSI+PGEgaHJlZj0iaHR0");
-						result_tFixedFlowInput_6
-								.append("cDovL2Jpb2luZm9ybWF0aXF1ZS51bGF2YWwuY2EvdGVhbS8iPjxpbWcgYWx0PSJ1bGF2YWwiIGhl");
-						result_tFixedFlowInput_6
-								.append("aWdodD0iODAiIHNyYz0iaHR0cDovL3d3dy51bGF2YWwuY2EvQWwvZmljaGllcnMvVUwuanBnIiAv");
-						result_tFixedFlowInput_6
-								.append("PjwvYT48L3RkPg0KCQkJPHRkIHdpZHRoPSI2MCUiPiZuYnNwOzwvdGQ+DQoJCQk8dGQgd2lkdGg9");
-						result_tFixedFlowInput_6
-								.append("IjIwJSI+PGEgaHJlZj0iaHR0cDovL2R1bW9udGllcmxhYi5jb20vIj48aW1nIGFsdD0iY2FybGV0");
-						result_tFixedFlowInput_6
-								.append("b24iIGhlaWdodD0iODAiIHNyYz0iaHR0cDovL20uYmlvMnJkZi5vcmcvaW1hZ2UvY2FybGV0b24u");
-						result_tFixedFlowInput_6
-								.append("cG5nIiAvPjwvYT48L3RkPg0KCQk8L3RyPg0KCTwvdGJvZHk+DQo8L3RhYmxlPg0KDQo8ZGl2IGlk");
-						result_tFixedFlowInput_6
-								.append("PSJhbGwiPg0KPGRpdiBpZD0ibWFpbiIgc3R5bGU9InRleHQtYWxpZ246IGNlbnRlcjsiPg0KPGRp");
-						result_tFixedFlowInput_6
-								.append("diBzdHlsZT0iaGVpZ2h0OiAyMCU7Ij4mbmJzcDs8L2Rpdj4NCjxpbWcgYWx0PSJCaW8yUkRGIiBz");
-						result_tFixedFlowInput_6
-								.append("cmM9Imh0dHA6Ly9tLmJpbzJyZGYub3JnL2ltYWdlL2JpbzJyZGYucG5nIiAvPg0KPGRpdiBpZD0i");
-						result_tFixedFlowInput_6
-								.append("bWFpbiIgc3R5bGU9InRleHQtYWxpZ246IGNlbnRlcjsiPg0KPGgxPkxpbmtlZCBEYXRhIEh1YiBm");
-						result_tFixedFlowInput_6
-								.append("b3IgdGhlIExpZmUgU2NpZW5jZXM8L2gxPg0KPC9kaXY+DQoNCjxmb3JtIGFjdGlvbj0iL25vc2Ny");
-						result_tFixedFlowInput_6
-								.append("aXB0LyIgbWV0aG9kPSJHRVQiIG5hbWU9ImZvcm0xIiBvbnN1Ym1pdD0iZG9jdW1lbnQubG9jYXRp");
-						result_tFixedFlowInput_6
-								.append("b249Jy9wYWdlLycrZm9ybTEuaWQudmFsdWUrJyc7cmV0dXJuIGZhbHNlOyI+CjxzZWxlY3QgbmFt");
-						result_tFixedFlowInput_6
-								.append("ZT0ic2VsZWN0dmFsdWUiIG9uY2hhbmdlPSJmb3JtMS5pZC52YWx1ZSA9IHRoaXMub3B0aW9uc1t0");
-						result_tFixedFlowInput_6
-								.append("aGlzLnNlbGVjdGVkSW5kZXhdLnZhbHVlOyIgc2l6ZT0iMSI+CjxvcHRpb24gdmFsdWU9ImFmZnlt");
-						result_tFixedFlowInput_6
-								.append("ZXRyaXg6MTQxNTc2NV9hdCI+QWZmeW1ldHJpeCBvbiBHZW5lQ2hpcCBIVCBNb3VzZSBHZW5vbWUg");
-						result_tFixedFlowInput_6
-								.append("TUctNDMwQiBbYWZmeW1ldHJpeDoxNDE1NzY1X2F0XTwvb3B0aW9uPgo8b3B0aW9uIHZhbHVlPSJj");
-						result_tFixedFlowInput_6
-								.append("bGluaWNhbHRyaWFsczpOQ1QwMDA1MDg5NSI+Q29tcGFyaW5nIFRocmVlIEFudGktSElWIERydWcg");
-						result_tFixedFlowInput_6
-								.append("UmVnaW1lbnMgW2NsaW5pY2FsdHJpYWxzOk5DVDAwMDUwODk1XTwvb3B0aW9uPgo8b3B0aW9uIHZh");
-						result_tFixedFlowInput_6
-								.append("bHVlPSJjdGRfcmVzb3VyY2U6RDAwMTE1MTQwNjk0OSI+QXJzZW5pYy1NSVIxNUIgY2hlbWljYWwt");
-						result_tFixedFlowInput_6
-								.append("Z2VuZSBhc3NvY2lhdGlvbiBbY3RkX3Jlc291cmNlOkQwMDExNTE0MDY5NDldPC9vcHRpb24+Cjxv");
-						result_tFixedFlowInput_6
-								.append("cHRpb24gdmFsdWU9ImRic25wOnJzMTk5NDIyMTg0Ij5BU1BOIGZyYW1lc2hpZnQgdmFyaWFudCBb");
-						result_tFixedFlowInput_6
-								.append("ZGJzbnA6cnMxOTk0MjIxODRdPC9vcHRpb24+CjxvcHRpb24gdmFsdWU9ImRydWdiYW5rOkRCMDAx");
-						result_tFixedFlowInput_6
-								.append("NDMiPlZpb3h4IFtkcnVnYmFuazpEQjAwNTMzIF08L29wdGlvbj4KPG9wdGlvbiB2YWx1ZT0iZ2Vu");
-						result_tFixedFlowInput_6
-								.append("ZHJfcmVzb3VyY2U6OWNkNDg4ZjliNzZjYWFlZDQ2MTBlZDIxZTQzYmRhZjgiPkNEQzI1IGluZHVj");
-						result_tFixedFlowInput_6
-								.append("ZWQgYnkgZGlldGFyeSByZXN0cmljdGlvbiBbZ2VuZHJfcmVzb3VyY2U6OWNkNDg4ZjliNzZjYWFl");
-						result_tFixedFlowInput_6
-								.append("ZDQ2MTBlZDIxZTQzYmRhZjhdPC9vcHRpb24+CjxvcHRpb24gdmFsdWU9ImhvbW9sb2dlbmU6ODI2");
-						result_tFixedFlowInput_6
-								.append("MCI+SG9tb2xvR2VuZSBHcm91cCA4MjYwIFtob21vbG9nZW5lOjgyNjBdPC9vcHRpb24+CjxvcHRp");
-						result_tFixedFlowInput_6
-								.append("b24gdmFsdWU9ImhnbmM6MjQwODYiPkFQT0JFQzEgY29tcGxlbWVudGF0aW9uIGZhY3RvciBbaGdu");
-						result_tFixedFlowInput_6
-								.append("YzoyNDA4Nl08L29wdGlvbj4KPG9wdGlvbiB2YWx1ZT0iaXByb2NsYXNzOnVuaXByb3Q6UDY5Mzgw");
-						result_tFixedFlowInput_6
-								.append("Ij5GZXJyb3VzLWlyb24gZWZmbHV4IHB1bXAgRmllRiBbaXByb2NsYXNzOnVuaXByb3Q6UDY5Mzgw");
-						result_tFixedFlowInput_6
-								.append("Ijwvb3B0aW9uPiAKPG9wdGlvbiB2YWx1ZT0iaW50ZXJwcm86SVBSMDAwMTAwIj5SaWJvbnVjbGVh");
-						result_tFixedFlowInput_6
-								.append("c2UgUCAoUk5hc2VfUCkgRmFtaWx5IFtpbnRlcnBybzpJUFIwMDAxMDBdPC9vcHRpb24+IAo8b3B0");
-						result_tFixedFlowInput_6
-								.append("aW9uIHZhbHVlPSJsc3I6ZGJzbnAiPlRoZSBMU1IgZW50cnkgZm9yIGRiU05QIFtsc3I6ZGJzbnBd");
-						result_tFixedFlowInput_6
-								.append("PC9vcHRpb24+IAo8b3B0aW9uIHZhbHVlPSJtZXNoOkQwMTgzNzciPk5ldXJvdHJhbnNtaXR0ZXIg");
-						result_tFixedFlowInput_6
-								.append("QWdlbnRzIFttZXNoOkQwMTgzNzddPC9vcHRpb24+CjxvcHRpb24gdmFsdWU9Im1naTo5NTQ4NCI+");
-						result_tFixedFlowInput_6
-								.append("RmFzIFttZ2k6OTU0ODRdPC9vcHRpb24+CjxvcHRpb24gdmFsdWU9Im5jYmlnZW5lOjM3MTkxIj5T");
-						result_tFixedFlowInput_6
-								.append("ZXJvdG9uaW4gcmVjZXB0b3IgMUIgKHN5bWJvbDo1LUhUMUIsdGF4b246NzIyNykgW25jYmlnZW5l");
-						result_tFixedFlowInput_6
-								.append("OjM3MTkxXTwvb3B0aW9uPgo8b3B0aW9uIHZhbHVlPSJvbWltOjYwMjA4MCI+UEFHRVQgRElTRUFT");
-						result_tFixedFlowInput_6
-								.append("RSBPRiBCT05FOyBQREIgW29taW06NjAyMDgwXTwvb3B0aW9uPgo8b3B0aW9uIHZhbHVlPSJwdWJt");
-						result_tFixedFlowInput_6
-								.append("ZWQ6MjM3MzUxOTYiPk9udG9sb2d5LUJhc2VkIFF1ZXJ5aW5nIHdpdGggQmlvMlJERnMgTGlua2Vk");
-						result_tFixedFlowInput_6
-								.append("IE9wZW4gRGF0YS4gW3B1Ym1lZDoyMzczNTE5Nl08L29wdGlvbj4KPG9wdGlvbiB2YWx1ZT0icGhh");
-						result_tFixedFlowInput_6
-								.append("cm1na2I6UEExMjg0MDY5NTYiPmZsdW9yb3VyYWNpbCBbcGhhcm1na2I6UEExMjg0MDY5NTZdPC9v");
-						result_tFixedFlowInput_6
-								.append("cHRpb24+CjxvcHRpb24gdmFsdWU9InNnZDpTMDAwMDA2MTY5Ij5HQUw0IFtzZ2Q6UzAwMDAwNjE2");
-						result_tFixedFlowInput_6
-								.append("OV08L29wdGlvbj4KPG9wdGlvbiB2YWx1ZT0idGF4b25vbXk6OTYwNiI+SG9tbyBTYXBpZW5zIFt0");
-						result_tFixedFlowInput_6
-								.append("YXhvbjo5NjA2XTwvb3B0aW9uPgo8b3B0aW9uIHZhbHVlPSJzaWRlcjoyMDExMTIyMF9iMzc5YjQx");
-						result_tFixedFlowInput_6
-								.append("My01ZDY2LTRhZGItODUyMS0zOTc4ZjEwYmJkMWQiPnZlbmxhZmF4aW5lIFtzaWRlcjoyMDExMTIy");
-						result_tFixedFlowInput_6
-								.append("MF9iMzc5YjQxMy01ZDY2LTRhZGItODUyMS0zOTc4ZjEwYmJkMWRdPC9vcHRpb24+CjxvcHRpb24g");
-						result_tFixedFlowInput_6
-								.append("dmFsdWU9Indvcm1iYXNlOldCR2VuZTAwMDAwMDAxIj5XQkdlbmUwMDAwMDAwMSAoYWFwLTEpIFt3");
-						result_tFixedFlowInput_6
-								.append("b3JtYmFzZTpXQkdlbmUwMDAwMDAwMV08L29wdGlvbj4KPC9zZWxlY3Q+CjxpbnB1dCBtYXhsZW5n");
-						result_tFixedFlowInput_6
-								.append("dGg9IjE1MCIgbmFtZT0iaWQiIHNpemU9IjMwIiB0eXBlPSJ0ZXh0IiAvPiA8aW5wdXQgdHlwZT0i");
-						result_tFixedFlowInput_6
-								.append("c3VibWl0IiB2YWx1ZT0iU3VibWl0IiAvPiZuYnNwOzwvZm9ybT4NCjwvZGl2Pg0KDQo8ZGl2IGlk");
-						result_tFixedFlowInput_6
-								.append("PSJmb290ZXIiIHN0eWxlPSJ0ZXh0LWFsaWduOiBjZW50ZXI7Ij4NCjx1bCBzdHlsZT0ibGlzdC1z");
-						result_tFixedFlowInput_6
-								.append("dHlsZS10eXBlOiBub25lOyI+DQoJPGxpPg0KCTxoMz48YSBocmVmPSIvdGVzdCI+UkVTVCBzZXJ2");
-						result_tFixedFlowInput_6
-								.append("aWNlcyB0ZXN0IHBhZ2U8L2E+PC9oMz4NCgk8L2xpPg0KCTxsaT4uPC9saT4NCgk8bGk+R2V0IG1v");
-						result_tFixedFlowInput_6
-								.append("cmUgaW5mb3JtYXRpb24gYWJvdXQgYXZhaWxhYmxlIEJpbzJSREYgZGF0YXNldHMgPGEgaHJlZj0i");
-						result_tFixedFlowInput_6
-								.append("aHR0cHM6Ly9naXRodWIuY29tL2JpbzJyZGYvYmlvMnJkZi1zY3JpcHRzL3dpa2kiPmhlcmU8L2E+");
-						result_tFixedFlowInput_6
-								.append("LjwvbGk+DQoJPGxpPlJlbGVhc2UgMiBkYXRhc2V0cyBsaXN0IDxhIGhyZWY9Imh0dHA6Ly9kb3du");
-						result_tFixedFlowInput_6
-								.append("bG9hZC5iaW8ycmRmLm9yZy9yZWxlYXNlLzIvcmVsZWFzZS5odG1sIj5oZXJlPC9hPjwvbGk+DQoJ");
-						result_tFixedFlowInput_6
-								.append("PGxpPiZuYnNwOzwvbGk+DQoJPGxpPkRvd25sb2FkIDogPGEgaHJlZj0iaHR0cHM6Ly9zb3VyY2Vm");
-						result_tFixedFlowInput_6
-								.append("b3JnZS5uZXQvcHJvamVjdHMvYmlvMnJkZi8iPkJpbzJSREYgdmVyc2lvbiAyLjAgUkVTVCBzZXJ2");
-						result_tFixedFlowInput_6
-								.append("ZXI8L2E+LCA8YSBocmVmPSJodHRwczovL3NvdXJjZWZvcmdlLm5ldC9wcm9qZWN0cy9iaW8ycmRm");
-						result_tFixedFlowInput_6
-								.append("L2ZpbGVzL3RhbGVuZDRiaW8ycmRmLyI+VGFsZW5kIGZvciBCaW8yUkRGPC9hPiwgPGEgaHJlZj0i");
-						result_tFixedFlowInput_6
-								.append("aHR0cHM6Ly9zb3VyY2Vmb3JnZS5uZXQvcHJvamVjdHMvYmlvMnJkZi9maWxlcy90YWxlbmQ0c3cv");
-						result_tFixedFlowInput_6
-								.append("Ij5UYWxlbmQgZm9yIFNlbWFudGljIFdlYjwvYT4uPC9saT4NCjwvdWw+DQo8L2Rpdj4NCjwvZGl2");
-						result_tFixedFlowInput_6
-								.append("Pg0KDQo8ZGl2IGlkPSJmb290ZXIiIHN0eWxlPSJ0ZXh0LWFsaWduOiBjZW50ZXI7Ij5Qb3dlcmVk");
-						result_tFixedFlowInput_6
-								.append("IGJ5IDxhIGhyZWY9Imh0dHA6Ly93d3cudGFsZW5kLmNvbS9wcm9kdWN0cy9lc2IiPlRhbGVuZCBF");
-						result_tFixedFlowInput_6
-								.append("U0I8L2E+IGFuZCA8YSBocmVmPSJodHRwOi8vdmlydHVvc28ub3Blbmxpbmtzdy5jb20vZGF0YXNw");
-						result_tFixedFlowInput_6
-								.append("YWNlL2RvYy9kYXYvd2lraS9NYWluLyI+VmlydHVvc28gT3Blbi1Tb3VyY2UgRWRpdGlvbjwvYT48");
-						result_tFixedFlowInput_6
-								.append("L2Rpdj4NCg0KPHRhYmxlIHN1bW1hcnk9IiI+DQoJPHRib2R5Pg0KCQk8dHI+DQoJCQk8dGQgd2lk");
-						result_tFixedFlowInput_6
-								.append("dGg9IjIwJSI+DQoJCQk8aDM+PGEgaHJlZj0iaHR0cHM6Ly90d2l0dGVyLmNvbS9iaW8ycmRmIj48");
-						result_tFixedFlowInput_6
-								.append("aW1nIGhlaWdodD0iMzAiIHNyYz0iaHR0cDovL20uYmlvMnJkZi5vcmcvaW1hZ2UvdHdpdHRlci5w");
-						result_tFixedFlowInput_6
-								.append("bmciIC8+QGJpbzJyZGY8L2E+PC9oMz4NCgkJCTwvdGQ+DQoJCQk8dGQgd2lkdGg9IjYwJSI+Jm5i");
-						result_tFixedFlowInput_6
-								.append("c3A7PC90ZD4NCgkJCTx0ZCB3aWR0aD0iMTAwJSI+PGEgaHJlZj0iaHR0cDovL2dyb3Vwcy5nb29n");
-						result_tFixedFlowInput_6
-								.append("bGUuY29tL2dyb3VwL2JpbzJyZGYiPlNlbmQgeW91ciBjb21tZW50cyB0byB0aGUgcHJvamVjdCB0");
-						result_tFixedFlowInput_6
-								.append("ZWFtPC9hPjwvdGQ+DQoJCTwvdHI+DQoJPC90Ym9keT4NCjwvdGFibGU+DQo8L2JvZHk+DQo8L2h0");
-						result_tFixedFlowInput_6.append("bWw+DQo=");
-						String originalFileContent_tFixedFlowInput_6 = "";
+						result_tFixedFlowInput_1
+								.append("dHRwOi8vd3d3LnczLm9yZy9NYXJrVXAvRFREL3hodG1sLXJkZmEtMS5kdGQiPgo8aHRtbCB2ZXJz");
+						result_tFixedFlowInput_1
+								.append("aW9uPSJYSFRNTCtSREZhIDEuMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwi");
+						result_tFixedFlowInput_1
+								.append("Pgo8aGVhZD4KCTx0aXRsZT5CaW8yUkRGPC90aXRsZT4KCTxsaW5rIGhyZWY9Imh0dHA6Ly9tLmJp");
+						result_tFixedFlowInput_1
+								.append("bzJyZGYub3JnL2ltYWdlL2JpbzJyZGYucG5nIiByZWw9InNob3J0Y3V0IGljb24iIC8+CjwvaGVh");
+						result_tFixedFlowInput_1
+								.append("ZD4KPCEtLSBQaXdpayAtLT4KPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPgogIHZhciBf");
+						result_tFixedFlowInput_1
+								.append("cGFxID0gX3BhcSB8fCBbXTsKICBfcGFxLnB1c2goWyJzZXREb2N1bWVudFRpdGxlIiwgZG9jdW1l");
+						result_tFixedFlowInput_1
+								.append("bnQuZG9tYWluICsgIi8iICsgZG9jdW1lbnQudGl0bGVdKTsKICBfcGFxLnB1c2goWyJzZXRDb29r");
+						result_tFixedFlowInput_1
+								.append("aWVEb21haW4iLCAiKi5iaW8ycmRmLm9yZyJdKTsKICBfcGFxLnB1c2goWyJzZXREb21haW5zIiwg");
+						result_tFixedFlowInput_1
+								.append("WyIqLmJpbzJyZGYub3JnIl1dKTsKICBfcGFxLnB1c2goWyd0cmFja1BhZ2VWaWV3J10pOwogIF9w");
+						result_tFixedFlowInput_1
+								.append("YXEucHVzaChbJ2VuYWJsZUxpbmtUcmFja2luZyddKTsKICAoZnVuY3Rpb24oKSB7CiAgICB2YXIg");
+						result_tFixedFlowInput_1
+								.append("dT0oKCJodHRwczoiID09IGRvY3VtZW50LmxvY2F0aW9uLnByb3RvY29sKSA/ICJodHRwcyIgOiAi");
+						result_tFixedFlowInput_1
+								.append("aHR0cCIpCisgIjovL2xzMjIuZ2Vub21lLnVsYXZhbC5jYToxMDAwMS8iOwogICAgX3BhcS5wdXNo");
+						result_tFixedFlowInput_1
+								.append("KFsnc2V0VHJhY2tlclVybCcsIHUrJ3Bpd2lrLnBocCddKTsKICAgIF9wYXEucHVzaChbJ3NldFNp");
+						result_tFixedFlowInput_1
+								.append("dGVJZCcsIDFdKTsKICAgIHZhciBkPWRvY3VtZW50LCBnPWQuY3JlYXRlRWxlbWVudCgnc2NyaXB0");
+						result_tFixedFlowInput_1
+								.append("JyksCnM9ZC5nZXRFbGVtZW50c0J5VGFnTmFtZSgnc2NyaXB0JylbMF07IGcudHlwZT0ndGV4dC9q");
+						result_tFixedFlowInput_1
+								.append("YXZhc2NyaXB0JzsKICAgIGcuZGVmZXI9dHJ1ZTsgZy5hc3luYz10cnVlOyBnLnNyYz11KydwaXdp");
+						result_tFixedFlowInput_1
+								.append("ay5qcyc7CnMucGFyZW50Tm9kZS5pbnNlcnRCZWZvcmUoZyxzKTsKICB9KSgpOwo8L3NjcmlwdD4K");
+						result_tFixedFlowInput_1
+								.append("PG5vc2NyaXB0PjxwPjxpbWcKc3JjPSJodHRwOi8vbHMyMi5nZW5vbWUudWxhdmFsLmNhOjEwMDAx");
+						result_tFixedFlowInput_1
+								.append("L3Bpd2lrLnBocD9pZHNpdGU9MSIKc3R5bGU9ImJvcmRlcjowOyIgYWx0PSIiIC8+PC9wPjwvbm9z");
+						result_tFixedFlowInput_1
+								.append("Y3JpcHQ+CjwhLS0gRW5kIFBpd2lrIENvZGUgLS0+Cjxib2R5Pgo8YnIvPjxici8+CjxkaXYgaWQ9");
+						result_tFixedFlowInput_1
+								.append("ImFsbCI+CiA8ZGl2IGlkPSJtYWluIiBzdHlsZT0idGV4dC1hbGlnbjogY2VudGVyOyI+CiA8ZGl2");
+						result_tFixedFlowInput_1
+								.append("IHN0eWxlPSJoZWlnaHQ6IDIwJTsiPiZuYnNwOzwvZGl2PgogPGltZyBhbHQ9IkJpbzJSREYiIHNy");
+						result_tFixedFlowInput_1
+								.append("Yz0iaHR0cDovL20uYmlvMnJkZi5vcmcvaW1hZ2UvYmlvMnJkZi5wbmciIC8+CiA8ZGl2IGlkPSJt");
+						result_tFixedFlowInput_1
+								.append("YWluIiBzdHlsZT0idGV4dC1hbGlnbjogY2VudGVyOyI+CiA8ZW0+TGlua2VkIERhdGEgZm9yIHRo");
+						result_tFixedFlowInput_1
+								.append("ZSBMaWZlIFNjaWVuY2VzPC9lbT4KPC9kaXY+Cjxici8+PGJyLz4KPGZvcm0gYWN0aW9uPSIvbm9z");
+						result_tFixedFlowInput_1
+								.append("Y3JpcHQvIiBtZXRob2Q9IkdFVCIgbmFtZT0iZm9ybTEiIG9uc3VibWl0PSJkb2N1bWVudC5sb2Nh");
+						result_tFixedFlowInput_1
+								.append("dGlvbj0nL3BhZ2UvJytmb3JtMS5pZC52YWx1ZSsnJztyZXR1cm4gZmFsc2U7Ij48c2VsZWN0IG5h");
+						result_tFixedFlowInput_1
+								.append("bWU9InNlbGVjdHZhbHVlIiBvbmNoYW5nZT0iZm9ybTEuaWQudmFsdWUgPSB0aGlzLm9wdGlvbnNb");
+						result_tFixedFlowInput_1
+								.append("dGhpcy5zZWxlY3RlZEluZGV4XS52YWx1ZTsiIHNpemU9IjEiPjxvcHRpb24gc2VsZWN0ZWQ9InNl");
+						result_tFixedFlowInput_1
+								.append("bGVjdGVkIiB2YWx1MTFlPSIiPlNlbGVjdCBhbiBJRCBleGFtcGxlPC9vcHRpb24+CjxvcHRpb24g");
+						result_tFixedFlowInput_1
+								.append("dmFsdWU9ImFmZnltZXRyaXg6MTQxNTc2NV9hdCI+QWZmeW1ldHJpeCBvbiBHZW5lQ2hpcCBIVCBN");
+						result_tFixedFlowInput_1
+								.append("b3VzZSBHZW5vbWUgTUctNDMwQiBbYWZmeW1ldHJpeDoxNDE1NzY1X2F0XTwvb3B0aW9uPgo8b3B0");
+						result_tFixedFlowInput_1
+								.append("aW9uIHZhbHVlPSJjbGluaWNhbHRyaWFsczpOQ1QwMDA1MDg5NSI+Q29tcGFyaW5nIFRocmVlIEFu");
+						result_tFixedFlowInput_1
+								.append("dGktSElWIERydWcgUmVnaW1lbnMgW2NsaW5pY2FsdHJpYWxzOk5DVDAwMDUwODk1XTwvb3B0aW9u");
+						result_tFixedFlowInput_1
+								.append("Pgo8b3B0aW9uIHZhbHVlPSJjdGRfcmVzb3VyY2U6RDAwMTE1MTQwNjk0OSI+QXJzZW5pYy1NSVIx");
+						result_tFixedFlowInput_1
+								.append("NUIgY2hlbWljYWwtZ2VuZSBhc3NvY2lhdGlvbiBbY3RkX3Jlc291cmNlOkQwMDExNTE0MDY5NDld");
+						result_tFixedFlowInput_1
+								.append("PC9vcHRpb24+CjxvcHRpb24gdmFsdWU9ImRic25wOnJzMTk5NDIyMTg0Ij5BU1BOIGZyYW1lc2hp");
+						result_tFixedFlowInput_1
+								.append("ZnQgdmFyaWFudCBbZGJzbnA6cnMxOTk0MjIxODRdPC9vcHRpb24+CjxvcHRpb24gdmFsdWU9ImRy");
+						result_tFixedFlowInput_1
+								.append("dWdiYW5rOkRCMDAxNDMiPlZpb3h4IFtkcnVnYmFuazpEQjAwNTMzIF08L29wdGlvbj4KPG9wdGlv");
+						result_tFixedFlowInput_1
+								.append("biB2YWx1ZT0iZ2VuZHJfcmVzb3VyY2U6OWNkNDg4ZjliNzZjYWFlZDQ2MTBlZDIxZTQzYmRhZjgi");
+						result_tFixedFlowInput_1
+								.append("PkNEQzI1IGluZHVjZWQgYnkgZGlldGFyeSByZXN0cmljdGlvbiBbZ2VuZHJfcmVzb3VyY2U6OWNk");
+						result_tFixedFlowInput_1
+								.append("NDg4ZjliNzZjYWFlZDQ2MTBlZDIxZTQzYmRhZjhdPC9vcHRpb24+CjxvcHRpb24gdmFsdWU9Imhv");
+						result_tFixedFlowInput_1
+								.append("bW9sb2dlbmU6ODI2MCI+SG9tb2xvR2VuZSBHcm91cCA4MjYwIFtob21vbG9nZW5lOjgyNjBdPC9v");
+						result_tFixedFlowInput_1
+								.append("cHRpb24+CjxvcHRpb24gdmFsdWU9ImhnbmM6MjQwODYiPkFQT0JFQzEgY29tcGxlbWVudGF0aW9u");
+						result_tFixedFlowInput_1
+								.append("IGZhY3RvciBbaGduYzoyNDA4Nl08L29wdGlvbj4KPG9wdGlvbiB2YWx1ZT0iaXByb2NsYXNzOnVu");
+						result_tFixedFlowInput_1
+								.append("aXByb3Q6UDY5MzgwIj5GZXJyb3VzLWlyb24gZWZmbHV4IHB1bXAgRmllRiBbaXByb2NsYXNzOnVu");
+						result_tFixedFlowInput_1
+								.append("aXByb3Q6UDY5MzgwIjwvb3B0aW9uPiAKPG9wdGlvbiB2YWx1ZT0iaW50ZXJwcm86SVBSMDAwMTAw");
+						result_tFixedFlowInput_1
+								.append("Ij5SaWJvbnVjbGVhc2UgUCAoUk5hc2VfUCkgRmFtaWx5IFtpbnRlcnBybzpJUFIwMDAxMDBdPC9v");
+						result_tFixedFlowInput_1
+								.append("cHRpb24+IAo8b3B0aW9uIHZhbHVlPSJsc3I6ZGJzbnAiPlRoZSBMU1IgZW50cnkgZm9yIGRiU05Q");
+						result_tFixedFlowInput_1
+								.append("IFtsc3I6ZGJzbnBdPC9vcHRpb24+IAo8b3B0aW9uIHZhbHVlPSJtZXNoOkQwMTgzNzciPk5ldXJv");
+						result_tFixedFlowInput_1
+								.append("dHJhbnNtaXR0ZXIgQWdlbnRzIFttZXNoOkQwMTgzNzddPC9vcHRpb24+CjxvcHRpb24gdmFsdWU9");
+						result_tFixedFlowInput_1
+								.append("Im1naTo5NTQ4NCI+RmFzIFttZ2k6OTU0ODRdPC9vcHRpb24+CjxvcHRpb24gdmFsdWU9Im5jYmln");
+						result_tFixedFlowInput_1
+								.append("ZW5lOjM3MTkxIj5TZXJvdG9uaW4gcmVjZXB0b3IgMUIgKHN5bWJvbDo1LUhUMUIsdGF4b246NzIy");
+						result_tFixedFlowInput_1
+								.append("NykgW25jYmlnZW5lOjM3MTkxXTwvb3B0aW9uPgo8b3B0aW9uIHZhbHVlPSJvbWltOjYwMjA4MCI+");
+						result_tFixedFlowInput_1
+								.append("UEFHRVQgRElTRUFTRSBPRiBCT05FOyBQREIgW29taW06NjAyMDgwXTwvb3B0aW9uPgo8b3B0aW9u");
+						result_tFixedFlowInput_1
+								.append("IHZhbHVlPSJwdWJtZWQ6MjM3MzUxOTYiPk9udG9sb2d5LUJhc2VkIFF1ZXJ5aW5nIHdpdGggQmlv");
+						result_tFixedFlowInput_1
+								.append("MlJERnMgTGlua2VkIE9wZW4gRGF0YS4gW3B1Ym1lZDoyMzczNTE5Nl08L29wdGlvbj4KPG9wdGlv");
+						result_tFixedFlowInput_1
+								.append("biB2YWx1ZT0icGhhcm1na2I6UEExMjg0MDY5NTYiPmZsdW9yb3VyYWNpbCBbcGhhcm1na2I6UEEx");
+						result_tFixedFlowInput_1
+								.append("Mjg0MDY5NTZdPC9vcHRpb24+CjxvcHRpb24gdmFsdWU9InNnZDpTMDAwMDA2MTY5Ij5HQUw0IFtz");
+						result_tFixedFlowInput_1
+								.append("Z2Q6UzAwMDAwNjE2OV08L29wdGlvbj4KPG9wdGlvbiB2YWx1ZT0idGF4b25vbXk6OTYwNiI+SG9t");
+						result_tFixedFlowInput_1
+								.append("byBTYXBpZW5zIFt0YXhvbjo5NjA2XTwvb3B0aW9uPgo8b3B0aW9uIHZhbHVlPSJzaWRlcjoyMDEx");
+						result_tFixedFlowInput_1
+								.append("MTIyMF9iMzc5YjQxMy01ZDY2LTRhZGItODUyMS0zOTc4ZjEwYmJkMWQiPnZlbmxhZmF4aW5lIFtz");
+						result_tFixedFlowInput_1
+								.append("aWRlcjoyMDExMTIyMF9iMzc5YjQxMy01ZDY2LTRhZGItODUyMS0zOTc4ZjEwYmJkMWRdPC9vcHRp");
+						result_tFixedFlowInput_1
+								.append("b24+CjxvcHRpb24gdmFsdWU9Indvcm1iYXNlOldCR2VuZTAwMDAwMDAxIj5XQkdlbmUwMDAwMDAw");
+						result_tFixedFlowInput_1
+								.append("MSAoYWFwLTEpIFt3b3JtYmFzZTpXQkdlbmUwMDAwMDAwMV08L29wdGlvbj4KPC9zZWxlY3Q+IDxp");
+						result_tFixedFlowInput_1
+								.append("bnB1dCBtYXhsZW5ndGg9IjE1MCIgbmFtZT0iaWQiIHNpemU9IjMwIiB0eXBlPSJ0ZXh0IiAvPiA8");
+						result_tFixedFlowInput_1
+								.append("aW5wdXQgdHlwZT0ic3VibWl0IiB2YWx1ZT0iU3VibWl0IiAvPiZuYnNwOzwvZm9ybT4KPC9kaXY+");
+						result_tFixedFlowInput_1
+								.append("Cjxici8+PGJyLz4KPGRpdiBpZD0iZm9vdGVyIiBzdHlsZT0idGV4dC1hbGlnbjogY2VudGVyOyI+");
+						result_tFixedFlowInput_1
+								.append("Cgk8YSBocmVmPSJodHRwOi8vZ2l0aHViLmNvbS9iaW8ycmRmL2JpbzJyZGYtc2NyaXB0cy93aWtp");
+						result_tFixedFlowInput_1
+								.append("Ij5hYm91dDwvYT4KCTxhIGhyZWY9Imh0dHA6Ly9kb3dubG9hZC5iaW8ycmRmLm9yZy9yZWxlYXNl");
+						result_tFixedFlowInput_1
+								.append("LzMvcmVsZWFzZS5odG1sIj5kYXRhc2V0czwvYT4KCTxhIGhyZWY9Ii90ZXN0Ij5BUEk8L2E+Cgk8");
+						result_tFixedFlowInput_1
+								.append("YSBocmVmPSJodHRwOi8vZ2l0aHViLmNvbS9iaW8ycmRmL2JpbzJyZGYtc2NyaXB0cy93aWtpL1F1");
+						result_tFixedFlowInput_1
+								.append("ZXJ5LXJlcG9zaXRvcnkiPlNQQVJRTDwvYT4KCTxhIGhyZWY9Imh0dHA6Ly9ncm91cHMuZ29vZ2xl");
+						result_tFixedFlowInput_1
+								.append("LmNvbS9ncm91cC9iaW8ycmRmIj5tYWlsaW5nIGxpc3Q8L2E+Cgk8YSBocmVmPSJodHRwOi8vdHdp");
+						result_tFixedFlowInput_1
+								.append("dHRlci5jb20vYmlvMnJkZiI+PGltZyBoZWlnaHQ9IjIwIiBzcmM9Imh0dHA6Ly9tLmJpbzJyZGYu");
+						result_tFixedFlowInput_1
+								.append("b3JnL2ltYWdlL3R3aXR0ZXIucG5nIiAvPjwvYT4KPGJyPjxicj4KUG93ZXJlZCBieSA8YSBocmVm");
+						result_tFixedFlowInput_1
+								.append("PSJodHRwOi8vcGhwLm5ldCI+UEhQPC9hPiwgPGEgaHJlZj0iaHR0cDovL3d3dy50YWxlbmQuY29t");
+						result_tFixedFlowInput_1
+								.append("L3Byb2R1Y3RzL2VzYiI+VGFsZW5kIEVTQjwvYT4sIGFuZCA8YSBocmVmPSJodHRwOi8vdmlydHVv");
+						result_tFixedFlowInput_1
+								.append("c28ub3Blbmxpbmtzdy5jb20vZGF0YXNwYWNlL2RvYy9kYXYvd2lraS9NYWluLyI+VmlydHVvc28g");
+						result_tFixedFlowInput_1
+								.append("T3Blbi1Tb3VyY2UgRWRpdGlvbjwvYT4KPGJyPjxicj4KPGEgaHJlZj0iaHR0cDovL2Jpb2luZm9y");
+						result_tFixedFlowInput_1
+								.append("bWF0aXF1ZS51bGF2YWwuY2EvdGVhbS8iPjxpbWcgYWx0PSJ1bGF2YWwiIGhlaWdodD0iMjUiIHNy");
+						result_tFixedFlowInput_1
+								.append("Yz0iaHR0cDovL3d3dy51bGF2YWwuY2EvQWwvZmljaGllcnMvVUwuanBnIiAvPjwvYT4KPGEgaHJl");
+						result_tFixedFlowInput_1
+								.append("Zj0iaHR0cDovL2R1bW9udGllcmxhYi5jb20vIj48aW1nIGFsdD0iY2FybGV0b24iIGhlaWdodD0i");
+						result_tFixedFlowInput_1
+								.append("MjUiIHNyYz0iaHR0cDovL20uYmlvMnJkZi5vcmcvaW1hZ2UvY2FybGV0b24ucG5nIiAvPjwvYT4K");
+						result_tFixedFlowInput_1
+								.append("PC9kaXY+CgoKPC9ib2R5Pgo8L2h0bWw+Cg==");
+						String originalFileContent_tFixedFlowInput_1 = "";
 						try {
-							originalFileContent_tFixedFlowInput_6 = new String(
-									(new sun.misc.BASE64Decoder()).decodeBuffer(result_tFixedFlowInput_6
+							originalFileContent_tFixedFlowInput_1 = new String(
+									(new sun.misc.BASE64Decoder()).decodeBuffer(result_tFixedFlowInput_1
 											.toString()), utf8Charset);
 						} catch (java.lang.Exception e) {
 							e.printStackTrace();
 						}
 
-						int nb_line_tFixedFlowInput_6 = 0;
+						int nb_line_tFixedFlowInput_1 = 0;
 
-						for (int i_tFixedFlowInput_6 = 0; i_tFixedFlowInput_6 < 1; i_tFixedFlowInput_6++) {
+						for (int i_tFixedFlowInput_1 = 0; i_tFixedFlowInput_1 < 1; i_tFixedFlowInput_1++) {
 
-							java.io.InputStream ins_tFixedFlowInput_6 = new java.io.ByteArrayInputStream(
-									originalFileContent_tFixedFlowInput_6
+							java.io.InputStream ins_tFixedFlowInput_1 = new java.io.ByteArrayInputStream(
+									originalFileContent_tFixedFlowInput_1
 											.getBytes(utf8Charset));
-							org.talend.fileprocess.FileInputDelimited fid_tFixedFlowInput_6 = new org.talend.fileprocess.FileInputDelimited(
-									ins_tFixedFlowInput_6, utf8Charset, "&&&",
-									"~~~", true, 0, 0, -1, -1, false);
+							org.talend.fileprocess.FileInputDelimited fid_tFixedFlowInput_1 = new org.talend.fileprocess.FileInputDelimited(
+									ins_tFixedFlowInput_1, utf8Charset, "", "",
+									true, 0, 0, -1, -1, false);
 
-							while (fid_tFixedFlowInput_6.nextRecord()) {
-								nb_line_tFixedFlowInput_6++;
+							while (fid_tFixedFlowInput_1.nextRecord()) {
+								nb_line_tFixedFlowInput_1++;
 								row2 = new row2Struct();
 
-								if (0 < fid_tFixedFlowInput_6
+								if (0 < fid_tFixedFlowInput_1
 										.getColumnsCountOfCurrentRow()) {
-									String colContent = fid_tFixedFlowInput_6
+									String colContent = fid_tFixedFlowInput_1
 											.get(0);
 									row2.string = (colContent == null || colContent
 											.length() == 0) ? null : colContent;
@@ -14917,9 +14904,9 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 
 								}
 
-								if (1 < fid_tFixedFlowInput_6
+								if (1 < fid_tFixedFlowInput_1
 										.getColumnsCountOfCurrentRow()) {
-									String colContent = fid_tFixedFlowInput_6
+									String colContent = fid_tFixedFlowInput_1
 											.get(1);
 									row2.body = (colContent == null || colContent
 											.trim().length() == 0) ? null
@@ -14932,18 +14919,18 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 								}
 
 								/**
-								 * [tFixedFlowInput_6 begin ] stop
+								 * [tFixedFlowInput_1 begin ] stop
 								 */
 								/**
-								 * [tFixedFlowInput_6 main ] start
+								 * [tFixedFlowInput_1 main ] start
 								 */
 
-								currentComponent = "tFixedFlowInput_6";
+								currentComponent = "tFixedFlowInput_1";
 
-								tos_count_tFixedFlowInput_6++;
+								tos_count_tFixedFlowInput_1++;
 
 								/**
-								 * [tFixedFlowInput_6 main ] stop
+								 * [tFixedFlowInput_1 main ] stop
 								 */
 
 								/**
@@ -15000,24 +14987,24 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 								 */
 
 								/**
-								 * [tFixedFlowInput_6 end ] start
+								 * [tFixedFlowInput_1 end ] start
 								 */
 
-								currentComponent = "tFixedFlowInput_6";
+								currentComponent = "tFixedFlowInput_1";
 
 							}
-							fid_tFixedFlowInput_6.close();
+							fid_tFixedFlowInput_1.close();
 						}
 
-						globalMap.put("tFixedFlowInput_6_NB_LINE",
-								nb_line_tFixedFlowInput_6);
+						globalMap.put("tFixedFlowInput_1_NB_LINE",
+								nb_line_tFixedFlowInput_1);
 
-						ok_Hash.put("tFixedFlowInput_6", true);
-						end_Hash.put("tFixedFlowInput_6",
+						ok_Hash.put("tFixedFlowInput_1", true);
+						end_Hash.put("tFixedFlowInput_1",
 								System.currentTimeMillis());
 
 						/**
-						 * [tFixedFlowInput_6 end ] stop
+						 * [tFixedFlowInput_1 end ] stop
 						 */
 
 						/**
@@ -15124,13 +15111,15 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 
 						row12.Accept = BioUtil
 								.parseContentNegotiation(row5.Accept);
+						context.contentType = row12.Accept;
 						context.format = row12.Accept;
 						// System.out.println(row12.Accept);
 
 						// EN ATTENDANT DE FAIRE UN RENDER HTML CORRECT
-						if (context.format.equals("text/html")) {
-							context.format = "text/plain";
-							row12.Accept = "text/plain";
+						if (row12.Accept.equals("text/html")) {
+							context.format = "application/rdf+xml";
+							context.contentType = "application/rdf+xml";
+							row12.Accept = "application/rdf+xml";
 						}
 						nb_line_tJavaRow_5++;
 
@@ -15393,7 +15382,8 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 								java.util.Map<String, String> restProviderResponseHeaders_tRESTResponse_9 = new java.util.TreeMap<String, String>(
 										String.CASE_INSENSITIVE_ORDER);
 								restProviderResponseHeaders_tRESTResponse_9
-										.put("Content-Type", context.format);
+										.put("Content-Type",
+												context.contentType);
 
 								java.util.Map<String, Object> restResponse_tRESTResponse_9 = new java.util.HashMap<String, Object>();
 								restResponse_tRESTResponse_9.put("BODY",
@@ -18143,6 +18133,9 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 						parentContextMap_tRunJob_10.put("restUrl",
 								context.restUrl);
 
+						parentContextMap_tRunJob_10.put("contentType",
+								context.contentType);
+
 						Object obj_tRunJob_10 = null;
 
 						bio2rdf.bio2rdf_rest_subjob_1_7.bio2rdf_rest_subjob childJob_tRunJob_10 = new bio2rdf.bio2rdf_rest_subjob_1_7.bio2rdf_rest_subjob();
@@ -18586,6 +18579,9 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 						parentContextMap_tRunJob_12.put("restUrl",
 								context.restUrl);
 
+						parentContextMap_tRunJob_12.put("contentType",
+								context.contentType);
+
 						Object obj_tRunJob_12 = null;
 
 						bio2rdf.bio2rdf_rest_subjob_1_7.bio2rdf_rest_subjob childJob_tRunJob_12 = new bio2rdf.bio2rdf_rest_subjob_1_7.bio2rdf_rest_subjob();
@@ -19010,6 +19006,9 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 
 						parentContextMap_tRunJob_9.put("restUrl",
 								context.restUrl);
+
+						parentContextMap_tRunJob_9.put("contentType",
+								context.contentType);
 
 						Object obj_tRunJob_9 = null;
 
@@ -20396,6 +20395,9 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 						parentContextMap_tRunJob_1.put("restUrl",
 								context.restUrl);
 
+						parentContextMap_tRunJob_1.put("contentType",
+								context.contentType);
+
 						Object obj_tRunJob_1 = null;
 
 						bio2rdf.bio2rdf_rest_subjob_1_7.bio2rdf_rest_subjob childJob_tRunJob_1 = new bio2rdf.bio2rdf_rest_subjob_1_7.bio2rdf_rest_subjob();
@@ -20810,6 +20812,9 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 
 						parentContextMap_tRunJob_2.put("restUrl",
 								context.restUrl);
+
+						parentContextMap_tRunJob_2.put("contentType",
+								context.contentType);
 
 						Object obj_tRunJob_2 = null;
 
@@ -21935,13 +21940,13 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 				 */
 
 				/**
-				 * [tFixedFlowInput_6 finally ] start
+				 * [tFixedFlowInput_1 finally ] start
 				 */
 
-				currentComponent = "tFixedFlowInput_6";
+				currentComponent = "tFixedFlowInput_1";
 
 				/**
-				 * [tFixedFlowInput_6 finally ] stop
+				 * [tFixedFlowInput_1 finally ] stop
 				 */
 
 				/**
@@ -22939,6 +22944,7 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 			context.parm2 = (String) context.getProperty("parm2");
 			context.parm3 = (String) context.getProperty("parm3");
 			context.restUrl = (String) context.getProperty("restUrl");
+			context.contentType = (String) context.getProperty("contentType");
 		} catch (java.io.IOException ie) {
 			System.err.println("Could not load context " + contextStr);
 			ie.printStackTrace();
@@ -23009,6 +23015,10 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 			}
 			if (parentContextMap.containsKey("restUrl")) {
 				context.restUrl = (String) parentContextMap.get("restUrl");
+			}
+			if (parentContextMap.containsKey("contentType")) {
+				context.contentType = (String) parentContextMap
+						.get("contentType");
 			}
 		}
 
@@ -23197,6 +23207,6 @@ public class REST_Bio2RDF_9000 implements TalendJob {
 	ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- * 589754 characters generated by Talend Open Studio for ESB on the 30 juillet
- * 2014 13:19:23 EDT
+ * 589204 characters generated by Talend Open Studio for ESB on the 6 août 2014
+ * 18:44:49 EDT
  ************************************************************************************************/
