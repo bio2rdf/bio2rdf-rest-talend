@@ -230,7 +230,7 @@
   <node componentName="tNTriplesTemplate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="736">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tNTriplesTemplate_1"/>
     <elementParameter field="CHECK" name="SIMPLE_MODE" value="true"/>
-    <elementParameter field="MEMO" name="TEMPLATE" value="{&#xA;&#xA;    &quot;name&quot;: &quot;bio2rdf-%NS%&quot;,&#xA;    &quot;title&quot;: &quot;Bio2RDF::%TITLE%&quot;,&#xA;    &quot;notes&quot;: &quot;%DESCRIPTION%&quot;,&#xA;    &quot;version&quot;: &quot;%VERSION%&quot;,&#xA;    &quot;author&quot;: &quot;Bio2RDF&quot;,&#xA;    &quot;author_email&quot;: &quot;bio2rdf@googlegroups.com&quot;,&#xA;    &quot;maintainer&quot;: &quot;Michel Dumontier&quot;,&#xA;    &quot;maintainer_email&quot;: &quot;michel.dumontier@gmail.com&quot;,&#xA;    &quot;license_id&quot;: &quot;cc-by&quot;,&#xA;    &quot;type&quot;: &quot;dataset&quot;,&#xA;    &quot;isopen&quot;: &quot;true&quot;,&#xA;    &quot;url&quot;: &quot;http://%NS%.bio2rdf.org/&quot;,&#xA;    &quot;owner_org&quot;: &quot;bio2rdf&quot;,&#xA;    &quot;resources&quot;: [&#xA;        {&#xA;            &quot;state&quot;: &quot;active&quot;,&#xA;            &quot;description&quot;: &quot;SPARQL endpoint&quot;,&#xA;            &quot;format&quot;: &quot;api/sparql&quot;,&#xA;            &quot;name&quot;: &quot;SPARQL endpoint&quot;,&#xA;            &quot;url&quot;: &quot;http://%NS%.bio2rdf.org/sparql&quot;,&#xA;            &quot;position&quot;: 0,&#xA;            &quot;resource_type&quot;: &quot;&quot;&#xA;        },&#xA;        {&#xA;            &quot;state&quot;: &quot;active&quot;,&#xA;            &quot;description&quot;: &quot;Example resource (RDF)&quot;,&#xA;            &quot;format&quot;: &quot;example/rdf+xml&quot;,&#xA;            &quot;name&quot;: &quot;Example resource (RDF)&quot;,&#xA;            &quot;url&quot;: &quot;%EXAMPLE%&quot;,&#xA;            &quot;position&quot;: 1,&#xA;            &quot;resource_type&quot;: &quot;file&quot;&#xA;        },&#xA;        {&#xA;            &quot;state&quot;: &quot;active&quot;,&#xA;            &quot;description&quot;: &quot;Download&quot;,&#xA;            &quot;format&quot;: &quot;&quot;,&#xA;            &quot;name&quot;: &quot;Download page (n-quads, gz compressed)&quot;,&#xA;            &quot;url&quot;: &quot;http://download.bio2rdf.org/current/%NS%/&quot;,&#xA;            &quot;position&quot;: 2,&#xA;            &quot;resource_type&quot;: &quot;file&quot;&#xA;        },&#xA;        {&#xA;            &quot;state&quot;: &quot;active&quot;,&#xA;            &quot;description&quot;: &quot;Dataset description (HTML)&quot;,&#xA;            &quot;format&quot;: &quot;HTML&quot;,&#xA;            &quot;name&quot;: &quot;Dataset description (HTML)&quot;,&#xA;            &quot;url&quot;: &quot;http://download.bio2rdf.org/current/%NS%/%NS%.html&quot;,&#xA;            &quot;position&quot;: 3,&#xA;            &quot;resource_type&quot;: &quot;file&quot;&#xA;        },&#xA;        {&#xA;            &quot;state&quot;: &quot;active&quot;,&#xA;            &quot;description&quot;: &quot;Dataset description (RDF)&quot;,&#xA;            &quot;format&quot;: &quot;meta/void&quot;,&#xA;            &quot;name&quot;: &quot;Dataset description (RDF)&quot;,&#xA;            &quot;url&quot;: &quot;http://download.bio2rdf.org/current/%NS%/bio2rdf-%NS%.nq&quot;,&#xA;            &quot;position&quot;: 4,&#xA;            &quot;resource_type&quot;: &quot;file&quot;&#xA;        },&#xA;        {&#xA;            &quot;state&quot;: &quot;active&quot;,&#xA;            &quot;description&quot;: &quot;OWL Schema&quot;,&#xA;            &quot;format&quot;: &quot;meta/rdf-schema&quot;,&#xA;            &quot;name&quot;: &quot;OWL Schema&quot;,&#xA;            &quot;url&quot;: &quot;http://download.bio2rdf.org/release/3/%NS%/%NS%.schema.owl&quot;,&#xA;            &quot;position&quot;: 5,&#xA;            &quot;resource_type&quot;: &quot;file&quot;&#xA;        },&#xA;        {&#xA;            &quot;state&quot;: &quot;active&quot;,&#xA;            &quot;description&quot;: &quot;Mappings (SIO)&quot;,&#xA;            &quot;format&quot;: &quot;mapping/owl&quot;,&#xA;            &quot;name&quot;: &quot;Mappings (SIO)&quot;,&#xA;            &quot;url&quot;: &quot;https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/%NS%/bio2rdf_%NS%_sio_mapping.owl&quot;,&#xA;            &quot;position&quot;: 6,&#xA;            &quot;resource_type&quot;: &quot;file&quot;&#xA;        },&#xA;&#x9;{&#xA;            &quot;state&quot;: &quot;active&quot;,&#xA;            &quot;description&quot;: &quot;Semantic Web Sitemap&quot;,&#xA;            &quot;format&quot;: &quot;meta/sitemap&quot;,&#xA;            &quot;name&quot;: &quot;Semantic Web Sitemap&quot;,&#xA;            &quot;url&quot;: &quot;http://download.bio2rdf.org/release/3/%NS%/sitemap.xml&quot;,&#xA;            &quot;position&quot;: 7,&#xA;            &quot;resource_type&quot;: &quot;file&quot;&#xA;        }&#xA;&#x9;%DOWNLOAD%&#xA;    ],&#xA;    &quot;tags&quot;: [&#xA;        {&#xA;            &quot;display_name&quot;: &quot;bio2rdf&quot;,&#xA;            &quot;name&quot;: &quot;bio2rdf&quot;,&#xA;            &quot;state&quot;: &quot;active&quot;&#xA;        },&#xA;        {&#xA;            &quot;display_name&quot;: &quot;lifesciences&quot;,&#xA;            &quot;name&quot;: &quot;lifesciences&quot;,&#xA;            &quot;state&quot;: &quot;active&quot;&#xA;        },&#xA;        {&#xA;            &quot;display_name&quot;: &quot;lod&quot;,&#xA;            &quot;name&quot;: &quot;lod&quot;,&#xA;            &quot;state&quot;: &quot;active&quot;&#xA;        },&#xA;&#x9;{&#xA;            &quot;display_name&quot;: &quot;published-by-third-party&quot;,&#xA;            &quot;name&quot;: &quot;published-by-third-party&quot;,&#xA;            &quot;state&quot;: &quot;active&quot;&#xA;        },&#xA;        {&#xA;            &quot;display_name&quot;: &quot;deref-vocab&quot;,&#xA;            &quot;name&quot;: &quot;deref-vocab&quot;,&#xA;            &quot;state&quot;: &quot;active&quot;&#xA;        },&#xA;        {&#xA;            &quot;display_name&quot;: &quot;provenance-metadata&quot;,&#xA;            &quot;name&quot;: &quot;provenance-metadata&quot;,&#xA;            &quot;state&quot;: &quot;active&quot;&#xA;        },&#xA;&#x9;{&#xA;            &quot;display_name&quot;: &quot;license-metadata&quot;,&#xA;            &quot;name&quot;: &quot;license-metadata&quot;,&#xA;            &quot;state&quot;: &quot;active&quot;&#xA;        },&#xA;&#x9;{&#xA;            &quot;display_name&quot;: &quot;vocab-mappings&quot;,&#xA;            &quot;name&quot;: &quot;vocab-mappings&quot;,&#xA;            &quot;state&quot;: &quot;active&quot;&#xA;        },&#xA;        {&#xA;            &quot;display_name&quot;: &quot;format-dc&quot;,&#xA;            &quot;name&quot;: &quot;format-dc&quot;,&#xA;            &quot;state&quot;: &quot;active&quot;&#xA;        },&#xA;        {&#xA;            &quot;display_name&quot;: &quot;format-rdfs&quot;,&#xA;            &quot;name&quot;: &quot;format-rdfs&quot;,&#xA;            &quot;state&quot;: &quot;active&quot;&#xA;        },&#xA;&#x9;{&#xA;            &quot;display_name&quot;: &quot;format-rdf&quot;,&#xA;            &quot;name&quot;: &quot;format-rdf&quot;,&#xA;            &quot;state&quot;: &quot;active&quot;&#xA;        }&#xA;    ],&#xA;    &quot;extras&quot;: [&#xA;        {&#xA;            &quot;key&quot;: &quot;namespace&quot;,&#xA;            &quot;value&quot;: &quot;http://bio2rdf.org/%NS%:&quot;,&#xA;            &quot;state&quot;: &quot;active&quot;&#xA;        }&#xA;&#x9;%EXTRAS%&#xA;    ]&#xA;&#xA;}"/>
+    <elementParameter field="MEMO" name="TEMPLATE" value="{&#xA;    &quot;state&quot;: &quot;active&quot;,&#xA;    &quot;name&quot;: &quot;bio2rdf-%NS%&quot;,&#xA;    &quot;title&quot;: &quot;Bio2RDF::%TITLE%&quot;,&#xA;    &quot;notes&quot;: &quot;%DESCRIPTION%&quot;,&#xA;    &quot;version&quot;: &quot;%VERSION%&quot;,&#xA;    &quot;author&quot;: &quot;Bio2RDF&quot;,&#xA;    &quot;author_email&quot;: &quot;bio2rdf@googlegroups.com&quot;,&#xA;    &quot;maintainer&quot;: &quot;Michel Dumontier&quot;,&#xA;    &quot;maintainer_email&quot;: &quot;michel.dumontier@gmail.com&quot;,&#xA;    &quot;license_id&quot;: &quot;cc-by&quot;,&#xA;    &quot;type&quot;: &quot;dataset&quot;,&#xA;    &quot;isopen&quot;: &quot;true&quot;,&#xA;    &quot;url&quot;: &quot;http://%NS%.bio2rdf.org/&quot;,&#xA;    &quot;owner_org&quot;: &quot;bio2rdf&quot;,&#xA;    &quot;resources&quot;: [&#xA;        {&#xA;            &quot;state&quot;: &quot;active&quot;,&#xA;            &quot;description&quot;: &quot;SPARQL endpoint&quot;,&#xA;            &quot;format&quot;: &quot;api/sparql&quot;,&#xA;            &quot;name&quot;: &quot;SPARQL endpoint&quot;,&#xA;            &quot;url&quot;: &quot;http://%NS%.bio2rdf.org/sparql&quot;,&#xA;            &quot;position&quot;: 0,&#xA;            &quot;resource_type&quot;: &quot;&quot;&#xA;        },&#xA;        {&#xA;            &quot;state&quot;: &quot;active&quot;,&#xA;            &quot;description&quot;: &quot;Example resource (RDF)&quot;,&#xA;            &quot;format&quot;: &quot;example/rdf+xml&quot;,&#xA;            &quot;name&quot;: &quot;Example resource (RDF)&quot;,&#xA;            &quot;url&quot;: &quot;%EXAMPLE%&quot;,&#xA;            &quot;position&quot;: 1,&#xA;            &quot;resource_type&quot;: &quot;file&quot;&#xA;        },&#xA;        {&#xA;            &quot;state&quot;: &quot;active&quot;,&#xA;            &quot;description&quot;: &quot;Download&quot;,&#xA;            &quot;format&quot;: &quot;&quot;,&#xA;            &quot;name&quot;: &quot;Download page (n-quads, gz compressed)&quot;,&#xA;            &quot;url&quot;: &quot;http://download.bio2rdf.org/current/%NS%/&quot;,&#xA;            &quot;position&quot;: 2,&#xA;            &quot;resource_type&quot;: &quot;file&quot;&#xA;        },&#xA;        {&#xA;            &quot;state&quot;: &quot;active&quot;,&#xA;            &quot;description&quot;: &quot;Dataset description (HTML)&quot;,&#xA;            &quot;format&quot;: &quot;HTML&quot;,&#xA;            &quot;name&quot;: &quot;Dataset description (HTML)&quot;,&#xA;            &quot;url&quot;: &quot;http://download.bio2rdf.org/current/%NS%/%NS%.html&quot;,&#xA;            &quot;position&quot;: 3,&#xA;            &quot;resource_type&quot;: &quot;file&quot;&#xA;        },&#xA;        {&#xA;            &quot;state&quot;: &quot;active&quot;,&#xA;            &quot;description&quot;: &quot;Dataset description (RDF)&quot;,&#xA;            &quot;format&quot;: &quot;meta/void&quot;,&#xA;            &quot;name&quot;: &quot;Dataset description (RDF)&quot;,&#xA;            &quot;url&quot;: &quot;http://download.bio2rdf.org/current/%NS%/bio2rdf-%NS%.nq&quot;,&#xA;            &quot;position&quot;: 4,&#xA;            &quot;resource_type&quot;: &quot;file&quot;&#xA;        },&#xA;        {&#xA;            &quot;state&quot;: &quot;active&quot;,&#xA;            &quot;description&quot;: &quot;OWL Schema&quot;,&#xA;            &quot;format&quot;: &quot;meta/rdf-schema&quot;,&#xA;            &quot;name&quot;: &quot;OWL Schema&quot;,&#xA;            &quot;url&quot;: &quot;http://download.bio2rdf.org/release/3/%NS%/%NS%.schema.owl&quot;,&#xA;            &quot;position&quot;: 5,&#xA;            &quot;resource_type&quot;: &quot;file&quot;&#xA;        },&#xA;        {&#xA;            &quot;state&quot;: &quot;active&quot;,&#xA;            &quot;description&quot;: &quot;Mappings (SIO)&quot;,&#xA;            &quot;format&quot;: &quot;mapping/owl&quot;,&#xA;            &quot;name&quot;: &quot;Mappings (SIO)&quot;,&#xA;            &quot;url&quot;: &quot;https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/%NS%/bio2rdf_%NS%_sio_mapping.owl&quot;,&#xA;            &quot;position&quot;: 6,&#xA;            &quot;resource_type&quot;: &quot;file&quot;&#xA;        },&#xA;&#x9;{&#xA;            &quot;state&quot;: &quot;active&quot;,&#xA;            &quot;description&quot;: &quot;Semantic Web Sitemap&quot;,&#xA;            &quot;format&quot;: &quot;meta/sitemap&quot;,&#xA;            &quot;name&quot;: &quot;Semantic Web Sitemap&quot;,&#xA;            &quot;url&quot;: &quot;http://download.bio2rdf.org/release/3/%NS%/sitemap.xml&quot;,&#xA;            &quot;position&quot;: 7,&#xA;            &quot;resource_type&quot;: &quot;file&quot;&#xA;        }&#xA;&#x9;%DOWNLOAD%&#xA;    ],&#xA;    &quot;tags&quot;: [&#xA;        {&#xA;            &quot;display_name&quot;: &quot;bio2rdf&quot;,&#xA;            &quot;name&quot;: &quot;bio2rdf&quot;,&#xA;            &quot;state&quot;: &quot;active&quot;&#xA;        },&#xA;        {&#xA;            &quot;display_name&quot;: &quot;lifesciences&quot;,&#xA;            &quot;name&quot;: &quot;lifesciences&quot;,&#xA;            &quot;state&quot;: &quot;active&quot;&#xA;        },&#xA;        {&#xA;            &quot;display_name&quot;: &quot;lod&quot;,&#xA;            &quot;name&quot;: &quot;lod&quot;,&#xA;            &quot;state&quot;: &quot;active&quot;&#xA;        },&#xA;&#x9;{&#xA;            &quot;display_name&quot;: &quot;published-by-third-party&quot;,&#xA;            &quot;name&quot;: &quot;published-by-third-party&quot;,&#xA;            &quot;state&quot;: &quot;active&quot;&#xA;        },&#xA;        {&#xA;            &quot;display_name&quot;: &quot;deref-vocab&quot;,&#xA;            &quot;name&quot;: &quot;deref-vocab&quot;,&#xA;            &quot;state&quot;: &quot;active&quot;&#xA;        },&#xA;        {&#xA;            &quot;display_name&quot;: &quot;provenance-metadata&quot;,&#xA;            &quot;name&quot;: &quot;provenance-metadata&quot;,&#xA;            &quot;state&quot;: &quot;active&quot;&#xA;        },&#xA;&#x9;{&#xA;            &quot;display_name&quot;: &quot;license-metadata&quot;,&#xA;            &quot;name&quot;: &quot;license-metadata&quot;,&#xA;            &quot;state&quot;: &quot;active&quot;&#xA;        },&#xA;&#x9;{&#xA;            &quot;display_name&quot;: &quot;vocab-mappings&quot;,&#xA;            &quot;name&quot;: &quot;vocab-mappings&quot;,&#xA;            &quot;state&quot;: &quot;active&quot;&#xA;        },&#xA;        {&#xA;            &quot;display_name&quot;: &quot;format-dc&quot;,&#xA;            &quot;name&quot;: &quot;format-dc&quot;,&#xA;            &quot;state&quot;: &quot;active&quot;&#xA;        },&#xA;        {&#xA;            &quot;display_name&quot;: &quot;format-rdfs&quot;,&#xA;            &quot;name&quot;: &quot;format-rdfs&quot;,&#xA;            &quot;state&quot;: &quot;active&quot;&#xA;        },&#xA;&#x9;{&#xA;            &quot;display_name&quot;: &quot;format-rdf&quot;,&#xA;            &quot;name&quot;: &quot;format-rdf&quot;,&#xA;            &quot;state&quot;: &quot;active&quot;&#xA;        }&#xA;    ],&#xA;    &quot;extras&quot;: [&#xA;        {&#xA;            &quot;key&quot;: &quot;namespace&quot;,&#xA;            &quot;value&quot;: &quot;http://bio2rdf.org/%NS%:&quot;,&#xA;            &quot;state&quot;: &quot;active&quot;&#xA;        }&#xA;&#x9;%EXTRAS%&#xA;    ]&#xA;&#xA;}"/>
     <elementParameter field="TABLE" name="SUBSTITUTIONS">
       <elementValue elementRef="SEARCH_PATTERN" value="&quot;%NS%&quot;"/>
       <elementValue elementRef="REPLACE_STRING" value="out1.namespace"/>
@@ -325,79 +325,6 @@
     <elementParameter field="MEMO" name="COMMENT" value=""/>
     <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
     <metadata connector="FLOW" name="tJava_1"/>
-  </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="false"/>
-    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
-    <elementParameter field="TEXT" name="CONTEXT_JOB" value=""/>
-    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="datahub_get_stats"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_rHkzgBy1EeSHxY3_E1Ex-w"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
-    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default"/>
-    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
-    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
-    <elementParameter field="TABLE" name="CONTEXTPARAMS">
-      <elementValue elementRef="PARAM_NAME_COLUMN" value="endpoint_namespace"/>
-      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.namespace"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
-    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
-    <elementParameter field="MEMO" name="COMMENT" value=""/>
-    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
-    <metadata connector="FLOW" name="tRunJob_1">
-      <column comment="" key="false" name="link_namespace" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="stat" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="CHECK" name="DUMMY" value="true"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
-    <elementParameter field="TABLE" name="LENGTHS">
-      <elementValue elementRef="SCHEMA_COLUMN" value="link_namespace"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="stat"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
-    <elementParameter field="MEMO" name="COMMENT" value=""/>
-    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
-    <metadata connector="FLOW" name="tLogRow_1">
-      <column comment="" key="false" name="link_namespace" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" name="stat" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="true"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="context.extras = context.extras + &quot;,{ \&quot;key\&quot;: \&quot;links:bio2rdf-&quot;+input_row.link_namespace+&quot;\&quot;, \&quot;value\&quot;: \&quot;&quot;+input_row.stat+&quot;\&quot;, \&quot;state\&quot;: \&quot;active\&quot; }&quot;;"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="LABEL" value="Concatenate stats in extras json string"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
-    <elementParameter field="MEMO" name="COMMENT" value=""/>
-    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
-    <metadata connector="FLOW" name="tJavaRow_1"/>
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_2"/>
@@ -511,6 +438,8 @@
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_3"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" value="true"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -539,7 +468,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractRegexFields_2"/>
     <elementParameter field="PREV_COLUMN_LIST" name="FIELD" value="downloadFile"/>
     <elementParameter field="LABEL" name="REGEX_HELP" value="The default regex will match &quot;[Monday] meeting with John [priority: high] [place: office]&quot;&#xA;      and &quot;[Friday] diner with kids [priority: highest] [place: home]&quot;&#xA;&#x9;  "/>
-    <elementParameter field="MEMO" name="REGEX" value="&quot;\\w*(\\..*?)$&quot;"/>
+    <elementParameter field="MEMO" name="REGEX" value="&quot;.*(\\.\\w*).gz$&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
     <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -557,10 +486,10 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="448">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_5"/>
     <elementParameter field="CHECK" name="END_OF_FLOW" value="true"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="context.resourceCount = context.resourceCount + 1;&#xA;&#xA;//context.downloadResource = input_row.downloadFile;&#xA;if (input_row.fileType.equals(&quot;.nq.gz&quot;) || input_row.fileType.equals(&quot;.nq&quot;))&#xA;{&#xA;&#x9;input_row.fileType = &quot;application/x-nquads&quot;;&#xA;}&#xA;else if (input_row.fileType.equals(&quot;.nt.gz&quot;) || input_row.fileType.equals(&quot;.nt&quot;))&#xA;{&#xA;&#x9;input_row.fileType = &quot;application/x-ntriples&quot;;&#xA;}&#xA;else if (input_row.fileType.equals(&quot;.ttl.gz&quot;) || input_row.fileType.equals(&quot;.ttl&quot;))&#xA;{&#xA;&#x9;input_row.fileType = &quot;text/turtle&quot;;&#xA;}&#xA;else if (input_row.fileType.equals(&quot;.xml.gz&quot;) || input_row.fileType.equals(&quot;.xml&quot;))&#xA;{&#xA;&#x9;input_row.fileType = &quot;application/rdf+xml&quot;;&#xA;}&#xA;&#xA;context.downloadResource = context.downloadResource + &quot;,\n {\&quot;state\&quot;: \&quot;active\&quot;, \&quot;description\&quot;: \&quot;Download &quot;+ row13.downloadFile +&quot; (n-quads, gzipped)\&quot;, \&quot;format\&quot;: \&quot;&quot;+ input_row.fileType +&quot;\&quot;, \&quot;name\&quot;: \&quot;Download (n-quads, gzipped)\&quot;, \&quot;url\&quot;: \&quot;http://download.bio2rdf.org/current/&quot;+ context.namespace +&quot;/&quot;+ row13.downloadFile +&quot;\&quot;, \&quot;position\&quot;: &quot;+ context.resourceCount +&quot;, \&quot;resource_type\&quot;: \&quot;file\&quot; }&quot;;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.resourceCount = context.resourceCount + 1;&#xA;&#xA;//context.downloadResource = input_row.downloadFile;&#xA;if (input_row.fileType.equals(&quot;.nq&quot;))&#xA;{&#xA;&#x9;input_row.fileType = &quot;application/x-nquads&quot;;&#xA;}&#xA;else if (input_row.fileType.equals(&quot;.nt&quot;))&#xA;{&#xA;&#x9;input_row.fileType = &quot;application/x-ntriples&quot;;&#xA;}&#xA;else if (input_row.fileType.equals(&quot;.ttl&quot;))&#xA;{&#xA;&#x9;input_row.fileType = &quot;text/turtle&quot;;&#xA;}&#xA;else if (input_row.fileType.equals(&quot;.xml&quot;))&#xA;{&#xA;&#x9;input_row.fileType = &quot;application/rdf+xml&quot;;&#xA;}&#xA;&#xA;context.downloadResource = context.downloadResource + &quot;,\n {\&quot;state\&quot;: \&quot;active\&quot;, \&quot;description\&quot;: \&quot;Download &quot;+ row13.downloadFile +&quot; (n-quads, gzipped)\&quot;, \&quot;format\&quot;: \&quot;&quot;+ input_row.fileType +&quot;\&quot;, \&quot;name\&quot;: \&quot;Download (n-quads, gzipped)\&quot;, \&quot;url\&quot;: \&quot;http://download.bio2rdf.org/current/&quot;+ context.namespace +&quot;/&quot;+ row13.downloadFile +&quot;\&quot;, \&quot;position\&quot;: &quot;+ context.resourceCount +&quot;, \&quot;resource_type\&quot;: \&quot;file\&quot; }&quot;;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="generate download resources json"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -568,6 +497,79 @@
     <elementParameter field="MEMO" name="COMMENT" value=""/>
     <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
     <metadata connector="FLOW" name="tJavaRow_5"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="datahub_get_stats"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_TKvjkCFuEeS1sK3u8AcpXA"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="endpoint_namespace"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.namespace"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tRunJob_1">
+      <column comment="" key="false" name="link_namespace" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="stat" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" value="true"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS">
+      <elementValue elementRef="SCHEMA_COLUMN" value="link_namespace"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="stat"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" key="false" name="link_namespace" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="stat" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.extras = context.extras + &quot;,{ \&quot;key\&quot;: \&quot;links:bio2rdf-&quot;+input_row.link_namespace+&quot;\&quot;, \&quot;value\&quot;: \&quot;&quot;+input_row.stat+&quot;\&quot;, \&quot;state\&quot;: \&quot;active\&quot; }&quot;;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Concatenate stats in extras json string"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tJavaRow_1"/>
   </node>
   <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tFilterRow_1">
     <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
@@ -751,54 +753,6 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1"/>
   </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tLogRow_1">
-    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
-      <elementValue elementRef="TRACE_COLUMN" value="endpoint_namespace"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="link_namespace"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="stat"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
-    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
-    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
-    <elementParameter field="TABLE" name="THRESHLODS"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2"/>
-  </connection>
-  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tJavaRow_1">
-    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
-      <elementValue elementRef="TRACE_COLUMN" value="endpoint_namespace"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="link_namespace"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="stat"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
-    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
-    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
-    <elementParameter field="TABLE" name="THRESHLODS"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tSparqlSelectRequest_1">
-    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2"/>
-  </connection>
   <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tSparqlSelectRequest_1" offsetLabelX="0" offsetLabelY="0" source="tSparqlSelectRequest_1" target="tJavaRow_3">
     <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
@@ -905,6 +859,51 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row13"/>
   </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="link_namespace"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="stat"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tJavaRow_1">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="endpoint_namespace"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="link_namespace"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="stat"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tSparqlSelectRequest_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2"/>
+  </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
@@ -918,11 +917,6 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
   </subjob>
@@ -944,6 +938,11 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHttpRequest_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
   </subjob>

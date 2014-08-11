@@ -2182,7 +2182,7 @@ public class generate_json_datahub_file implements TalendJob {
 
 									currentComponent = "tNTriplesTemplate_1";
 
-									row6.RDF = "{~n~~n~    \"name\": \"bio2rdf-%NS%\",~n~    \"title\": \"Bio2RDF::%TITLE%\",~n~    \"notes\": \"%DESCRIPTION%\",~n~    \"version\": \"%VERSION%\",~n~    \"author\": \"Bio2RDF\",~n~    \"author_email\": \"bio2rdf@googlegroups.com\",~n~    \"maintainer\": \"Michel Dumontier\",~n~    \"maintainer_email\": \"michel.dumontier@gmail.com\",~n~    \"license_id\": \"cc-by\",~n~    \"type\": \"dataset\",~n~    \"isopen\": \"true\",~n~    \"url\": \"http://%NS%.bio2rdf.org/\",~n~    \"owner_org\": \"bio2rdf\",~n~    \"resources\": [~n~        {~n~            \"state\": \"active\",~n~            \"description\": \"SPARQL endpoint\",~n~            \"format\": \"api/sparql\",~n~            \"name\": \"SPARQL endpoint\",~n~            \"url\": \"http://%NS%.bio2rdf.org/sparql\",~n~            \"position\": 0,~n~            \"resource_type\": \"\"~n~        },~n~        {~n~            \"state\": \"active\",~n~            \"description\": \"Example resource (RDF)\",~n~            \"format\": \"example/rdf+xml\",~n~            \"name\": \"Example resource (RDF)\",~n~            \"url\": \"%EXAMPLE%\",~n~            \"position\": 1,~n~            \"resource_type\": \"file\"~n~        },~n~        {~n~            \"state\": \"active\",~n~            \"description\": \"Download\",~n~            \"format\": \"\",~n~            \"name\": \"Download page (n-quads, gz compressed)\",~n~            \"url\": \"http://download.bio2rdf.org/current/%NS%/\",~n~            \"position\": 2,~n~            \"resource_type\": \"file\"~n~        },~n~        {~n~            \"state\": \"active\",~n~            \"description\": \"Dataset description (HTML)\",~n~            \"format\": \"HTML\",~n~            \"name\": \"Dataset description (HTML)\",~n~            \"url\": \"http://download.bio2rdf.org/current/%NS%/%NS%.html\",~n~            \"position\": 3,~n~            \"resource_type\": \"file\"~n~        },~n~        {~n~            \"state\": \"active\",~n~            \"description\": \"Dataset description (RDF)\",~n~            \"format\": \"meta/void\",~n~            \"name\": \"Dataset description (RDF)\",~n~            \"url\": \"http://download.bio2rdf.org/current/%NS%/bio2rdf-%NS%.nq\",~n~            \"position\": 4,~n~            \"resource_type\": \"file\"~n~        },~n~        {~n~            \"state\": \"active\",~n~            \"description\": \"OWL Schema\",~n~            \"format\": \"meta/rdf-schema\",~n~            \"name\": \"OWL Schema\",~n~            \"url\": \"http://download.bio2rdf.org/release/3/%NS%/%NS%.schema.owl\",~n~            \"position\": 5,~n~            \"resource_type\": \"file\"~n~        },~n~        {~n~            \"state\": \"active\",~n~            \"description\": \"Mappings (SIO)\",~n~            \"format\": \"mapping/owl\",~n~            \"name\": \"Mappings (SIO)\",~n~            \"url\": \"https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/%NS%/bio2rdf_%NS%_sio_mapping.owl\",~n~            \"position\": 6,~n~            \"resource_type\": \"file\"~n~        },~n~	{~n~            \"state\": \"active\",~n~            \"description\": \"Semantic Web Sitemap\",~n~            \"format\": \"meta/sitemap\",~n~            \"name\": \"Semantic Web Sitemap\",~n~            \"url\": \"http://download.bio2rdf.org/release/3/%NS%/sitemap.xml\",~n~            \"position\": 7,~n~            \"resource_type\": \"file\"~n~        }~n~	%DOWNLOAD%~n~    ],~n~    \"tags\": [~n~        {~n~            \"display_name\": \"bio2rdf\",~n~            \"name\": \"bio2rdf\",~n~            \"state\": \"active\"~n~        },~n~        {~n~            \"display_name\": \"lifesciences\",~n~            \"name\": \"lifesciences\",~n~            \"state\": \"active\"~n~        },~n~        {~n~            \"display_name\": \"lod\",~n~            \"name\": \"lod\",~n~            \"state\": \"active\"~n~        },~n~	{~n~            \"display_name\": \"published-by-third-party\",~n~            \"name\": \"published-by-third-party\",~n~            \"state\": \"active\"~n~        },~n~        {~n~            \"display_name\": \"deref-vocab\",~n~            \"name\": \"deref-vocab\",~n~            \"state\": \"active\"~n~        },~n~        {~n~            \"display_name\": \"provenance-metadata\",~n~            \"name\": \"provenance-metadata\",~n~            \"state\": \"active\"~n~        },~n~	{~n~            \"display_name\": \"license-metadata\",~n~            \"name\": \"license-metadata\",~n~            \"state\": \"active\"~n~        },~n~	{~n~            \"display_name\": \"vocab-mappings\",~n~            \"name\": \"vocab-mappings\",~n~            \"state\": \"active\"~n~        },~n~        {~n~            \"display_name\": \"format-dc\",~n~            \"name\": \"format-dc\",~n~            \"state\": \"active\"~n~        },~n~        {~n~            \"display_name\": \"format-rdfs\",~n~            \"name\": \"format-rdfs\",~n~            \"state\": \"active\"~n~        },~n~	{~n~            \"display_name\": \"format-rdf\",~n~            \"name\": \"format-rdf\",~n~            \"state\": \"active\"~n~        }~n~    ],~n~    \"extras\": [~n~        {~n~            \"key\": \"namespace\",~n~            \"value\": \"http://bio2rdf.org/%NS%:\",~n~            \"state\": \"active\"~n~        }~n~	%EXTRAS%~n~    ]~n~~n~}";
+									row6.RDF = "{~n~    \"state\": \"active\",~n~    \"name\": \"bio2rdf-%NS%\",~n~    \"title\": \"Bio2RDF::%TITLE%\",~n~    \"notes\": \"%DESCRIPTION%\",~n~    \"version\": \"%VERSION%\",~n~    \"author\": \"Bio2RDF\",~n~    \"author_email\": \"bio2rdf@googlegroups.com\",~n~    \"maintainer\": \"Michel Dumontier\",~n~    \"maintainer_email\": \"michel.dumontier@gmail.com\",~n~    \"license_id\": \"cc-by\",~n~    \"type\": \"dataset\",~n~    \"isopen\": \"true\",~n~    \"url\": \"http://%NS%.bio2rdf.org/\",~n~    \"owner_org\": \"bio2rdf\",~n~    \"resources\": [~n~        {~n~            \"state\": \"active\",~n~            \"description\": \"SPARQL endpoint\",~n~            \"format\": \"api/sparql\",~n~            \"name\": \"SPARQL endpoint\",~n~            \"url\": \"http://%NS%.bio2rdf.org/sparql\",~n~            \"position\": 0,~n~            \"resource_type\": \"\"~n~        },~n~        {~n~            \"state\": \"active\",~n~            \"description\": \"Example resource (RDF)\",~n~            \"format\": \"example/rdf+xml\",~n~            \"name\": \"Example resource (RDF)\",~n~            \"url\": \"%EXAMPLE%\",~n~            \"position\": 1,~n~            \"resource_type\": \"file\"~n~        },~n~        {~n~            \"state\": \"active\",~n~            \"description\": \"Download\",~n~            \"format\": \"\",~n~            \"name\": \"Download page (n-quads, gz compressed)\",~n~            \"url\": \"http://download.bio2rdf.org/current/%NS%/\",~n~            \"position\": 2,~n~            \"resource_type\": \"file\"~n~        },~n~        {~n~            \"state\": \"active\",~n~            \"description\": \"Dataset description (HTML)\",~n~            \"format\": \"HTML\",~n~            \"name\": \"Dataset description (HTML)\",~n~            \"url\": \"http://download.bio2rdf.org/current/%NS%/%NS%.html\",~n~            \"position\": 3,~n~            \"resource_type\": \"file\"~n~        },~n~        {~n~            \"state\": \"active\",~n~            \"description\": \"Dataset description (RDF)\",~n~            \"format\": \"meta/void\",~n~            \"name\": \"Dataset description (RDF)\",~n~            \"url\": \"http://download.bio2rdf.org/current/%NS%/bio2rdf-%NS%.nq\",~n~            \"position\": 4,~n~            \"resource_type\": \"file\"~n~        },~n~        {~n~            \"state\": \"active\",~n~            \"description\": \"OWL Schema\",~n~            \"format\": \"meta/rdf-schema\",~n~            \"name\": \"OWL Schema\",~n~            \"url\": \"http://download.bio2rdf.org/release/3/%NS%/%NS%.schema.owl\",~n~            \"position\": 5,~n~            \"resource_type\": \"file\"~n~        },~n~        {~n~            \"state\": \"active\",~n~            \"description\": \"Mappings (SIO)\",~n~            \"format\": \"mapping/owl\",~n~            \"name\": \"Mappings (SIO)\",~n~            \"url\": \"https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/%NS%/bio2rdf_%NS%_sio_mapping.owl\",~n~            \"position\": 6,~n~            \"resource_type\": \"file\"~n~        },~n~	{~n~            \"state\": \"active\",~n~            \"description\": \"Semantic Web Sitemap\",~n~            \"format\": \"meta/sitemap\",~n~            \"name\": \"Semantic Web Sitemap\",~n~            \"url\": \"http://download.bio2rdf.org/release/3/%NS%/sitemap.xml\",~n~            \"position\": 7,~n~            \"resource_type\": \"file\"~n~        }~n~	%DOWNLOAD%~n~    ],~n~    \"tags\": [~n~        {~n~            \"display_name\": \"bio2rdf\",~n~            \"name\": \"bio2rdf\",~n~            \"state\": \"active\"~n~        },~n~        {~n~            \"display_name\": \"lifesciences\",~n~            \"name\": \"lifesciences\",~n~            \"state\": \"active\"~n~        },~n~        {~n~            \"display_name\": \"lod\",~n~            \"name\": \"lod\",~n~            \"state\": \"active\"~n~        },~n~	{~n~            \"display_name\": \"published-by-third-party\",~n~            \"name\": \"published-by-third-party\",~n~            \"state\": \"active\"~n~        },~n~        {~n~            \"display_name\": \"deref-vocab\",~n~            \"name\": \"deref-vocab\",~n~            \"state\": \"active\"~n~        },~n~        {~n~            \"display_name\": \"provenance-metadata\",~n~            \"name\": \"provenance-metadata\",~n~            \"state\": \"active\"~n~        },~n~	{~n~            \"display_name\": \"license-metadata\",~n~            \"name\": \"license-metadata\",~n~            \"state\": \"active\"~n~        },~n~	{~n~            \"display_name\": \"vocab-mappings\",~n~            \"name\": \"vocab-mappings\",~n~            \"state\": \"active\"~n~        },~n~        {~n~            \"display_name\": \"format-dc\",~n~            \"name\": \"format-dc\",~n~            \"state\": \"active\"~n~        },~n~        {~n~            \"display_name\": \"format-rdfs\",~n~            \"name\": \"format-rdfs\",~n~            \"state\": \"active\"~n~        },~n~	{~n~            \"display_name\": \"format-rdf\",~n~            \"name\": \"format-rdf\",~n~            \"state\": \"active\"~n~        }~n~    ],~n~    \"extras\": [~n~        {~n~            \"key\": \"namespace\",~n~            \"value\": \"http://bio2rdf.org/%NS%:\",~n~            \"state\": \"active\"~n~        }~n~	%EXTRAS%~n~    ]~n~~n~}";
 
 									String searchStr_tNTriplesTemplate_1_1 = "%NS%"
 											+ "";
@@ -4566,7 +4566,7 @@ public class generate_json_datahub_file implements TalendJob {
 				int tos_count_tExtractRegexFields_2 = 0;
 
 				java.util.regex.Pattern pattern_tExtractRegexFields_2 = java.util.regex.Pattern
-						.compile("\\w*(\\..*?)$");
+						.compile(".*(\\.\\w*).gz$");
 
 				/**
 				 * [tExtractRegexFields_2 begin ] stop
@@ -4582,15 +4582,6 @@ public class generate_json_datahub_file implements TalendJob {
 				currentComponent = "tLogRow_3";
 
 				int tos_count_tLogRow_3 = 0;
-
-				// /////////////////////
-
-				final String OUTPUT_FIELD_SEPARATOR_tLogRow_3 = "|";
-				java.io.PrintStream consoleOut_tLogRow_3 = null;
-
-				StringBuilder strBuffer_tLogRow_3 = null;
-				int nb_line_tLogRow_3 = 0;
-				// /////////////////////
 
 				/**
 				 * [tLogRow_3 begin ] stop
@@ -4788,38 +4779,6 @@ public class generate_json_datahub_file implements TalendJob {
 
 								currentComponent = "tLogRow_3";
 
-								// /////////////////////
-
-								strBuffer_tLogRow_3 = new StringBuilder();
-
-								if (row12.downloadFile != null) { //
-
-									strBuffer_tLogRow_3.append(String
-											.valueOf(row12.downloadFile));
-
-								} //
-
-								if (globalMap.get("tLogRow_CONSOLE") != null) {
-									consoleOut_tLogRow_3 = (java.io.PrintStream) globalMap
-											.get("tLogRow_CONSOLE");
-								} else {
-									consoleOut_tLogRow_3 = new java.io.PrintStream(
-											new java.io.BufferedOutputStream(
-													System.out));
-									globalMap.put("tLogRow_CONSOLE",
-											consoleOut_tLogRow_3);
-								}
-
-								consoleOut_tLogRow_3
-										.println(strBuffer_tLogRow_3.toString());
-								consoleOut_tLogRow_3.flush();
-								nb_line_tLogRow_3++;
-								// ////
-
-								// ////
-
-								// /////////////////////
-
 								row11 = row12;
 
 								tos_count_tLogRow_3++;
@@ -4873,24 +4832,16 @@ public class generate_json_datahub_file implements TalendJob {
 
 											// context.downloadResource =
 											// row13.downloadFile;
-											if (row13.fileType.equals(".nq.gz")
-													|| row13.fileType
-															.equals(".nq")) {
+											if (row13.fileType.equals(".nq")) {
 												row13.fileType = "application/x-nquads";
 											} else if (row13.fileType
-													.equals(".nt.gz")
-													|| row13.fileType
-															.equals(".nt")) {
+													.equals(".nt")) {
 												row13.fileType = "application/x-ntriples";
 											} else if (row13.fileType
-													.equals(".ttl.gz")
-													|| row13.fileType
-															.equals(".ttl")) {
+													.equals(".ttl")) {
 												row13.fileType = "text/turtle";
 											} else if (row13.fileType
-													.equals(".xml.gz")
-													|| row13.fileType
-															.equals(".xml")) {
+													.equals(".xml")) {
 												row13.fileType = "application/rdf+xml";
 											}
 
@@ -4975,12 +4926,6 @@ public class generate_json_datahub_file implements TalendJob {
 				 */
 
 				currentComponent = "tLogRow_3";
-
-				// ////
-				// ////
-				globalMap.put("tLogRow_3_NB_LINE", nb_line_tLogRow_3);
-
-				// /////////////////////
 
 				ok_Hash.put("tLogRow_3", true);
 				end_Hash.put("tLogRow_3", System.currentTimeMillis());
@@ -5475,6 +5420,6 @@ public class generate_json_datahub_file implements TalendJob {
 	ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- * 145235 characters generated by Talend Open Studio for Data Integration on the
- * 8 août 2014 15:39:18 EDT
+ * 143709 characters generated by Talend Open Studio for Data Integration on the
+ * 11 août 2014 16:32:21 EDT
  ************************************************************************************************/

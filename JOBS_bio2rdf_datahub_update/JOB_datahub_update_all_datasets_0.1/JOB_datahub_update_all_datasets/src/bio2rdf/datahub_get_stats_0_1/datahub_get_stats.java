@@ -42,7 +42,7 @@ import java.io.ObjectInputStream;
 import java.io.IOException;
 import java.util.Comparator;
 
-//the import part of tJavaRow_1
+//the import part of tJavaRow_2
 //import java.util.List;
 
 @SuppressWarnings("unused")
@@ -271,7 +271,7 @@ public class datahub_get_stats implements TalendJob {
 		}
 	}
 
-	public void tFileInputDelimited_1_error(java.lang.Exception exception,
+	public void tHttpRequest_1_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
 
@@ -279,11 +279,10 @@ public class datahub_get_stats implements TalendJob {
 
 		status = "failure";
 
-		tFileInputDelimited_1_onSubJobError(exception, errorComponent,
-				globalMap);
+		tHttpRequest_1_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void tFilterRow_2_error(java.lang.Exception exception,
+	public void tExtractJSONFields_1_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
 
@@ -291,11 +290,10 @@ public class datahub_get_stats implements TalendJob {
 
 		status = "failure";
 
-		tFileInputDelimited_1_onSubJobError(exception, errorComponent,
-				globalMap);
+		tHttpRequest_1_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void tFlowToIterate_1_error(java.lang.Exception exception,
+	public void tExtractRegexFields_1_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
 
@@ -303,11 +301,10 @@ public class datahub_get_stats implements TalendJob {
 
 		status = "failure";
 
-		tFileInputDelimited_1_onSubJobError(exception, errorComponent,
-				globalMap);
+		tHttpRequest_1_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void tSparqlSelectRequest_1_error(java.lang.Exception exception,
+	public void tJavaRow_2_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
 
@@ -315,11 +312,10 @@ public class datahub_get_stats implements TalendJob {
 
 		status = "failure";
 
-		tFileInputDelimited_1_onSubJobError(exception, errorComponent,
-				globalMap);
+		tHttpRequest_1_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void tJavaRow_1_error(java.lang.Exception exception,
+	public void tFilterRow_1_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
 
@@ -327,11 +323,10 @@ public class datahub_get_stats implements TalendJob {
 
 		status = "failure";
 
-		tFileInputDelimited_1_onSubJobError(exception, errorComponent,
-				globalMap);
+		tHttpRequest_1_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void tLogRow_1_error(java.lang.Exception exception,
+	public void tLogRow_2_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
 
@@ -339,8 +334,7 @@ public class datahub_get_stats implements TalendJob {
 
 		status = "failure";
 
-		tFileInputDelimited_1_onSubJobError(exception, errorComponent,
-				globalMap);
+		tHttpRequest_1_onSubJobError(exception, errorComponent, globalMap);
 	}
 
 	public void tBufferOutput_1_error(java.lang.Exception exception,
@@ -351,13 +345,11 @@ public class datahub_get_stats implements TalendJob {
 
 		status = "failure";
 
-		tFileInputDelimited_1_onSubJobError(exception, errorComponent,
-				globalMap);
+		tHttpRequest_1_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void tFileInputDelimited_1_onSubJobError(
-			java.lang.Exception exception, String errorComponent,
-			final java.util.Map<String, Object> globalMap)
+	public void tHttpRequest_1_onSubJobError(java.lang.Exception exception,
+			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
 
 		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread
@@ -372,10 +364,10 @@ public class datahub_get_stats implements TalendJob {
 		final static byte[] commonByteArrayLock_BIO2RDF_datahub_get_stats = new byte[0];
 		static byte[] commonByteArray_BIO2RDF_datahub_get_stats = new byte[0];
 
-		public String link_namespace;
+		public String link;
 
-		public String getLink_namespace() {
-			return this.link_namespace;
+		public String getLink() {
+			return this.link;
 		}
 
 		public String stat;
@@ -427,7 +419,7 @@ public class datahub_get_stats implements TalendJob {
 
 					int length = 0;
 
-					this.link_namespace = readString(dis);
+					this.link = readString(dis);
 
 					this.stat = readString(dis);
 
@@ -445,7 +437,7 @@ public class datahub_get_stats implements TalendJob {
 
 				// String
 
-				writeString(this.link_namespace, dos);
+				writeString(this.link, dos);
 
 				// String
 
@@ -462,7 +454,7 @@ public class datahub_get_stats implements TalendJob {
 			StringBuilder sb = new StringBuilder();
 			sb.append(super.toString());
 			sb.append("[");
-			sb.append("link_namespace=" + link_namespace);
+			sb.append("link=" + link);
 			sb.append(",stat=" + stat);
 			sb.append("]");
 
@@ -503,15 +495,15 @@ public class datahub_get_stats implements TalendJob {
 
 	}
 
-	public static class row3Struct implements
-			routines.system.IPersistableRow<row3Struct> {
+	public static class row10Struct implements
+			routines.system.IPersistableRow<row10Struct> {
 		final static byte[] commonByteArrayLock_BIO2RDF_datahub_get_stats = new byte[0];
 		static byte[] commonByteArray_BIO2RDF_datahub_get_stats = new byte[0];
 
-		public String link_namespace;
+		public String link;
 
-		public String getLink_namespace() {
-			return this.link_namespace;
+		public String getLink() {
+			return this.link;
 		}
 
 		public String stat;
@@ -563,7 +555,7 @@ public class datahub_get_stats implements TalendJob {
 
 					int length = 0;
 
-					this.link_namespace = readString(dis);
+					this.link = readString(dis);
 
 					this.stat = readString(dis);
 
@@ -581,7 +573,7 @@ public class datahub_get_stats implements TalendJob {
 
 				// String
 
-				writeString(this.link_namespace, dos);
+				writeString(this.link, dos);
 
 				// String
 
@@ -598,7 +590,7 @@ public class datahub_get_stats implements TalendJob {
 			StringBuilder sb = new StringBuilder();
 			sb.append(super.toString());
 			sb.append("[");
-			sb.append("link_namespace=" + link_namespace);
+			sb.append("link=" + link);
 			sb.append(",stat=" + stat);
 			sb.append("]");
 
@@ -608,7 +600,7 @@ public class datahub_get_stats implements TalendJob {
 		/**
 		 * Compare keys
 		 */
-		public int compareTo(row3Struct other) {
+		public int compareTo(row10Struct other) {
 
 			int returnValue = -1;
 
@@ -639,10 +631,16 @@ public class datahub_get_stats implements TalendJob {
 
 	}
 
-	public static class row2Struct implements
-			routines.system.IPersistableRow<row2Struct> {
+	public static class row9Struct implements
+			routines.system.IPersistableRow<row9Struct> {
 		final static byte[] commonByteArrayLock_BIO2RDF_datahub_get_stats = new byte[0];
 		static byte[] commonByteArray_BIO2RDF_datahub_get_stats = new byte[0];
+
+		public String link;
+
+		public String getLink() {
+			return this.link;
+		}
 
 		public String stat;
 
@@ -693,6 +691,8 @@ public class datahub_get_stats implements TalendJob {
 
 					int length = 0;
 
+					this.link = readString(dis);
+
 					this.stat = readString(dis);
 
 				} catch (IOException e) {
@@ -709,6 +709,10 @@ public class datahub_get_stats implements TalendJob {
 
 				// String
 
+				writeString(this.link, dos);
+
+				// String
+
 				writeString(this.stat, dos);
 
 			} catch (IOException e) {
@@ -722,7 +726,8 @@ public class datahub_get_stats implements TalendJob {
 			StringBuilder sb = new StringBuilder();
 			sb.append(super.toString());
 			sb.append("[");
-			sb.append("stat=" + stat);
+			sb.append("link=" + link);
+			sb.append(",stat=" + stat);
 			sb.append("]");
 
 			return sb.toString();
@@ -731,7 +736,7 @@ public class datahub_get_stats implements TalendJob {
 		/**
 		 * Compare keys
 		 */
-		public int compareTo(row2Struct other) {
+		public int compareTo(row9Struct other) {
 
 			int returnValue = -1;
 
@@ -762,45 +767,21 @@ public class datahub_get_stats implements TalendJob {
 
 	}
 
-	public static class row4Struct implements
-			routines.system.IPersistableRow<row4Struct> {
+	public static class row8Struct implements
+			routines.system.IPersistableRow<row8Struct> {
 		final static byte[] commonByteArrayLock_BIO2RDF_datahub_get_stats = new byte[0];
 		static byte[] commonByteArray_BIO2RDF_datahub_get_stats = new byte[0];
 
-		public String namespace;
+		public String count;
 
-		public String getNamespace() {
-			return this.namespace;
+		public String getCount() {
+			return this.count;
 		}
 
-		public String description;
+		public String linkNamespace;
 
-		public String getDescription() {
-			return this.description;
-		}
-
-		public String example;
-
-		public String getExample() {
-			return this.example;
-		}
-
-		public String releaseDate;
-
-		public String getReleaseDate() {
-			return this.releaseDate;
-		}
-
-		public String tripleCount;
-
-		public String getTripleCount() {
-			return this.tripleCount;
-		}
-
-		public String uniqueEntityCount;
-
-		public String getUniqueEntityCount() {
-			return this.uniqueEntityCount;
+		public String getLinkNamespace() {
+			return this.linkNamespace;
 		}
 
 		private String readString(ObjectInputStream dis) throws IOException {
@@ -846,17 +827,9 @@ public class datahub_get_stats implements TalendJob {
 
 					int length = 0;
 
-					this.namespace = readString(dis);
+					this.count = readString(dis);
 
-					this.description = readString(dis);
-
-					this.example = readString(dis);
-
-					this.releaseDate = readString(dis);
-
-					this.tripleCount = readString(dis);
-
-					this.uniqueEntityCount = readString(dis);
+					this.linkNamespace = readString(dis);
 
 				} catch (IOException e) {
 					throw new RuntimeException(e);
@@ -872,27 +845,11 @@ public class datahub_get_stats implements TalendJob {
 
 				// String
 
-				writeString(this.namespace, dos);
+				writeString(this.count, dos);
 
 				// String
 
-				writeString(this.description, dos);
-
-				// String
-
-				writeString(this.example, dos);
-
-				// String
-
-				writeString(this.releaseDate, dos);
-
-				// String
-
-				writeString(this.tripleCount, dos);
-
-				// String
-
-				writeString(this.uniqueEntityCount, dos);
+				writeString(this.linkNamespace, dos);
 
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -905,12 +862,8 @@ public class datahub_get_stats implements TalendJob {
 			StringBuilder sb = new StringBuilder();
 			sb.append(super.toString());
 			sb.append("[");
-			sb.append("namespace=" + namespace);
-			sb.append(",description=" + description);
-			sb.append(",example=" + example);
-			sb.append(",releaseDate=" + releaseDate);
-			sb.append(",tripleCount=" + tripleCount);
-			sb.append(",uniqueEntityCount=" + uniqueEntityCount);
+			sb.append("count=" + count);
+			sb.append(",linkNamespace=" + linkNamespace);
 			sb.append("]");
 
 			return sb.toString();
@@ -919,7 +872,7 @@ public class datahub_get_stats implements TalendJob {
 		/**
 		 * Compare keys
 		 */
-		public int compareTo(row4Struct other) {
+		public int compareTo(row8Struct other) {
 
 			int returnValue = -1;
 
@@ -950,45 +903,21 @@ public class datahub_get_stats implements TalendJob {
 
 	}
 
-	public static class row1Struct implements
-			routines.system.IPersistableRow<row1Struct> {
+	public static class row7Struct implements
+			routines.system.IPersistableRow<row7Struct> {
 		final static byte[] commonByteArrayLock_BIO2RDF_datahub_get_stats = new byte[0];
 		static byte[] commonByteArray_BIO2RDF_datahub_get_stats = new byte[0];
 
-		public String namespace;
+		public String link;
 
-		public String getNamespace() {
-			return this.namespace;
+		public String getLink() {
+			return this.link;
 		}
 
-		public String description;
+		public String count;
 
-		public String getDescription() {
-			return this.description;
-		}
-
-		public String example;
-
-		public String getExample() {
-			return this.example;
-		}
-
-		public String releaseDate;
-
-		public String getReleaseDate() {
-			return this.releaseDate;
-		}
-
-		public String tripleCount;
-
-		public String getTripleCount() {
-			return this.tripleCount;
-		}
-
-		public String uniqueEntityCount;
-
-		public String getUniqueEntityCount() {
-			return this.uniqueEntityCount;
+		public String getCount() {
+			return this.count;
 		}
 
 		private String readString(ObjectInputStream dis) throws IOException {
@@ -1034,17 +963,9 @@ public class datahub_get_stats implements TalendJob {
 
 					int length = 0;
 
-					this.namespace = readString(dis);
+					this.link = readString(dis);
 
-					this.description = readString(dis);
-
-					this.example = readString(dis);
-
-					this.releaseDate = readString(dis);
-
-					this.tripleCount = readString(dis);
-
-					this.uniqueEntityCount = readString(dis);
+					this.count = readString(dis);
 
 				} catch (IOException e) {
 					throw new RuntimeException(e);
@@ -1060,27 +981,11 @@ public class datahub_get_stats implements TalendJob {
 
 				// String
 
-				writeString(this.namespace, dos);
+				writeString(this.link, dos);
 
 				// String
 
-				writeString(this.description, dos);
-
-				// String
-
-				writeString(this.example, dos);
-
-				// String
-
-				writeString(this.releaseDate, dos);
-
-				// String
-
-				writeString(this.tripleCount, dos);
-
-				// String
-
-				writeString(this.uniqueEntityCount, dos);
+				writeString(this.count, dos);
 
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -1093,12 +998,8 @@ public class datahub_get_stats implements TalendJob {
 			StringBuilder sb = new StringBuilder();
 			sb.append(super.toString());
 			sb.append("[");
-			sb.append("namespace=" + namespace);
-			sb.append(",description=" + description);
-			sb.append(",example=" + example);
-			sb.append(",releaseDate=" + releaseDate);
-			sb.append(",tripleCount=" + tripleCount);
-			sb.append(",uniqueEntityCount=" + uniqueEntityCount);
+			sb.append("link=" + link);
+			sb.append(",count=" + count);
 			sb.append("]");
 
 			return sb.toString();
@@ -1107,7 +1008,7 @@ public class datahub_get_stats implements TalendJob {
 		/**
 		 * Compare keys
 		 */
-		public int compareTo(row1Struct other) {
+		public int compareTo(row7Struct other) {
 
 			int returnValue = -1;
 
@@ -1138,10 +1039,133 @@ public class datahub_get_stats implements TalendJob {
 
 	}
 
-	public void tFileInputDelimited_1Process(
+	public static class row6Struct implements
+			routines.system.IPersistableRow<row6Struct> {
+		final static byte[] commonByteArrayLock_BIO2RDF_datahub_get_stats = new byte[0];
+		static byte[] commonByteArray_BIO2RDF_datahub_get_stats = new byte[0];
+
+		public String ResponseContent;
+
+		public String getResponseContent() {
+			return this.ResponseContent;
+		}
+
+		private String readString(ObjectInputStream dis) throws IOException {
+			String strReturn = null;
+			int length = 0;
+			length = dis.readInt();
+			if (length == -1) {
+				strReturn = null;
+			} else {
+				if (length > commonByteArray_BIO2RDF_datahub_get_stats.length) {
+					if (length < 1024
+							&& commonByteArray_BIO2RDF_datahub_get_stats.length == 0) {
+						commonByteArray_BIO2RDF_datahub_get_stats = new byte[1024];
+					} else {
+						commonByteArray_BIO2RDF_datahub_get_stats = new byte[2 * length];
+					}
+				}
+				dis.readFully(commonByteArray_BIO2RDF_datahub_get_stats, 0,
+						length);
+				strReturn = new String(
+						commonByteArray_BIO2RDF_datahub_get_stats, 0, length,
+						utf8Charset);
+			}
+			return strReturn;
+		}
+
+		private void writeString(String str, ObjectOutputStream dos)
+				throws IOException {
+			if (str == null) {
+				dos.writeInt(-1);
+			} else {
+				byte[] byteArray = str.getBytes(utf8Charset);
+				dos.writeInt(byteArray.length);
+				dos.write(byteArray);
+			}
+		}
+
+		public void readData(ObjectInputStream dis) {
+
+			synchronized (commonByteArrayLock_BIO2RDF_datahub_get_stats) {
+
+				try {
+
+					int length = 0;
+
+					this.ResponseContent = readString(dis);
+
+				} catch (IOException e) {
+					throw new RuntimeException(e);
+
+				}
+
+			}
+
+		}
+
+		public void writeData(ObjectOutputStream dos) {
+			try {
+
+				// String
+
+				writeString(this.ResponseContent, dos);
+
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+
+		}
+
+		public String toString() {
+
+			StringBuilder sb = new StringBuilder();
+			sb.append(super.toString());
+			sb.append("[");
+			sb.append("ResponseContent=" + ResponseContent);
+			sb.append("]");
+
+			return sb.toString();
+		}
+
+		/**
+		 * Compare keys
+		 */
+		public int compareTo(row6Struct other) {
+
+			int returnValue = -1;
+
+			return returnValue;
+		}
+
+		private int checkNullsAndCompare(Object object1, Object object2) {
+			int returnValue = 0;
+			if (object1 instanceof Comparable && object2 instanceof Comparable) {
+				returnValue = ((Comparable) object1).compareTo(object2);
+			} else if (object1 != null && object2 != null) {
+				returnValue = compareStrings(object1.toString(),
+						object2.toString());
+			} else if (object1 == null && object2 != null) {
+				returnValue = 1;
+			} else if (object1 != null && object2 == null) {
+				returnValue = -1;
+			} else {
+				returnValue = 0;
+			}
+
+			return returnValue;
+		}
+
+		private int compareStrings(String string1, String string2) {
+			return string1.compareTo(string2);
+		}
+
+	}
+
+	public void tHttpRequest_1Process(
 			final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		globalMap.put("tFileInputDelimited_1_SUBPROCESS_STATE", 0);
+		globalMap.put("tHttpRequest_1_SUBPROCESS_STATE", 0);
 
 		final boolean execStat = this.execStat;
 
@@ -1161,53 +1185,64 @@ public class datahub_get_stats implements TalendJob {
 																					// resume
 				globalResumeTicket = true;
 
-				row1Struct row1 = new row1Struct();
-				row4Struct row4 = new row4Struct();
-				row2Struct row2 = new row2Struct();
-				row3Struct row3 = new row3Struct();
-				row3Struct row5 = row3;
+				row6Struct row6 = new row6Struct();
+				row7Struct row7 = new row7Struct();
+				row8Struct row8 = new row8Struct();
+				row9Struct row9 = new row9Struct();
+				row10Struct row10 = new row10Struct();
+				row10Struct row5 = row10;
 
 				/**
-				 * [tFlowToIterate_1 begin ] start
+				 * [tBufferOutput_1 begin ] start
 				 */
 
-				int NB_ITERATE_tSparqlSelectRequest_1 = 0; // for statistics
+				ok_Hash.put("tBufferOutput_1", false);
+				start_Hash.put("tBufferOutput_1", System.currentTimeMillis());
 
-				ok_Hash.put("tFlowToIterate_1", false);
-				start_Hash.put("tFlowToIterate_1", System.currentTimeMillis());
+				currentComponent = "tBufferOutput_1";
 
-				currentComponent = "tFlowToIterate_1";
-
-				int tos_count_tFlowToIterate_1 = 0;
-
-				int nb_line_tFlowToIterate_1 = 0;
-				int counter_tFlowToIterate_1 = 0;
+				int tos_count_tBufferOutput_1 = 0;
 
 				/**
-				 * [tFlowToIterate_1 begin ] stop
+				 * [tBufferOutput_1 begin ] stop
 				 */
 
 				/**
-				 * [tFilterRow_2 begin ] start
+				 * [tLogRow_2 begin ] start
 				 */
 
-				ok_Hash.put("tFilterRow_2", false);
-				start_Hash.put("tFilterRow_2", System.currentTimeMillis());
+				ok_Hash.put("tLogRow_2", false);
+				start_Hash.put("tLogRow_2", System.currentTimeMillis());
 
-				currentComponent = "tFilterRow_2";
+				currentComponent = "tLogRow_2";
 
-				int tos_count_tFilterRow_2 = 0;
+				int tos_count_tLogRow_2 = 0;
 
-				int nb_line_tFilterRow_2 = 0;
-				int nb_line_ok_tFilterRow_2 = 0;
-				int nb_line_reject_tFilterRow_2 = 0;
+				/**
+				 * [tLogRow_2 begin ] stop
+				 */
 
-				class Operator_tFilterRow_2 {
+				/**
+				 * [tFilterRow_1 begin ] start
+				 */
+
+				ok_Hash.put("tFilterRow_1", false);
+				start_Hash.put("tFilterRow_1", System.currentTimeMillis());
+
+				currentComponent = "tFilterRow_1";
+
+				int tos_count_tFilterRow_1 = 0;
+
+				int nb_line_tFilterRow_1 = 0;
+				int nb_line_ok_tFilterRow_1 = 0;
+				int nb_line_reject_tFilterRow_1 = 0;
+
+				class Operator_tFilterRow_1 {
 					private String sErrorMsg = "";
 					private boolean bMatchFlag = true;
 					private String sUnionFlag = "&&";
 
-					public Operator_tFilterRow_2(String unionFlag) {
+					public Operator_tFilterRow_1(String unionFlag) {
 						sUnionFlag = unionFlag;
 						bMatchFlag = "||".equals(unionFlag) ? false : true;
 					}
@@ -1241,585 +1276,702 @@ public class datahub_get_stats implements TalendJob {
 				}
 
 				/**
-				 * [tFilterRow_2 begin ] stop
+				 * [tFilterRow_1 begin ] stop
 				 */
 
 				/**
-				 * [tFileInputDelimited_1 begin ] start
+				 * [tJavaRow_2 begin ] start
 				 */
 
-				ok_Hash.put("tFileInputDelimited_1", false);
-				start_Hash.put("tFileInputDelimited_1",
+				ok_Hash.put("tJavaRow_2", false);
+				start_Hash.put("tJavaRow_2", System.currentTimeMillis());
+
+				currentComponent = "tJavaRow_2";
+
+				int tos_count_tJavaRow_2 = 0;
+
+				int nb_line_tJavaRow_2 = 0;
+
+				/**
+				 * [tJavaRow_2 begin ] stop
+				 */
+
+				/**
+				 * [tExtractRegexFields_1 begin ] start
+				 */
+
+				ok_Hash.put("tExtractRegexFields_1", false);
+				start_Hash.put("tExtractRegexFields_1",
 						System.currentTimeMillis());
 
-				currentComponent = "tFileInputDelimited_1";
+				currentComponent = "tExtractRegexFields_1";
 
-				int tos_count_tFileInputDelimited_1 = 0;
+				int tos_count_tExtractRegexFields_1 = 0;
 
-				int nb_line_tFileInputDelimited_1 = 0;
-				org.talend.fileprocess.FileInputDelimited fid_tFileInputDelimited_1 = null;
-				try {
+				java.util.regex.Pattern pattern_tExtractRegexFields_1 = java.util.regex.Pattern
+						.compile("http:\\/\\/bio2rdf.org\\/(.*)_vocabulary:Resource");
 
-					Object filename_tFileInputDelimited_1 = context.inputFile;
-					if (filename_tFileInputDelimited_1 instanceof java.io.InputStream) {
+				/**
+				 * [tExtractRegexFields_1 begin ] stop
+				 */
 
-						int footer_value_tFileInputDelimited_1 = 0, random_value_tFileInputDelimited_1 = -1;
-						if (footer_value_tFileInputDelimited_1 > 0
-								|| random_value_tFileInputDelimited_1 > 0) {
+				/**
+				 * [tExtractJSONFields_1 begin ] start
+				 */
 
-							throw new java.lang.Exception(
-									"When the input source is a stream,footer and random shouldn't be bigger than 0.");
-						}
+				ok_Hash.put("tExtractJSONFields_1", false);
+				start_Hash.put("tExtractJSONFields_1",
+						System.currentTimeMillis());
 
-					}
-					try {
-						fid_tFileInputDelimited_1 = new org.talend.fileprocess.FileInputDelimited(
-								context.inputFile, "ISO-8859-15", "\t", "\n",
-								true, 0, 0, -1, -1, false);
-					} catch (java.lang.Exception e) {
+				currentComponent = "tExtractJSONFields_1";
 
-						System.err.println(e.getMessage());
+				int tos_count_tExtractJSONFields_1 = 0;
 
-					}
+				int nb_line_tExtractJSONFields_1 = 0;
 
-					while (fid_tFileInputDelimited_1 != null
-							&& fid_tFileInputDelimited_1.nextRecord()) {
+				class ConvertJSONString_tExtractJSONFields_1 {
+					final static int Brace = 0; // {
+					final static int Bracket = 1; // [
+					private int barceType = -1;
+					private String originalJsonString = "";
+					private String originalLoopString = "";
+					private String jsonString4XML = null;
+					private String loopString4XML = null;
+					private String additionRoot = null;
 
-						row1 = null;
+					public void barceType() {
 
-						boolean whetherReject_tFileInputDelimited_1 = false;
-						row1 = new row1Struct();
-						try {
-
-							int columnIndexWithD_tFileInputDelimited_1 = 0;
-
-							columnIndexWithD_tFileInputDelimited_1 = 0;
-
-							row1.namespace = fid_tFileInputDelimited_1
-									.get(columnIndexWithD_tFileInputDelimited_1);
-
-							columnIndexWithD_tFileInputDelimited_1 = 1;
-
-							row1.description = fid_tFileInputDelimited_1
-									.get(columnIndexWithD_tFileInputDelimited_1);
-
-							columnIndexWithD_tFileInputDelimited_1 = 2;
-
-							row1.example = fid_tFileInputDelimited_1
-									.get(columnIndexWithD_tFileInputDelimited_1);
-
-							columnIndexWithD_tFileInputDelimited_1 = 3;
-
-							row1.releaseDate = fid_tFileInputDelimited_1
-									.get(columnIndexWithD_tFileInputDelimited_1);
-
-							columnIndexWithD_tFileInputDelimited_1 = 4;
-
-							row1.tripleCount = fid_tFileInputDelimited_1
-									.get(columnIndexWithD_tFileInputDelimited_1);
-
-							columnIndexWithD_tFileInputDelimited_1 = 5;
-
-							row1.uniqueEntityCount = fid_tFileInputDelimited_1
-									.get(columnIndexWithD_tFileInputDelimited_1);
-
-						} catch (java.lang.Exception e) {
-							whetherReject_tFileInputDelimited_1 = true;
-
-							System.err.println(e.getMessage());
-							row1 = null;
-
-						}
-
-						/**
-						 * [tFileInputDelimited_1 begin ] stop
-						 */
-						/**
-						 * [tFileInputDelimited_1 main ] start
-						 */
-
-						currentComponent = "tFileInputDelimited_1";
-
-						tos_count_tFileInputDelimited_1++;
-
-						/**
-						 * [tFileInputDelimited_1 main ] stop
-						 */
-						// Start of branch "row1"
-						if (row1 != null) {
-
-							/**
-							 * [tFilterRow_2 main ] start
-							 */
-
-							currentComponent = "tFilterRow_2";
-
-							row4 = null;
-							Operator_tFilterRow_2 ope_tFilterRow_2 = new Operator_tFilterRow_2(
-									"&&");
-							ope_tFilterRow_2
-									.matches(
-											(row1.namespace == null ? false
-													: row1.namespace
-															.matches(context.endpoint_namespace) != true),
-											" namespace.matches(context.endpoint_namespace) != true failed");
-
-							if (ope_tFilterRow_2.getMatchFlag()) {
-								if (row4 == null) {
-									row4 = new row4Struct();
-								}
-								row4.namespace = row1.namespace;
-								row4.description = row1.description;
-								row4.example = row1.example;
-								row4.releaseDate = row1.releaseDate;
-								row4.tripleCount = row1.tripleCount;
-								row4.uniqueEntityCount = row1.uniqueEntityCount;
-								nb_line_ok_tFilterRow_2++;
-							} else {
-								nb_line_reject_tFilterRow_2++;
+						for (int c = 0; c < originalJsonString.length(); ++c) {
+							if (originalJsonString.charAt(c) == '{') {
+								barceType = Brace;
+								break;
+							} else if (originalJsonString.charAt(c) == '[') {
+								barceType = Bracket;
+								break;
 							}
-
-							nb_line_tFilterRow_2++;
-
-							tos_count_tFilterRow_2++;
-
-							/**
-							 * [tFilterRow_2 main ] stop
-							 */
-							// Start of branch "row4"
-							if (row4 != null) {
-
-								/**
-								 * [tFlowToIterate_1 main ] start
-								 */
-
-								currentComponent = "tFlowToIterate_1";
-
-								globalMap.put("link_namespace", row4.namespace);
-								nb_line_tFlowToIterate_1++;
-								counter_tFlowToIterate_1++;
-								globalMap.put(
-										"tFlowToIterate_1_CURRENT_ITERATION",
-										counter_tFlowToIterate_1);
-
-								tos_count_tFlowToIterate_1++;
-
-								/**
-								 * [tFlowToIterate_1 main ] stop
-								 */
-								NB_ITERATE_tSparqlSelectRequest_1++;
-								iterateLoop++;
-
-								/**
-								 * [tBufferOutput_1 begin ] start
-								 */
-
-								ok_Hash.put("tBufferOutput_1", false);
-								start_Hash.put("tBufferOutput_1",
-										System.currentTimeMillis());
-
-								currentComponent = "tBufferOutput_1";
-
-								int tos_count_tBufferOutput_1 = 0;
-
-								/**
-								 * [tBufferOutput_1 begin ] stop
-								 */
-
-								/**
-								 * [tLogRow_1 begin ] start
-								 */
-
-								ok_Hash.put("tLogRow_1", false);
-								start_Hash.put("tLogRow_1",
-										System.currentTimeMillis());
-
-								currentComponent = "tLogRow_1";
-
-								int tos_count_tLogRow_1 = 0;
-
-								/**
-								 * [tLogRow_1 begin ] stop
-								 */
-
-								/**
-								 * [tJavaRow_1 begin ] start
-								 */
-
-								ok_Hash.put("tJavaRow_1", false);
-								start_Hash.put("tJavaRow_1",
-										System.currentTimeMillis());
-
-								currentComponent = "tJavaRow_1";
-
-								int tos_count_tJavaRow_1 = 0;
-
-								int nb_line_tJavaRow_1 = 0;
-
-								/**
-								 * [tJavaRow_1 begin ] stop
-								 */
-
-								/**
-								 * [tSparqlSelectRequest_1 begin ] start
-								 */
-
-								ok_Hash.put("tSparqlSelectRequest_1", false);
-								start_Hash.put("tSparqlSelectRequest_1",
-										System.currentTimeMillis());
-
-								currentComponent = "tSparqlSelectRequest_1";
-
-								int tos_count_tSparqlSelectRequest_1 = 0;
-
-								String URL_string_tSparqlSelectRequest_1;
-
-								URL_string_tSparqlSelectRequest_1 = "http://"
-										+ context.endpoint_namespace
-										+ ".bio2rdf.org/sparql"
-										+ "?default-graph-uri=&query="
-										+ java.net.URLEncoder
-												.encode("PREFIX void: <http://rdfs.org/ns/void#> PREFIX ds: <http://bio2rdf.org/bio2rdf.dataset_vocabulary:>  SELECT *  { [] void:subset [        a ds:Dataset-Type-Count;        void:class <http://bio2rdf.org/"
-														+ (String) globalMap
-																.get("link_namespace")
-														+ "_vocabulary:Resource>;        void:distinctEntities ?distinctCount;    ]  }",
-														"UTF-8")
-										+ "&format=application%2Fsparql-results%2Bjson&timeout=0&debug=on";
-
-								org.json.JSONArray jsonArray_tSparqlSelectRequest_1 = new org.json.JSONArray();
-
-								org.json.JSONArray jsonKeysArray_tSparqlSelectRequest_1;
-
-								java.util.ArrayList<String> queryKeys_tSparqlSelectRequest_1 = new java.util.ArrayList<String>();
-								// ArrayList that will contain the key value of
-								// the query sorted correctly
-
-								org.json.JSONObject jsonObj_tSparqlSelectRequest_1;
-
-								java.util.Iterator<String> queryKeysIterator_tSparqlSelectRequest_1;
-
-								java.net.URL url_tSparqlSelectRequest_1 = new java.net.URL(
-										URL_string_tSparqlSelectRequest_1);
-
-								java.net.HttpURLConnection urlConn_tSparqlSelectRequest_1 = (java.net.HttpURLConnection) url_tSparqlSelectRequest_1
-										.openConnection();
-								urlConn_tSparqlSelectRequest_1
-										.setRequestMethod("GET");
-								urlConn_tSparqlSelectRequest_1
-										.setDoOutput(true);
-								urlConn_tSparqlSelectRequest_1.setDoInput(true);
-								urlConn_tSparqlSelectRequest_1
-										.setUseCaches(false);
-
-								try {
-									urlConn_tSparqlSelectRequest_1.connect();
-
-									byte[] buffer_tSparqlSelectRequest_1 = new byte[1024];
-									int bos_buffer_tSparqlSelectRequest_1 = 0;
-
-									StringBuilder sb_tSparqlSelectRequest_1 = new StringBuilder();
-
-									if (java.net.HttpURLConnection.HTTP_OK == (urlConn_tSparqlSelectRequest_1
-											.getResponseCode())) {
-										java.io.InputStream bis_tSparqlSelectRequest_1 = new java.io.BufferedInputStream(
-												urlConn_tSparqlSelectRequest_1
-														.getInputStream());
-
-										while ((bos_buffer_tSparqlSelectRequest_1 = bis_tSparqlSelectRequest_1
-												.read(buffer_tSparqlSelectRequest_1)) != -1) {
-											// Then the table of bytes and its
-											// size are used to generate a
-											// string
-											// which is added to a string
-											// builder that will contain the
-											// whole response
-											sb_tSparqlSelectRequest_1
-													.append(new String(
-															buffer_tSparqlSelectRequest_1,
-															0,
-															bos_buffer_tSparqlSelectRequest_1));
-										}
-										bis_tSparqlSelectRequest_1.close();
-
-									} else {
-										System.err
-												.println(urlConn_tSparqlSelectRequest_1
-														.getResponseCode()
-														+ " "
-														+ urlConn_tSparqlSelectRequest_1
-																.getResponseMessage());
-									}
-
-									urlConn_tSparqlSelectRequest_1.disconnect();
-
-									jsonObj_tSparqlSelectRequest_1 = new org.json.JSONObject(
-											sb_tSparqlSelectRequest_1
-													.toString());
-
-									jsonKeysArray_tSparqlSelectRequest_1 = jsonObj_tSparqlSelectRequest_1
-											.getJSONObject("head")
-											.getJSONArray("vars");
-									for (int k_tSparqlSelectRequest_1 = 0; k_tSparqlSelectRequest_1 < jsonKeysArray_tSparqlSelectRequest_1
-											.length(); k_tSparqlSelectRequest_1++) {
-										queryKeys_tSparqlSelectRequest_1
-												.add(jsonKeysArray_tSparqlSelectRequest_1
-														.getString(k_tSparqlSelectRequest_1));
-									}
-
-									jsonArray_tSparqlSelectRequest_1 = jsonObj_tSparqlSelectRequest_1
-											.getJSONObject("results")
-											.getJSONArray("bindings");
-
-								} catch (Exception e) {
-									System.err.println("UnknownHostException");
-								}
-
-								if (jsonArray_tSparqlSelectRequest_1.length() == 0) {
-									globalMap
-											.put("tSparqlSelectRequest_1_HAS_RESULTS",
-													false);
-								} else {
-									globalMap
-											.put("tSparqlSelectRequest_1_HAS_RESULTS",
-													true);
-								}
-
-								int i_tSparqlSelectRequest_1;
-								int nb_line_tSparqlSelectRequest_1 = 0;
-
-								for (i_tSparqlSelectRequest_1 = 0; i_tSparqlSelectRequest_1 < jsonArray_tSparqlSelectRequest_1
-										.length(); i_tSparqlSelectRequest_1++) {
-
-									/**
-									 * [tSparqlSelectRequest_1 begin ] stop
-									 */
-									/**
-									 * [tSparqlSelectRequest_1 main ] start
-									 */
-
-									currentComponent = "tSparqlSelectRequest_1";
-
-									queryKeysIterator_tSparqlSelectRequest_1 = queryKeys_tSparqlSelectRequest_1
-											.iterator();
-
-									if (queryKeysIterator_tSparqlSelectRequest_1
-											.hasNext()) {
-										try {
-											row2.stat = jsonArray_tSparqlSelectRequest_1
-													.getJSONObject(
-															i_tSparqlSelectRequest_1)
-													.getJSONObject(
-															queryKeysIterator_tSparqlSelectRequest_1
-																	.next())
-													.getString("value");
-										} catch (org.json.JSONException e_tSparqlSelectRequest_1) {
-											row2.stat = "";
-										}
-									}
-
-									tos_count_tSparqlSelectRequest_1++;
-
-									/**
-									 * [tSparqlSelectRequest_1 main ] stop
-									 */
-
-									/**
-									 * [tJavaRow_1 main ] start
-									 */
-
-									currentComponent = "tJavaRow_1";
-
-									row3.link_namespace = (String) globalMap
-											.get("link_namespace");
-
-									row3.stat = row2.stat;
-
-									// System.out.println((String)
-									// globalMap.get("link_namespace"));
-
-									// System.out.println(row2.stat);
-									nb_line_tJavaRow_1++;
-
-									tos_count_tJavaRow_1++;
-
-									/**
-									 * [tJavaRow_1 main ] stop
-									 */
-
-									/**
-									 * [tLogRow_1 main ] start
-									 */
-
-									currentComponent = "tLogRow_1";
-
-									row5 = row3;
-
-									tos_count_tLogRow_1++;
-
-									/**
-									 * [tLogRow_1 main ] stop
-									 */
-
-									/**
-									 * [tBufferOutput_1 main ] start
-									 */
-
-									currentComponent = "tBufferOutput_1";
-
-									String[] row_tBufferOutput_1 = new String[] {
-											"", "", };
-									if (row5.link_namespace != null) {
-
-										row_tBufferOutput_1[0] = row5.link_namespace;
-
-									} else {
-										row_tBufferOutput_1[0] = null;
-									}
-									if (row5.stat != null) {
-
-										row_tBufferOutput_1[1] = row5.stat;
-
-									} else {
-										row_tBufferOutput_1[1] = null;
-									}
-									globalBuffer.add(row_tBufferOutput_1);
-
-									tos_count_tBufferOutput_1++;
-
-									/**
-									 * [tBufferOutput_1 main ] stop
-									 */
-
-									/**
-									 * [tSparqlSelectRequest_1 end ] start
-									 */
-
-									currentComponent = "tSparqlSelectRequest_1";
-
-									nb_line_tSparqlSelectRequest_1++;
-								}
-
-								globalMap.put("tSparqlSelectRequest_1_NB_LINE",
-										nb_line_tSparqlSelectRequest_1);
-
-								ok_Hash.put("tSparqlSelectRequest_1", true);
-								end_Hash.put("tSparqlSelectRequest_1",
-										System.currentTimeMillis());
-
-								/**
-								 * [tSparqlSelectRequest_1 end ] stop
-								 */
-
-								/**
-								 * [tJavaRow_1 end ] start
-								 */
-
-								currentComponent = "tJavaRow_1";
-
-								globalMap.put("tJavaRow_1_NB_LINE",
-										nb_line_tJavaRow_1);
-
-								ok_Hash.put("tJavaRow_1", true);
-								end_Hash.put("tJavaRow_1",
-										System.currentTimeMillis());
-
-								/**
-								 * [tJavaRow_1 end ] stop
-								 */
-
-								/**
-								 * [tLogRow_1 end ] start
-								 */
-
-								currentComponent = "tLogRow_1";
-
-								ok_Hash.put("tLogRow_1", true);
-								end_Hash.put("tLogRow_1",
-										System.currentTimeMillis());
-
-								/**
-								 * [tLogRow_1 end ] stop
-								 */
-
-								/**
-								 * [tBufferOutput_1 end ] start
-								 */
-
-								currentComponent = "tBufferOutput_1";
-
-								ok_Hash.put("tBufferOutput_1", true);
-								end_Hash.put("tBufferOutput_1",
-										System.currentTimeMillis());
-
-								/**
-								 * [tBufferOutput_1 end ] stop
-								 */
-
-							} // End of branch "row4"
-
-						} // End of branch "row1"
-
-						/**
-						 * [tFileInputDelimited_1 end ] start
-						 */
-
-						currentComponent = "tFileInputDelimited_1";
-
-					}
-				} finally {
-					if (!((Object) (context.inputFile) instanceof java.io.InputStream)) {
-						if (fid_tFileInputDelimited_1 != null) {
-							fid_tFileInputDelimited_1.close();
 						}
 					}
-					if (fid_tFileInputDelimited_1 != null) {
-						globalMap.put("tFileInputDelimited_1_NB_LINE",
-								fid_tFileInputDelimited_1.getRowNumber());
 
+					public void setJsonString(String originalJsonString) {
+						this.originalJsonString = originalJsonString;
+					}
+
+					public void setLoopString(String originalLoopString) {
+						this.originalLoopString = originalLoopString;
+					}
+
+					public String getJsonString4XML() {
+						return jsonString4XML;
+					}
+
+					public String getLoopString4XML() {
+						if (loopString4XML.length() > 1
+								&& loopString4XML.endsWith("/")) {
+							loopString4XML = loopString4XML.substring(0,
+									loopString4XML.length() - 1);
+						}
+						return loopString4XML;
+					}
+
+					public void setAdditionRoot(String additionRoot) {
+						this.additionRoot = additionRoot;
+					}
+
+					public String getAdditionRoot() {
+						return additionRoot;
+					}
+
+					public void generate() {
+						barceType();
+						jsonString4XML = originalJsonString;
+						loopString4XML = originalLoopString;
+						if (Brace == barceType) {
+							if (isNeedAddRoot(originalJsonString)) {
+								jsonString4XML = "{ \"root\": "
+										+ originalJsonString + " }";
+								loopString4XML = "root" + originalLoopString;
+								setAdditionRoot("root");
+							}
+						} else if (Bracket == barceType) {
+							jsonString4XML = "{ \"root\" : { \"object\": "
+									+ originalJsonString + " } }";
+							loopString4XML = "root/object" + originalLoopString;
+							setAdditionRoot("object");
+						}
+					}
+
+					public boolean isNeedAddRoot(String originalJsonString) {
+						boolean isNeedAddRoot = false;
+						net.sf.json.JSONObject jso = net.sf.json.JSONObject
+								.fromObject(originalJsonString);
+						String jsonKey = "";
+						Object firstObject = null;
+						if (jso.names().size() == 1) {
+							jsonKey = jso.names().get(0).toString();
+							firstObject = jso.get(jsonKey);
+						}
+						if (jso.size() > 1
+								|| (firstObject != null
+										&& firstObject instanceof net.sf.json.JSONArray && ((net.sf.json.JSONArray) firstObject)
+										.size() > 1)) {
+							isNeedAddRoot = true;
+						}
+						return isNeedAddRoot;
+					}
+
+				}
+
+				ConvertJSONString_tExtractJSONFields_1 cjs_tExtractJSONFields_1 = new ConvertJSONString_tExtractJSONFields_1();
+
+				de.odysseus.staxon.json.JsonXMLConfig config_tExtractJSONFields_1 = new de.odysseus.staxon.json.JsonXMLConfigBuilder()
+						.multiplePI(false).build();
+				de.odysseus.staxon.json.JsonXMLInputFactory jsonXMLInputFactory_tExtractJSONFields_1 = new de.odysseus.staxon.json.JsonXMLInputFactory(
+						config_tExtractJSONFields_1);
+				javax.xml.stream.XMLOutputFactory xmlOutputFactory_tExtractJSONFields_1 = javax.xml.stream.XMLOutputFactory
+						.newInstance();
+				boolean isGetWholeJson_tExtractJSONFields_1 = false;
+
+				class OriginalJSONString_tExtractJSONFields_1 {
+				}
+
+				OriginalJSONString_tExtractJSONFields_1 originalJSONString_tExtractJSONFields_1 = new OriginalJSONString_tExtractJSONFields_1();
+
+				class XML_API_tExtractJSONFields_1 {
+					public boolean isDefNull(org.dom4j.Node node)
+							throws javax.xml.transform.TransformerException {
+						if (node != null && node instanceof org.dom4j.Element) {
+							org.dom4j.Attribute attri = ((org.dom4j.Element) node)
+									.attribute("nil");
+							if (attri != null
+									&& ("true").equals(attri.getText())) {
+								return true;
+							}
+						}
+						return false;
+					}
+
+					public boolean isMissing(org.dom4j.Node node)
+							throws javax.xml.transform.TransformerException {
+						return node == null ? true : false;
+					}
+
+					public boolean isEmpty(org.dom4j.Node node)
+							throws javax.xml.transform.TransformerException {
+						if (node != null) {
+							return node.getText().length() == 0;
+						}
+						return false;
 					}
 				}
 
-				ok_Hash.put("tFileInputDelimited_1", true);
-				end_Hash.put("tFileInputDelimited_1",
+				String jsonStr_tExtractJSONFields_1 = "";
+				String xmlStr_tExtractJSONFields_1 = "";
+
+				XML_API_tExtractJSONFields_1 xml_api_tExtractJSONFields_1 = new XML_API_tExtractJSONFields_1();
+
+				/**
+				 * [tExtractJSONFields_1 begin ] stop
+				 */
+
+				/**
+				 * [tHttpRequest_1 begin ] start
+				 */
+
+				ok_Hash.put("tHttpRequest_1", false);
+				start_Hash.put("tHttpRequest_1", System.currentTimeMillis());
+
+				currentComponent = "tHttpRequest_1";
+
+				int tos_count_tHttpRequest_1 = 0;
+
+				/**
+				 * [tHttpRequest_1 begin ] stop
+				 */
+				/**
+				 * [tHttpRequest_1 main ] start
+				 */
+
+				currentComponent = "tHttpRequest_1";
+
+				java.net.URL url_tHttpRequest_1 = new java.net.URL(
+						"http://"
+								+ context.endpoint_namespace
+								+ ".bio2rdf.org/sparql?default-graph-uri=&query=PREFIX+void%3A+%3Chttp%3A%2F%2Frdfs.org%2Fns%2Fvoid%23%3E%0D%0APREFIX+ds%3A+%3Chttp%3A%2F%2Fbio2rdf.org%2Fbio2rdf.dataset_vocabulary%3A%3E%0D%0A%0D%0ASELECT+*%0D%0A+%7B+%5B%5D+void%3Asubset+%5B%0D%0A+++++++a+ds%3ADataset-Type-Count%3B%0D%0A+++++++void%3Aclass+%3Flink%3B%0D%0A+++++++void%3AdistinctEntities+%3FdistinctCount%3B%0D%0A+++%5D%0D%0A+++FILTER+regex%28str%28%3Flink%29%2C+%27.*bio2rdf.org%5C%5C%2F.*_vocabulary%3AResource%27%2C+%27i%27%29%0D%0A+%7D&format=application%2Fsparql-results%2Bjson&timeout=0&debug=on");
+
+				java.net.HttpURLConnection urlConn_tHttpRequest_1 = (java.net.HttpURLConnection) url_tHttpRequest_1
+						.openConnection();
+				urlConn_tHttpRequest_1.setRequestMethod("GET");
+				urlConn_tHttpRequest_1.setDoOutput(true);
+				urlConn_tHttpRequest_1.setDoInput(true);
+				urlConn_tHttpRequest_1.setUseCaches(false);
+
+				urlConn_tHttpRequest_1.connect();
+
+				byte[] buffer_tHttpRequest_1 = new byte[1024];
+				int bos_buffer_tHttpRequest_1 = 0;
+				StringBuilder sb_tHttpRequest_1 = new StringBuilder();
+
+				if (java.net.HttpURLConnection.HTTP_OK == (urlConn_tHttpRequest_1
+						.getResponseCode())) {
+					java.io.InputStream bis_tHttpRequest_1 = new java.io.BufferedInputStream(
+							urlConn_tHttpRequest_1.getInputStream());
+					while ((bos_buffer_tHttpRequest_1 = bis_tHttpRequest_1
+							.read(buffer_tHttpRequest_1)) != -1) {
+						sb_tHttpRequest_1.append(new String(
+								buffer_tHttpRequest_1, 0,
+								bos_buffer_tHttpRequest_1));
+					}
+					bis_tHttpRequest_1.close();
+				} else {
+					System.err
+							.println(urlConn_tHttpRequest_1.getResponseCode()
+									+ " "
+									+ urlConn_tHttpRequest_1
+											.getResponseMessage());
+				}
+
+				row6.ResponseContent = sb_tHttpRequest_1.toString();
+				urlConn_tHttpRequest_1.disconnect();
+
+				tos_count_tHttpRequest_1++;
+
+				/**
+				 * [tHttpRequest_1 main ] stop
+				 */
+
+				/**
+				 * [tExtractJSONFields_1 main ] start
+				 */
+
+				currentComponent = "tExtractJSONFields_1";
+
+				if (row6.ResponseContent != null) {// C_01
+					jsonStr_tExtractJSONFields_1 = row6.ResponseContent
+							.toString();
+
+					row7 = null;
+					org.dom4j.io.SAXReader reader_tExtractJSONFields_1 = new org.dom4j.io.SAXReader();
+					org.dom4j.Document doc_tExtractJSONFields_1 = null;
+					java.util.HashMap xmlNameSpaceMap_tExtractJSONFields_1 = new java.util.HashMap<String, String>();
+					org.dom4j.XPath x_tExtractJSONFields_1 = null;
+					java.util.List<org.dom4j.tree.AbstractNode> nodeList_tExtractJSONFields_1 = null;
+					boolean isStructError_tExtractJSONFields_1 = true;
+
+					String loopQuery_tExtractJSONFields_1 = "/results/bindings";
+					String oraginalJsonStr_tExtractJSONFields_1 = jsonStr_tExtractJSONFields_1;
+					cjs_tExtractJSONFields_1
+							.setJsonString(jsonStr_tExtractJSONFields_1);
+					cjs_tExtractJSONFields_1
+							.setLoopString(loopQuery_tExtractJSONFields_1);
+					java.io.ByteArrayInputStream bais_tExtractJSONFields_1 = null;
+					java.io.ByteArrayOutputStream baos_tExtractJSONFields_1 = new java.io.ByteArrayOutputStream();
+					try {
+						cjs_tExtractJSONFields_1.generate();
+						jsonStr_tExtractJSONFields_1 = cjs_tExtractJSONFields_1
+								.getJsonString4XML();
+						loopQuery_tExtractJSONFields_1 = cjs_tExtractJSONFields_1
+								.getLoopString4XML();
+						bais_tExtractJSONFields_1 = new ByteArrayInputStream(
+								jsonStr_tExtractJSONFields_1.getBytes("UTF-8"));
+						javax.xml.stream.XMLEventReader xmlEventReader_tExtractJSONFields_1 = jsonXMLInputFactory_tExtractJSONFields_1
+								.createXMLEventReader(bais_tExtractJSONFields_1);
+						javax.xml.stream.XMLEventWriter xmLEventWriter_tExtractJSONFields_1 = xmlOutputFactory_tExtractJSONFields_1
+								.createXMLEventWriter(
+										baos_tExtractJSONFields_1, "UTF-8");
+						xmLEventWriter_tExtractJSONFields_1
+								.add(xmlEventReader_tExtractJSONFields_1);
+						// convert json string to xml
+						xmlStr_tExtractJSONFields_1 = baos_tExtractJSONFields_1
+								.toString();
+						xmLEventWriter_tExtractJSONFields_1.close();
+						xmlEventReader_tExtractJSONFields_1.close();
+
+						doc_tExtractJSONFields_1 = reader_tExtractJSONFields_1
+								.read(new java.io.StringReader(
+										xmlStr_tExtractJSONFields_1));
+						x_tExtractJSONFields_1 = doc_tExtractJSONFields_1
+								.createXPath(loopQuery_tExtractJSONFields_1);
+						x_tExtractJSONFields_1
+								.setNamespaceURIs(xmlNameSpaceMap_tExtractJSONFields_1);
+						nodeList_tExtractJSONFields_1 = (java.util.List<org.dom4j.tree.AbstractNode>) x_tExtractJSONFields_1
+								.selectNodes(doc_tExtractJSONFields_1);
+						isStructError_tExtractJSONFields_1 = false;
+
+					} catch (java.lang.Exception ex_tExtractJSONFields_1) {
+						System.err
+								.println(ex_tExtractJSONFields_1.getMessage());
+					} finally {
+						baos_tExtractJSONFields_1.close();
+						if (bais_tExtractJSONFields_1 != null) {
+							bais_tExtractJSONFields_1.close();
+						}
+					}
+
+					org.dom4j.Node node_tExtractJSONFields_1 = null;
+					String str_tExtractJSONFields_1 = "";
+					for (int i_tExtractJSONFields_1 = 0; isStructError_tExtractJSONFields_1
+							|| (nodeList_tExtractJSONFields_1 != null && i_tExtractJSONFields_1 < nodeList_tExtractJSONFields_1
+									.size()); i_tExtractJSONFields_1++) {
+
+						if (!isStructError_tExtractJSONFields_1) {
+							row7 = null;
+							row7 = new row7Struct();
+
+							org.dom4j.tree.AbstractNode temp_tExtractJSONFields_1 = nodeList_tExtractJSONFields_1
+									.get(i_tExtractJSONFields_1);
+
+							nb_line_tExtractJSONFields_1++;
+							try {
+								org.dom4j.XPath xTmp0_tExtractJSONFields_1 = temp_tExtractJSONFields_1
+										.createXPath("link/value");
+								xTmp0_tExtractJSONFields_1
+										.setNamespaceURIs(xmlNameSpaceMap_tExtractJSONFields_1);
+								Object obj0_tExtractJSONFields_1 = xTmp0_tExtractJSONFields_1
+										.evaluate(temp_tExtractJSONFields_1);
+								if (obj0_tExtractJSONFields_1 instanceof String
+										|| obj0_tExtractJSONFields_1 instanceof Number) {
+									node_tExtractJSONFields_1 = temp_tExtractJSONFields_1;
+									str_tExtractJSONFields_1 = String
+											.valueOf(obj0_tExtractJSONFields_1);
+								} else {
+									node_tExtractJSONFields_1 = xTmp0_tExtractJSONFields_1
+											.selectSingleNode(temp_tExtractJSONFields_1);
+
+									str_tExtractJSONFields_1 = xTmp0_tExtractJSONFields_1
+											.valueOf(temp_tExtractJSONFields_1);
+
+								}
+
+								if (xml_api_tExtractJSONFields_1
+										.isDefNull(node_tExtractJSONFields_1)) {
+									row7.link = null;
+								} else if (xml_api_tExtractJSONFields_1
+										.isEmpty(node_tExtractJSONFields_1)) {
+									row7.link = "";
+								} else if (xml_api_tExtractJSONFields_1
+										.isMissing(node_tExtractJSONFields_1)) {
+									row7.link = null;
+								} else {
+
+									row7.link = str_tExtractJSONFields_1;
+
+								}
+
+								org.dom4j.XPath xTmp1_tExtractJSONFields_1 = temp_tExtractJSONFields_1
+										.createXPath("distinctCount/value");
+								xTmp1_tExtractJSONFields_1
+										.setNamespaceURIs(xmlNameSpaceMap_tExtractJSONFields_1);
+								Object obj1_tExtractJSONFields_1 = xTmp1_tExtractJSONFields_1
+										.evaluate(temp_tExtractJSONFields_1);
+								if (obj1_tExtractJSONFields_1 instanceof String
+										|| obj1_tExtractJSONFields_1 instanceof Number) {
+									node_tExtractJSONFields_1 = temp_tExtractJSONFields_1;
+									str_tExtractJSONFields_1 = String
+											.valueOf(obj1_tExtractJSONFields_1);
+								} else {
+									node_tExtractJSONFields_1 = xTmp1_tExtractJSONFields_1
+											.selectSingleNode(temp_tExtractJSONFields_1);
+
+									str_tExtractJSONFields_1 = xTmp1_tExtractJSONFields_1
+											.valueOf(temp_tExtractJSONFields_1);
+
+								}
+
+								if (xml_api_tExtractJSONFields_1
+										.isDefNull(node_tExtractJSONFields_1)) {
+									row7.count = null;
+								} else if (xml_api_tExtractJSONFields_1
+										.isEmpty(node_tExtractJSONFields_1)) {
+									row7.count = "";
+								} else if (xml_api_tExtractJSONFields_1
+										.isMissing(node_tExtractJSONFields_1)) {
+									row7.count = null;
+								} else {
+
+									row7.count = str_tExtractJSONFields_1;
+
+								}
+
+							} catch (java.lang.Exception ex_tExtractJSONFields_1) {
+								System.err.println(ex_tExtractJSONFields_1
+										.getMessage());
+								row7 = null;
+							}
+						}
+
+						isStructError_tExtractJSONFields_1 = false;
+
+						tos_count_tExtractJSONFields_1++;
+
+						/**
+						 * [tExtractJSONFields_1 main ] stop
+						 */
+						// Start of branch "row7"
+						if (row7 != null) {
+
+							/**
+							 * [tExtractRegexFields_1 main ] start
+							 */
+
+							currentComponent = "tExtractRegexFields_1";
+
+							row8 = null;
+							if (row7.link != null) {// C_01
+								java.util.regex.Matcher matcher_tExtractRegexFields_1 = pattern_tExtractRegexFields_1
+										.matcher(row7.link);
+
+								int groupCount_tExtractRegexFields_1 = matcher_tExtractRegexFields_1
+										.groupCount();
+								while (matcher_tExtractRegexFields_1.find()) {
+
+									try {
+										row8 = new row8Struct();
+										row8.count = row7.count;
+
+										String temp_tExtractRegexFields_1 = null;
+										row8.linkNamespace = groupCount_tExtractRegexFields_1 <= 0 ? ""
+												: matcher_tExtractRegexFields_1
+														.group(1);
+									} catch (java.lang.Exception ex_tExtractRegexFields_1) {
+										throw (ex_tExtractRegexFields_1);
+									}
+
+									tos_count_tExtractRegexFields_1++;
+
+									/**
+									 * [tExtractRegexFields_1 main ] stop
+									 */
+									// Start of branch "row8"
+									if (row8 != null) {
+
+										/**
+										 * [tJavaRow_2 main ] start
+										 */
+
+										currentComponent = "tJavaRow_2";
+
+										// Code généré selon le schémas d'entrée
+										// et de sortie
+										row9.link = row8.linkNamespace;
+										row9.stat = row8.count;
+
+										nb_line_tJavaRow_2++;
+
+										tos_count_tJavaRow_2++;
+
+										/**
+										 * [tJavaRow_2 main ] stop
+										 */
+
+										/**
+										 * [tFilterRow_1 main ] start
+										 */
+
+										currentComponent = "tFilterRow_1";
+
+										row10 = null;
+										Operator_tFilterRow_1 ope_tFilterRow_1 = new Operator_tFilterRow_1(
+												"&&");
+										ope_tFilterRow_1
+												.matches(
+														(// code sample : use
+															// row9 to define
+															// the condition.
+														// row9.columnName1.equals("foo")
+														// ||!(row9.columnName2.equals("bar"))
+														// replace the following
+														// expression by your
+														// own filter condition
+														!row9.link
+																.contains(".")
+																&& !row9.link
+																		.contains(" ") && !row9.link
+																.equals(context.endpoint_namespace)),
+														"advanced condition failed");
+
+										if (ope_tFilterRow_1.getMatchFlag()) {
+											if (row10 == null) {
+												row10 = new row10Struct();
+											}
+											row10.link = row9.link;
+											row10.stat = row9.stat;
+											nb_line_ok_tFilterRow_1++;
+										} else {
+											nb_line_reject_tFilterRow_1++;
+										}
+
+										nb_line_tFilterRow_1++;
+
+										tos_count_tFilterRow_1++;
+
+										/**
+										 * [tFilterRow_1 main ] stop
+										 */
+										// Start of branch "row10"
+										if (row10 != null) {
+
+											/**
+											 * [tLogRow_2 main ] start
+											 */
+
+											currentComponent = "tLogRow_2";
+
+											row5 = row10;
+
+											tos_count_tLogRow_2++;
+
+											/**
+											 * [tLogRow_2 main ] stop
+											 */
+
+											/**
+											 * [tBufferOutput_1 main ] start
+											 */
+
+											currentComponent = "tBufferOutput_1";
+
+											String[] row_tBufferOutput_1 = new String[] {
+													"", "", };
+											if (row5.link != null) {
+
+												row_tBufferOutput_1[0] = row5.link;
+
+											} else {
+												row_tBufferOutput_1[0] = null;
+											}
+											if (row5.stat != null) {
+
+												row_tBufferOutput_1[1] = row5.stat;
+
+											} else {
+												row_tBufferOutput_1[1] = null;
+											}
+											globalBuffer
+													.add(row_tBufferOutput_1);
+
+											tos_count_tBufferOutput_1++;
+
+											/**
+											 * [tBufferOutput_1 main ] stop
+											 */
+
+										} // End of branch "row10"
+
+									} // End of branch "row8"
+
+									// end for
+								}
+
+							} // C_01
+
+						} // End of branch "row7"
+
+						// end for
+					}
+
+				} // C_01
+
+				/**
+				 * [tHttpRequest_1 end ] start
+				 */
+
+				currentComponent = "tHttpRequest_1";
+
+				ok_Hash.put("tHttpRequest_1", true);
+				end_Hash.put("tHttpRequest_1", System.currentTimeMillis());
+
+				/**
+				 * [tHttpRequest_1 end ] stop
+				 */
+
+				/**
+				 * [tExtractJSONFields_1 end ] start
+				 */
+
+				currentComponent = "tExtractJSONFields_1";
+
+				globalMap.put("tExtractJSONFields_1_NB_LINE",
+						nb_line_tExtractJSONFields_1);
+
+				ok_Hash.put("tExtractJSONFields_1", true);
+				end_Hash.put("tExtractJSONFields_1", System.currentTimeMillis());
+
+				/**
+				 * [tExtractJSONFields_1 end ] stop
+				 */
+
+				/**
+				 * [tExtractRegexFields_1 end ] start
+				 */
+
+				currentComponent = "tExtractRegexFields_1";
+
+				ok_Hash.put("tExtractRegexFields_1", true);
+				end_Hash.put("tExtractRegexFields_1",
 						System.currentTimeMillis());
 
 				/**
-				 * [tFileInputDelimited_1 end ] stop
+				 * [tExtractRegexFields_1 end ] stop
 				 */
 
 				/**
-				 * [tFilterRow_2 end ] start
+				 * [tJavaRow_2 end ] start
 				 */
 
-				currentComponent = "tFilterRow_2";
+				currentComponent = "tJavaRow_2";
 
-				globalMap.put("tFilterRow_2_NB_LINE", nb_line_tFilterRow_2);
-				globalMap.put("tFilterRow_2_NB_LINE_OK",
-						nb_line_ok_tFilterRow_2);
-				globalMap.put("tFilterRow_2_NB_LINE_REJECT",
-						nb_line_reject_tFilterRow_2);
+				globalMap.put("tJavaRow_2_NB_LINE", nb_line_tJavaRow_2);
 
-				ok_Hash.put("tFilterRow_2", true);
-				end_Hash.put("tFilterRow_2", System.currentTimeMillis());
+				ok_Hash.put("tJavaRow_2", true);
+				end_Hash.put("tJavaRow_2", System.currentTimeMillis());
 
 				/**
-				 * [tFilterRow_2 end ] stop
+				 * [tJavaRow_2 end ] stop
 				 */
 
 				/**
-				 * [tFlowToIterate_1 end ] start
+				 * [tFilterRow_1 end ] start
 				 */
 
-				currentComponent = "tFlowToIterate_1";
+				currentComponent = "tFilterRow_1";
 
-				globalMap.put("tFlowToIterate_1_NB_LINE",
-						nb_line_tFlowToIterate_1);
+				globalMap.put("tFilterRow_1_NB_LINE", nb_line_tFilterRow_1);
+				globalMap.put("tFilterRow_1_NB_LINE_OK",
+						nb_line_ok_tFilterRow_1);
+				globalMap.put("tFilterRow_1_NB_LINE_REJECT",
+						nb_line_reject_tFilterRow_1);
 
-				ok_Hash.put("tFlowToIterate_1", true);
-				end_Hash.put("tFlowToIterate_1", System.currentTimeMillis());
+				ok_Hash.put("tFilterRow_1", true);
+				end_Hash.put("tFilterRow_1", System.currentTimeMillis());
 
 				/**
-				 * [tFlowToIterate_1 end ] stop
+				 * [tFilterRow_1 end ] stop
+				 */
+
+				/**
+				 * [tLogRow_2 end ] start
+				 */
+
+				currentComponent = "tLogRow_2";
+
+				ok_Hash.put("tLogRow_2", true);
+				end_Hash.put("tLogRow_2", System.currentTimeMillis());
+
+				/**
+				 * [tLogRow_2 end ] stop
+				 */
+
+				/**
+				 * [tBufferOutput_1 end ] start
+				 */
+
+				currentComponent = "tBufferOutput_1";
+
+				ok_Hash.put("tBufferOutput_1", true);
+				end_Hash.put("tBufferOutput_1", System.currentTimeMillis());
+
+				/**
+				 * [tBufferOutput_1 end ] stop
 				 */
 
 			}// end the resume
@@ -1838,63 +1990,63 @@ public class datahub_get_stats implements TalendJob {
 			try {
 
 				/**
-				 * [tFileInputDelimited_1 finally ] start
+				 * [tHttpRequest_1 finally ] start
 				 */
 
-				currentComponent = "tFileInputDelimited_1";
+				currentComponent = "tHttpRequest_1";
 
 				/**
-				 * [tFileInputDelimited_1 finally ] stop
-				 */
-
-				/**
-				 * [tFilterRow_2 finally ] start
-				 */
-
-				currentComponent = "tFilterRow_2";
-
-				/**
-				 * [tFilterRow_2 finally ] stop
+				 * [tHttpRequest_1 finally ] stop
 				 */
 
 				/**
-				 * [tFlowToIterate_1 finally ] start
+				 * [tExtractJSONFields_1 finally ] start
 				 */
 
-				currentComponent = "tFlowToIterate_1";
+				currentComponent = "tExtractJSONFields_1";
 
 				/**
-				 * [tFlowToIterate_1 finally ] stop
-				 */
-
-				/**
-				 * [tSparqlSelectRequest_1 finally ] start
-				 */
-
-				currentComponent = "tSparqlSelectRequest_1";
-
-				/**
-				 * [tSparqlSelectRequest_1 finally ] stop
+				 * [tExtractJSONFields_1 finally ] stop
 				 */
 
 				/**
-				 * [tJavaRow_1 finally ] start
+				 * [tExtractRegexFields_1 finally ] start
 				 */
 
-				currentComponent = "tJavaRow_1";
+				currentComponent = "tExtractRegexFields_1";
 
 				/**
-				 * [tJavaRow_1 finally ] stop
+				 * [tExtractRegexFields_1 finally ] stop
 				 */
 
 				/**
-				 * [tLogRow_1 finally ] start
+				 * [tJavaRow_2 finally ] start
 				 */
 
-				currentComponent = "tLogRow_1";
+				currentComponent = "tJavaRow_2";
 
 				/**
-				 * [tLogRow_1 finally ] stop
+				 * [tJavaRow_2 finally ] stop
+				 */
+
+				/**
+				 * [tFilterRow_1 finally ] start
+				 */
+
+				currentComponent = "tFilterRow_1";
+
+				/**
+				 * [tFilterRow_1 finally ] stop
+				 */
+
+				/**
+				 * [tLogRow_2 finally ] start
+				 */
+
+				currentComponent = "tLogRow_2";
+
+				/**
+				 * [tLogRow_2 finally ] stop
 				 */
 
 				/**
@@ -1915,7 +2067,7 @@ public class datahub_get_stats implements TalendJob {
 			resourceMap = null;
 		}
 
-		globalMap.put("tFileInputDelimited_1_SUBPROCESS_STATE", 1);
+		globalMap.put("tHttpRequest_1_SUBPROCESS_STATE", 1);
 	}
 
 	public String resuming_logs_dir_path = null;
@@ -2089,14 +2241,14 @@ public class datahub_get_stats implements TalendJob {
 
 		try {
 			errorCode = null;
-			tFileInputDelimited_1Process(globalMap);
+			tHttpRequest_1Process(globalMap);
 			if (!"failure".equals(status)) {
 				status = "end";
 			}
-		} catch (TalendException e_tFileInputDelimited_1) {
-			globalMap.put("tFileInputDelimited_1_SUBPROCESS_STATE", -1);
+		} catch (TalendException e_tHttpRequest_1) {
+			globalMap.put("tHttpRequest_1_SUBPROCESS_STATE", -1);
 
-			e_tFileInputDelimited_1.printStackTrace();
+			e_tHttpRequest_1.printStackTrace();
 
 		}
 
@@ -2233,6 +2385,6 @@ public class datahub_get_stats implements TalendJob {
 	ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- * 58403 characters generated by Talend Open Studio for Data Integration on the
- * 8 août 2014 15:39:18 EDT
+ * 65622 characters generated by Talend Open Studio for Data Integration on the
+ * 11 août 2014 16:32:21 EDT
  ************************************************************************************************/
