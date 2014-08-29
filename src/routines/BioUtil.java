@@ -106,7 +106,13 @@ public static int getMimePriority(String mimeString) {
 	acceptableMime.add("text/turtle");
 	acceptableMime.add("text/plain");
 	acceptableMime.add("text/html");
+	acceptableMime.add("application/x-json+ld");
+	acceptableMime.add("application/json");
+	acceptableMime.add("application/ld+json");
+	acceptableMime.add("application/trig");
+	acceptableMime.add("application/x-trig");
 	acceptableMime.add("application/rdf+json");
+
 	// Add mime type here if you want to parse them
 	
 	return(acceptableMime.indexOf(mimeString));
@@ -158,6 +164,55 @@ public static int getMimePriority(String mimeString) {
     	}
     }
 	
+    
+    /**
+     * Return well-written format for Bio2RDF REST service
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("format")
+     * 
+     * {example} restFormat("rdf")
+     */
+    public static String getFormatFromMime(String formatIn) {
+    	if (formatIn.toLowerCase().equals("rdf") || formatIn.toLowerCase().equals("rdfxml") || formatIn.toLowerCase().equals("application/rdf+xml"))
+    	{
+    		return("rdfxml");
+    	}
+    	else if (formatIn.toLowerCase().equals("n3") || formatIn.toLowerCase().equals("text/rdf+n3")) 
+    	{
+    		return("n3");
+    	}
+    	else if (formatIn.toLowerCase().equals("ttl") || formatIn.toLowerCase().equals("turtle") || formatIn.toLowerCase().equals("text/turtle")) 
+    	{
+    		return("turtle");
+    	}
+    	else if (formatIn.toLowerCase().equals("nt")  || formatIn.toLowerCase().equals("text/plain")  || formatIn.toLowerCase().equals("ntriple")  || formatIn.toLowerCase().equals("ntriples")) 
+    	{
+    		return("ntriple");
+    	}
+    	else if (formatIn.toLowerCase().equals("json")  || formatIn.toLowerCase().equals("application/rdf+json") || formatIn.toLowerCase().equals("rdfjson")) 
+    	{
+    		return("rdfjson");
+    	}
+    	else if (formatIn.toLowerCase().equals("jsonld")  || formatIn.toLowerCase().equals("application/x-json+ld") || formatIn.toLowerCase().equals("application/ld+json") || formatIn.toLowerCase().equals("application/json") || formatIn.toLowerCase().equals("ldjson") )
+    	{
+    		return("jsonld");
+    	}
+    	else if (formatIn.toLowerCase().equals("trig") || formatIn.toLowerCase().equals("application/x-trig") || formatIn.toLowerCase().equals("application/trig")) 
+    	{
+    		return("trig");
+    	}
+    	else
+    	{
+    		System.err.println("Incompatible format");
+    		return("null");
+    	}
+    }
+    
 	
     /**
      * Return well-written format for Bio2RDF REST service
@@ -171,7 +226,7 @@ public static int getMimePriority(String mimeString) {
      * 
      * {example} restFormat("rdf")
      */
-    public static String restFormat(String formatIn) {
+    public static String getMimeFromFormat(String formatIn) {
     	if (formatIn.toLowerCase().equals("rdf") || formatIn.toLowerCase().equals("rdfxml"))
     	{
     		return("application/rdf+xml");
@@ -195,6 +250,10 @@ public static int getMimePriority(String mimeString) {
     	else if (formatIn.toLowerCase().equals("jsonld") )
     	{
     		return("application/ld+json");
+    	}
+    	else if (formatIn.toLowerCase().equals("trig") )
+    	{
+    		return("application/trig");
     	}
     	else
     	{

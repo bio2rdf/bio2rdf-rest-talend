@@ -40,33 +40,8 @@ import java.io.ObjectInputStream;
 import java.io.IOException;
 import java.util.Comparator;
 
-//the import part of tJenaCreateModel_1
-import com.hp.hpl.jena.rdf.model.*;
-import com.hp.hpl.jena.util.FileManager;
-import java.io.*;
-import com.hp.hpl.jena.query.*;
-
 //the import part of tJavaRow_1
 //import java.util.List;
-
-//the import part of tJenaReadRow_1
-import com.hp.hpl.jena.rdf.model.*;
-import com.hp.hpl.jena.util.FileManager;
-import java.io.*;
-import com.hp.hpl.jena.query.*;
-
-//the import part of tJenaConstructQuery_1
-import com.hp.hpl.jena.rdf.model.*;
-import com.hp.hpl.jena.util.FileManager;
-import java.io.*;
-import com.hp.hpl.jena.query.*;
-import java.util.*;
-
-//the import part of tRDF2RDF_1
-import com.hp.hpl.jena.rdf.model.*;
-import com.hp.hpl.jena.util.FileManager;
-import java.io.*;
-import org.openjena.riot.out.RDFJSONWriter;
 
 @SuppressWarnings("unused")
 /**
@@ -331,7 +306,7 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 		}
 	}
 
-	public void tJenaCreateModel_1_error(java.lang.Exception exception,
+	public void tPostjob_1_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
 
@@ -339,7 +314,51 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 
 		status = "failure";
 
-		tJenaCreateModel_1_onSubJobError(exception, errorComponent, globalMap);
+		tPostjob_1_onSubJobError(exception, errorComponent, globalMap);
+	}
+
+	public void tSesameRdfOutput_1_error(java.lang.Exception exception,
+			String errorComponent, final java.util.Map<String, Object> globalMap)
+			throws TalendException {
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
+
+		status = "failure";
+
+		tSesameRdfOutput_1_onSubJobError(exception, errorComponent, globalMap);
+	}
+
+	public void tLogRow_2_error(java.lang.Exception exception,
+			String errorComponent, final java.util.Map<String, Object> globalMap)
+			throws TalendException {
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
+
+		status = "failure";
+
+		tSesameRdfOutput_1_onSubJobError(exception, errorComponent, globalMap);
+	}
+
+	public void tBufferOutput_1_error(java.lang.Exception exception,
+			String errorComponent, final java.util.Map<String, Object> globalMap)
+			throws TalendException {
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
+
+		status = "failure";
+
+		tSesameRdfOutput_1_onSubJobError(exception, errorComponent, globalMap);
+	}
+
+	public void tSesameModelCreate_1_error(java.lang.Exception exception,
+			String errorComponent, final java.util.Map<String, Object> globalMap)
+			throws TalendException {
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
+
+		status = "failure";
+
+		tSesameModelCreate_1_onSubJobError(exception, errorComponent, globalMap);
 	}
 
 	public void tFixedFlowInput_1_error(java.lang.Exception exception,
@@ -364,7 +383,7 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 		tFixedFlowInput_1_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void tReplicate_1_error(java.lang.Exception exception,
+	public void tFlowToIterate_1_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
 
@@ -375,7 +394,7 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 		tFixedFlowInput_1_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void tSparqlConstructRequest_1_error(java.lang.Exception exception,
+	public void tSparqlSelectRequest_2_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
 
@@ -397,7 +416,7 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 		tFixedFlowInput_1_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void tJenaReadRow_1_error(java.lang.Exception exception,
+	public void tSesameModelAddStatement_1_error(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
 
@@ -408,67 +427,31 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 		tFixedFlowInput_1_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void tPostjob_1_error(java.lang.Exception exception,
+	public void tPostjob_1_onSubJobError(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
 
-		end_Hash.put(errorComponent, System.currentTimeMillis());
+		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread
+				.currentThread().getId() + "", "FATAL", "",
+				exception.getMessage(),
+				ResumeUtil.getExceptionStackTrace(exception), "");
 
-		status = "failure";
-
-		tPostjob_1_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void tJenaConstructQuery_1_error(java.lang.Exception exception,
+	public void tSesameRdfOutput_1_onSubJobError(java.lang.Exception exception,
 			String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
 
-		end_Hash.put(errorComponent, System.currentTimeMillis());
+		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread
+				.currentThread().getId() + "", "FATAL", "",
+				exception.getMessage(),
+				ResumeUtil.getExceptionStackTrace(exception), "");
 
-		status = "failure";
-
-		tJenaConstructQuery_1_onSubJobError(exception, errorComponent,
-				globalMap);
 	}
 
-	public void tRDF2RDF_1_error(java.lang.Exception exception,
-			String errorComponent, final java.util.Map<String, Object> globalMap)
-			throws TalendException {
-
-		end_Hash.put(errorComponent, System.currentTimeMillis());
-
-		status = "failure";
-
-		tJenaConstructQuery_1_onSubJobError(exception, errorComponent,
-				globalMap);
-	}
-
-	public void tLogRow_4_error(java.lang.Exception exception,
-			String errorComponent, final java.util.Map<String, Object> globalMap)
-			throws TalendException {
-
-		end_Hash.put(errorComponent, System.currentTimeMillis());
-
-		status = "failure";
-
-		tJenaConstructQuery_1_onSubJobError(exception, errorComponent,
-				globalMap);
-	}
-
-	public void tBufferOutput_1_error(java.lang.Exception exception,
-			String errorComponent, final java.util.Map<String, Object> globalMap)
-			throws TalendException {
-
-		end_Hash.put(errorComponent, System.currentTimeMillis());
-
-		status = "failure";
-
-		tJenaConstructQuery_1_onSubJobError(exception, errorComponent,
-				globalMap);
-	}
-
-	public void tJenaCreateModel_1_onSubJobError(java.lang.Exception exception,
-			String errorComponent, final java.util.Map<String, Object> globalMap)
+	public void tSesameModelCreate_1_onSubJobError(
+			java.lang.Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap)
 			throws TalendException {
 
 		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread
@@ -489,33 +472,9 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 
 	}
 
-	public void tPostjob_1_onSubJobError(java.lang.Exception exception,
-			String errorComponent, final java.util.Map<String, Object> globalMap)
+	public void tPostjob_1Process(final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-
-		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread
-				.currentThread().getId() + "", "FATAL", "",
-				exception.getMessage(),
-				ResumeUtil.getExceptionStackTrace(exception), "");
-
-	}
-
-	public void tJenaConstructQuery_1_onSubJobError(
-			java.lang.Exception exception, String errorComponent,
-			final java.util.Map<String, Object> globalMap)
-			throws TalendException {
-
-		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread
-				.currentThread().getId() + "", "FATAL", "",
-				exception.getMessage(),
-				ResumeUtil.getExceptionStackTrace(exception), "");
-
-	}
-
-	public void tJenaCreateModel_1Process(
-			final java.util.Map<String, Object> globalMap)
-			throws TalendException {
-		globalMap.put("tJenaCreateModel_1_SUBPROCESS_STATE", 0);
+		globalMap.put("tPostjob_1_SUBPROCESS_STATE", 0);
 
 		final boolean execStat = this.execStat;
 
@@ -536,59 +495,45 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 				globalResumeTicket = true;
 
 				/**
-				 * [tJenaCreateModel_1 begin ] start
+				 * [tPostjob_1 begin ] start
 				 */
 
-				ok_Hash.put("tJenaCreateModel_1", false);
-				start_Hash
-						.put("tJenaCreateModel_1", System.currentTimeMillis());
+				ok_Hash.put("tPostjob_1", false);
+				start_Hash.put("tPostjob_1", System.currentTimeMillis());
 
-				currentComponent = "tJenaCreateModel_1";
+				currentComponent = "tPostjob_1";
 
-				int tos_count_tJenaCreateModel_1 = 0;
-
-				Model model_tJenaCreateModel_1 = ModelFactory
-						.createDefaultModel();
-
-				globalMap.put("model_tJenaCreateModel_1",
-						model_tJenaCreateModel_1);
+				int tos_count_tPostjob_1 = 0;
 
 				/**
-				 * [tJenaCreateModel_1 begin ] stop
+				 * [tPostjob_1 begin ] stop
 				 */
 				/**
-				 * [tJenaCreateModel_1 main ] start
+				 * [tPostjob_1 main ] start
 				 */
 
-				currentComponent = "tJenaCreateModel_1";
+				currentComponent = "tPostjob_1";
 
-				tos_count_tJenaCreateModel_1++;
+				tos_count_tPostjob_1++;
 
 				/**
-				 * [tJenaCreateModel_1 main ] stop
+				 * [tPostjob_1 main ] stop
 				 */
 				/**
-				 * [tJenaCreateModel_1 end ] start
+				 * [tPostjob_1 end ] start
 				 */
 
-				currentComponent = "tJenaCreateModel_1";
+				currentComponent = "tPostjob_1";
 
-				ok_Hash.put("tJenaCreateModel_1", true);
-				end_Hash.put("tJenaCreateModel_1", System.currentTimeMillis());
+				ok_Hash.put("tPostjob_1", true);
+				end_Hash.put("tPostjob_1", System.currentTimeMillis());
+
+				tSesameRdfOutput_1Process(globalMap);
 
 				/**
-				 * [tJenaCreateModel_1 end ] stop
+				 * [tPostjob_1 end ] stop
 				 */
 			}// end the resume
-
-			if (resumeEntryMethodName == null || globalResumeTicket) {
-				resumeUtil.addLog("CHECKPOINT",
-						"CONNECTION:SUBJOB_OK:tJenaCreateModel_1:OnSubjobOk",
-						"", Thread.currentThread().getId() + "", "", "", "",
-						"", "");
-			}
-
-			tFixedFlowInput_1Process(globalMap);
 
 		} catch (java.lang.Exception e) {
 
@@ -604,13 +549,13 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 			try {
 
 				/**
-				 * [tJenaCreateModel_1 finally ] start
+				 * [tPostjob_1 finally ] start
 				 */
 
-				currentComponent = "tJenaCreateModel_1";
+				currentComponent = "tPostjob_1";
 
 				/**
-				 * [tJenaCreateModel_1 finally ] stop
+				 * [tPostjob_1 finally ] stop
 				 */
 			} catch (java.lang.Exception e) {
 				// ignore
@@ -620,24 +565,18 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 			resourceMap = null;
 		}
 
-		globalMap.put("tJenaCreateModel_1_SUBPROCESS_STATE", 1);
+		globalMap.put("tPostjob_1_SUBPROCESS_STATE", 1);
 	}
 
-	public static class row4Struct implements
-			routines.system.IPersistableRow<row4Struct> {
+	public static class row6Struct implements
+			routines.system.IPersistableRow<row6Struct> {
 		final static byte[] commonByteArrayLock_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[0];
 		static byte[] commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[0];
 
-		public String endpoint;
+		public String rdf;
 
-		public String getEndpoint() {
-			return this.endpoint;
-		}
-
-		public String SparqlResults;
-
-		public String getSparqlResults() {
-			return this.SparqlResults;
+		public String getRdf() {
+			return this.rdf;
 		}
 
 		private String readString(ObjectInputStream dis) throws IOException {
@@ -683,9 +622,7 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 
 					int length = 0;
 
-					this.endpoint = readString(dis);
-
-					this.SparqlResults = readString(dis);
+					this.rdf = readString(dis);
 
 				} catch (IOException e) {
 					throw new RuntimeException(e);
@@ -701,11 +638,7 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 
 				// String
 
-				writeString(this.endpoint, dos);
-
-				// String
-
-				writeString(this.SparqlResults, dos);
+				writeString(this.rdf, dos);
 
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -718,8 +651,712 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 			StringBuilder sb = new StringBuilder();
 			sb.append(super.toString());
 			sb.append("[");
-			sb.append("endpoint=" + endpoint);
-			sb.append(",SparqlResults=" + SparqlResults);
+			sb.append("rdf=" + rdf);
+			sb.append("]");
+
+			return sb.toString();
+		}
+
+		/**
+		 * Compare keys
+		 */
+		public int compareTo(row6Struct other) {
+
+			int returnValue = -1;
+
+			return returnValue;
+		}
+
+		private int checkNullsAndCompare(Object object1, Object object2) {
+			int returnValue = 0;
+			if (object1 instanceof Comparable && object2 instanceof Comparable) {
+				returnValue = ((Comparable) object1).compareTo(object2);
+			} else if (object1 != null && object2 != null) {
+				returnValue = compareStrings(object1.toString(),
+						object2.toString());
+			} else if (object1 == null && object2 != null) {
+				returnValue = 1;
+			} else if (object1 != null && object2 == null) {
+				returnValue = -1;
+			} else {
+				returnValue = 0;
+			}
+
+			return returnValue;
+		}
+
+		private int compareStrings(String string1, String string2) {
+			return string1.compareTo(string2);
+		}
+
+	}
+
+	public static class row5Struct implements
+			routines.system.IPersistableRow<row5Struct> {
+		final static byte[] commonByteArrayLock_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[0];
+		static byte[] commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[0];
+
+		public String rdf;
+
+		public String getRdf() {
+			return this.rdf;
+		}
+
+		private String readString(ObjectInputStream dis) throws IOException {
+			String strReturn = null;
+			int length = 0;
+			length = dis.readInt();
+			if (length == -1) {
+				strReturn = null;
+			} else {
+				if (length > commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop.length) {
+					if (length < 1024
+							&& commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop.length == 0) {
+						commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[1024];
+					} else {
+						commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[2 * length];
+					}
+				}
+				dis.readFully(commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop,
+						0, length);
+				strReturn = new String(
+						commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop, 0,
+						length, utf8Charset);
+			}
+			return strReturn;
+		}
+
+		private void writeString(String str, ObjectOutputStream dos)
+				throws IOException {
+			if (str == null) {
+				dos.writeInt(-1);
+			} else {
+				byte[] byteArray = str.getBytes(utf8Charset);
+				dos.writeInt(byteArray.length);
+				dos.write(byteArray);
+			}
+		}
+
+		public void readData(ObjectInputStream dis) {
+
+			synchronized (commonByteArrayLock_BIO2RDF_Bio2RDF_DescribeAll_loop) {
+
+				try {
+
+					int length = 0;
+
+					this.rdf = readString(dis);
+
+				} catch (IOException e) {
+					throw new RuntimeException(e);
+
+				}
+
+			}
+
+		}
+
+		public void writeData(ObjectOutputStream dos) {
+			try {
+
+				// String
+
+				writeString(this.rdf, dos);
+
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+
+		}
+
+		public String toString() {
+
+			StringBuilder sb = new StringBuilder();
+			sb.append(super.toString());
+			sb.append("[");
+			sb.append("rdf=" + rdf);
+			sb.append("]");
+
+			return sb.toString();
+		}
+
+		/**
+		 * Compare keys
+		 */
+		public int compareTo(row5Struct other) {
+
+			int returnValue = -1;
+
+			return returnValue;
+		}
+
+		private int checkNullsAndCompare(Object object1, Object object2) {
+			int returnValue = 0;
+			if (object1 instanceof Comparable && object2 instanceof Comparable) {
+				returnValue = ((Comparable) object1).compareTo(object2);
+			} else if (object1 != null && object2 != null) {
+				returnValue = compareStrings(object1.toString(),
+						object2.toString());
+			} else if (object1 == null && object2 != null) {
+				returnValue = 1;
+			} else if (object1 != null && object2 == null) {
+				returnValue = -1;
+			} else {
+				returnValue = 0;
+			}
+
+			return returnValue;
+		}
+
+		private int compareStrings(String string1, String string2) {
+			return string1.compareTo(string2);
+		}
+
+	}
+
+	public void tSesameRdfOutput_1Process(
+			final java.util.Map<String, Object> globalMap)
+			throws TalendException {
+		globalMap.put("tSesameRdfOutput_1_SUBPROCESS_STATE", 0);
+
+		final boolean execStat = this.execStat;
+
+		String iterateId = "";
+
+		int iterateLoop = 0;
+		String currentComponent = "";
+		java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
+
+		try {
+
+			String currentMethodName = new java.lang.Exception()
+					.getStackTrace()[0].getMethodName();
+			boolean resumeIt = currentMethodName.equals(resumeEntryMethodName);
+			if (resumeEntryMethodName == null || resumeIt || globalResumeTicket) {// start
+																					// the
+																					// resume
+				globalResumeTicket = true;
+
+				row5Struct row5 = new row5Struct();
+				row5Struct row6 = row5;
+
+				/**
+				 * [tBufferOutput_1 begin ] start
+				 */
+
+				ok_Hash.put("tBufferOutput_1", false);
+				start_Hash.put("tBufferOutput_1", System.currentTimeMillis());
+
+				currentComponent = "tBufferOutput_1";
+
+				int tos_count_tBufferOutput_1 = 0;
+
+				/**
+				 * [tBufferOutput_1 begin ] stop
+				 */
+
+				/**
+				 * [tLogRow_2 begin ] start
+				 */
+
+				ok_Hash.put("tLogRow_2", false);
+				start_Hash.put("tLogRow_2", System.currentTimeMillis());
+
+				currentComponent = "tLogRow_2";
+
+				int tos_count_tLogRow_2 = 0;
+
+				/**
+				 * [tLogRow_2 begin ] stop
+				 */
+
+				/**
+				 * [tSesameRdfOutput_1 begin ] start
+				 */
+
+				ok_Hash.put("tSesameRdfOutput_1", false);
+				start_Hash
+						.put("tSesameRdfOutput_1", System.currentTimeMillis());
+
+				currentComponent = "tSesameRdfOutput_1";
+
+				int tos_count_tSesameRdfOutput_1 = 0;
+
+				int nb_line_tSesameRdfOutput_1 = 0;
+
+				/**
+				 * [tSesameRdfOutput_1 begin ] stop
+				 */
+				/**
+				 * [tSesameRdfOutput_1 main ] start
+				 */
+
+				currentComponent = "tSesameRdfOutput_1";
+
+				org.openrdf.model.Model model_tSesameRdfOutput_1 = (org.openrdf.model.Model) globalMap
+						.get("model_tSesameModelCreate_1");
+
+				java.io.Writer rdfWriter_tSesameRdfOutput_1 = new java.io.StringWriter();
+
+				try {
+
+					if (context.format.toLowerCase().equals("rdf")
+							|| context.format.toLowerCase().equals("rdf/xml")
+							|| context.format.toLowerCase().equals("xml")
+							|| context.format.toLowerCase().equals(
+									"application/rdf+xml")
+							|| context.format.toLowerCase().equals("rdfxml")) {
+						org.openrdf.rio.Rio.write(model_tSesameRdfOutput_1,
+								rdfWriter_tSesameRdfOutput_1,
+								org.openrdf.rio.RDFFormat.RDFXML);
+					} else if (context.format.toLowerCase().equals("turtle")
+							|| context.format.toLowerCase().equals("ttl")
+							|| context.format.toLowerCase().equals(
+									"text/turtle")) {
+						org.openrdf.rio.Rio.write(model_tSesameRdfOutput_1,
+								rdfWriter_tSesameRdfOutput_1,
+								org.openrdf.rio.RDFFormat.TURTLE);
+					} else if (context.format.toLowerCase().equals("nt")
+							|| context.format.toLowerCase().equals("n-triple")
+							|| context.format.toLowerCase()
+									.equals("text/plain")
+							|| context.format.toLowerCase().equals("ntriple")
+							|| context.format.toLowerCase().equals("ntriples")
+							|| context.format.toLowerCase().equals("n-triples")) {
+						org.openrdf.rio.Rio.write(model_tSesameRdfOutput_1,
+								rdfWriter_tSesameRdfOutput_1,
+								org.openrdf.rio.RDFFormat.NTRIPLES);
+					} else if (context.format.toLowerCase().equals("jsonld")
+							|| context.format.toLowerCase().equals("json-ld")
+							|| context.format.toLowerCase().equals("json/ld")) {
+						org.openrdf.rio.Rio.write(model_tSesameRdfOutput_1,
+								rdfWriter_tSesameRdfOutput_1,
+								org.openrdf.rio.RDFFormat.JSONLD);
+					} else if (context.format.toLowerCase().equals("n3")
+							|| context.format.toLowerCase().equals(
+									"text/rdf+n3")) {
+						org.openrdf.rio.Rio.write(model_tSesameRdfOutput_1,
+								rdfWriter_tSesameRdfOutput_1,
+								org.openrdf.rio.RDFFormat.N3);
+					} else if (context.format.toLowerCase().equals("rdf/json")
+							|| context.format.toLowerCase().equals("json")
+							|| context.format.toLowerCase().equals(
+									"application/rdf+json")
+							|| context.format.toLowerCase().equals("rdfjson")) {
+						org.openrdf.rio.Rio.write(model_tSesameRdfOutput_1,
+								rdfWriter_tSesameRdfOutput_1,
+								org.openrdf.rio.RDFFormat.RDFJSON);
+					} else if (context.format.toLowerCase().equals("trig")
+							|| context.format.toLowerCase().equals(
+									"application/trig")) {
+						org.openrdf.rio.Rio.write(model_tSesameRdfOutput_1,
+								rdfWriter_tSesameRdfOutput_1,
+								org.openrdf.rio.RDFFormat.TRIG);
+					} else if (context.format.toLowerCase().equals("nquads")
+							|| context.format.toLowerCase().equals("n-quads")
+							|| context.format.toLowerCase().equals("nquad")
+							|| context.format.toLowerCase().equals("n-quad")) {
+						org.openrdf.rio.Rio.write(model_tSesameRdfOutput_1,
+								rdfWriter_tSesameRdfOutput_1,
+								org.openrdf.rio.RDFFormat.NQUADS);
+					} else {
+						System.err.println("RDF Format not supported");
+					}
+
+				} catch (Exception e) {
+					System.out.println("FAILED");
+				}
+
+				row5.rdf = rdfWriter_tSesameRdfOutput_1.toString();
+
+				nb_line_tSesameRdfOutput_1++;
+
+				tos_count_tSesameRdfOutput_1++;
+
+				/**
+				 * [tSesameRdfOutput_1 main ] stop
+				 */
+
+				/**
+				 * [tLogRow_2 main ] start
+				 */
+
+				currentComponent = "tLogRow_2";
+
+				row6 = row5;
+
+				tos_count_tLogRow_2++;
+
+				/**
+				 * [tLogRow_2 main ] stop
+				 */
+
+				/**
+				 * [tBufferOutput_1 main ] start
+				 */
+
+				currentComponent = "tBufferOutput_1";
+
+				String[] row_tBufferOutput_1 = new String[] { "", };
+				if (row6.rdf != null) {
+
+					row_tBufferOutput_1[0] = row6.rdf;
+
+				} else {
+					row_tBufferOutput_1[0] = null;
+				}
+				globalBuffer.add(row_tBufferOutput_1);
+
+				tos_count_tBufferOutput_1++;
+
+				/**
+				 * [tBufferOutput_1 main ] stop
+				 */
+
+				/**
+				 * [tSesameRdfOutput_1 end ] start
+				 */
+
+				currentComponent = "tSesameRdfOutput_1";
+
+				globalMap.put("tSesameRdfOutput_1_NB_LINE",
+						nb_line_tSesameRdfOutput_1);
+
+				ok_Hash.put("tSesameRdfOutput_1", true);
+				end_Hash.put("tSesameRdfOutput_1", System.currentTimeMillis());
+
+				/**
+				 * [tSesameRdfOutput_1 end ] stop
+				 */
+
+				/**
+				 * [tLogRow_2 end ] start
+				 */
+
+				currentComponent = "tLogRow_2";
+
+				ok_Hash.put("tLogRow_2", true);
+				end_Hash.put("tLogRow_2", System.currentTimeMillis());
+
+				/**
+				 * [tLogRow_2 end ] stop
+				 */
+
+				/**
+				 * [tBufferOutput_1 end ] start
+				 */
+
+				currentComponent = "tBufferOutput_1";
+
+				ok_Hash.put("tBufferOutput_1", true);
+				end_Hash.put("tBufferOutput_1", System.currentTimeMillis());
+
+				/**
+				 * [tBufferOutput_1 end ] stop
+				 */
+
+			}// end the resume
+
+		} catch (java.lang.Exception e) {
+
+			TalendException te = new TalendException(e, currentComponent,
+					globalMap);
+
+			throw te;
+		} catch (java.lang.Error error) {
+
+			throw error;
+		} finally {
+
+			try {
+
+				/**
+				 * [tSesameRdfOutput_1 finally ] start
+				 */
+
+				currentComponent = "tSesameRdfOutput_1";
+
+				/**
+				 * [tSesameRdfOutput_1 finally ] stop
+				 */
+
+				/**
+				 * [tLogRow_2 finally ] start
+				 */
+
+				currentComponent = "tLogRow_2";
+
+				/**
+				 * [tLogRow_2 finally ] stop
+				 */
+
+				/**
+				 * [tBufferOutput_1 finally ] start
+				 */
+
+				currentComponent = "tBufferOutput_1";
+
+				/**
+				 * [tBufferOutput_1 finally ] stop
+				 */
+
+			} catch (java.lang.Exception e) {
+				// ignore
+			} catch (java.lang.Error error) {
+				// ignore
+			}
+			resourceMap = null;
+		}
+
+		globalMap.put("tSesameRdfOutput_1_SUBPROCESS_STATE", 1);
+	}
+
+	public void tSesameModelCreate_1Process(
+			final java.util.Map<String, Object> globalMap)
+			throws TalendException {
+		globalMap.put("tSesameModelCreate_1_SUBPROCESS_STATE", 0);
+
+		final boolean execStat = this.execStat;
+
+		String iterateId = "";
+
+		int iterateLoop = 0;
+		String currentComponent = "";
+		java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
+
+		try {
+
+			String currentMethodName = new java.lang.Exception()
+					.getStackTrace()[0].getMethodName();
+			boolean resumeIt = currentMethodName.equals(resumeEntryMethodName);
+			if (resumeEntryMethodName == null || resumeIt || globalResumeTicket) {// start
+																					// the
+																					// resume
+				globalResumeTicket = true;
+
+				/**
+				 * [tSesameModelCreate_1 begin ] start
+				 */
+
+				ok_Hash.put("tSesameModelCreate_1", false);
+				start_Hash.put("tSesameModelCreate_1",
+						System.currentTimeMillis());
+
+				currentComponent = "tSesameModelCreate_1";
+
+				int tos_count_tSesameModelCreate_1 = 0;
+
+				org.openrdf.model.Model model_tSesameModelCreate_1 = new org.openrdf.model.impl.LinkedHashModel();
+
+				globalMap.put("model_tSesameModelCreate_1",
+						model_tSesameModelCreate_1);
+
+				/**
+				 * [tSesameModelCreate_1 begin ] stop
+				 */
+				/**
+				 * [tSesameModelCreate_1 main ] start
+				 */
+
+				currentComponent = "tSesameModelCreate_1";
+
+				tos_count_tSesameModelCreate_1++;
+
+				/**
+				 * [tSesameModelCreate_1 main ] stop
+				 */
+				/**
+				 * [tSesameModelCreate_1 end ] start
+				 */
+
+				currentComponent = "tSesameModelCreate_1";
+
+				ok_Hash.put("tSesameModelCreate_1", true);
+				end_Hash.put("tSesameModelCreate_1", System.currentTimeMillis());
+
+				/**
+				 * [tSesameModelCreate_1 end ] stop
+				 */
+			}// end the resume
+
+			if (resumeEntryMethodName == null || globalResumeTicket) {
+				resumeUtil.addLog("CHECKPOINT",
+						"CONNECTION:SUBJOB_OK:tSesameModelCreate_1:OnSubjobOk",
+						"", Thread.currentThread().getId() + "", "", "", "",
+						"", "");
+			}
+
+			tFixedFlowInput_1Process(globalMap);
+
+		} catch (java.lang.Exception e) {
+
+			TalendException te = new TalendException(e, currentComponent,
+					globalMap);
+
+			throw te;
+		} catch (java.lang.Error error) {
+
+			throw error;
+		} finally {
+
+			try {
+
+				/**
+				 * [tSesameModelCreate_1 finally ] start
+				 */
+
+				currentComponent = "tSesameModelCreate_1";
+
+				/**
+				 * [tSesameModelCreate_1 finally ] stop
+				 */
+			} catch (java.lang.Exception e) {
+				// ignore
+			} catch (java.lang.Error error) {
+				// ignore
+			}
+			resourceMap = null;
+		}
+
+		globalMap.put("tSesameModelCreate_1_SUBPROCESS_STATE", 1);
+	}
+
+	public static class row4Struct implements
+			routines.system.IPersistableRow<row4Struct> {
+		final static byte[] commonByteArrayLock_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[0];
+		static byte[] commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[0];
+
+		public String subject;
+
+		public String getSubject() {
+			return this.subject;
+		}
+
+		public String predicate;
+
+		public String getPredicate() {
+			return this.predicate;
+		}
+
+		public String object;
+
+		public String getObject() {
+			return this.object;
+		}
+
+		public String graph;
+
+		public String getGraph() {
+			return this.graph;
+		}
+
+		public String type;
+
+		public String getType() {
+			return this.type;
+		}
+
+		private String readString(ObjectInputStream dis) throws IOException {
+			String strReturn = null;
+			int length = 0;
+			length = dis.readInt();
+			if (length == -1) {
+				strReturn = null;
+			} else {
+				if (length > commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop.length) {
+					if (length < 1024
+							&& commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop.length == 0) {
+						commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[1024];
+					} else {
+						commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[2 * length];
+					}
+				}
+				dis.readFully(commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop,
+						0, length);
+				strReturn = new String(
+						commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop, 0,
+						length, utf8Charset);
+			}
+			return strReturn;
+		}
+
+		private void writeString(String str, ObjectOutputStream dos)
+				throws IOException {
+			if (str == null) {
+				dos.writeInt(-1);
+			} else {
+				byte[] byteArray = str.getBytes(utf8Charset);
+				dos.writeInt(byteArray.length);
+				dos.write(byteArray);
+			}
+		}
+
+		public void readData(ObjectInputStream dis) {
+
+			synchronized (commonByteArrayLock_BIO2RDF_Bio2RDF_DescribeAll_loop) {
+
+				try {
+
+					int length = 0;
+
+					this.subject = readString(dis);
+
+					this.predicate = readString(dis);
+
+					this.object = readString(dis);
+
+					this.graph = readString(dis);
+
+					this.type = readString(dis);
+
+				} catch (IOException e) {
+					throw new RuntimeException(e);
+
+				}
+
+			}
+
+		}
+
+		public void writeData(ObjectOutputStream dos) {
+			try {
+
+				// String
+
+				writeString(this.subject, dos);
+
+				// String
+
+				writeString(this.predicate, dos);
+
+				// String
+
+				writeString(this.object, dos);
+
+				// String
+
+				writeString(this.graph, dos);
+
+				// String
+
+				writeString(this.type, dos);
+
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+
+		}
+
+		public String toString() {
+
+			StringBuilder sb = new StringBuilder();
+			sb.append(super.toString());
+			sb.append("[");
+			sb.append("subject=" + subject);
+			sb.append(",predicate=" + predicate);
+			sb.append(",object=" + object);
+			sb.append(",graph=" + graph);
+			sb.append(",type=" + type);
 			sb.append("]");
 
 			return sb.toString();
@@ -729,6 +1366,181 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 		 * Compare keys
 		 */
 		public int compareTo(row4Struct other) {
+
+			int returnValue = -1;
+
+			return returnValue;
+		}
+
+		private int checkNullsAndCompare(Object object1, Object object2) {
+			int returnValue = 0;
+			if (object1 instanceof Comparable && object2 instanceof Comparable) {
+				returnValue = ((Comparable) object1).compareTo(object2);
+			} else if (object1 != null && object2 != null) {
+				returnValue = compareStrings(object1.toString(),
+						object2.toString());
+			} else if (object1 == null && object2 != null) {
+				returnValue = 1;
+			} else if (object1 != null && object2 == null) {
+				returnValue = -1;
+			} else {
+				returnValue = 0;
+			}
+
+			return returnValue;
+		}
+
+		private int compareStrings(String string1, String string2) {
+			return string1.compareTo(string2);
+		}
+
+	}
+
+	public static class row3Struct implements
+			routines.system.IPersistableRow<row3Struct> {
+		final static byte[] commonByteArrayLock_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[0];
+		static byte[] commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[0];
+
+		public String subject;
+
+		public String getSubject() {
+			return this.subject;
+		}
+
+		public String predicate;
+
+		public String getPredicate() {
+			return this.predicate;
+		}
+
+		public String object;
+
+		public String getObject() {
+			return this.object;
+		}
+
+		public String graph;
+
+		public String getGraph() {
+			return this.graph;
+		}
+
+		public String type;
+
+		public String getType() {
+			return this.type;
+		}
+
+		private String readString(ObjectInputStream dis) throws IOException {
+			String strReturn = null;
+			int length = 0;
+			length = dis.readInt();
+			if (length == -1) {
+				strReturn = null;
+			} else {
+				if (length > commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop.length) {
+					if (length < 1024
+							&& commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop.length == 0) {
+						commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[1024];
+					} else {
+						commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[2 * length];
+					}
+				}
+				dis.readFully(commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop,
+						0, length);
+				strReturn = new String(
+						commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop, 0,
+						length, utf8Charset);
+			}
+			return strReturn;
+		}
+
+		private void writeString(String str, ObjectOutputStream dos)
+				throws IOException {
+			if (str == null) {
+				dos.writeInt(-1);
+			} else {
+				byte[] byteArray = str.getBytes(utf8Charset);
+				dos.writeInt(byteArray.length);
+				dos.write(byteArray);
+			}
+		}
+
+		public void readData(ObjectInputStream dis) {
+
+			synchronized (commonByteArrayLock_BIO2RDF_Bio2RDF_DescribeAll_loop) {
+
+				try {
+
+					int length = 0;
+
+					this.subject = readString(dis);
+
+					this.predicate = readString(dis);
+
+					this.object = readString(dis);
+
+					this.graph = readString(dis);
+
+					this.type = readString(dis);
+
+				} catch (IOException e) {
+					throw new RuntimeException(e);
+
+				}
+
+			}
+
+		}
+
+		public void writeData(ObjectOutputStream dos) {
+			try {
+
+				// String
+
+				writeString(this.subject, dos);
+
+				// String
+
+				writeString(this.predicate, dos);
+
+				// String
+
+				writeString(this.object, dos);
+
+				// String
+
+				writeString(this.graph, dos);
+
+				// String
+
+				writeString(this.type, dos);
+
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+
+		}
+
+		public String toString() {
+
+			StringBuilder sb = new StringBuilder();
+			sb.append(super.toString());
+			sb.append("[");
+			sb.append("subject=" + subject);
+			sb.append(",predicate=" + predicate);
+			sb.append(",object=" + object);
+			sb.append(",graph=" + graph);
+			sb.append(",type=" + type);
+			sb.append("]");
+
+			return sb.toString();
+		}
+
+		/**
+		 * Compare keys
+		 */
+		public int compareTo(row3Struct other) {
 
 			int returnValue = -1;
 
@@ -770,12 +1582,6 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 			return this.endpoint;
 		}
 
-		public String SparqlResults;
-
-		public String getSparqlResults() {
-			return this.SparqlResults;
-		}
-
 		private String readString(ObjectInputStream dis) throws IOException {
 			String strReturn = null;
 			int length = 0;
@@ -821,8 +1627,6 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 
 					this.endpoint = readString(dis);
 
-					this.SparqlResults = readString(dis);
-
 				} catch (IOException e) {
 					throw new RuntimeException(e);
 
@@ -839,10 +1643,6 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 
 				writeString(this.endpoint, dos);
 
-				// String
-
-				writeString(this.SparqlResults, dos);
-
 			} catch (IOException e) {
 				throw new RuntimeException(e);
 			}
@@ -855,7 +1655,6 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 			sb.append(super.toString());
 			sb.append("[");
 			sb.append("endpoint=" + endpoint);
-			sb.append(",SparqlResults=" + SparqlResults);
 			sb.append("]");
 
 			return sb.toString();
@@ -865,252 +1664,6 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 		 * Compare keys
 		 */
 		public int compareTo(row2Struct other) {
-
-			int returnValue = -1;
-
-			return returnValue;
-		}
-
-		private int checkNullsAndCompare(Object object1, Object object2) {
-			int returnValue = 0;
-			if (object1 instanceof Comparable && object2 instanceof Comparable) {
-				returnValue = ((Comparable) object1).compareTo(object2);
-			} else if (object1 != null && object2 != null) {
-				returnValue = compareStrings(object1.toString(),
-						object2.toString());
-			} else if (object1 == null && object2 != null) {
-				returnValue = 1;
-			} else if (object1 != null && object2 == null) {
-				returnValue = -1;
-			} else {
-				returnValue = 0;
-			}
-
-			return returnValue;
-		}
-
-		private int compareStrings(String string1, String string2) {
-			return string1.compareTo(string2);
-		}
-
-	}
-
-	public static class row6Struct implements
-			routines.system.IPersistableRow<row6Struct> {
-		final static byte[] commonByteArrayLock_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[0];
-		static byte[] commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[0];
-
-		public String endpoint;
-
-		public String getEndpoint() {
-			return this.endpoint;
-		}
-
-		private String readString(ObjectInputStream dis) throws IOException {
-			String strReturn = null;
-			int length = 0;
-			length = dis.readInt();
-			if (length == -1) {
-				strReturn = null;
-			} else {
-				if (length > commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop.length) {
-					if (length < 1024
-							&& commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop.length == 0) {
-						commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[1024];
-					} else {
-						commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[2 * length];
-					}
-				}
-				dis.readFully(commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop,
-						0, length);
-				strReturn = new String(
-						commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop, 0,
-						length, utf8Charset);
-			}
-			return strReturn;
-		}
-
-		private void writeString(String str, ObjectOutputStream dos)
-				throws IOException {
-			if (str == null) {
-				dos.writeInt(-1);
-			} else {
-				byte[] byteArray = str.getBytes(utf8Charset);
-				dos.writeInt(byteArray.length);
-				dos.write(byteArray);
-			}
-		}
-
-		public void readData(ObjectInputStream dis) {
-
-			synchronized (commonByteArrayLock_BIO2RDF_Bio2RDF_DescribeAll_loop) {
-
-				try {
-
-					int length = 0;
-
-					this.endpoint = readString(dis);
-
-				} catch (IOException e) {
-					throw new RuntimeException(e);
-
-				}
-
-			}
-
-		}
-
-		public void writeData(ObjectOutputStream dos) {
-			try {
-
-				// String
-
-				writeString(this.endpoint, dos);
-
-			} catch (IOException e) {
-				throw new RuntimeException(e);
-			}
-
-		}
-
-		public String toString() {
-
-			StringBuilder sb = new StringBuilder();
-			sb.append(super.toString());
-			sb.append("[");
-			sb.append("endpoint=" + endpoint);
-			sb.append("]");
-
-			return sb.toString();
-		}
-
-		/**
-		 * Compare keys
-		 */
-		public int compareTo(row6Struct other) {
-
-			int returnValue = -1;
-
-			return returnValue;
-		}
-
-		private int checkNullsAndCompare(Object object1, Object object2) {
-			int returnValue = 0;
-			if (object1 instanceof Comparable && object2 instanceof Comparable) {
-				returnValue = ((Comparable) object1).compareTo(object2);
-			} else if (object1 != null && object2 != null) {
-				returnValue = compareStrings(object1.toString(),
-						object2.toString());
-			} else if (object1 == null && object2 != null) {
-				returnValue = 1;
-			} else if (object1 != null && object2 == null) {
-				returnValue = -1;
-			} else {
-				returnValue = 0;
-			}
-
-			return returnValue;
-		}
-
-		private int compareStrings(String string1, String string2) {
-			return string1.compareTo(string2);
-		}
-
-	}
-
-	public static class row3Struct implements
-			routines.system.IPersistableRow<row3Struct> {
-		final static byte[] commonByteArrayLock_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[0];
-		static byte[] commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[0];
-
-		public String endpoint;
-
-		public String getEndpoint() {
-			return this.endpoint;
-		}
-
-		private String readString(ObjectInputStream dis) throws IOException {
-			String strReturn = null;
-			int length = 0;
-			length = dis.readInt();
-			if (length == -1) {
-				strReturn = null;
-			} else {
-				if (length > commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop.length) {
-					if (length < 1024
-							&& commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop.length == 0) {
-						commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[1024];
-					} else {
-						commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[2 * length];
-					}
-				}
-				dis.readFully(commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop,
-						0, length);
-				strReturn = new String(
-						commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop, 0,
-						length, utf8Charset);
-			}
-			return strReturn;
-		}
-
-		private void writeString(String str, ObjectOutputStream dos)
-				throws IOException {
-			if (str == null) {
-				dos.writeInt(-1);
-			} else {
-				byte[] byteArray = str.getBytes(utf8Charset);
-				dos.writeInt(byteArray.length);
-				dos.write(byteArray);
-			}
-		}
-
-		public void readData(ObjectInputStream dis) {
-
-			synchronized (commonByteArrayLock_BIO2RDF_Bio2RDF_DescribeAll_loop) {
-
-				try {
-
-					int length = 0;
-
-					this.endpoint = readString(dis);
-
-				} catch (IOException e) {
-					throw new RuntimeException(e);
-
-				}
-
-			}
-
-		}
-
-		public void writeData(ObjectOutputStream dos) {
-			try {
-
-				// String
-
-				writeString(this.endpoint, dos);
-
-			} catch (IOException e) {
-				throw new RuntimeException(e);
-			}
-
-		}
-
-		public String toString() {
-
-			StringBuilder sb = new StringBuilder();
-			sb.append(super.toString());
-			sb.append("[");
-			sb.append("endpoint=" + endpoint);
-			sb.append("]");
-
-			return sb.toString();
-		}
-
-		/**
-		 * Compare keys
-		 */
-		public int compareTo(row3Struct other) {
 
 			int returnValue = -1;
 
@@ -1288,75 +1841,28 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 				globalResumeTicket = true;
 
 				row1Struct row1 = new row1Struct();
-				row1Struct row3 = row1;
-				row6Struct row6 = new row6Struct();
-				row2Struct row2 = new row2Struct();
+				row1Struct row2 = row1;
+				row3Struct row3 = new row3Struct();
 				row4Struct row4 = new row4Struct();
 
 				/**
-				 * [tJenaReadRow_1 begin ] start
+				 * [tFlowToIterate_1 begin ] start
 				 */
 
-				ok_Hash.put("tJenaReadRow_1", false);
-				start_Hash.put("tJenaReadRow_1", System.currentTimeMillis());
+				int NB_ITERATE_tSparqlSelectRequest_2 = 0; // for statistics
 
-				currentComponent = "tJenaReadRow_1";
+				ok_Hash.put("tFlowToIterate_1", false);
+				start_Hash.put("tFlowToIterate_1", System.currentTimeMillis());
 
-				int tos_count_tJenaReadRow_1 = 0;
+				currentComponent = "tFlowToIterate_1";
 
-				Model model_tJenaReadRow_1 = (Model) globalMap
-						.get("model_tJenaCreateModel_1");
+				int tos_count_tFlowToIterate_1 = 0;
 
-				/**
-				 * [tJenaReadRow_1 begin ] stop
-				 */
+				int nb_line_tFlowToIterate_1 = 0;
+				int counter_tFlowToIterate_1 = 0;
 
 				/**
-				 * [tJavaRow_1 begin ] start
-				 */
-
-				ok_Hash.put("tJavaRow_1", false);
-				start_Hash.put("tJavaRow_1", System.currentTimeMillis());
-
-				currentComponent = "tJavaRow_1";
-
-				int tos_count_tJavaRow_1 = 0;
-
-				int nb_line_tJavaRow_1 = 0;
-
-				/**
-				 * [tJavaRow_1 begin ] stop
-				 */
-
-				/**
-				 * [tSparqlConstructRequest_1 begin ] start
-				 */
-
-				ok_Hash.put("tSparqlConstructRequest_1", false);
-				start_Hash.put("tSparqlConstructRequest_1",
-						System.currentTimeMillis());
-
-				currentComponent = "tSparqlConstructRequest_1";
-
-				int tos_count_tSparqlConstructRequest_1 = 0;
-
-				/**
-				 * [tSparqlConstructRequest_1 begin ] stop
-				 */
-
-				/**
-				 * [tReplicate_1 begin ] start
-				 */
-
-				ok_Hash.put("tReplicate_1", false);
-				start_Hash.put("tReplicate_1", System.currentTimeMillis());
-
-				currentComponent = "tReplicate_1";
-
-				int tos_count_tReplicate_1 = 0;
-
-				/**
-				 * [tReplicate_1 begin ] stop
+				 * [tFlowToIterate_1 begin ] stop
 				 */
 
 				/**
@@ -1524,7 +2030,7 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 
 						// /////////////////////
 
-						row3 = row1;
+						row2 = row1;
 
 						tos_count_tLogRow_1++;
 
@@ -1533,143 +2039,414 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 						 */
 
 						/**
-						 * [tReplicate_1 main ] start
+						 * [tFlowToIterate_1 main ] start
 						 */
 
-						currentComponent = "tReplicate_1";
+						currentComponent = "tFlowToIterate_1";
 
-						row6 = new row6Struct();
+						globalMap.put("endpoint", row2.endpoint);
+						nb_line_tFlowToIterate_1++;
+						counter_tFlowToIterate_1++;
+						globalMap.put("tFlowToIterate_1_CURRENT_ITERATION",
+								counter_tFlowToIterate_1);
 
-						row6.endpoint = row3.endpoint;
-
-						tos_count_tReplicate_1++;
+						tos_count_tFlowToIterate_1++;
 
 						/**
-						 * [tReplicate_1 main ] stop
+						 * [tFlowToIterate_1 main ] stop
+						 */
+						NB_ITERATE_tSparqlSelectRequest_2++;
+						iterateLoop++;
+
+						/**
+						 * [tSesameModelAddStatement_1 begin ] start
+						 */
+
+						ok_Hash.put("tSesameModelAddStatement_1", false);
+						start_Hash.put("tSesameModelAddStatement_1",
+								System.currentTimeMillis());
+
+						currentComponent = "tSesameModelAddStatement_1";
+
+						int tos_count_tSesameModelAddStatement_1 = 0;
+
+						org.openrdf.model.ValueFactory factory_tSesameModelAddStatement_1 = org.openrdf.model.impl.ValueFactoryImpl
+								.getInstance();
+
+						int nb_line_tSesameModelAddStatement_1 = 0;
+
+						/**
+						 * [tSesameModelAddStatement_1 begin ] stop
 						 */
 
 						/**
-						 * [tSparqlConstructRequest_1 main ] start
+						 * [tJavaRow_1 begin ] start
 						 */
 
-						currentComponent = "tSparqlConstructRequest_1";
+						ok_Hash.put("tJavaRow_1", false);
+						start_Hash
+								.put("tJavaRow_1", System.currentTimeMillis());
 
-						String URL_string_tSparqlConstructRequest_1;
+						currentComponent = "tJavaRow_1";
 
-						URL_string_tSparqlConstructRequest_1 = row6.endpoint
+						int tos_count_tJavaRow_1 = 0;
+
+						int nb_line_tJavaRow_1 = 0;
+
+						/**
+						 * [tJavaRow_1 begin ] stop
+						 */
+
+						/**
+						 * [tSparqlSelectRequest_2 begin ] start
+						 */
+
+						ok_Hash.put("tSparqlSelectRequest_2", false);
+						start_Hash.put("tSparqlSelectRequest_2",
+								System.currentTimeMillis());
+
+						currentComponent = "tSparqlSelectRequest_2";
+
+						int tos_count_tSparqlSelectRequest_2 = 0;
+
+						String URL_string_tSparqlSelectRequest_2;
+
+						URL_string_tSparqlSelectRequest_2 = ((String) globalMap
+								.get("endpoint"))
 								+ "?default-graph-uri=&query="
-								+ java.net.URLEncoder.encode(
-										"construct {?s ?p ?o .}   where {?s ?p ?o .  FILTER (?s = <http://bio2rdf.org/"
-												+ context.ns + ":" + context.id
-												+ ">) .}", "UTF-8")
-								+ "&format=" + "text%2Fplain"
-								+ "&timeout=0&debug=on";
+								+ java.net.URLEncoder
+										.encode("select ?s ?p ?o ?g isLiteral(?o) where { GRAPH ?g  {?s ?p ?o .  FILTER (?s = <http://bio2rdf.org/"
+												+ context.ns
+												+ ":"
+												+ context.id
+												+ ">) .}}", "UTF-8")
+								+ "&format=application%2Fsparql-results%2Bjson&timeout=0&debug=on";
 
-						java.net.URL url_tSparqlConstructRequest_1 = new java.net.URL(
-								URL_string_tSparqlConstructRequest_1);
+						org.json.JSONArray jsonArray_tSparqlSelectRequest_2 = new org.json.JSONArray();
+
+						org.json.JSONArray jsonKeysArray_tSparqlSelectRequest_2;
+
+						java.util.ArrayList<String> queryKeys_tSparqlSelectRequest_2 = new java.util.ArrayList<String>();
+						// ArrayList that will contain the key value of the
+						// query sorted correctly
+
+						org.json.JSONObject jsonObj_tSparqlSelectRequest_2;
+
+						java.util.Iterator<String> queryKeysIterator_tSparqlSelectRequest_2;
+
+						java.net.URL url_tSparqlSelectRequest_2 = new java.net.URL(
+								URL_string_tSparqlSelectRequest_2);
+
+						java.net.HttpURLConnection urlConn_tSparqlSelectRequest_2 = (java.net.HttpURLConnection) url_tSparqlSelectRequest_2
+								.openConnection();
+						urlConn_tSparqlSelectRequest_2.setRequestMethod("GET");
+						urlConn_tSparqlSelectRequest_2.setDoOutput(true);
+						urlConn_tSparqlSelectRequest_2.setDoInput(true);
+						urlConn_tSparqlSelectRequest_2.setUseCaches(false);
 
 						try {
+							urlConn_tSparqlSelectRequest_2.connect();
 
-							java.net.HttpURLConnection urlConn_tSparqlConstructRequest_1 = (java.net.HttpURLConnection) url_tSparqlConstructRequest_1
-									.openConnection();
-							urlConn_tSparqlConstructRequest_1
-									.setRequestMethod("GET");
-							urlConn_tSparqlConstructRequest_1.setDoOutput(true);
-							urlConn_tSparqlConstructRequest_1.setDoInput(true);
-							urlConn_tSparqlConstructRequest_1
-									.setUseCaches(false);
+							byte[] buffer_tSparqlSelectRequest_2 = new byte[1024];
+							int bos_buffer_tSparqlSelectRequest_2 = 0;
 
-							urlConn_tSparqlConstructRequest_1.connect();
+							StringBuilder sb_tSparqlSelectRequest_2 = new StringBuilder();
 
-							byte[] buffer_tSparqlConstructRequest_1 = new byte[1024];
-							int bos_buffer_tSparqlConstructRequest_1 = 0;
-
-							StringBuilder sb_tSparqlConstructRequest_1 = new StringBuilder();
-
-							if (java.net.HttpURLConnection.HTTP_OK == (urlConn_tSparqlConstructRequest_1
+							if (java.net.HttpURLConnection.HTTP_OK == (urlConn_tSparqlSelectRequest_2
 									.getResponseCode())) {
-								java.io.InputStream bis_tSparqlConstructRequest_1 = new java.io.BufferedInputStream(
-										urlConn_tSparqlConstructRequest_1
+								java.io.InputStream bis_tSparqlSelectRequest_2 = new java.io.BufferedInputStream(
+										urlConn_tSparqlSelectRequest_2
 												.getInputStream());
 
-								while ((bos_buffer_tSparqlConstructRequest_1 = bis_tSparqlConstructRequest_1
-										.read(buffer_tSparqlConstructRequest_1)) != -1) {
-
-									sb_tSparqlConstructRequest_1
+								while ((bos_buffer_tSparqlSelectRequest_2 = bis_tSparqlSelectRequest_2
+										.read(buffer_tSparqlSelectRequest_2)) != -1) {
+									// Then the table of bytes and its size are
+									// used to generate a string
+									// which is added to a string builder that
+									// will contain the whole response
+									sb_tSparqlSelectRequest_2
 											.append(new String(
-													buffer_tSparqlConstructRequest_1,
+													buffer_tSparqlSelectRequest_2,
 													0,
-													bos_buffer_tSparqlConstructRequest_1));
-
+													bos_buffer_tSparqlSelectRequest_2));
 								}
-								bis_tSparqlConstructRequest_1.close();
+								bis_tSparqlSelectRequest_2.close();
 
 							} else {
 								System.err
-										.println(urlConn_tSparqlConstructRequest_1
+										.println(urlConn_tSparqlSelectRequest_2
 												.getResponseCode()
 												+ " "
-												+ urlConn_tSparqlConstructRequest_1
+												+ urlConn_tSparqlSelectRequest_2
 														.getResponseMessage());
 							}
 
-							row2.endpoint = row6.endpoint;
+							urlConn_tSparqlSelectRequest_2.disconnect();
 
-							row2.SparqlResults = sb_tSparqlConstructRequest_1
-									.toString();
+							jsonObj_tSparqlSelectRequest_2 = new org.json.JSONObject(
+									sb_tSparqlSelectRequest_2.toString());
 
-							urlConn_tSparqlConstructRequest_1.disconnect();
+							jsonKeysArray_tSparqlSelectRequest_2 = jsonObj_tSparqlSelectRequest_2
+									.getJSONObject("head").getJSONArray("vars");
+							for (int k_tSparqlSelectRequest_2 = 0; k_tSparqlSelectRequest_2 < jsonKeysArray_tSparqlSelectRequest_2
+									.length(); k_tSparqlSelectRequest_2++) {
+								queryKeys_tSparqlSelectRequest_2
+										.add(jsonKeysArray_tSparqlSelectRequest_2
+												.getString(k_tSparqlSelectRequest_2));
+							}
+
+							jsonArray_tSparqlSelectRequest_2 = jsonObj_tSparqlSelectRequest_2
+									.getJSONObject("results").getJSONArray(
+											"bindings");
+
 						} catch (Exception e) {
 							System.err.println("UnknownHostException");
 						}
 
-						tos_count_tSparqlConstructRequest_1++;
+						if (jsonArray_tSparqlSelectRequest_2.length() == 0) {
+							globalMap.put("tSparqlSelectRequest_2_HAS_RESULTS",
+									false);
+						} else {
+							globalMap.put("tSparqlSelectRequest_2_HAS_RESULTS",
+									true);
+						}
+
+						int i_tSparqlSelectRequest_2;
+						int nb_line_tSparqlSelectRequest_2 = 0;
+
+						for (i_tSparqlSelectRequest_2 = 0; i_tSparqlSelectRequest_2 < jsonArray_tSparqlSelectRequest_2
+								.length(); i_tSparqlSelectRequest_2++) {
+
+							/**
+							 * [tSparqlSelectRequest_2 begin ] stop
+							 */
+							/**
+							 * [tSparqlSelectRequest_2 main ] start
+							 */
+
+							currentComponent = "tSparqlSelectRequest_2";
+
+							queryKeysIterator_tSparqlSelectRequest_2 = queryKeys_tSparqlSelectRequest_2
+									.iterator();
+
+							if (queryKeysIterator_tSparqlSelectRequest_2
+									.hasNext()) {
+								try {
+									row3.subject = jsonArray_tSparqlSelectRequest_2
+											.getJSONObject(
+													i_tSparqlSelectRequest_2)
+											.getJSONObject(
+													queryKeysIterator_tSparqlSelectRequest_2
+															.next())
+											.getString("value");
+								} catch (org.json.JSONException e_tSparqlSelectRequest_2) {
+									row3.subject = "";
+								}
+							}
+
+							if (queryKeysIterator_tSparqlSelectRequest_2
+									.hasNext()) {
+								try {
+									row3.predicate = jsonArray_tSparqlSelectRequest_2
+											.getJSONObject(
+													i_tSparqlSelectRequest_2)
+											.getJSONObject(
+													queryKeysIterator_tSparqlSelectRequest_2
+															.next())
+											.getString("value");
+								} catch (org.json.JSONException e_tSparqlSelectRequest_2) {
+									row3.predicate = "";
+								}
+							}
+
+							if (queryKeysIterator_tSparqlSelectRequest_2
+									.hasNext()) {
+								try {
+									row3.object = jsonArray_tSparqlSelectRequest_2
+											.getJSONObject(
+													i_tSparqlSelectRequest_2)
+											.getJSONObject(
+													queryKeysIterator_tSparqlSelectRequest_2
+															.next())
+											.getString("value");
+								} catch (org.json.JSONException e_tSparqlSelectRequest_2) {
+									row3.object = "";
+								}
+							}
+
+							if (queryKeysIterator_tSparqlSelectRequest_2
+									.hasNext()) {
+								try {
+									row3.graph = jsonArray_tSparqlSelectRequest_2
+											.getJSONObject(
+													i_tSparqlSelectRequest_2)
+											.getJSONObject(
+													queryKeysIterator_tSparqlSelectRequest_2
+															.next())
+											.getString("value");
+								} catch (org.json.JSONException e_tSparqlSelectRequest_2) {
+									row3.graph = "";
+								}
+							}
+
+							if (queryKeysIterator_tSparqlSelectRequest_2
+									.hasNext()) {
+								try {
+									row3.type = jsonArray_tSparqlSelectRequest_2
+											.getJSONObject(
+													i_tSparqlSelectRequest_2)
+											.getJSONObject(
+													queryKeysIterator_tSparqlSelectRequest_2
+															.next())
+											.getString("value");
+								} catch (org.json.JSONException e_tSparqlSelectRequest_2) {
+									row3.type = "";
+								}
+							}
+
+							tos_count_tSparqlSelectRequest_2++;
+
+							/**
+							 * [tSparqlSelectRequest_2 main ] stop
+							 */
+
+							/**
+							 * [tJavaRow_1 main ] start
+							 */
+
+							currentComponent = "tJavaRow_1";
+
+							// Code généré selon le schémas d'entrée et de
+							// sortie
+							row4.subject = row3.subject;
+							row4.predicate = row3.predicate;
+							row4.object = row3.object;
+							row4.graph = row3.graph;
+
+							if (row3.type.equals(0)) {
+								row4.type = "uri";
+							} else {
+								row4.type = "string";
+							}
+
+							nb_line_tJavaRow_1++;
+
+							tos_count_tJavaRow_1++;
+
+							/**
+							 * [tJavaRow_1 main ] stop
+							 */
+
+							/**
+							 * [tSesameModelAddStatement_1 main ] start
+							 */
+
+							currentComponent = "tSesameModelAddStatement_1";
+
+							String subject_tSesameModelAddStatement_1 = row4.subject;
+							String predicate_tSesameModelAddStatement_1 = row4.predicate;
+							String object_tSesameModelAddStatement_1 = row4.object;
+
+							String graph_tSesameModelAddStatement_1 = row4.graph;
+
+							org.openrdf.model.Model model_tSesameModelAddStatement_1 = (org.openrdf.model.Model) globalMap
+									.get("model_tSesameModelCreate_1");
+
+							try {
+
+								if (row4.type.toLowerCase().equals("uri")) {
+
+									model_tSesameModelAddStatement_1
+											.add(factory_tSesameModelAddStatement_1
+													.createURI(subject_tSesameModelAddStatement_1),
+													factory_tSesameModelAddStatement_1
+															.createURI(predicate_tSesameModelAddStatement_1),
+													factory_tSesameModelAddStatement_1
+															.createURI(object_tSesameModelAddStatement_1),
+													factory_tSesameModelAddStatement_1
+															.createURI(graph_tSesameModelAddStatement_1));
+
+								}
+
+								else {
+
+									model_tSesameModelAddStatement_1
+											.add(factory_tSesameModelAddStatement_1
+													.createURI(subject_tSesameModelAddStatement_1),
+													factory_tSesameModelAddStatement_1
+															.createURI(predicate_tSesameModelAddStatement_1),
+													factory_tSesameModelAddStatement_1
+															.createLiteral(object_tSesameModelAddStatement_1),
+													factory_tSesameModelAddStatement_1
+															.createURI(graph_tSesameModelAddStatement_1));
+
+								}
+
+								globalMap.put("model_tSesameModelCreate_1",
+										model_tSesameModelAddStatement_1);
+							} catch (Exception e) {
+								// System.out.println("Fail");
+
+							}
+
+							nb_line_tSesameModelAddStatement_1++;
+
+							tos_count_tSesameModelAddStatement_1++;
+
+							/**
+							 * [tSesameModelAddStatement_1 main ] stop
+							 */
+
+							/**
+							 * [tSparqlSelectRequest_2 end ] start
+							 */
+
+							currentComponent = "tSparqlSelectRequest_2";
+
+							nb_line_tSparqlSelectRequest_2++;
+						}
+
+						globalMap.put("tSparqlSelectRequest_2_NB_LINE",
+								nb_line_tSparqlSelectRequest_2);
+
+						ok_Hash.put("tSparqlSelectRequest_2", true);
+						end_Hash.put("tSparqlSelectRequest_2",
+								System.currentTimeMillis());
 
 						/**
-						 * [tSparqlConstructRequest_1 main ] stop
+						 * [tSparqlSelectRequest_2 end ] stop
 						 */
 
 						/**
-						 * [tJavaRow_1 main ] start
+						 * [tJavaRow_1 end ] start
 						 */
 
 						currentComponent = "tJavaRow_1";
 
-						// Code généré selon le schémas d'entrée et de sortie
-						row4.endpoint = row2.endpoint;
-						row4.SparqlResults = row2.SparqlResults;
+						globalMap.put("tJavaRow_1_NB_LINE", nb_line_tJavaRow_1);
 
-						System.out.println(row2.endpoint);
-						System.out.println(row2.SparqlResults);
-						nb_line_tJavaRow_1++;
-
-						tos_count_tJavaRow_1++;
+						ok_Hash.put("tJavaRow_1", true);
+						end_Hash.put("tJavaRow_1", System.currentTimeMillis());
 
 						/**
-						 * [tJavaRow_1 main ] stop
+						 * [tJavaRow_1 end ] stop
 						 */
 
 						/**
-						 * [tJenaReadRow_1 main ] start
+						 * [tSesameModelAddStatement_1 end ] start
 						 */
 
-						currentComponent = "tJenaReadRow_1";
+						currentComponent = "tSesameModelAddStatement_1";
 
-						String stringToConvert_tJenaReadRow_1 = row4.SparqlResults;
+						globalMap.put("tSesameModelAddStatement_1_NB_LINE",
+								nb_line_tSesameModelAddStatement_1);
 
-						InputStream stringIn_tJenaReadRow_1 = new ByteArrayInputStream(
-								stringToConvert_tJenaReadRow_1.getBytes());
-
-						model_tJenaReadRow_1.read(stringIn_tJenaReadRow_1, "",
-								"N-TRIPLE");
-
-						globalMap.put("model_tJenaCreateModel_1",
-								model_tJenaReadRow_1);
-
-						tos_count_tJenaReadRow_1++;
+						ok_Hash.put("tSesameModelAddStatement_1", true);
+						end_Hash.put("tSesameModelAddStatement_1",
+								System.currentTimeMillis());
 
 						/**
-						 * [tJenaReadRow_1 main ] stop
+						 * [tSesameModelAddStatement_1 end ] stop
 						 */
 
 						/**
@@ -1712,58 +2489,19 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 				 */
 
 				/**
-				 * [tReplicate_1 end ] start
+				 * [tFlowToIterate_1 end ] start
 				 */
 
-				currentComponent = "tReplicate_1";
+				currentComponent = "tFlowToIterate_1";
 
-				ok_Hash.put("tReplicate_1", true);
-				end_Hash.put("tReplicate_1", System.currentTimeMillis());
+				globalMap.put("tFlowToIterate_1_NB_LINE",
+						nb_line_tFlowToIterate_1);
 
-				/**
-				 * [tReplicate_1 end ] stop
-				 */
-
-				/**
-				 * [tSparqlConstructRequest_1 end ] start
-				 */
-
-				currentComponent = "tSparqlConstructRequest_1";
-
-				ok_Hash.put("tSparqlConstructRequest_1", true);
-				end_Hash.put("tSparqlConstructRequest_1",
-						System.currentTimeMillis());
+				ok_Hash.put("tFlowToIterate_1", true);
+				end_Hash.put("tFlowToIterate_1", System.currentTimeMillis());
 
 				/**
-				 * [tSparqlConstructRequest_1 end ] stop
-				 */
-
-				/**
-				 * [tJavaRow_1 end ] start
-				 */
-
-				currentComponent = "tJavaRow_1";
-
-				globalMap.put("tJavaRow_1_NB_LINE", nb_line_tJavaRow_1);
-
-				ok_Hash.put("tJavaRow_1", true);
-				end_Hash.put("tJavaRow_1", System.currentTimeMillis());
-
-				/**
-				 * [tJavaRow_1 end ] stop
-				 */
-
-				/**
-				 * [tJenaReadRow_1 end ] start
-				 */
-
-				currentComponent = "tJenaReadRow_1";
-
-				ok_Hash.put("tJenaReadRow_1", true);
-				end_Hash.put("tJenaReadRow_1", System.currentTimeMillis());
-
-				/**
-				 * [tJenaReadRow_1 end ] stop
+				 * [tFlowToIterate_1 end ] stop
 				 */
 
 			}// end the resume
@@ -1802,23 +2540,23 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 				 */
 
 				/**
-				 * [tReplicate_1 finally ] start
+				 * [tFlowToIterate_1 finally ] start
 				 */
 
-				currentComponent = "tReplicate_1";
+				currentComponent = "tFlowToIterate_1";
 
 				/**
-				 * [tReplicate_1 finally ] stop
+				 * [tFlowToIterate_1 finally ] stop
 				 */
 
 				/**
-				 * [tSparqlConstructRequest_1 finally ] start
+				 * [tSparqlSelectRequest_2 finally ] start
 				 */
 
-				currentComponent = "tSparqlConstructRequest_1";
+				currentComponent = "tSparqlSelectRequest_2";
 
 				/**
-				 * [tSparqlConstructRequest_1 finally ] stop
+				 * [tSparqlSelectRequest_2 finally ] stop
 				 */
 
 				/**
@@ -1832,13 +2570,13 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 				 */
 
 				/**
-				 * [tJenaReadRow_1 finally ] start
+				 * [tSesameModelAddStatement_1 finally ] start
 				 */
 
-				currentComponent = "tJenaReadRow_1";
+				currentComponent = "tSesameModelAddStatement_1";
 
 				/**
-				 * [tJenaReadRow_1 finally ] stop
+				 * [tSesameModelAddStatement_1 finally ] stop
 				 */
 
 			} catch (java.lang.Exception e) {
@@ -1850,822 +2588,6 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 		}
 
 		globalMap.put("tFixedFlowInput_1_SUBPROCESS_STATE", 1);
-	}
-
-	public void tPostjob_1Process(final java.util.Map<String, Object> globalMap)
-			throws TalendException {
-		globalMap.put("tPostjob_1_SUBPROCESS_STATE", 0);
-
-		final boolean execStat = this.execStat;
-
-		String iterateId = "";
-
-		int iterateLoop = 0;
-		String currentComponent = "";
-		java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
-
-		try {
-
-			String currentMethodName = new java.lang.Exception()
-					.getStackTrace()[0].getMethodName();
-			boolean resumeIt = currentMethodName.equals(resumeEntryMethodName);
-			if (resumeEntryMethodName == null || resumeIt || globalResumeTicket) {// start
-																					// the
-																					// resume
-				globalResumeTicket = true;
-
-				/**
-				 * [tPostjob_1 begin ] start
-				 */
-
-				ok_Hash.put("tPostjob_1", false);
-				start_Hash.put("tPostjob_1", System.currentTimeMillis());
-
-				currentComponent = "tPostjob_1";
-
-				int tos_count_tPostjob_1 = 0;
-
-				/**
-				 * [tPostjob_1 begin ] stop
-				 */
-				/**
-				 * [tPostjob_1 main ] start
-				 */
-
-				currentComponent = "tPostjob_1";
-
-				tos_count_tPostjob_1++;
-
-				/**
-				 * [tPostjob_1 main ] stop
-				 */
-				/**
-				 * [tPostjob_1 end ] start
-				 */
-
-				currentComponent = "tPostjob_1";
-
-				ok_Hash.put("tPostjob_1", true);
-				end_Hash.put("tPostjob_1", System.currentTimeMillis());
-
-				tJenaConstructQuery_1Process(globalMap);
-
-				/**
-				 * [tPostjob_1 end ] stop
-				 */
-			}// end the resume
-
-		} catch (java.lang.Exception e) {
-
-			TalendException te = new TalendException(e, currentComponent,
-					globalMap);
-
-			throw te;
-		} catch (java.lang.Error error) {
-
-			throw error;
-		} finally {
-
-			try {
-
-				/**
-				 * [tPostjob_1 finally ] start
-				 */
-
-				currentComponent = "tPostjob_1";
-
-				/**
-				 * [tPostjob_1 finally ] stop
-				 */
-			} catch (java.lang.Exception e) {
-				// ignore
-			} catch (java.lang.Error error) {
-				// ignore
-			}
-			resourceMap = null;
-		}
-
-		globalMap.put("tPostjob_1_SUBPROCESS_STATE", 1);
-	}
-
-	public static class row11Struct implements
-			routines.system.IPersistableRow<row11Struct> {
-		final static byte[] commonByteArrayLock_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[0];
-		static byte[] commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[0];
-
-		public String rdf;
-
-		public String getRdf() {
-			return this.rdf;
-		}
-
-		private String readString(ObjectInputStream dis) throws IOException {
-			String strReturn = null;
-			int length = 0;
-			length = dis.readInt();
-			if (length == -1) {
-				strReturn = null;
-			} else {
-				if (length > commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop.length) {
-					if (length < 1024
-							&& commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop.length == 0) {
-						commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[1024];
-					} else {
-						commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[2 * length];
-					}
-				}
-				dis.readFully(commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop,
-						0, length);
-				strReturn = new String(
-						commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop, 0,
-						length, utf8Charset);
-			}
-			return strReturn;
-		}
-
-		private void writeString(String str, ObjectOutputStream dos)
-				throws IOException {
-			if (str == null) {
-				dos.writeInt(-1);
-			} else {
-				byte[] byteArray = str.getBytes(utf8Charset);
-				dos.writeInt(byteArray.length);
-				dos.write(byteArray);
-			}
-		}
-
-		public void readData(ObjectInputStream dis) {
-
-			synchronized (commonByteArrayLock_BIO2RDF_Bio2RDF_DescribeAll_loop) {
-
-				try {
-
-					int length = 0;
-
-					this.rdf = readString(dis);
-
-				} catch (IOException e) {
-					throw new RuntimeException(e);
-
-				}
-
-			}
-
-		}
-
-		public void writeData(ObjectOutputStream dos) {
-			try {
-
-				// String
-
-				writeString(this.rdf, dos);
-
-			} catch (IOException e) {
-				throw new RuntimeException(e);
-			}
-
-		}
-
-		public String toString() {
-
-			StringBuilder sb = new StringBuilder();
-			sb.append(super.toString());
-			sb.append("[");
-			sb.append("rdf=" + rdf);
-			sb.append("]");
-
-			return sb.toString();
-		}
-
-		/**
-		 * Compare keys
-		 */
-		public int compareTo(row11Struct other) {
-
-			int returnValue = -1;
-
-			return returnValue;
-		}
-
-		private int checkNullsAndCompare(Object object1, Object object2) {
-			int returnValue = 0;
-			if (object1 instanceof Comparable && object2 instanceof Comparable) {
-				returnValue = ((Comparable) object1).compareTo(object2);
-			} else if (object1 != null && object2 != null) {
-				returnValue = compareStrings(object1.toString(),
-						object2.toString());
-			} else if (object1 == null && object2 != null) {
-				returnValue = 1;
-			} else if (object1 != null && object2 == null) {
-				returnValue = -1;
-			} else {
-				returnValue = 0;
-			}
-
-			return returnValue;
-		}
-
-		private int compareStrings(String string1, String string2) {
-			return string1.compareTo(string2);
-		}
-
-	}
-
-	public static class row7Struct implements
-			routines.system.IPersistableRow<row7Struct> {
-		final static byte[] commonByteArrayLock_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[0];
-		static byte[] commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[0];
-
-		public String rdf;
-
-		public String getRdf() {
-			return this.rdf;
-		}
-
-		private String readString(ObjectInputStream dis) throws IOException {
-			String strReturn = null;
-			int length = 0;
-			length = dis.readInt();
-			if (length == -1) {
-				strReturn = null;
-			} else {
-				if (length > commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop.length) {
-					if (length < 1024
-							&& commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop.length == 0) {
-						commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[1024];
-					} else {
-						commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[2 * length];
-					}
-				}
-				dis.readFully(commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop,
-						0, length);
-				strReturn = new String(
-						commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop, 0,
-						length, utf8Charset);
-			}
-			return strReturn;
-		}
-
-		private void writeString(String str, ObjectOutputStream dos)
-				throws IOException {
-			if (str == null) {
-				dos.writeInt(-1);
-			} else {
-				byte[] byteArray = str.getBytes(utf8Charset);
-				dos.writeInt(byteArray.length);
-				dos.write(byteArray);
-			}
-		}
-
-		public void readData(ObjectInputStream dis) {
-
-			synchronized (commonByteArrayLock_BIO2RDF_Bio2RDF_DescribeAll_loop) {
-
-				try {
-
-					int length = 0;
-
-					this.rdf = readString(dis);
-
-				} catch (IOException e) {
-					throw new RuntimeException(e);
-
-				}
-
-			}
-
-		}
-
-		public void writeData(ObjectOutputStream dos) {
-			try {
-
-				// String
-
-				writeString(this.rdf, dos);
-
-			} catch (IOException e) {
-				throw new RuntimeException(e);
-			}
-
-		}
-
-		public String toString() {
-
-			StringBuilder sb = new StringBuilder();
-			sb.append(super.toString());
-			sb.append("[");
-			sb.append("rdf=" + rdf);
-			sb.append("]");
-
-			return sb.toString();
-		}
-
-		/**
-		 * Compare keys
-		 */
-		public int compareTo(row7Struct other) {
-
-			int returnValue = -1;
-
-			return returnValue;
-		}
-
-		private int checkNullsAndCompare(Object object1, Object object2) {
-			int returnValue = 0;
-			if (object1 instanceof Comparable && object2 instanceof Comparable) {
-				returnValue = ((Comparable) object1).compareTo(object2);
-			} else if (object1 != null && object2 != null) {
-				returnValue = compareStrings(object1.toString(),
-						object2.toString());
-			} else if (object1 == null && object2 != null) {
-				returnValue = 1;
-			} else if (object1 != null && object2 == null) {
-				returnValue = -1;
-			} else {
-				returnValue = 0;
-			}
-
-			return returnValue;
-		}
-
-		private int compareStrings(String string1, String string2) {
-			return string1.compareTo(string2);
-		}
-
-	}
-
-	public static class row5Struct implements
-			routines.system.IPersistableRow<row5Struct> {
-		final static byte[] commonByteArrayLock_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[0];
-		static byte[] commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[0];
-
-		public String rdf;
-
-		public String getRdf() {
-			return this.rdf;
-		}
-
-		private String readString(ObjectInputStream dis) throws IOException {
-			String strReturn = null;
-			int length = 0;
-			length = dis.readInt();
-			if (length == -1) {
-				strReturn = null;
-			} else {
-				if (length > commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop.length) {
-					if (length < 1024
-							&& commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop.length == 0) {
-						commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[1024];
-					} else {
-						commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop = new byte[2 * length];
-					}
-				}
-				dis.readFully(commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop,
-						0, length);
-				strReturn = new String(
-						commonByteArray_BIO2RDF_Bio2RDF_DescribeAll_loop, 0,
-						length, utf8Charset);
-			}
-			return strReturn;
-		}
-
-		private void writeString(String str, ObjectOutputStream dos)
-				throws IOException {
-			if (str == null) {
-				dos.writeInt(-1);
-			} else {
-				byte[] byteArray = str.getBytes(utf8Charset);
-				dos.writeInt(byteArray.length);
-				dos.write(byteArray);
-			}
-		}
-
-		public void readData(ObjectInputStream dis) {
-
-			synchronized (commonByteArrayLock_BIO2RDF_Bio2RDF_DescribeAll_loop) {
-
-				try {
-
-					int length = 0;
-
-					this.rdf = readString(dis);
-
-				} catch (IOException e) {
-					throw new RuntimeException(e);
-
-				}
-
-			}
-
-		}
-
-		public void writeData(ObjectOutputStream dos) {
-			try {
-
-				// String
-
-				writeString(this.rdf, dos);
-
-			} catch (IOException e) {
-				throw new RuntimeException(e);
-			}
-
-		}
-
-		public String toString() {
-
-			StringBuilder sb = new StringBuilder();
-			sb.append(super.toString());
-			sb.append("[");
-			sb.append("rdf=" + rdf);
-			sb.append("]");
-
-			return sb.toString();
-		}
-
-		/**
-		 * Compare keys
-		 */
-		public int compareTo(row5Struct other) {
-
-			int returnValue = -1;
-
-			return returnValue;
-		}
-
-		private int checkNullsAndCompare(Object object1, Object object2) {
-			int returnValue = 0;
-			if (object1 instanceof Comparable && object2 instanceof Comparable) {
-				returnValue = ((Comparable) object1).compareTo(object2);
-			} else if (object1 != null && object2 != null) {
-				returnValue = compareStrings(object1.toString(),
-						object2.toString());
-			} else if (object1 == null && object2 != null) {
-				returnValue = 1;
-			} else if (object1 != null && object2 == null) {
-				returnValue = -1;
-			} else {
-				returnValue = 0;
-			}
-
-			return returnValue;
-		}
-
-		private int compareStrings(String string1, String string2) {
-			return string1.compareTo(string2);
-		}
-
-	}
-
-	public void tJenaConstructQuery_1Process(
-			final java.util.Map<String, Object> globalMap)
-			throws TalendException {
-		globalMap.put("tJenaConstructQuery_1_SUBPROCESS_STATE", 0);
-
-		final boolean execStat = this.execStat;
-
-		String iterateId = "";
-
-		int iterateLoop = 0;
-		String currentComponent = "";
-		java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
-
-		try {
-
-			String currentMethodName = new java.lang.Exception()
-					.getStackTrace()[0].getMethodName();
-			boolean resumeIt = currentMethodName.equals(resumeEntryMethodName);
-			if (resumeEntryMethodName == null || resumeIt || globalResumeTicket) {// start
-																					// the
-																					// resume
-				globalResumeTicket = true;
-
-				row5Struct row5 = new row5Struct();
-				row7Struct row7 = new row7Struct();
-				row7Struct row11 = row7;
-
-				/**
-				 * [tBufferOutput_1 begin ] start
-				 */
-
-				ok_Hash.put("tBufferOutput_1", false);
-				start_Hash.put("tBufferOutput_1", System.currentTimeMillis());
-
-				currentComponent = "tBufferOutput_1";
-
-				int tos_count_tBufferOutput_1 = 0;
-
-				/**
-				 * [tBufferOutput_1 begin ] stop
-				 */
-
-				/**
-				 * [tLogRow_4 begin ] start
-				 */
-
-				ok_Hash.put("tLogRow_4", false);
-				start_Hash.put("tLogRow_4", System.currentTimeMillis());
-
-				currentComponent = "tLogRow_4";
-
-				int tos_count_tLogRow_4 = 0;
-
-				/**
-				 * [tLogRow_4 begin ] stop
-				 */
-
-				/**
-				 * [tRDF2RDF_1 begin ] start
-				 */
-
-				ok_Hash.put("tRDF2RDF_1", false);
-				start_Hash.put("tRDF2RDF_1", System.currentTimeMillis());
-
-				currentComponent = "tRDF2RDF_1";
-
-				int tos_count_tRDF2RDF_1 = 0;
-
-				org.openjena.riot.RIOT.init();
-
-				Reader reader_tRDF2RDF_1;
-				Writer writer_tRDF2RDF_1;
-				Model model_tRDF2RDF_1;
-
-				String outputFormat_tRDF2RDF_1;
-				String inputFormat_tRDF2RDF_1;
-
-				int nb_line_tRDF2RDF_1 = 0;
-
-				/**
-				 * [tRDF2RDF_1 begin ] stop
-				 */
-
-				/**
-				 * [tJenaConstructQuery_1 begin ] start
-				 */
-
-				ok_Hash.put("tJenaConstructQuery_1", false);
-				start_Hash.put("tJenaConstructQuery_1",
-						System.currentTimeMillis());
-
-				currentComponent = "tJenaConstructQuery_1";
-
-				int tos_count_tJenaConstructQuery_1 = 0;
-
-				Model model_tJenaConstructQuery_1 = (Model) globalMap
-						.get("model_tJenaCreateModel_1");
-
-				String queryString_tJenaConstructQuery_1 = "construct {?s ?p ?o} where { ?s ?p ?o .}";
-
-				Query query_tJenaConstructQuery_1 = QueryFactory
-						.create(queryString_tJenaConstructQuery_1);
-				query_tJenaConstructQuery_1.setQueryConstructType();
-
-				QueryExecution queryExec_tJenaConstructQuery_1 = QueryExecutionFactory
-						.create(query_tJenaConstructQuery_1,
-								model_tJenaConstructQuery_1);
-
-				Model results_tJenaConstructQuery_1 = queryExec_tJenaConstructQuery_1
-						.execConstruct();
-
-				StringWriter out_tJenaConstructQuery_1 = new StringWriter();
-
-				results_tJenaConstructQuery_1.write(out_tJenaConstructQuery_1,
-						"N-TRIPLE");
-
-				row5.rdf = out_tJenaConstructQuery_1.toString();
-
-				queryExec_tJenaConstructQuery_1.close();
-
-				/**
-				 * [tJenaConstructQuery_1 begin ] stop
-				 */
-				/**
-				 * [tJenaConstructQuery_1 main ] start
-				 */
-
-				currentComponent = "tJenaConstructQuery_1";
-
-				tos_count_tJenaConstructQuery_1++;
-
-				/**
-				 * [tJenaConstructQuery_1 main ] stop
-				 */
-
-				/**
-				 * [tRDF2RDF_1 main ] start
-				 */
-
-				currentComponent = "tRDF2RDF_1";
-
-				inputFormat_tRDF2RDF_1 = "N-TRIPLE";
-
-				if (context.format.toLowerCase().equals("rdf")
-						|| context.format.toLowerCase().equals("rdf/xml")
-						|| context.format.toLowerCase().equals("xml")
-						|| context.format.toLowerCase().equals(
-								"application/rdf+xml")) {
-					outputFormat_tRDF2RDF_1 = "RDF/XML";
-				} else if (context.format.toLowerCase().equals("turtle")
-						|| context.format.toLowerCase().equals("ttl")
-						|| context.format.toLowerCase().equals("text/turtle")) {
-					outputFormat_tRDF2RDF_1 = "TURTLE";
-				} else if (context.format.toLowerCase().equals("nt")
-						|| context.format.toLowerCase().equals("n-triple")
-						|| context.format.toLowerCase().equals("text/plain")) {
-					outputFormat_tRDF2RDF_1 = "N-TRIPLE";
-				} else if (context.format.toLowerCase().equals("n3")
-						|| context.format.toLowerCase().equals("text/rdf+n3")) {
-					outputFormat_tRDF2RDF_1 = "N3";
-				} else if (context.format.toLowerCase().equals("rdf/json")
-						|| context.format.toLowerCase().equals("json")
-						|| context.format.toLowerCase().equals(
-								"application/json")) {
-					outputFormat_tRDF2RDF_1 = "RDF/JSON";
-				} else {
-					outputFormat_tRDF2RDF_1 = "null";
-				}
-
-				String rdfInput_tRDF2RDF_1 = "";
-				String defaultGraph_tRDF2RDF_1 = "http://default.graph";
-
-				rdfInput_tRDF2RDF_1 = row5.rdf;
-
-				reader_tRDF2RDF_1 = new StringReader(rdfInput_tRDF2RDF_1);
-				writer_tRDF2RDF_1 = new StringWriter();
-				model_tRDF2RDF_1 = ModelFactory.createDefaultModel();
-
-				model_tRDF2RDF_1.read(reader_tRDF2RDF_1,
-						defaultGraph_tRDF2RDF_1, inputFormat_tRDF2RDF_1);
-
-				model_tRDF2RDF_1.write(writer_tRDF2RDF_1,
-						outputFormat_tRDF2RDF_1);
-
-				row7.rdf = writer_tRDF2RDF_1.toString();
-
-				nb_line_tRDF2RDF_1++;
-
-				tos_count_tRDF2RDF_1++;
-
-				/**
-				 * [tRDF2RDF_1 main ] stop
-				 */
-
-				/**
-				 * [tLogRow_4 main ] start
-				 */
-
-				currentComponent = "tLogRow_4";
-
-				row11 = row7;
-
-				tos_count_tLogRow_4++;
-
-				/**
-				 * [tLogRow_4 main ] stop
-				 */
-
-				/**
-				 * [tBufferOutput_1 main ] start
-				 */
-
-				currentComponent = "tBufferOutput_1";
-
-				String[] row_tBufferOutput_1 = new String[] { "", };
-				if (row11.rdf != null) {
-
-					row_tBufferOutput_1[0] = row11.rdf;
-
-				} else {
-					row_tBufferOutput_1[0] = null;
-				}
-				globalBuffer.add(row_tBufferOutput_1);
-
-				tos_count_tBufferOutput_1++;
-
-				/**
-				 * [tBufferOutput_1 main ] stop
-				 */
-
-				/**
-				 * [tJenaConstructQuery_1 end ] start
-				 */
-
-				currentComponent = "tJenaConstructQuery_1";
-
-				ok_Hash.put("tJenaConstructQuery_1", true);
-				end_Hash.put("tJenaConstructQuery_1",
-						System.currentTimeMillis());
-
-				/**
-				 * [tJenaConstructQuery_1 end ] stop
-				 */
-
-				/**
-				 * [tRDF2RDF_1 end ] start
-				 */
-
-				currentComponent = "tRDF2RDF_1";
-
-				globalMap.put("tRDF2RDF_1_NB_LINE", nb_line_tRDF2RDF_1);
-
-				ok_Hash.put("tRDF2RDF_1", true);
-				end_Hash.put("tRDF2RDF_1", System.currentTimeMillis());
-
-				/**
-				 * [tRDF2RDF_1 end ] stop
-				 */
-
-				/**
-				 * [tLogRow_4 end ] start
-				 */
-
-				currentComponent = "tLogRow_4";
-
-				ok_Hash.put("tLogRow_4", true);
-				end_Hash.put("tLogRow_4", System.currentTimeMillis());
-
-				/**
-				 * [tLogRow_4 end ] stop
-				 */
-
-				/**
-				 * [tBufferOutput_1 end ] start
-				 */
-
-				currentComponent = "tBufferOutput_1";
-
-				ok_Hash.put("tBufferOutput_1", true);
-				end_Hash.put("tBufferOutput_1", System.currentTimeMillis());
-
-				/**
-				 * [tBufferOutput_1 end ] stop
-				 */
-
-			}// end the resume
-
-		} catch (java.lang.Exception e) {
-
-			TalendException te = new TalendException(e, currentComponent,
-					globalMap);
-
-			throw te;
-		} catch (java.lang.Error error) {
-
-			throw error;
-		} finally {
-
-			try {
-
-				/**
-				 * [tJenaConstructQuery_1 finally ] start
-				 */
-
-				currentComponent = "tJenaConstructQuery_1";
-
-				/**
-				 * [tJenaConstructQuery_1 finally ] stop
-				 */
-
-				/**
-				 * [tRDF2RDF_1 finally ] start
-				 */
-
-				currentComponent = "tRDF2RDF_1";
-
-				/**
-				 * [tRDF2RDF_1 finally ] stop
-				 */
-
-				/**
-				 * [tLogRow_4 finally ] start
-				 */
-
-				currentComponent = "tLogRow_4";
-
-				/**
-				 * [tLogRow_4 finally ] stop
-				 */
-
-				/**
-				 * [tBufferOutput_1 finally ] start
-				 */
-
-				currentComponent = "tBufferOutput_1";
-
-				/**
-				 * [tBufferOutput_1 finally ] stop
-				 */
-
-			} catch (java.lang.Exception e) {
-				// ignore
-			} catch (java.lang.Error error) {
-				// ignore
-			}
-			resourceMap = null;
-		}
-
-		globalMap.put("tJenaConstructQuery_1_SUBPROCESS_STATE", 1);
 	}
 
 	public String resuming_logs_dir_path = null;
@@ -2851,14 +2773,14 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 
 		try {
 			errorCode = null;
-			tJenaCreateModel_1Process(globalMap);
+			tSesameModelCreate_1Process(globalMap);
 			if (!"failure".equals(status)) {
 				status = "end";
 			}
-		} catch (TalendException e_tJenaCreateModel_1) {
-			globalMap.put("tJenaCreateModel_1_SUBPROCESS_STATE", -1);
+		} catch (TalendException e_tSesameModelCreate_1) {
+			globalMap.put("tSesameModelCreate_1_SUBPROCESS_STATE", -1);
 
-			e_tJenaCreateModel_1.printStackTrace();
+			e_tSesameModelCreate_1.printStackTrace();
 
 		}
 
@@ -3008,6 +2930,6 @@ public class Bio2RDF_DescribeAll_loop implements TalendJob {
 	ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- * 78515 characters generated by Talend Open Studio for ESB on the 15 août 2014
- * 15:42:12 EDT
+ * 77361 characters generated by Talend Open Studio for ESB on the 29 août 2014
+ * 16:28:18 EDT
  ************************************************************************************************/

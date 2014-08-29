@@ -43,10 +43,11 @@ import java.io.IOException;
 import java.util.Comparator;
 
 //the import part of tRDF2RDF_2
-import com.hp.hpl.jena.rdf.model.*;
-import com.hp.hpl.jena.util.FileManager;
+import org.apache.jena.riot.Lang;
+import org.apache.jena.riot.RDFDataMgr;
+import com.hp.hpl.jena.rdf.model.Model;
+import com.hp.hpl.jena.rdf.model.ModelFactory;
 import java.io.*;
-import org.openjena.riot.out.RDFJSONWriter;
 
 @SuppressWarnings("unused")
 /**
@@ -937,8 +938,8 @@ public class rdfxml_reader_converter implements TalendJob {
 
 	}
 
-	public static class not_jsonldStruct implements
-			routines.system.IPersistableRow<not_jsonldStruct> {
+	public static class outStruct implements
+			routines.system.IPersistableRow<outStruct> {
 		final static byte[] commonByteArrayLock_BIO2RDF_rdfxml_reader_converter = new byte[0];
 		static byte[] commonByteArray_BIO2RDF_rdfxml_reader_converter = new byte[0];
 
@@ -1029,7 +1030,7 @@ public class rdfxml_reader_converter implements TalendJob {
 		/**
 		 * Compare keys
 		 */
-		public int compareTo(not_jsonldStruct other) {
+		public int compareTo(outStruct other) {
 
 			int returnValue = -1;
 
@@ -1578,7 +1579,7 @@ public class rdfxml_reader_converter implements TalendJob {
 				row1Struct row1 = new row1Struct();
 				row1Struct row2 = row1;
 				ntriplesStruct ntriples = new ntriplesStruct();
-				not_jsonldStruct not_jsonld = new not_jsonldStruct();
+				outStruct out = new outStruct();
 				row3Struct row3 = new row3Struct();
 				out2Struct out2 = new out2Struct();
 				debug3Struct debug3 = new debug3Struct();
@@ -1666,13 +1667,10 @@ public class rdfxml_reader_converter implements TalendJob {
 
 				int tos_count_tRDF2RDF_2 = 0;
 
-				org.openjena.riot.RIOT.init();
-
-				Reader reader_tRDF2RDF_2;
+				// Reader reader_tRDF2RDF_2;
 				Writer writer_tRDF2RDF_2;
-				Model model_tRDF2RDF_2;
+				Model model_tRDF2RDF_2 = ModelFactory.createDefaultModel();
 
-				String outputFormat_tRDF2RDF_2;
 				String inputFormat_tRDF2RDF_2;
 
 				int nb_line_tRDF2RDF_2 = 0;
@@ -1705,7 +1703,7 @@ public class rdfxml_reader_converter implements TalendJob {
 
 				// ###############################
 				// # Outputs initialization
-				not_jsonldStruct not_jsonld_tmp = new not_jsonldStruct();
+				outStruct out_tmp = new outStruct();
 				// ###############################
 
 				/**
@@ -1941,19 +1939,12 @@ public class rdfxml_reader_converter implements TalendJob {
 						// ###############################
 						// # Output tables
 
-						not_jsonld = null;
+						out = null;
 
-						// # Output table : 'not_jsonld'
-						// # Filter conditions
-						if (
-
-						!context.formatOut.equals("application/ld+json")
-
-						) {
-							not_jsonld_tmp.rdf = ntriples.ntriples;
-							not_jsonld = not_jsonld_tmp;
-						} // closing filter/reject
-							// ###############################
+						// # Output table : 'out'
+						out_tmp.rdf = ntriples.ntriples;
+						out = out_tmp;
+						// ###############################
 
 					} // end of Var scope
 
@@ -1964,8 +1955,8 @@ public class rdfxml_reader_converter implements TalendJob {
 					/**
 					 * [tMap_6 main ] stop
 					 */
-					// Start of branch "not_jsonld"
-					if (not_jsonld != null) {
+					// Start of branch "out"
+					if (out != null) {
 
 						/**
 						 * [tRDF2RDF_2 main ] start
@@ -1973,7 +1964,18 @@ public class rdfxml_reader_converter implements TalendJob {
 
 						currentComponent = "tRDF2RDF_2";
 
-						inputFormat_tRDF2RDF_2 = "RDF/XML";
+						String rdfInput_tRDF2RDF_2 = "";
+						String baseUri_tRDF2RDF_2 = "http://identifiers.org/";
+
+						rdfInput_tRDF2RDF_2 = out.rdf;
+
+						RDFDataMgr.read(
+								model_tRDF2RDF_2,
+								new ByteArrayInputStream(rdfInput_tRDF2RDF_2
+										.getBytes()), baseUri_tRDF2RDF_2,
+								Lang.RDFXML);
+
+						writer_tRDF2RDF_2 = new StringWriter();
 
 						if (context.formatOut.toLowerCase().equals("rdf")
 								|| context.formatOut.toLowerCase().equals(
@@ -1981,53 +1983,70 @@ public class rdfxml_reader_converter implements TalendJob {
 								|| context.formatOut.toLowerCase()
 										.equals("xml")
 								|| context.formatOut.toLowerCase().equals(
-										"application/rdf+xml")) {
-							outputFormat_tRDF2RDF_2 = "RDF/XML";
+										"application/rdf+xml")
+								|| context.formatOut.toLowerCase().equals(
+										"rdfxml")) {
+							RDFDataMgr.write(writer_tRDF2RDF_2,
+									model_tRDF2RDF_2, Lang.RDFXML);
 						} else if (context.formatOut.toLowerCase().equals(
 								"turtle")
 								|| context.formatOut.toLowerCase()
 										.equals("ttl")
 								|| context.formatOut.toLowerCase().equals(
 										"text/turtle")) {
-							outputFormat_tRDF2RDF_2 = "TURTLE";
+							RDFDataMgr.write(writer_tRDF2RDF_2,
+									model_tRDF2RDF_2, Lang.TURTLE);
 						} else if (context.formatOut.toLowerCase().equals("nt")
 								|| context.formatOut.toLowerCase().equals(
 										"n-triple")
 								|| context.formatOut.toLowerCase().equals(
-										"text/plain")) {
-							outputFormat_tRDF2RDF_2 = "N-TRIPLE";
+										"text/plain")
+								|| context.formatOut.toLowerCase().equals(
+										"ntriple")
+								|| context.formatOut.toLowerCase().equals(
+										"ntriples")
+								|| context.formatOut.toLowerCase().equals(
+										"n-triples")) {
+							RDFDataMgr.write(writer_tRDF2RDF_2,
+									model_tRDF2RDF_2, Lang.NTRIPLES);
+						} else if (context.formatOut.toLowerCase().equals(
+								"jsonld")
+								|| context.formatOut.toLowerCase().equals(
+										"json-ld")
+								|| context.formatOut.toLowerCase().equals(
+										"json/ld")) {
+							RDFDataMgr.write(writer_tRDF2RDF_2,
+									model_tRDF2RDF_2, Lang.JSONLD);
 						} else if (context.formatOut.toLowerCase().equals("n3")
 								|| context.formatOut.toLowerCase().equals(
 										"text/rdf+n3")) {
-							outputFormat_tRDF2RDF_2 = "N3";
+							RDFDataMgr.write(writer_tRDF2RDF_2,
+									model_tRDF2RDF_2, Lang.N3);
 						} else if (context.formatOut.toLowerCase().equals(
 								"rdf/json")
 								|| context.formatOut.toLowerCase().equals(
 										"json")
 								|| context.formatOut.toLowerCase().equals(
-										"application/json")) {
-							outputFormat_tRDF2RDF_2 = "RDF/JSON";
+										"application/rdf+json")
+								|| context.formatOut.toLowerCase().equals(
+										"rdfjson")) {
+							RDFDataMgr.write(writer_tRDF2RDF_2,
+									model_tRDF2RDF_2, Lang.RDFJSON);
+						} else if (context.formatOut.toLowerCase().equals(
+								"trig")
+								|| context.formatOut.toLowerCase().equals(
+										"application/trig")) {
+							RDFDataMgr.write(writer_tRDF2RDF_2,
+									model_tRDF2RDF_2, Lang.TRIG);
+						} else if (context.formatOut.toLowerCase().equals(
+								"nquads")
+								|| context.formatOut.toLowerCase().equals(
+										"n-quads")) {
+							RDFDataMgr.write(writer_tRDF2RDF_2,
+									model_tRDF2RDF_2, Lang.NQUADS);
 						} else {
-							outputFormat_tRDF2RDF_2 = "null";
+							System.err.println("RDF Lang not supported");
 						}
-
-						String rdfInput_tRDF2RDF_2 = "";
-						String defaultGraph_tRDF2RDF_2 = "http://default.graph";
-
-						rdfInput_tRDF2RDF_2 = not_jsonld.rdf;
-
-						reader_tRDF2RDF_2 = new StringReader(
-								rdfInput_tRDF2RDF_2);
-						writer_tRDF2RDF_2 = new StringWriter();
-						model_tRDF2RDF_2 = ModelFactory.createDefaultModel();
-
-						model_tRDF2RDF_2
-								.read(reader_tRDF2RDF_2,
-										defaultGraph_tRDF2RDF_2,
-										inputFormat_tRDF2RDF_2);
-
-						model_tRDF2RDF_2.write(writer_tRDF2RDF_2,
-								outputFormat_tRDF2RDF_2);
 
 						row3.rdf = writer_tRDF2RDF_2.toString();
 
@@ -2176,7 +2195,7 @@ public class rdfxml_reader_converter implements TalendJob {
 
 						} // End of branch "debug3"
 
-					} // End of branch "not_jsonld"
+					} // End of branch "out"
 
 				} // End of branch "ntriples"
 
@@ -2860,6 +2879,6 @@ public class rdfxml_reader_converter implements TalendJob {
 	ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- * 73451 characters generated by Talend Open Studio for ESB on the 15 août 2014
- * 15:42:13 EDT
+ * 74109 characters generated by Talend Open Studio for ESB on the 29 août 2014
+ * 16:28:19 EDT
  ************************************************************************************************/
