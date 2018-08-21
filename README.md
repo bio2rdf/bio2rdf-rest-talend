@@ -3,6 +3,8 @@ bio2rdf-rest
 
 A RESTful interface to the Bio2RDF network of data.
 
+This component is not used and not actively developed.
+
 ============
 
 REST service online at http://bio2rdf.org/
